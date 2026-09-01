@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TouchOff — Privacy Policy</title>
+<meta name="description" content="TouchOff blocks accidental touches while the screen stays on. It has no internet permission: no server, no account, no analytics, no tracking.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="mark">TouchOff</p>
+    <p class="tagline">Screen on. Touches off.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 1 September 2026</p>
+    <dl class="facts">
+      <dt>App</dt><dd><code>software.basilbase.touchoff</code></dd>
+      <dt>Version</dt><dd>1.0.0</dd>
+      <dt>Developer</dt><dd>basilbase</dd>
+      <dt>Contact</dt><dd><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></dd>
+    </dl>
+  </header>
+
+  <div class="lede">
+    <p><strong>The short version.</strong> TouchOff does not collect, store or transmit any
+    personal data. It has no internet permission. There are no accounts, no advertising, no
+    analytics and no crash reporting. Your settings stay on your device.</p>
+  </div>
+
+  <h2>The verifiable version</h2>
+  <p>Claims about privacy are easy to make, so here is how to check this one.</p>
+  <p>TouchOff's manifest does not request <code>INTERNET</code> or
+  <code>ACCESS_NETWORK_STATE</code>. An Android app cannot open a network connection without
+  <code>INTERNET</code> — not "does not", but <strong>cannot</strong>; the operating system
+  refuses. You can confirm this on the Play listing's permission list, or by inspecting the
+  app bundle yourself.</p>
+  <p>There are also no third-party SDKs. The app is built on Google's own AndroidX, Jetpack
+  Compose and Material libraries, which run entirely on the device. Nothing in the app talks
+  to a server, because nothing in the app can.</p>
+
+  <h2>Permissions in full</h2>
+  <div class="table-scroll">
+  <table>
+    <thead>
+      <tr><th>Permission</th><th>Why it is needed</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>SYSTEM_ALERT_WINDOW</code><br>Display over other apps</td>
+        <td>To draw the small floating lock button, and the transparent layer that absorbs
+        touches while the lock is on. This permission allows an app to <strong>draw over</strong>
+        other apps. It does not allow it to <strong>read</strong> them.</td>
+      </tr>
+      <tr>
+        <td><code>FOREGROUND_SERVICE</code><br><code>FOREGROUND_SERVICE_SPECIAL_USE</code></td>
+        <td>To keep the floating lock alive while you are inside another app. The service
+        starts only when you press start, never at boot and never on its own.</td>
+      </tr>
+      <tr>
+        <td><code>VIBRATE</code></td>
+        <td>A short confirmation buzz when the screen locks and unlocks. Can be turned off.</td>
+      </tr>
+      <tr>
+        <td><code>POST_NOTIFICATIONS</code></td>
+        <td>The silent ongoing notification shown while the service runs, with its Unlock and
+        Stop actions. Declining it does not break anything.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p>That is the complete list. In particular there is no internet, network state, storage,
+  photos, camera, microphone, location, contacts, calendar, account, phone or SMS permission,
+  no usage access, no accessibility service, no <code>QUERY_ALL_PACKAGES</code>, no
+  boot-completed receiver and no exact alarms.</p>
+
+  <h2>What TouchOff does not do</h2>
+  <ul>
+    <li>It does not read the contents of your screen. Drawing over an app and reading an app
+    are different permissions, and TouchOff only has the first.</li>
+    <li>It does not take screenshots or record your screen. There is no
+    <code>MediaProjection</code> use and no screen capture of any kind.</li>
+    <li>It does not see which apps you have installed, or which app you are using.</li>
+    <li>It does not see what you type. It has no accessibility service and no keyboard.</li>
+    <li>It does not know who you are. There is no account, no identifier and no advertising ID.</li>
+  </ul>
+
+  <h2>What is stored on your device, and only on your device</h2>
+  <p>Your settings: button size, idle transparency, which edge it settles on, hold length,
+  vibration, keep-screen-on, whether the help card appears, the chosen theme and language,
+  and whether the volume-key shortcut has been found to work on your phone.</p>
+  <p>These live in the app's own private storage, in a single file no other app can read.</p>
+
+  <h2>What is deliberately not stored</h2>
+  <p>Whether the lock is currently on is <strong>never</strong> written to disk. If the app
+  restarts, is closed by the system, or your phone reboots, the lock is always off and your
+  touchscreen always works. That is a safety decision as much as a privacy one: a lock
+  restored without the button that dismisses it would be a lock you could not escape.</p>
+
+  <h2>Backup</h2>
+  <p>Android's standard cloud backup includes the settings file, if you have backup enabled,
+  so your preferences follow you to a new phone. That transfer is between your device and
+  your own Google account. basilbase has no server and never receives it.</p>
+
+  <h2>Children</h2>
+  <p>TouchOff collects no data from anyone, children included. It is a general-purpose
+  utility, is not directed at children, and contains no advertising, no purchases and no
+  user-generated content. It is also not parental-control software, and does not claim to be.</p>
+
+  <h2>Permissions you can withdraw at any time</h2>
+  <ul>
+    <li><strong>Display over other apps</strong> — withdraw it and the floating lock can no
+    longer appear. The app notices, removes anything on screen and stops its service.</li>
+    <li><strong>Notifications</strong> — withdraw it and the ongoing notification disappears.
+    The lock keeps working, and the floating button remains the primary way to unlock.</li>
+  </ul>
+  <p>TouchOff will not repeatedly prompt you to re-enable either one.</p>
+
+  <h2>Data retention and deletion</h2>
+  <p>There is no server, so there is nothing for us to retain or delete. Everything the app
+  stores lives on your device and is removed when you uninstall it, or when you use
+  <em>Clear storage</em> in Android's app settings.</p>
+
+  <h2>Changes</h2>
+  <p>If a future version of TouchOff ever collects data, this policy will be updated before
+  that version is published, and the change will be described in the app's "What's new".
+  Given that the app has no internet permission, any such change would be a significant one
+  and would be announced as such. Updated versions are published at this URL with a new date
+  at the top.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy, or about privacy in TouchOff:
+  <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+
+  <footer>
+    TouchOff is made by basilbase.
+  </footer>
+
+</div>
+</body>
+</html>
