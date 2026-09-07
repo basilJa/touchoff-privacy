@@ -10,6 +10,7 @@ every basilbase policy is published. The name is kept because live Play listings
 | TouchOff | https://basilja.github.io/touchoff-privacy/ |
 | UpTime | https://basilja.github.io/touchoff-privacy/privacy/uptime/ |
 | AppLight | https://basilja.github.io/touchoff-privacy/privacy/applight/ |
+| RichNotify | https://basilja.github.io/touchoff-privacy/privacy/richnotify/ |
 
 New apps go in `privacy/<slug>/index.html`. Copy the nearest existing page and rewrite the
 content: the `<style>` block is shared verbatim so every policy looks like the same product

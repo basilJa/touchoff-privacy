@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RichNotify — Privacy Policy</title>
+<meta name="description" content="RichNotify shows your phone notifications properly on your Wear OS watch. It has no internet permission at all: notification content never leaves your own two devices.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌚</text></svg>">
+<style>
+  :root {
+    --bg:        #eceff4;
+    --surface:   #ffffff;
+    --ink:       #0f131a;
+    --muted:     #565f6b;
+    --accent:    #3a6ea5;
+    --accent-dk: #1d3f66;
+    --line:      #dde2ea;
+    --chip:      #eff2f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0c10;
+      --surface:   #161a20;
+      --ink:       #eff2f6;
+      --muted:     #9aa4b2;
+      --accent:    #7fb0e0;
+      --accent-dk: #aecdec;
+      --line:      #242a33;
+      --chip:      #1e242c;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="mark">RichNotify</p>
+    <p class="tagline">Your notifications, usable on your wrist.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 7 September 2026</p>
+    <dl class="facts">
+      <dt>App</dt><dd><code>software.basilbase.richnotify</code></dd>
+      <dt>Developer</dt><dd>basilbase</dd>
+      <dt>Contact</dt><dd><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></dd>
+    </dl>
+  </header>
+
+  <div class="lede">
+    <p><strong>The short version.</strong> RichNotify reads the notifications that arrive on
+    your phone so it can show them properly on your watch. That content never leaves your two
+    devices. There is no server, no account, no advertising, no analytics and no crash
+    reporting, and the app has <strong>no internet permission at all</strong>.</p>
+  </div>
+
+  <h2>Why that claim is checkable</h2>
+  <p>Privacy claims are cheap, so here is how to check this one rather than believe it.</p>
+  <p>RichNotify's manifest does not request <code>INTERNET</code> or
+  <code>ACCESS_NETWORK_STATE</code>. An Android app without <code>INTERNET</code> cannot open
+  a network connection — not "does not", but <strong>cannot</strong>: the operating system
+  refuses. You can confirm this in the permission list on the Play listing, or by inspecting
+  the APK yourself.</p>
+  <p>This matters more here than in most apps. RichNotify can see every notification your
+  phone receives: messages, one-time codes, bank alerts, health reminders. An app holding
+  that and also holding network access would be asking for a great deal of trust. This one is
+  built so that the trust is not needed.</p>
+  <p>The check is also automated. Every push to the project's repository runs a build that
+  reads the merged manifest of both apps and fails if <code>INTERNET</code>,
+  <code>ACCESS_NETWORK_STATE</code> or <code>QUERY_ALL_PACKAGES</code> has appeared —
+  including by way of a dependency that declares one quietly.</p>
+
+  <h2>What RichNotify reads</h2>
+  <p>To place a notification on your watch, the app reads what the notification contains:</p>
+  <ul>
+    <li>the app it came from, and that app's name and version</li>
+    <li>the title, the text, and any additional lines</li>
+    <li>the sender and the conversation, where the app provides them</li>
+    <li>attached images, stickers and voice messages</li>
+    <li>the notification's category, channel, and whether it can be replied to</li>
+  </ul>
+  <p>It reads this through Android's <strong>notification access</strong>, which you grant in
+  system settings and can withdraw at any time. The moment you withdraw it, RichNotify stops
+  reading.</p>
+  <p><strong>What it does with it.</strong> That content builds the card you see on your
+  watch, groups messages into conversations, and applies the rules you have set. Nothing
+  else.</p>
+  <p><strong>What it does not read.</strong> RichNotify does not read your contacts, your
+  accounts, your files, your location, your call log or your messages from within other apps.
+  It holds no permission for any of them. It does not enumerate the apps on your device: it
+  declares a narrow query for apps with a launcher icon, so it can offer you a list to pick
+  from, and it does <em>not</em> hold <code>QUERY_ALL_PACKAGES</code>.</p>
+
+  <h2>Where it goes</h2>
+  <p><strong>Your watch.</strong> The notification is sent over Android's Wear Data Layer to a
+  watch you have paired with this phone. This is a direct link between your own two devices;
+  it does not travel over the internet.</p>
+  <p><strong>This phone's storage, only if you turn history on.</strong> History is
+  <strong>off</strong> by default. With it off, no message is written down at all.</p>
+  <p>That default is deliberate. For an app that can read every message you receive, off is
+  the honest starting point, and the app should have to be asked before it keeps a record.</p>
+  <p><strong>Nowhere else.</strong> No server, no cloud backup, no analytics service, no crash
+  reporter, no advertising network. There is no third party in this product to send anything
+  to.</p>
+
+  <h2>What is stored, and for how long</h2>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th scope="col">What</th><th scope="col">Where</th><th scope="col">Default</th><th scope="col">Your control</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Notification content</td>
+          <td>This phone, encrypted</td>
+          <td><strong>Not stored</strong></td>
+          <td>History: off, 1 day, 1 week, 1 month, 3 months, or until you delete</td>
+        </tr>
+        <tr>
+          <td>Which rule decided what</td>
+          <td>This phone</td>
+          <td>Kept</td>
+          <td>Deletable separately</td>
+        </tr>
+        <tr>
+          <td>Counts per app</td>
+          <td>This phone</td>
+          <td>Kept</td>
+          <td>Can be switched off, which also erases them</td>
+        </tr>
+        <tr>
+          <td>Recent cards</td>
+          <td>Your watch</td>
+          <td>Until cleared</td>
+          <td>"Clear this list" on the watch</td>
+        </tr>
+        <tr>
+          <td>Copied images and voice notes</td>
+          <td>Phone and watch, size-capped cache</td>
+          <td>Per your rules</td>
+          <td>Cleared by age, by size, and when the notification goes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>When history is on, stored notification content is <strong>encrypted</strong> with a key
+  held in the Android Keystore, so it is not readable by simply reading the app's database
+  file.</p>
+  <p>There is also a mode that keeps the shape without the words: it records that an app wrote
+  and when, but not the title, the text or the sender.</p>
+  <p>You can name apps that are <strong>never recorded</strong>. Their notifications still
+  reach your watch; nothing about them is written down, and excluding an app also erases what
+  it already wrote. An individual conversation can be marked the same way.</p>
+
+  <h2>What you can delete, and how</h2>
+  <ul>
+    <li><strong>Delete all history now</strong> — erases every stored notification. Your rules
+    and the record of which rule decided what remain.</li>
+    <li><strong>Delete the decision records</strong> — erases the log of which rule decided
+    what. After this, the diagnostics screen can no longer explain anything that already
+    happened.</li>
+    <li><strong>Forget a conversation</strong> — erases what is stored about it, including any
+    name you gave it.</li>
+    <li><strong>Clear the list on the watch</strong> — removes the cards held there.</li>
+    <li><strong>Uninstall</strong> — removes everything the app stored, on both devices.</li>
+  </ul>
+  <p>Deleting something here does not touch the app it came from, and deleting a message in
+  that app does not bring it back here. RichNotify keeps the notification it saw, not the
+  conversation itself.</p>
+
+  <h2>Permissions in full</h2>
+  <p>This is the complete set. There are no others.</p>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th scope="col">Permission</th><th scope="col">Why</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Notification access<br><code>BIND_NOTIFICATION_LISTENER_SERVICE</code></td>
+          <td>The core function. Granted by you in system settings, not requested by the app,
+            and withdrawable at any time</td>
+        </tr>
+        <tr>
+          <td>Phone<br><code>RECEIVE_BOOT_COMPLETED</code></td>
+          <td>To start reading again after the phone restarts, so notifications do not
+            silently stop until you next open the app</td>
+        </tr>
+        <tr>
+          <td>Phone<br><code>POST_NOTIFICATIONS</code></td>
+          <td>Only for the test notifications on the diagnostics screen, which the app posts to
+            itself so you can check that the path to your watch works. Nothing else in the app
+            posts a notification</td>
+        </tr>
+        <tr>
+          <td>Watch<br><code>POST_NOTIFICATIONS</code></td>
+          <td>To show the notification on your wrist. That is the product</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The phone also declares a <strong>targeted package visibility</strong> query for apps
+  with a launcher icon, so it can offer you a list to choose from. It does <em>not</em> hold
+  <code>QUERY_ALL_PACKAGES</code>.</p>
+
+  <h2>Deliberately absent</h2>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th scope="col">Not requested</th><th scope="col">What that means</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>INTERNET</code></td><td>The app cannot make a network connection. This is
+          what makes the rest of this page checkable rather than promised</td></tr>
+        <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>It cannot even see whether you are
+          online</td></tr>
+        <tr><td><code>QUERY_ALL_PACKAGES</code></td><td>It cannot enumerate what is installed on
+          your device</td></tr>
+        <tr><td><code>READ_CONTACTS</code></td><td>It cannot read your contacts. Names come from
+          the notification itself</td></tr>
+        <tr><td><code>BIND_ACCESSIBILITY_SERVICE</code></td><td>Notification access already does
+          this job, and an accessibility service can read far more of your screen than this app
+          has any business seeing</td></tr>
+        <tr><td>Location, microphone, camera, call log, SMS</td><td>None are requested</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Children</h2>
+  <p>RichNotify is not directed at children and collects no data from anyone, of any age.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the date at the top changes with it, and this page is updated at
+  the same time as the release it describes. A change that altered what leaves your device
+  would be described plainly rather than folded into a version note.</p>
+
+  <h2>Your rights</h2>
+  <p>Because nothing is collected or transmitted, there is no account to close, no data to
+  request from us, and nothing held anywhere for us to delete. Everything the app holds is on
+  your own devices and is deletable by you, from inside the app, at any time.</p>
+
+  <h2>What RichNotify cannot do</h2>
+  <p>Written here rather than only in the store listing, because a limit that appears only
+  where it is convenient is not honestly disclosed.</p>
+  <p>RichNotify can only show what a notification itself contains. If an app sends a terse
+  notification and keeps the rest to itself, there is nothing to enrich. Replies, reactions
+  and media appear only when the source app actually offers them, which varies by app and by
+  version. Custom vibration patterns depend on your watch's manufacturer and are not
+  guaranteed. And it cannot fix notifications that Android or your watch delivers late — no
+  app can.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+
+  <footer>
+    RichNotify is made by basilbase.
+  </footer>
+
+</div>
+</body>
+</html>
