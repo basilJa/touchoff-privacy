@@ -1,13 +1,27 @@
 # touchoff-privacy
 
-Public host for the TouchOff privacy policy, linked from the Google Play listing.
+Public host for the **basilbase privacy policies**, linked from the Google Play listings.
 
-**Live page:** https://basilja.github.io/touchoff-privacy/
+Despite the repository name, this is no longer TouchOff's site alone — it is the single place
+every basilbase policy is published. The name is kept because live Play listings point at it.
 
-`index.html` is the whole site — a single self-contained page, no build step and no Jekyll
-(`.nojekyll` is present). Edit it and push; GitHub Pages redeploys in about a minute.
+| App | Live page |
+|---|---|
+| TouchOff | https://basilja.github.io/touchoff-privacy/ |
+| UpTime | https://basilja.github.io/touchoff-privacy/privacy/uptime/ |
+| AppLight | https://basilja.github.io/touchoff-privacy/privacy/applight/ |
 
-The app itself lives in a separate private repository, `TouchOff`, whose
-`docs/PRIVACY_POLICY_EN.md` holds the same text in Markdown. Keep the two in step, and keep
-the "Last updated" date in `index.html` current whenever the policy text changes — Play
-reviewers check it.
+New apps go in `privacy/<slug>/index.html`. Copy the nearest existing page and rewrite the
+content: the `<style>` block is shared verbatim so every policy looks like the same product
+family. TouchOff's own policy is still the root `index.html` because its published listing
+points there; leave it where it is until that listing is changed.
+
+No build step and no Jekyll (`.nojekyll` is present). Edit and push; GitHub Pages redeploys in
+about a minute.
+
+Each app's own repository keeps the same text in Markdown (`docs/privacy-policy.md` or
+`docs/PRIVACY_POLICY_EN.md`). Keep the two in step, and keep the "Last updated" date current
+whenever the policy text changes — Play reviewers check it.
+
+SayIt's policy is still on its own separate repository, `sayit-privacy`, and has not been
+migrated here yet.
