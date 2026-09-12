@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GlowRim — Gizlilik Politikası</title>
+<meta name="description" content="GlowRim draws edge lighting and a battery ring. It has no internet permission and never reads notification text.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">GlowRim</p>
+    <p class="tagline">Kenar ışığı ve pil halkası, tam istediğin biçimde.</p>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme 13 Eylül 2026 · <a href="../">English</a></p>
+    <dl class="facts">
+      <dt>App</dt><dd><code>software.basilbase.glowrim</code></dd>
+      <dt>Version</dt><dd>1.0.0</dd>
+      <dt>Developer</dt><dd>basilbase</dd>
+      <dt>Contact</dt><dd><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></dd>
+    </dl>
+  </header>
+<p>İletişim: <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+<h2>Kısaca</h2>
+<p>GlowRim hiçbir kişisel veriyi toplamaz, saklamaz veya göndermez. İnternet izni yoktur. Hesap, analitik ve hata raporlama yoktur. Bildirimlerinizin metnini asla okumaz. Ayarlarınız cihazınızda kalır.</p>
+<h2>Doğrulanabilir hâli</h2>
+<p>GlowRim'in manifest dosyası <code>INTERNET</code> veya <code>ACCESS_NETWORK_STATE</code> izni istemez. Bir Android uygulaması <code>INTERNET</code> izni olmadan ağ bağlantısı açamaz — işletim sistemi buna izin vermez. Bunu Play sayfasındaki izin listesinden veya APK'yı inceleyerek doğrulayabilirsiniz.</p>
+<p>Bu önemlidir, çünkü GlowRim'in bildirim erişimi vardır. Ağ erişimi olmadığı için gördüğü hiçbir şey telefonunuzdan çıkamaz.</p>
+<h2>İzinlerin tamamı</h2>
+<p>GlowRim'in istediği izinlerin tam listesi budur. Başka izin yoktur.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">İzin</th><th scope="col">Neden</th><th scope="col">Olmazsa</th><th scope="col">Geri alma</th></tr></thead><tbody>
+<tr><td>Bildirim erişimi (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>, sistem ayarlarından sizin verdiğiniz)</td><td>Bir bildirimin geldiğini, hangi uygulamanın gönderdiğini, o uygulamanın belirlediği vurgu rengini, bildirimin süren veya sessiz olup olmadığını ve ne zaman temizlendiğini öğrenmek — ışığın doğru anda yanıp sönmesi için. Glow ekranında, bekleyen bildirimi olan uygulamaların küçük simgesini göstermek için.</td><td>Bildirimler hiçbir ışık yakmaz. Pil halkası çalışmaya devam eder.</td><td>Ayarlar › Bildirimler › Cihaz ve uygulama bildirimleri › GlowRim (adı telefona göre değişir)</td></tr>
+<tr><td>Diğer uygulamaların üzerinde göster (<code>SYSTEM_ALERT_WINDOW</code>)</td><td>Kenar ışığını, kamera ışığını ve pil halkasını diğer uygulamaların üstüne çizmek ve glow ekranını kilit ekranının üstünde açmak. Her overlay penceresi dokunulamaz: dokunuşlar alttaki uygulamaya gider.</td><td>GlowRim kendi ekranları dışında hiçbir şey gösteremez.</td><td>Ayarlar › Uygulamalar › Özel uygulama erişimi › Diğer uygulamaların üzerinde göster › GlowRim</td></tr>
+<tr><td>Takvim (<code>READ_CALENDAR</code>), isteğe bağlı</td><td>Yalnız glow ekranında "Sıradaki takvim etkinliği"ni açarsanız: önümüzdeki 24 saatteki bir sonraki saatli etkinliğin başlangıç saatini — "Başlık ve saat" seçerseniz başlığını da — ekranda göstermek için okumak.</td><td>Etkinlik gösterilmez.</td><td>Ayarlar › Uygulamalar › GlowRim › İzinler › Takvim</td></tr>
+</tbody></table></div>
+<p>GlowRim, hangi uygulamaların ışık yakabileceğini seçebilmeniz için başlatılabilir uygulamaları listeleyen hedefli bir paket görünürlüğü sorgusu bildirir. <code>QUERY_ALL_PACKAGES</code> iznine <strong>sahip değildir</strong>.</p>
+<h2>GlowRim'in yapmadıkları</h2>
+<ul><li>Hiçbir bildirimin başlığını veya metnini okumaz, saklamaz, göstermez veya analiz etmez.</li><li>Bildirim geçmişi, hangi uygulamanın ne zaman bildirim gönderdiği kaydı tutmaz.</li><li>Takvim etkinliklerini saklamaz; sıradaki etkinlik glow ekranı gösterilirken okunur ve yalnız ekran görünür olduğu sürece bellekte tutulur.</li><li>Ekranınızı okumaz, yakalamaz veya kaydetmez; nereye dokunduğunuzu kaydetmez.</li><li>Erişilebilirlik hizmeti kullanmaz.</li><li>Telefonunuzun kilidini açmaz, kilit ekranını kapatmaz.</li><li>Kamera, mikrofon, konum, kişiler, telefon, SMS, fotoğraflar, dosyalar veya hesaplara erişmez ve bu izinleri istemez.</li><li>Atıf, analitik, telemetri veya hata raporlama SDK'sı içermez.</li><li>Giriş, hesap veya bulut eşitlemesi yoktur.</li><li>Telefonunuzun kendi always-on display veya kenar aydınlatma ayarlarını değiştirmez.</li></ul>
+<h2>Yalnız cihazınızda saklananlar</h2>
+<div class="table-scroll"><table><thead><tr><th scope="col">Veri</th><th scope="col">Nerede</th><th scope="col">Neden</th></tr></thead><tbody>
+<tr><td>Işık, halka ve glow ekranı ayarlarınız — şekiller, boyutlar, renkler, zamanlama, halkanın konum düzeltmesi</td><td>Uygulamanın özel depolama alanı</td><td>Tasarımınızın korunması için</td></tr>
+<tr><td>"Yalnız seçilen uygulamalar" kullanıyorsanız ışık yakmasına izin verdiğiniz uygulamaların listesi (paket adları)</td><td>Uygulamanın özel depolama alanı</td><td>Seçiminizi uygulamak için</td></tr>
+<tr><td>Tema, uygulama dili ve tanıtımı bitirip bitirmediğiniz</td><td>Uygulamanın özel depolama alanı</td><td>Uygulamayı nasıl kullandığınızı hatırlamak için</td></tr>
+</tbody></table></div>
+<p>Özel depolama alanını yalnız GlowRim okuyabilir. Uygulamayı kaldırmak hepsini siler. Bilerek <strong>saklanmayanlar</strong>: bildirimler, bildirim geçmişi, takvim etkinlikleri, pil geçmişi, kullanım istatistikleri.</p>
+<h2>Yedekleme</h2>
+<p>GlowRim için Android bulut yedeklemesi ve cihazdan cihaza aktarım manifest dosyasında <strong>kapalıdır</strong>. Uygulamanın sakladığı hiçbir şey cihaz yedeğiyle Google sunucularına kopyalanmaz.</p>
+<h2>Çocuklar</h2>
+<p>GlowRim çocuklara yönelik olmayan genel amaçlı bir araçtır. Hangi yaşta olursa olsun kimseden veri toplamaz.</p>
+<h2>Saklama ve silme</h2>
+<p>Sunucu olmadığı için bizim saklayacağımız veya sileceğimiz bir şey yoktur. GlowRim'in sakladığı her şeyi silmek için uygulamayı kaldırın veya Ayarlar › Uygulamalar › GlowRim › Depolama'dan verilerini temizleyin.</p>
+<h2>Değişiklikler</h2>
+<p>GlowRim'in gelecekteki bir sürümü veri toplarsa bu politika o sürüm yayınlanmadan önce güncellenir ve değişiklik sürüm notlarında anlatılır. Güncel sürüm aynı adreste, üstte yeni tarihle yayınlanır.</p>
+<h2>İletişim</h2>
+<p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  <footer>GlowRim is made by basilbase.</footer>
+</div>
+</body>
+</html>

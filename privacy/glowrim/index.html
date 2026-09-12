@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GlowRim — Privacy Policy</title>
+<meta name="description" content="GlowRim draws edge lighting and a battery ring. It has no internet permission and never reads notification text.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">GlowRim</p>
+    <p class="tagline">Edge light and a battery ring, shaped the way you want.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 13 September 2026 · <a href="tr/">Türkçe</a></p>
+    <dl class="facts">
+      <dt>App</dt><dd><code>software.basilbase.glowrim</code></dd>
+      <dt>Version</dt><dd>1.0.0</dd>
+      <dt>Developer</dt><dd>basilbase</dd>
+      <dt>Contact</dt><dd><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></dd>
+    </dl>
+  </header>
+<p>Contact: <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+<h2>The short version</h2>
+<p>GlowRim does not collect, store or transmit any personal data. It has no internet permission. There are no accounts, no analytics and no crash reporting. It never reads the text of your notifications. Your settings stay on your device.</p>
+<h2>The verifiable version</h2>
+<p>GlowRim's manifest does not request <code>INTERNET</code> or <code>ACCESS_NETWORK_STATE</code>. An Android app cannot open a network connection without <code>INTERNET</code> — the operating system refuses. You can confirm this on the Play listing's permission list or by inspecting the APK.</p>
+<p>This matters because GlowRim has notification access. Without network access, nothing it can see can leave your phone.</p>
+<h2>Permissions in full</h2>
+<p>This is the complete set GlowRim requests. There are no others.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">Permission</th><th scope="col">Why</th><th scope="col">Without it</th><th scope="col">Withdraw</th></tr></thead><tbody>
+<tr><td>Notification access (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>, granted by you in system settings)</td><td>To learn that a notification arrived, which app posted it, the accent colour that app set, whether it is ongoing or silent, and when it was cleared — so the light can come on and go out at the right moment. On the glow screen, to show the small icon of apps with waiting notifications.</td><td>Notifications light nothing. The battery ring still works.</td><td>Settings › Notifications › Device &amp; app notifications › GlowRim (name varies by phone)</td></tr>
+<tr><td>Display over other apps (<code>SYSTEM_ALERT_WINDOW</code>)</td><td>To draw the edge light, the camera light and the battery ring above other apps, and to open the glow screen over the lock screen. Every overlay window is untouchable: taps go to the app underneath.</td><td>Nothing can be shown outside GlowRim's own screens.</td><td>Settings › Apps › Special app access › Display over other apps › GlowRim</td></tr>
+<tr><td>Calendar (<code>READ_CALENDAR</code>), optional</td><td>Only if you turn on "Next calendar event" on the glow screen: to read the start time — and, if you choose "Title and time", the title — of your next timed event within 24 hours, to show it on screen.</td><td>No event is shown.</td><td>Settings › Apps › GlowRim › Permissions › Calendar</td></tr>
+</tbody></table></div>
+<p>GlowRim declares a targeted package visibility query for launchable apps, so it can list them for you to choose which apps may light up. It does <strong>not</strong> hold <code>QUERY_ALL_PACKAGES</code>.</p>
+<h2>What GlowRim does not do</h2>
+<ul><li>It does not read, store, display or analyse the title or text of any notification.</li><li>It does not keep a history of notifications, of which apps notified you, or when.</li><li>It does not store calendar events; the next event is read when the glow screen is shown and kept only in memory while it is visible.</li><li>It does not read, capture or record your screen, and does not record where you tap.</li><li>It does not use an accessibility service.</li><li>It does not unlock your phone or dismiss your lock screen.</li><li>It does not access your camera, microphone, location, contacts, phone, SMS, photos, files or accounts, and does not request those permissions.</li><li>It contains no attribution, analytics, telemetry or crash-reporting SDK.</li><li>It has no login, no account and no cloud sync.</li><li>It does not change your phone's own always-on display or edge lighting settings.</li></ul>
+<h2>What is stored on your device, and only on your device</h2>
+<div class="table-scroll"><table><thead><tr><th scope="col">Data</th><th scope="col">Where</th><th scope="col">Why</th></tr></thead><tbody>
+<tr><td>Your light, ring and glow screen settings — shapes, sizes, colours, timing, the ring's position adjustment</td><td>App private storage</td><td>So your design is kept</td></tr>
+<tr><td>The list of apps you ticked as allowed to light up (package names), if you use "Only selected apps"</td><td>App private storage</td><td>To apply your choice</td></tr>
+<tr><td>Theme, app language, and whether you finished the introduction</td><td>App private storage</td><td>To remember how you like the app</td></tr>
+</tbody></table></div>
+<p>App private storage is readable only by GlowRim. Uninstalling the app deletes all of it. Deliberately <strong>not</strong> stored: notifications, notification history, calendar events, battery history, usage statistics.</p>
+<h2>Backup</h2>
+<p>Android cloud backup and device-to-device transfer are <strong>disabled</strong> for GlowRim in its manifest. Nothing the app stores is copied to Google's servers as part of a device backup.</p>
+<h2>Children</h2>
+<p>GlowRim is a general-purpose utility, not directed at children. It collects no data from anyone, of any age.</p>
+<h2>Data retention and deletion</h2>
+<p>There is no server, so there is nothing for us to retain or delete. To remove everything GlowRim stored, uninstall it, or clear its storage in Settings › Apps › GlowRim › Storage.</p>
+<h2>Changes</h2>
+<p>If a future version of GlowRim ever collects data, this policy will be updated before that version is published and the change will be described in the app's release notes. Updated versions are published at the same URL with a new date at the top.</p>
+<h2>Contact</h2>
+<p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  <footer>GlowRim is made by basilbase.</footer>
+</div>
+</body>
+</html>
