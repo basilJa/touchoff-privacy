@@ -233,11 +233,11 @@
   </div>
   <p>There is no internet, network state, storage, photos, camera, microphone, location, contacts,
   calendar, account, phone or SMS permission, no usage access, no accessibility service, no overlay
-  and no exact alarms.</p>
+  and no exact alarms. Saving and opening files uses Android's file picker, which needs no permission.</p>
 
   <h2>What WageTick does not do</h2>
   <ul>
-    <li>It does not send your rates, jobs or working times anywhere. It cannot.</li>
+    <li>It does not send your rates, jobs or working times anywhere. It cannot. Files leave the app only when you save one yourself (see <em>Files you save</em>).</li>
     <li>It does not know when you arrive at work or where you are. It counts only between your Start and Stop.</li>
     <li>It does not know who you are. There is no account or identifier.</li>
     <li>It does not calculate or report tax, and it shares nothing with an employer or client.</li>
@@ -249,15 +249,24 @@
     <li>Each job you add: its name, hourly rate and currency.</li>
     <li>If a session is running: which job, the rate and currency it started with, and when it started
     (the device's uptime clock, wall-clock time and restart counter, used to measure time correctly).</li>
-    <li>For each job, the last finished session: its length, the amount, and when it started and ended.</li>
-    <li>Your settings: theme, language, whether the notification is on, whether you swiped it away
-    for the current session, and whether first-run setup was completed.</li>
+    <li>Every finished session (the history), including sessions you add or edit by hand: job name, rate, currency, overtime rule, start and end time, paid time, break time, amount, and whether it was edited or bridged a restart.</li>
+    <li>For a running session, its current break, if any.</li>
+    <li>Your settings: theme, language, whether the notification is on, whether you swiped it away for the current session, whether first-run setup was completed, your daily goal and your deductions percentage.</li>
   </ul>
   <p>These live in the app's private storage, which other apps cannot read.</p>
 
   <h2>What is deliberately not stored</h2>
-  <p>No list of past sessions beyond the last one per job, no statistics, no usage times and no logs
-  of when the app was opened.</p>
+  <p>No usage times, no logs of when the app was opened, and no location. Weekly and monthly statistics are calculated from the history each time they are shown, not stored separately.</p>
+
+  <h2>Files you save</h2>
+  <ul>
+    <li><strong>Export CSV</strong> writes your sessions to a spreadsheet file, and <strong>Save a backup file</strong> writes jobs, sessions and settings to a JSON file. Both go only to the place you pick in Android's own file picker (for example your Downloads folder or a cloud drive app you use). WageTick does not choose, see or upload anything beyond writing that one file.</li>
+    <li><strong>Restore from a backup</strong> reads only the file you pick, and replaces the app's data with it.</li>
+    <li>Once saved, a file is under your control and subject to wherever you put it.</li>
+  </ul>
+
+  <h2>Widget and Quick Settings tile</h2>
+  <p>If you place the widget on your home screen, it shows the selected job, the running time and the amount to anyone who can see your home screen. The Quick Settings tile shows the job name and whether it is counting. Both are optional and read only the app's own data.</p>
 
   <h2>Backup</h2>
   <p>WageTick turns Android backup off. Its data is excluded from cloud backup and from
@@ -270,7 +279,7 @@
 
   <h2>Data retention and deletion</h2>
   <p>There is no server, so there is nothing for us to retain. In the app, <em>Settings → Delete
-  all data</em> removes every job, session and setting at once and stops a running counter.
+  all data</em> removes every job, session and setting at once and stops a running counter; single sessions can be deleted in <em>History</em>.
   Uninstalling the app, or <em>Clear storage</em> in Android's app settings, removes everything.</p>
 
   <h2>Changes</h2>
