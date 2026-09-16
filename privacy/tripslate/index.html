@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TripSlate — Privacy Policy</title>
+<meta name="description" content="TripSlate reads travel bookings and passes on your phone. It has no internet permission: no server, no account, no analytics.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧳</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="mark">TripSlate</p>
+    <p class="tagline">Every booking on one offline timeline.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 16 September 2026</p>
+    <dl class="facts">
+      <dt>App</dt><dd><code>software.basilbase.tripslate</code></dd>
+      <dt>Version</dt><dd>1.0.0</dd>
+      <dt>Developer</dt><dd>basilbase</dd>
+      <dt>Contact</dt><dd><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></dd>
+      <dt>Türkçe</dt><dd><a href="#tr">Aşağıda</a></dd>
+    </dl>
+  </header>
+
+  <h2>The short version</h2>
+  <p>TripSlate does not collect, send or share any personal data. It has no internet permission, no account, no analytics and no crash reporting. Your bookings, passes and documents are read and kept on your phone. They leave it only when you save a backup file or share an export yourself.</p>
+  <h2>The verifiable version</h2>
+  <p>TripSlate's manifest does not request <code>INTERNET</code> or <code>ACCESS_NETWORK_STATE</code>. Without <code>INTERNET</code>, Android does not let an app open a network connection at all. You can confirm this in the Play listing's permission list or by inspecting the APK.</p>
+  <h2>What the app handles</h2>
+  <p>You give TripSlate documents — boarding pass PDFs, Wallet passes (.pkpass), booking PDFs, calendar files, saved e-mails, screenshots or pasted text — by sharing them to the app or picking them in the system file picker. These can contain personal data: names, booking codes, flight numbers, seat numbers, dates, addresses, and barcodes. Documents you keep in "Documents" may be copies of passports, visas or insurance papers.</p>
+  <p>All of this is processed <strong>on the phone</strong>: text is extracted, barcodes are read, dates and places are recognised. Nothing is sent to basilbase or anyone else for this.</p>
+  <h2>Permissions — the complete list</h2>
+  <div class="table-scroll"><table>
+    <tr><th>Permission</th><th>Why</th><th>Without it</th><th>Can you revoke it</th></tr>
+    <tr><td><code>POST_NOTIFICATIONS</code></td><td>Shows the reminders you turn on for a trip item. Asked only when you turn on your first reminder.</td><td>Reminders are saved but cannot appear. Everything else works.</td><td>Yes, in system settings</td></tr>
+    <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Sets your reminders again after the phone restarts.</td><td>Reminders would be lost after a restart until you open the app.</td><td>Not a runtime permission</td></tr>
+  </table></div>
+  <p>TripSlate does not request: internet or network state, location, camera, microphone, contacts, calendar access, storage or photo library access, exact alarms, full-screen notifications, accessibility or notification access. Files reach the app only when you share or pick them.</p>
+  <h2>What it does not do</h2>
+  <ul>
+    <li>It does not read your mailbox or connect to any e-mail account.</li>
+    <li>It does not check flight status or contact airlines, hotels or rail operators.</li>
+    <li>It does not upload documents, passes or backups anywhere.</li>
+    <li>It does not use advertising identifiers, analytics or crash-reporting SDKs.</li>
+    <li>It does not add passes to or read passes from Google Wallet or any other wallet.</li>
+    <li>It does not verify or sign barcodes.</li>
+  </ul>
+  <h2>What is stored on your phone</h2>
+  <ul>
+    <li>Trips and items you confirmed: type, title, places and airport codes, dates, times and time zones, carrier and number, booking code, addresses, notes, traveller names, reminder choices.</li>
+    <li>Passes: barcode format and content, traveller name, seat.</li>
+    <li>Original documents you imported or added, in the app's private storage.</li>
+    <li>Settings: theme, language, home time zone, home airport, reminder defaults, pass-screen options, and an unfinished manual entry if you left one.</li>
+    <li>Files waiting for review after being shared.</li>
+  </ul>
+  <p>This data is in app-private storage that other apps cannot read.</p>
+  <h2>What is deliberately not stored</h2>
+  <p>No usage history, statistics, location history or logs of what you opened.</p>
+  <h2>Backups</h2>
+  <p>Android cloud backup and device-to-device transfer are <strong>turned off</strong> for TripSlate. The only way data leaves the phone is a backup file <strong>you</strong> save with "Backup", to a place you choose. Without a password that file is a readable zip; with a password it is encrypted with AES-256-GCM, and it cannot be restored without the password. Where you store that file (for example a cloud drive) is governed by that service's policy.</p>
+  <h2>Sharing and exports</h2>
+  <p>"Share with someone" creates a PDF summary or calendar file of a trip and opens the Android share sheet. These exports leave out booking codes, traveller names and barcodes. "Open with" and "Share" on a document hand that file to the app you choose.</p>
+  <h2>Children</h2>
+  <p>TripSlate is not directed at children and collects no data from anyone.</p>
+  <h2>Retention and deletion</h2>
+  <p>Nothing is kept on any server. Delete an item, trip or document in the app, use "Delete all past trips", or use Settings → "Delete all data". Uninstalling the app removes everything it stored. Backup files you saved elsewhere are not affected.</p>
+  <h2>Changes</h2>
+  <p>If a future version ever changes what data is handled or sent, this policy will be updated before that version is published, with a new date at the top.</p>
+  <h2>Contact</h2>
+  <p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+
+  <h1 id="tr" lang="tr">Gizlilik Politikası</h1>
+  <p class="meta">Son güncelleme 16 Eylül 2026</p>
+  <div lang="tr">
+  <h2>Kısaca</h2>
+  <p>TripSlate hiçbir kişisel veriyi toplamaz, göndermez, paylaşmaz. İnternet izni, hesabı, analitiği ve çökme raporlaması yoktur. Rezervasyonların, kartların ve belgelerin telefonunda okunur ve orada kalır. Telefondan yalnız senin kaydettiğin bir yedek dosyasıyla veya senin paylaştığın bir dışa aktarımla çıkar.</p>
+  <h2>Doğrulanabilir hâli</h2>
+  <p>TripSlate'in manifest'i <code>INTERNET</code> veya <code>ACCESS_NETWORK_STATE</code> istemez. <code>INTERNET</code> izni olmadan Android bir uygulamanın ağ bağlantısı açmasına hiç izin vermez. Bunu Play sayfasındaki izin listesinden veya APK'yı inceleyerek doğrulayabilirsin.</p>
+  <h2>Uygulamanın işlediği bilgiler</h2>
+  <p>TripSlate'e belgeleri sen verirsin — biniş kartı PDF'i, Wallet kartı (.pkpass), rezervasyon PDF'i, takvim dosyası, kayıtlı e-posta, ekran görüntüsü veya yapıştırılmış metin — uygulamaya paylaşarak ya da sistem dosya seçicisinden seçerek. Bunlar kişisel veri içerebilir: ad, rezervasyon kodu, uçuş numarası, koltuk, tarih, adres ve barkod. "Belgeler"de sakladığın dosyalar pasaport, vize veya sigorta kopyası olabilir.</p>
+  <p>Bunların hepsi <strong>telefonda</strong> işlenir: metin çıkarılır, barkod okunur, tarih ve yer tanınır. Bunun için basilbase'e veya başkasına hiçbir şey gönderilmez.</p>
+  <h2>İzinler — tam liste</h2>
+  <div class="table-scroll"><table>
+    <tr><th>İzin</th><th>Neden</th><th>Olmazsa</th><th>Geri alınabilir mi</th></tr>
+    <tr><td><code>POST_NOTIFICATIONS</code></td><td>Bir gezi öğesi için açtığın hatırlatmaları gösterir. Yalnız ilk hatırlatmayı açtığında istenir.</td><td>Hatırlatmalar kaydedilir ama görünmez. Geri kalan her şey çalışır.</td><td>Evet, sistem ayarlarından</td></tr>
+    <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Telefon yeniden başlayınca hatırlatmalarını yeniden kurar.</td><td>Yeniden başlatmadan sonra uygulamayı açana kadar hatırlatmalar kaybolur.</td><td>Çalışma zamanı izni değil</td></tr>
+  </table></div>
+  <p>TripSlate şunları istemez: internet veya ağ durumu, konum, kamera, mikrofon, rehber, takvim erişimi, depolama veya fotoğraf galerisi erişimi, kesin alarm, tam ekran bildirim, erişilebilirlik veya bildirim erişimi. Dosyalar uygulamaya yalnız sen paylaşınca veya seçince gelir.</p>
+  <h2>Yapmadıkları</h2>
+  <ul>
+    <li>Gelen kutunu okumaz, hiçbir e-posta hesabına bağlanmaz.</li>
+    <li>Uçuş durumunu kontrol etmez; havayolu, otel veya demiryolu şirketleriyle iletişim kurmaz.</li>
+    <li>Belge, kart veya yedeği hiçbir yere yüklemez.</li>
+    <li>Reklam kimliği, analitik veya çökme raporlama SDK'sı kullanmaz.</li>
+    <li>Google Wallet'a veya başka bir cüzdana kart eklemez, oradan okumaz.</li>
+    <li>Barkodları doğrulamaz veya imzalamaz.</li>
+  </ul>
+  <h2>Telefonda saklananlar</h2>
+  <ul>
+    <li>Onayladığın geziler ve öğeler: tür, başlık, yerler ve havalimanı kodları, tarih, saat ve saat dilimi, taşıyıcı ve numara, rezervasyon kodu, adres, not, yolcu adları, hatırlatma seçimleri.</li>
+    <li>Kartlar: barkod biçimi ve içeriği, yolcu adı, koltuk.</li>
+    <li>İçe aktardığın veya eklediğin orijinal belgeler, uygulamanın özel alanında.</li>
+    <li>Ayarlar: tema, dil, ev saat dilimi, ev havalimanı, hatırlatma varsayılanları, kart ekranı seçenekleri ve yarım bıraktığın elle giriş.</li>
+    <li>Paylaşıldıktan sonra onay bekleyen dosyalar.</li>
+  </ul>
+  <p>Bu veriler başka uygulamaların okuyamadığı özel alandadır.</p>
+  <h2>Bilerek saklanmayanlar</h2>
+  <p>Kullanım geçmişi, istatistik, konum geçmişi veya neyi açtığına dair kayıt tutulmaz.</p>
+  <h2>Yedekleme</h2>
+  <p>TripSlate için Android bulut yedeği ve cihazdan cihaza aktarım <strong>kapalıdır</strong>. Verinin telefondan çıkmasının tek yolu, "Yedek" ekranından <strong>senin</strong> seçtiğin yere kaydettiğin yedek dosyasıdır. Parolasız dosya okunabilir bir zip'tir; parolalı dosya AES-256-GCM ile şifrelenir ve parola olmadan geri yüklenemez. Dosyayı sakladığın yer (örneğin bir bulut sürücü) o hizmetin politikasına tabidir.</p>
+  <h2>Paylaşım ve dışa aktarım</h2>
+  <p>"Biriyle paylaş" bir gezinin PDF özetini veya takvim dosyasını oluşturur ve Android paylaşım menüsünü açar. Bu dışa aktarımlarda rezervasyon kodu, yolcu adı ve barkod bulunmaz. Bir belgedeki "Birlikte aç" ve "Paylaş", dosyayı senin seçtiğin uygulamaya verir.</p>
+  <h2>Çocuklar</h2>
+  <p>TripSlate çocuklara yönelik değildir ve kimseden veri toplamaz.</p>
+  <h2>Saklama ve silme</h2>
+  <p>Hiçbir sunucuda bir şey tutulmaz. Uygulamada öğe, gezi veya belge silebilir, "Tüm geçmiş gezileri sil"i ya da Ayarlar → "Tüm verileri sil"i kullanabilirsin. Uygulamayı kaldırmak sakladığı her şeyi siler. Başka yere kaydettiğin yedek dosyaları etkilenmez.</p>
+  <h2>Değişiklikler</h2>
+  <p>Gelecekteki bir sürüm işlenen veya gönderilen veriyi değiştirirse, bu politika o sürüm yayınlanmadan önce güncellenir ve üstteki tarih değişir.</p>
+  <h2>İletişim</h2>
+  <p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  </div>
+
+  <footer>
+    TripSlate is made by basilbase.
+  </footer>
+
+</div>
+</body>
+</html>
