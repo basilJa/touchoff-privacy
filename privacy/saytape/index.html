@@ -177,7 +177,7 @@
     <p class="meta">Last updated 16 September 2026 · App <code>software.basilbase.saytape</code> · Developer basilbase · Contact <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="tr/">Türkçe</a></p>
   </header>
 <h2>The short version</h2>
-<p>SayTape records audio when you tap Record and turns it into text <strong>on your phone</strong>. Your recordings, transcripts, bookmarks and settings never leave the device through SayTape. There is no account, no analytics, no advertising code and no crash reporting. SayTape has no internet permission.</p>
+<p>SayTape records audio when you tap Record and turns it into text <strong>on your phone</strong>. Your recordings, transcripts, bookmarks and settings never leave the device through SayTape. There is no account, no analytics and no crash reporting. SayTape has no internet permission.</p>
 <h2>The verifiable version</h2>
 <p>SayTape's manifest does not request <code>INTERNET</code> or <code>ACCESS_NETWORK_STATE</code>; it explicitly removes them. An Android app cannot open a network connection without <code>INTERNET</code> — the operating system refuses. You can confirm this in the Play listing's permission list or by inspecting the APK.</p>
 <p>Speech models are downloaded once <strong>by the Google Play Store app</strong> through Play Asset Delivery, not by SayTape. Google Play handles that download under Google's own privacy policy; SayTape sends nothing with it.</p>
@@ -232,7 +232,7 @@
 <li>It does not upload, sync or share audio, transcripts or anything else. Sharing happens only when you use the Share button, and goes to the app you pick.</li>
 <li>It does not record phone calls; during a call Android gives the microphone to the call and SayTape marks the silence.</li>
 <li>It does not use your location, contacts, camera, calendar, phone, SMS or accounts, and does not request those permissions.</li>
-<li>It contains no analytics, advertising, attribution, telemetry or crash-reporting SDK.</li>
+<li>It contains no analytics, attribution, telemetry or crash-reporting SDK.</li>
 <li>It has no login, no account and no cloud storage.</li>
 <li>It does not use your recordings or transcripts to train any model.</li>
 </ul>
