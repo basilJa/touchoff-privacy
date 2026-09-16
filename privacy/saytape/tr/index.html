@@ -217,6 +217,12 @@
 <td>Kayıt yine çalışır; kontroller bildirim alanında görünmez.</td>
 <td>Ayarlar › Uygulamalar › SayTape › Bildirimler</td>
 </tr>
+<tr>
+<td>Uyanık tutma (<code>WAKE_LOCK</code>) ve açılışta çalışma (<code>RECEIVE_BOOT_COMPLETED</code>)</td>
+<td>Google'ın Play Asset Delivery kütüphanesi (Android WorkManager üzerinden) ekler; konuşma modeli indirmesini zamanlar ve yeniden başlatmadan sonra sürdürür. SayTape'in kendi kodu açılışta çalışmaz, açılışta kayıt veya transkript yapmaz.</td>
+<td>Model indirmesi yeniden başlatmadan sonra sürdürülemez.</td>
+<td>Kullanıcı tarafından kapatılamaz; kaldırınca silinir</td>
+</tr>
 </tbody>
 </table></div>
 <p>SayTape depolama izni <strong>istemez</strong>: kayıtlar Android'in medya deposu üzerinden Recordings (veya Music) klasörünüze kaydedilir; dışa aktardığınız dosyalar yalnız sistem dosya seçicisinde seçtiğiniz yere gider.</p>

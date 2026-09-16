@@ -217,6 +217,12 @@
 <td>Recording still works; the controls are not visible in the notification shade.</td>
 <td>Settings › Apps › SayTape › Notifications</td>
 </tr>
+<tr>
+<td>Keep awake (<code>WAKE_LOCK</code>) and run at startup (<code>RECEIVE_BOOT_COMPLETED</code>)</td>
+<td>Added by Google's Play Asset Delivery library (through Android WorkManager), which schedules the speech-model download and resumes it after a restart. SayTape's own code never starts at boot and never records or transcribes at startup.</td>
+<td>The model download could not be resumed after a restart.</td>
+<td>Not user-switchable; uninstalling removes them</td>
+</tr>
 </tbody>
 </table></div>
 <p>SayTape does <strong>not</strong> request storage permissions: recordings are saved through Android's media store into your Recordings (or Music) folder, and files you export go only where you choose in the system file picker.</p>
