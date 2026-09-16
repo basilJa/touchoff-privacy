@@ -175,10 +175,9 @@
     <p class="mark">TripSlate</p>
     <p class="tagline">Every booking on one offline timeline.</p>
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated 16 September 2026</p>
+    <p class="meta">Last updated 17 September 2026</p>
     <dl class="facts">
       <dt>App</dt><dd><code>software.basilbase.tripslate</code></dd>
-      <dt>Version</dt><dd>1.0.0</dd>
       <dt>Developer</dt><dd>basilbase</dd>
       <dt>Contact</dt><dd><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></dd>
       <dt>Türkçe</dt><dd><a href="#tr">Aşağıda</a></dd>
@@ -186,7 +185,7 @@
   </header>
 
   <h2>The short version</h2>
-  <p>TripSlate does not collect, send or share any personal data. It has no internet permission, no account, no analytics and no crash reporting. Your bookings, passes and documents are read and kept on your phone. They leave it only when you save a backup file or share an export yourself.</p>
+  <p>TripSlate does not collect, send or share any personal data with basilbase or anyone else. It has no internet permission, no account, no analytics and no crash reporting. Your bookings, passes and documents are read and kept on your phone, in an encrypted database. They leave it only when you save a backup file, share an export, or turn on the optional watch sync yourself.</p>
   <h2>The verifiable version</h2>
   <p>TripSlate's manifest does not request <code>INTERNET</code> or <code>ACCESS_NETWORK_STATE</code>. Without <code>INTERNET</code>, Android does not let an app open a network connection at all. You can confirm this in the Play listing's permission list or by inspecting the APK.</p>
   <h2>What the app handles</h2>
@@ -197,15 +196,18 @@
     <tr><th>Permission</th><th>Why</th><th>Without it</th><th>Can you revoke it</th></tr>
     <tr><td><code>POST_NOTIFICATIONS</code></td><td>Shows the reminders you turn on for a trip item. Asked only when you turn on your first reminder.</td><td>Reminders are saved but cannot appear. Everything else works.</td><td>Yes, in system settings</td></tr>
     <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Sets your reminders again after the phone restarts.</td><td>Reminders would be lost after a restart until you open the app.</td><td>Not a runtime permission</td></tr>
+    <tr><td><code>CAMERA</code></td><td>Scans the barcode of a paper pass, only on the Scan screen. The one frame in which a code is found is imported like a photo; nothing else is kept.</td><td>Scanning is unavailable; photos and files still work.</td><td>Yes, in system settings</td></tr>
+    <tr><td><code>SCHEDULE_EXACT_ALARM</code> ("Alarms and reminders")</td><td>Only if you turn on exact-time reminders and allow it in system settings.</td><td>Reminders come within about 10 minutes instead.</td><td>Yes, in system settings</td></tr>
+    <tr><td>Notification access (special access, optional)</td><td>Only if you turn on "Look for bookings in travel-app notifications" and grant access. The title and text of notifications from a fixed list of airline, rail and booking apps are checked on the phone; all other notifications are ignored. E-mail and messaging apps are never read. Nothing is stored unless you tap Review and confirm.</td><td>The feature is off; everything else works.</td><td>Yes, in the app and in system settings</td></tr>
   </table></div>
-  <p>TripSlate does not request: internet or network state, location, camera, microphone, contacts, calendar access, storage or photo library access, exact alarms, full-screen notifications, accessibility or notification access. Files reach the app only when you share or pick them.</p>
+  <p>TripSlate does not request: internet or network state, location, microphone, contacts, calendar access, storage or photo library access, full-screen notifications or accessibility. Files reach the app only when you share, pick or scan them.</p>
   <h2>What it does not do</h2>
   <ul>
-    <li>It does not read your mailbox or connect to any e-mail account.</li>
+    <li>It does not read your mailbox, connect to any e-mail account, or read notifications of e-mail and messaging apps.</li>
     <li>It does not check flight status or contact airlines, hotels or rail operators.</li>
     <li>It does not upload documents, passes or backups anywhere.</li>
     <li>It does not use advertising identifiers, analytics or crash-reporting SDKs.</li>
-    <li>It does not add passes to or read passes from Google Wallet or any other wallet.</li>
+    <li>It does not add passes to or read passes from Google Wallet or any other wallet on its own; "Open in a wallet app" only hands over a .pkpass you choose.</li>
     <li>It does not verify or sign barcodes.</li>
   </ul>
   <h2>What is stored on your phone</h2>
@@ -213,15 +215,20 @@
     <li>Trips and items you confirmed: type, title, places and airport codes, dates, times and time zones, carrier and number, booking code, addresses, notes, traveller names, reminder choices.</li>
     <li>Passes: barcode format and content, traveller name, seat.</li>
     <li>Original documents you imported or added, in the app's private storage.</li>
-    <li>Settings: theme, language, home time zone, home airport, reminder defaults, pass-screen options, and an unfinished manual entry if you left one.</li>
+    <li>Trip notes, checklists and spending entries you add.</li>
+    <li>Settings: theme, language, home time zone, home airport, reminder defaults, pass-screen, lock and optional-feature switches, and an unfinished manual entry if you left one.</li>
     <li>Files waiting for review after being shared.</li>
   </ul>
+  <p>The database is encrypted with a key kept in the phone's Android Keystore. Original documents are stored in the app's private storage.</p>
   <p>This data is in app-private storage that other apps cannot read.</p>
   <h2>What is deliberately not stored</h2>
   <p>No usage history, statistics, location history or logs of what you opened.</p>
   <h2>Backups</h2>
   <p>Android cloud backup and device-to-device transfer are <strong>turned off</strong> for TripSlate. The only way data leaves the phone is a backup file <strong>you</strong> save with "Backup", to a place you choose. Without a password that file is a readable zip; with a password it is encrypted with AES-256-GCM, and it cannot be restored without the password. Where you store that file (for example a cloud drive) is governed by that service's policy.</p>
+  <h2>Wear OS watch (optional)</h2>
+  <p>If you turn on "Send passes to my watch", the next passes (title, date and time, traveller name, seat and barcode content) are sent to Wear OS watches paired with this phone through Google Play services' Data Layer. When the watch is not within Bluetooth range, Google may relay this data over its network to your watch. It is off by default; turning it off removes the data from the Data Layer and the watch deletes its copy.</p>
   <h2>Sharing and exports</h2>
+  <p>"Look up flight status" opens your own search or browser app with the flight number and date; TripSlate itself does not go online. "Open in a wallet app" hands the original .pkpass to the wallet app you choose. "Send structure" shows a masked layout of a document (names, codes, numbers and dates replaced) and opens your e-mail app; it is sent only if you send that e-mail.</p>
   <p>"Share with someone" creates a PDF summary or calendar file of a trip and opens the Android share sheet. These exports leave out booking codes, traveller names and barcodes. "Open with" and "Share" on a document hand that file to the app you choose.</p>
   <h2>Children</h2>
   <p>TripSlate is not directed at children and collects no data from anyone.</p>
@@ -233,10 +240,10 @@
   <p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
 
   <h1 id="tr" lang="tr">Gizlilik Politikası</h1>
-  <p class="meta">Son güncelleme 16 Eylül 2026</p>
+  <p class="meta">Son güncelleme 17 Eylül 2026</p>
   <div lang="tr">
   <h2>Kısaca</h2>
-  <p>TripSlate hiçbir kişisel veriyi toplamaz, göndermez, paylaşmaz. İnternet izni, hesabı, analitiği ve çökme raporlaması yoktur. Rezervasyonların, kartların ve belgelerin telefonunda okunur ve orada kalır. Telefondan yalnız senin kaydettiğin bir yedek dosyasıyla veya senin paylaştığın bir dışa aktarımla çıkar.</p>
+  <p>TripSlate hiçbir kişisel veriyi basilbase'e veya başkasına toplamaz, göndermez, paylaşmaz. İnternet izni, hesabı, analitiği ve çökme raporlaması yoktur. Rezervasyonların, kartların ve belgelerin telefonunda, şifreli bir veritabanında okunur ve saklanır. Telefondan yalnız senin kaydettiğin yedek dosyasıyla, senin paylaştığın dışa aktarımla veya senin açtığın isteğe bağlı saat eşitlemesiyle çıkar.</p>
   <h2>Doğrulanabilir hâli</h2>
   <p>TripSlate'in manifest'i <code>INTERNET</code> veya <code>ACCESS_NETWORK_STATE</code> istemez. <code>INTERNET</code> izni olmadan Android bir uygulamanın ağ bağlantısı açmasına hiç izin vermez. Bunu Play sayfasındaki izin listesinden veya APK'yı inceleyerek doğrulayabilirsin.</p>
   <h2>Uygulamanın işlediği bilgiler</h2>
@@ -247,15 +254,18 @@
     <tr><th>İzin</th><th>Neden</th><th>Olmazsa</th><th>Geri alınabilir mi</th></tr>
     <tr><td><code>POST_NOTIFICATIONS</code></td><td>Bir gezi öğesi için açtığın hatırlatmaları gösterir. Yalnız ilk hatırlatmayı açtığında istenir.</td><td>Hatırlatmalar kaydedilir ama görünmez. Geri kalan her şey çalışır.</td><td>Evet, sistem ayarlarından</td></tr>
     <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Telefon yeniden başlayınca hatırlatmalarını yeniden kurar.</td><td>Yeniden başlatmadan sonra uygulamayı açana kadar hatırlatmalar kaybolur.</td><td>Çalışma zamanı izni değil</td></tr>
+    <tr><td><code>CAMERA</code></td><td>Yalnız Tara ekranında kâğıt kartın barkodunu okur. Kodun bulunduğu tek kare fotoğraf gibi içe aktarılır; başka hiçbir şey saklanmaz.</td><td>Tarama kullanılamaz; fotoğraf ve dosya yine çalışır.</td><td>Evet, sistem ayarlarından</td></tr>
+    <tr><td><code>SCHEDULE_EXACT_ALARM</code> ("Alarmlar ve hatırlatıcılar")</td><td>Yalnız tam zamanlı hatırlatmaları açıp sistem ayarlarında izin verirsen.</td><td>Hatırlatmalar yaklaşık 10 dakika içinde gelir.</td><td>Evet, sistem ayarlarından</td></tr>
+    <tr><td>Bildirim erişimi (özel erişim, isteğe bağlı)</td><td>Yalnız "Seyahat uygulaması bildirimlerinde rezervasyon ara"yı açıp erişim verirsen. Sabit bir havayolu, demiryolu ve rezervasyon uygulaması listesinin bildirim başlığı ve metni telefonda kontrol edilir; diğer tüm bildirimler yok sayılır. E-posta ve mesajlaşma uygulamaları asla okunmaz. İncele'ye basıp onaylamadıkça hiçbir şey saklanmaz.</td><td>Özellik kapalıdır; geri kalan her şey çalışır.</td><td>Evet, uygulamadan ve sistem ayarlarından</td></tr>
   </table></div>
-  <p>TripSlate şunları istemez: internet veya ağ durumu, konum, kamera, mikrofon, rehber, takvim erişimi, depolama veya fotoğraf galerisi erişimi, kesin alarm, tam ekran bildirim, erişilebilirlik veya bildirim erişimi. Dosyalar uygulamaya yalnız sen paylaşınca veya seçince gelir.</p>
+  <p>TripSlate şunları istemez: internet veya ağ durumu, konum, mikrofon, rehber, takvim erişimi, depolama veya fotoğraf galerisi erişimi, tam ekran bildirim veya erişilebilirlik. Dosyalar uygulamaya yalnız sen paylaşınca, seçince veya tarayınca gelir.</p>
   <h2>Yapmadıkları</h2>
   <ul>
-    <li>Gelen kutunu okumaz, hiçbir e-posta hesabına bağlanmaz.</li>
+    <li>Gelen kutunu okumaz, hiçbir e-posta hesabına bağlanmaz, e-posta ve mesajlaşma uygulamalarının bildirimlerini okumaz.</li>
     <li>Uçuş durumunu kontrol etmez; havayolu, otel veya demiryolu şirketleriyle iletişim kurmaz.</li>
     <li>Belge, kart veya yedeği hiçbir yere yüklemez.</li>
     <li>Reklam kimliği, analitik veya çökme raporlama SDK'sı kullanmaz.</li>
-    <li>Google Wallet'a veya başka bir cüzdana kart eklemez, oradan okumaz.</li>
+    <li>Google Wallet'a veya başka bir cüzdana kendiliğinden kart eklemez, oradan okumaz; "Cüzdan uygulamasında aç" yalnız senin seçtiğin .pkpass'i verir.</li>
     <li>Barkodları doğrulamaz veya imzalamaz.</li>
   </ul>
   <h2>Telefonda saklananlar</h2>
@@ -263,15 +273,20 @@
     <li>Onayladığın geziler ve öğeler: tür, başlık, yerler ve havalimanı kodları, tarih, saat ve saat dilimi, taşıyıcı ve numara, rezervasyon kodu, adres, not, yolcu adları, hatırlatma seçimleri.</li>
     <li>Kartlar: barkod biçimi ve içeriği, yolcu adı, koltuk.</li>
     <li>İçe aktardığın veya eklediğin orijinal belgeler, uygulamanın özel alanında.</li>
-    <li>Ayarlar: tema, dil, ev saat dilimi, ev havalimanı, hatırlatma varsayılanları, kart ekranı seçenekleri ve yarım bıraktığın elle giriş.</li>
+    <li>Eklediğin gezi notları, kontrol listeleri ve harcama kayıtları.</li>
+    <li>Ayarlar: tema, dil, ev saat dilimi, ev havalimanı, hatırlatma varsayılanları, kart ekranı, kilit ve isteğe bağlı özellik anahtarları ve yarım bıraktığın elle giriş.</li>
     <li>Paylaşıldıktan sonra onay bekleyen dosyalar.</li>
   </ul>
+  <p>Veritabanı, telefonun Android Keystore'unda tutulan bir anahtarla şifrelenir. Orijinal belgeler uygulamanın özel alanında saklanır.</p>
   <p>Bu veriler başka uygulamaların okuyamadığı özel alandadır.</p>
   <h2>Bilerek saklanmayanlar</h2>
   <p>Kullanım geçmişi, istatistik, konum geçmişi veya neyi açtığına dair kayıt tutulmaz.</p>
   <h2>Yedekleme</h2>
   <p>TripSlate için Android bulut yedeği ve cihazdan cihaza aktarım <strong>kapalıdır</strong>. Verinin telefondan çıkmasının tek yolu, "Yedek" ekranından <strong>senin</strong> seçtiğin yere kaydettiğin yedek dosyasıdır. Parolasız dosya okunabilir bir zip'tir; parolalı dosya AES-256-GCM ile şifrelenir ve parola olmadan geri yüklenemez. Dosyayı sakladığın yer (örneğin bir bulut sürücü) o hizmetin politikasına tabidir.</p>
+  <h2>Wear OS saat (isteğe bağlı)</h2>
+  <p>"Kartları saatime gönder"i açarsan sıradaki kartlar (başlık, tarih ve saat, yolcu adı, koltuk ve barkod içeriği) Google Play hizmetlerinin Data Layer'ı üzerinden bu telefonla eşleştirilmiş Wear OS saatlere gönderilir. Saat Bluetooth menzilinde değilken Google bu veriyi kendi ağı üzerinden saatine iletebilir. Varsayılan olarak kapalıdır; kapatınca veri Data Layer'dan silinir ve saat kendi kopyasını siler.</p>
   <h2>Paylaşım ve dışa aktarım</h2>
+  <p>"Uçuş durumuna bak", uçuş numarası ve tarihle kendi arama veya tarayıcı uygulamanı açar; TripSlate internete çıkmaz. "Cüzdan uygulamasında aç" orijinal .pkpass'i seçtiğin cüzdana verir. "Yapıyı gönder" bir belgenin maskelenmiş düzenini (ad, kod, numara ve tarihler değiştirilmiş) gösterir ve e-posta uygulamanı açar; yalnız o e-postayı sen gönderirsen gider.</p>
   <p>"Biriyle paylaş" bir gezinin PDF özetini veya takvim dosyasını oluşturur ve Android paylaşım menüsünü açar. Bu dışa aktarımlarda rezervasyon kodu, yolcu adı ve barkod bulunmaz. Bir belgedeki "Birlikte aç" ve "Paylaş", dosyayı senin seçtiğin uygulamaya verir.</p>
   <h2>Çocuklar</h2>
   <p>TripSlate çocuklara yönelik değildir ve kimseden veri toplamaz.</p>
