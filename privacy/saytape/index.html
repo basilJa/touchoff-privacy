@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SayTape — Privacy Policy</title>
+<meta name="description" content="SayTape records and transcribes on your phone. It has no internet permission, no account and no analytics.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">SayTape</p>
+    <p class="tagline">Records without losing a minute. Writes it down on your phone.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 16 September 2026 · App <code>software.basilbase.saytape</code> · Developer basilbase · Contact <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="tr/">Türkçe</a></p>
+  </header>
+<h2>The short version</h2>
+<p>SayTape records audio when you tap Record and turns it into text <strong>on your phone</strong>. Your recordings, transcripts, bookmarks and settings never leave the device through SayTape. There is no account, no analytics, no advertising code and no crash reporting. SayTape has no internet permission.</p>
+<h2>The verifiable version</h2>
+<p>SayTape's manifest does not request <code>INTERNET</code> or <code>ACCESS_NETWORK_STATE</code>; it explicitly removes them. An Android app cannot open a network connection without <code>INTERNET</code> — the operating system refuses. You can confirm this in the Play listing's permission list or by inspecting the APK.</p>
+<p>Speech models are downloaded once <strong>by the Google Play Store app</strong> through Play Asset Delivery, not by SayTape. Google Play handles that download under Google's own privacy policy; SayTape sends nothing with it.</p>
+<h2>Permissions in full</h2>
+<p>This is the complete list. There are no others.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Why</th>
+<th>Without it</th>
+<th>Withdraw</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microphone (<code>RECORD_AUDIO</code>)</td>
+<td>To record when you tap Record. Asked the first time you tap Record, not before.</td>
+<td>Nothing can be recorded. Opening existing audio files still works.</td>
+<td>Settings › Apps › SayTape › Permissions › Microphone</td>
+</tr>
+<tr>
+<td>Foreground service, microphone type (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code>)</td>
+<td>So a recording keeps going with the screen off or while you use other apps. A notification is always shown while the microphone is on.</td>
+<td>Recording would stop when you leave the app.</td>
+<td>Stop the recording</td>
+</tr>
+<tr>
+<td>Foreground service, media processing and data sync types (<code>FOREGROUND_SERVICE_MEDIA_PROCESSING</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code>)</td>
+<td>To keep transcribing on the phone after you close the app, with a progress notification. "Data sync" is only the Android 10–14 type for this local file processing; nothing is synced anywhere.</td>
+<td>Transcription would stop when you leave the app.</td>
+<td>Pause from the notification</td>
+</tr>
+<tr>
+<td>Post notifications (<code>POST_NOTIFICATIONS</code>), Android 13+</td>
+<td>To show recording controls, transcription progress and "transcript ready".</td>
+<td>Recording still works; the controls are not visible in the notification shade.</td>
+<td>Settings › Apps › SayTape › Notifications</td>
+</tr>
+</tbody>
+</table></div>
+<p>SayTape does <strong>not</strong> request storage permissions: recordings are saved through Android's media store into your Recordings (or Music) folder, and files you export go only where you choose in the system file picker.</p>
+<h2>What SayTape does not do</h2>
+<ul>
+<li>It does not record unless you tap Record (or the SayTape widget), and never starts recording by itself, on a schedule or when the phone starts.</li>
+<li>It does not upload, sync or share audio, transcripts or anything else. Sharing happens only when you use the Share button, and goes to the app you pick.</li>
+<li>It does not record phone calls; during a call Android gives the microphone to the call and SayTape marks the silence.</li>
+<li>It does not use your location, contacts, camera, calendar, phone, SMS or accounts, and does not request those permissions.</li>
+<li>It contains no analytics, advertising, attribution, telemetry or crash-reporting SDK.</li>
+<li>It has no login, no account and no cloud storage.</li>
+<li>It does not use your recordings or transcripts to train any model.</li>
+</ul>
+<h2>What is stored on your device</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Where</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Your recordings (M4A audio files)</td>
+<td>Shared storage: <code>Recordings/SayTape</code> or <code>Music/SayTape</code> (Android 10+); SayTape's app folder on Android 8–9</td>
+<td>They are your files; visible in a file manager</td>
+</tr>
+<tr>
+<td>Audio files you open or share into SayTape (a copy)</td>
+<td>App private storage</td>
+<td>So the file stays available for playback and transcription</td>
+</tr>
+<tr>
+<td>Transcripts, word timings, bookmarks, cuts, folders, the trash</td>
+<td>App private database</td>
+<td>To show, search and export them</td>
+</tr>
+<tr>
+<td>Temporary working audio while recording or transcribing</td>
+<td>App private storage, deleted when transcription finishes</td>
+<td>Crash-safe recording and transcription</td>
+</tr>
+<tr>
+<td>Speech models</td>
+<td>Storage managed by Google Play for SayTape</td>
+<td>Offline transcription</td>
+</tr>
+<tr>
+<td>Settings: theme, app language, transcript language, model, recording quality, save folder, measured transcription speed, whether you finished the introduction</td>
+<td>App private storage</td>
+<td>To remember your choices</td>
+</tr>
+</tbody>
+</table></div>
+<p>App private storage is readable only by SayTape. Deliberately <strong>not</strong> stored: usage statistics, location, device identifiers.</p>
+<h2>Backup</h2>
+<p>Android cloud backup and device-to-device transfer are <strong>disabled</strong> for SayTape. To keep a copy of your transcripts, export them.</p>
+<h2>Deleting your data</h2>
+<ul>
+<li>Delete a recording in SayTape: it moves to the trash; emptying the trash deletes the audio file, its transcript and marks.</li>
+<li>Remove a speech model: Speech models › Remove.</li>
+<li>Uninstalling SayTape deletes all app private storage (transcripts, settings, imported copies, models). Recordings in your Recordings or Music folder are your files and remain until you delete them.</li>
+</ul>
+<h2>Children</h2>
+<p>SayTape is not directed at children and collects no personal data from anyone.</p>
+<h2>Changes</h2>
+<p>If SayTape's behaviour changes in a way that affects this policy, the policy is updated before that version is published and the date above changes.</p>
+<h2>Contact</h2>
+<p>basilbase — <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>

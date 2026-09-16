@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SayTape — Gizlilik Politikası</title>
+<meta name="description" content="SayTape telefonunuzda kaydeder ve yazıya döker. İnternet izni, hesabı ve analitiği yoktur.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">SayTape</p>
+    <p class="tagline">Tek dakikayı kaybetmeden kaydeder. Telefonunuzda yazıya döker.</p>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme 16 Eylül 2026 · Uygulama <code>software.basilbase.saytape</code> · Geliştirici basilbase · İletişim <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="../">English</a></p>
+  </header>
+<h2>Kısa hâli</h2>
+<p>SayTape, Kaydet'e dokunduğunuzda ses kaydeder ve onu <strong>telefonunuzda</strong> yazıya döker. Kayıtlarınız, transkriptleriniz, yer imleriniz ve ayarlarınız SayTape aracılığıyla cihazdan çıkmaz. Hesap, analitik, reklam kodu ve çökme raporlama yoktur. SayTape'in internet izni yoktur.</p>
+<h2>Doğrulanabilir hâli</h2>
+<p>SayTape'in manifest dosyası <code>INTERNET</code> veya <code>ACCESS_NETWORK_STATE</code> istemez; bunları açıkça kaldırır. Bir Android uygulaması <code>INTERNET</code> izni olmadan ağ bağlantısı açamaz — işletim sistemi reddeder. Bunu Play sayfasındaki izin listesinden veya APK'yı inceleyerek doğrulayabilirsiniz.</p>
+<p>Konuşma modelleri bir kez, SayTape tarafından değil <strong>Google Play Store uygulaması</strong> tarafından Play Asset Delivery ile indirilir. Bu indirme Google'ın kendi gizlilik politikasına tabidir; SayTape onunla hiçbir veri göndermez.</p>
+<h2>İzinlerin tam listesi</h2>
+<p>Liste eksiksizdir. Başka izin yoktur.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>İzin</th>
+<th>Neden</th>
+<th>Olmazsa</th>
+<th>Geri alma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mikrofon (<code>RECORD_AUDIO</code>)</td>
+<td>Kaydet'e dokunduğunuzda kayıt için. İlk kez Kaydet'e dokunduğunuzda istenir, öncesinde değil.</td>
+<td>Kayıt yapılamaz. Mevcut ses dosyalarını açmak yine çalışır.</td>
+<td>Ayarlar › Uygulamalar › SayTape › İzinler › Mikrofon</td>
+</tr>
+<tr>
+<td>Ön plan hizmeti, mikrofon türü (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code>)</td>
+<td>Ekran kapalıyken veya başka uygulama kullanırken kaydın sürmesi için. Mikrofon açıkken her zaman bir bildirim görünür.</td>
+<td>Uygulamadan çıkınca kayıt durur.</td>
+<td>Kaydı durdurun</td>
+</tr>
+<tr>
+<td>Ön plan hizmeti, medya işleme ve veri eşitleme türleri (<code>FOREGROUND_SERVICE_MEDIA_PROCESSING</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code>)</td>
+<td>Uygulamayı kapattıktan sonra da telefonda yazıya dökmeye ilerleme bildirimiyle devam etmek için. "Veri eşitleme", bu yerel dosya işleme için Android 10–14'teki türdür; hiçbir yere bir şey eşitlenmez.</td>
+<td>Uygulamadan çıkınca transkript durur.</td>
+<td>Bildirimden duraklatın</td>
+</tr>
+<tr>
+<td>Bildirim gönderme (<code>POST_NOTIFICATIONS</code>), Android 13+</td>
+<td>Kayıt kontrollerini, transkript ilerlemesini ve "transkript hazır" bilgisini göstermek için.</td>
+<td>Kayıt yine çalışır; kontroller bildirim alanında görünmez.</td>
+<td>Ayarlar › Uygulamalar › SayTape › Bildirimler</td>
+</tr>
+</tbody>
+</table></div>
+<p>SayTape depolama izni <strong>istemez</strong>: kayıtlar Android'in medya deposu üzerinden Recordings (veya Music) klasörünüze kaydedilir; dışa aktardığınız dosyalar yalnız sistem dosya seçicisinde seçtiğiniz yere gider.</p>
+<h2>SayTape'in yapmadıkları</h2>
+<ul>
+<li>Siz Kaydet'e (veya SayTape widget'ına) dokunmadıkça kayıt yapmaz; kendiliğinden, zamanlanmış olarak veya telefon açılırken kayıt başlatmaz.</li>
+<li>Ses, transkript veya başka hiçbir şeyi yüklemez, eşitlemez, paylaşmaz. Paylaşım yalnız Paylaş düğmesini kullandığınızda, seçtiğiniz uygulamaya olur.</li>
+<li>Telefon görüşmesi kaydetmez; görüşme sırasında Android mikrofonu görüşmeye verir ve SayTape sessizliği işaretler.</li>
+<li>Konum, kişiler, kamera, takvim, telefon, SMS veya hesaplarınızı kullanmaz, bu izinleri istemez.</li>
+<li>Analitik, reklam, atıf, telemetri veya çökme raporlama SDK'sı içermez.</li>
+<li>Giriş, hesap veya bulut depolama yoktur.</li>
+<li>Kayıtlarınızı veya transkriptlerinizi herhangi bir modeli eğitmek için kullanmaz.</li>
+</ul>
+<h2>Cihazınızda saklananlar</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Veri</th>
+<th>Nerede</th>
+<th>Neden</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kayıtlarınız (M4A ses dosyaları)</td>
+<td>Paylaşılan depolama: <code>Recordings/SayTape</code> veya <code>Music/SayTape</code> (Android 10+); Android 8–9'da SayTape'in uygulama klasörü</td>
+<td>Sizin dosyalarınızdır; dosya yöneticisinde görünür</td>
+</tr>
+<tr>
+<td>SayTape'te açtığınız veya paylaştığınız ses dosyaları (bir kopya)</td>
+<td>Uygulamaya özel depolama</td>
+<td>Oynatma ve transkript için dosya erişilebilir kalsın diye</td>
+</tr>
+<tr>
+<td>Transkriptler, kelime zamanları, yer imleri, kesimler, klasörler, çöp kutusu</td>
+<td>Uygulamaya özel veritabanı</td>
+<td>Gösterme, arama ve dışa aktarma için</td>
+</tr>
+<tr>
+<td>Kayıt veya transkript sırasındaki geçici çalışma sesi</td>
+<td>Uygulamaya özel depolama; transkript bitince silinir</td>
+<td>Çökmeye dayanıklı kayıt ve transkript</td>
+</tr>
+<tr>
+<td>Konuşma modelleri</td>
+<td>Google Play'in SayTape için yönettiği depolama</td>
+<td>Çevrimdışı transkript</td>
+</tr>
+<tr>
+<td>Ayarlar: tema, uygulama dili, transkript dili, model, kayıt kalitesi, kayıt klasörü, ölçülen transkript hızı, tanıtımı bitirip bitirmediğiniz</td>
+<td>Uygulamaya özel depolama</td>
+<td>Seçimlerinizi hatırlamak için</td>
+</tr>
+</tbody>
+</table></div>
+<p>Uygulamaya özel depolamayı yalnız SayTape okuyabilir. Bilerek <strong>saklanmayanlar</strong>: kullanım istatistikleri, konum, cihaz tanımlayıcıları.</p>
+<h2>Yedekleme</h2>
+<p>SayTape için Android bulut yedeklemesi ve cihazdan cihaza aktarım <strong>kapalıdır</strong>. Transkriptlerinizin kopyasını tutmak için dışa aktarın.</p>
+<h2>Verilerinizi silme</h2>
+<ul>
+<li>SayTape'te bir kaydı silmek onu çöp kutusuna taşır; çöp kutusunu boşaltmak ses dosyasını, transkriptini ve işaretlerini siler.</li>
+<li>Bir konuşma modelini kaldırmak: Konuşma modelleri › Kaldır.</li>
+<li>SayTape'i kaldırmak uygulamaya özel depolamanın tamamını siler (transkriptler, ayarlar, içe aktarılan kopyalar, modeller). Recordings veya Music klasörünüzdeki kayıtlar sizin dosyalarınızdır ve siz silene kadar kalır.</li>
+</ul>
+<h2>Çocuklar</h2>
+<p>SayTape çocuklara yönelik değildir ve kimseden kişisel veri toplamaz.</p>
+<h2>Değişiklikler</h2>
+<p>SayTape'in davranışı bu politikayı etkileyecek şekilde değişirse politika o sürüm yayımlanmadan önce güncellenir ve yukarıdaki tarih değişir.</p>
+<h2>İletişim</h2>
+<p>basilbase — <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>
