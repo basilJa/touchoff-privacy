@@ -218,6 +218,12 @@
 <td>Settings › Apps › SayTape › Notifications</td>
 </tr>
 <tr>
+<td>Change audio settings (<code>MODIFY_AUDIO_SETTINGS</code>)</td>
+<td>Only to route recording to a Bluetooth microphone you pick in Settings › Microphone. Granted at install; it does not give access to audio.</td>
+<td>Bluetooth microphones could not be selected; the phone microphone still works.</td>
+<td>Not user-switchable; uninstalling removes it</td>
+</tr>
+<tr>
 <td>Keep awake (<code>WAKE_LOCK</code>) and run at startup (<code>RECEIVE_BOOT_COMPLETED</code>)</td>
 <td>Added by Google's Play Asset Delivery library (through Android WorkManager), which schedules the speech-model download and resumes it after a restart. SayTape's own code never starts at boot and never records or transcribes at startup.</td>
 <td>The model download could not be resumed after a restart.</td>
@@ -225,13 +231,14 @@
 </tr>
 </tbody>
 </table></div>
-<p>SayTape does <strong>not</strong> request storage permissions: recordings are saved through Android's media store into your Recordings (or Music) folder, and files you export go only where you choose in the system file picker.</p>
+<p>SayTape does <strong>not</strong> request storage permissions: recordings are saved through Android's media store into your Recordings (or Music) folder, and files you export and backup files go only where you choose in the system file picker. If you turn on Settings › Transcript file, a .txt or .srt copy of each transcript is written to <code>Documents/SayTape</code> (Android 10+) or SayTape's app folder <code>Music/SayTape</code> (Android 8–9).</p>
 <h2>What SayTape does not do</h2>
 <ul>
 <li>It does not record unless you tap Record (or the SayTape widget), and never starts recording by itself, on a schedule or when the phone starts.</li>
 <li>It does not upload, sync or share audio, transcripts or anything else. Sharing happens only when you use the Share button, and goes to the app you pick.</li>
 <li>It does not record phone calls; during a call Android gives the microphone to the call and SayTape marks the silence.</li>
 <li>It does not use your location, contacts, camera, calendar, phone, SMS or accounts, and does not request those permissions.</li>
+<li>Speaker labels and the live draft transcript are computed on the phone, like transcripts. The live draft is not saved.</li>
 <li>It contains no analytics, attribution, telemetry or crash-reporting SDK.</li>
 <li>It has no login, no account and no cloud storage.</li>
 <li>It does not use your recordings or transcripts to train any model.</li>
@@ -267,9 +274,19 @@
 <td>Crash-safe recording and transcription</td>
 </tr>
 <tr>
-<td>Speech models</td>
-<td>Storage managed by Google Play for SayTape</td>
-<td>Offline transcription</td>
+<td>Speech models and the speaker-labelling pack</td>
+<td>Storage managed by Google Play for SayTape; the speaker pack is downloaded by Google Play like the speech models</td>
+<td>Offline transcription and optional speaker labels</td>
+</tr>
+<tr>
+<td>Speaker names you give, custom vocabulary</td>
+<td>App private database and storage</td>
+<td>Shown in transcripts and exports; the vocabulary guides transcription</td>
+</tr>
+<tr>
+<td>Transcript side files (only if turned on)</td>
+<td><code>Documents/SayTape</code> (Android 10+) or the <code>Music/SayTape</code> app folder (Android 8–9)</td>
+<td>A plain copy of your transcript that is yours to keep</td>
 </tr>
 <tr>
 <td>Settings: theme, app language, transcript language, model, recording quality, save folder, measured transcription speed, whether you finished the introduction</td>
@@ -280,12 +297,13 @@
 </table></div>
 <p>App private storage is readable only by SayTape. Deliberately <strong>not</strong> stored: usage statistics, location, device identifiers.</p>
 <h2>Backup</h2>
-<p>Android cloud backup and device-to-device transfer are <strong>disabled</strong> for SayTape. To keep a copy of your transcripts, export them.</p>
+<p>Android cloud backup and device-to-device transfer remain <strong>disabled</strong> for SayTape.</p>
+<p>Settings › Backup and move to a new phone creates one <code>.saytape</code> file that you save where you choose in the system file picker. It contains your recordings' audio, transcripts, word timings, edits, bookmarks, cuts, folders and speaker names; speech models are not included. <strong>The file is not encrypted</strong> — anyone who has it can open it, so keep it somewhere you trust. SayTape never uploads it; where it goes afterwards depends on the place you picked. Restoring it in SayTape adds the recordings that are not already on the phone.</p>
 <h2>Deleting your data</h2>
 <ul>
 <li>Delete a recording in SayTape: it moves to the trash; emptying the trash deletes the audio file, its transcript and marks.</li>
 <li>Remove a speech model: Speech models › Remove.</li>
-<li>Uninstalling SayTape deletes all app private storage (transcripts, settings, imported copies, models). Recordings in your Recordings or Music folder are your files and remain until you delete them.</li>
+<li>Uninstalling SayTape deletes all app private storage (transcripts, settings, imported copies, models). Backup files and transcript side files you created stay until you delete them. Recordings in your Recordings or Music folder are your files and remain until you delete them.</li>
 </ul>
 <h2>Children</h2>
 <p>SayTape is not directed at children and collects no personal data from anyone.</p>

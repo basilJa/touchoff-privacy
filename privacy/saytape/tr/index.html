@@ -218,6 +218,12 @@
 <td>Ayarlar › Uygulamalar › SayTape › Bildirimler</td>
 </tr>
 <tr>
+<td>Ses ayarlarını değiştirme (<code>MODIFY_AUDIO_SETTINGS</code>)</td>
+<td>Yalnız Ayarlar › Mikrofon'da seçtiğiniz Bluetooth mikrofona kaydı yönlendirmek için. Kurulumda verilir; sese erişim sağlamaz.</td>
+<td>Bluetooth mikrofon seçilemez; telefon mikrofonu yine çalışır.</td>
+<td>Kullanıcı tarafından kapatılamaz; kaldırınca silinir</td>
+</tr>
+<tr>
 <td>Uyanık tutma (<code>WAKE_LOCK</code>) ve açılışta çalışma (<code>RECEIVE_BOOT_COMPLETED</code>)</td>
 <td>Google'ın Play Asset Delivery kütüphanesi (Android WorkManager üzerinden) ekler; konuşma modeli indirmesini zamanlar ve yeniden başlatmadan sonra sürdürür. SayTape'in kendi kodu açılışta çalışmaz, açılışta kayıt veya transkript yapmaz.</td>
 <td>Model indirmesi yeniden başlatmadan sonra sürdürülemez.</td>
@@ -225,13 +231,14 @@
 </tr>
 </tbody>
 </table></div>
-<p>SayTape depolama izni <strong>istemez</strong>: kayıtlar Android'in medya deposu üzerinden Recordings (veya Music) klasörünüze kaydedilir; dışa aktardığınız dosyalar yalnız sistem dosya seçicisinde seçtiğiniz yere gider.</p>
+<p>SayTape depolama izni <strong>istemez</strong>: kayıtlar Android'in medya deposu üzerinden Recordings (veya Music) klasörünüze kaydedilir; dışa aktardığınız dosyalar ve yedek dosyaları yalnız sistem dosya seçicisinde seçtiğiniz yere gider. Ayarlar › Transkript dosyası'nı açarsanız her transkriptin .txt veya .srt kopyası <code>Documents/SayTape</code> (Android 10+) veya SayTape'in uygulama klasörü <code>Music/SayTape</code> (Android 8–9) içine yazılır.</p>
 <h2>SayTape'in yapmadıkları</h2>
 <ul>
 <li>Siz Kaydet'e (veya SayTape widget'ına) dokunmadıkça kayıt yapmaz; kendiliğinden, zamanlanmış olarak veya telefon açılırken kayıt başlatmaz.</li>
 <li>Ses, transkript veya başka hiçbir şeyi yüklemez, eşitlemez, paylaşmaz. Paylaşım yalnız Paylaş düğmesini kullandığınızda, seçtiğiniz uygulamaya olur.</li>
 <li>Telefon görüşmesi kaydetmez; görüşme sırasında Android mikrofonu görüşmeye verir ve SayTape sessizliği işaretler.</li>
 <li>Konum, kişiler, kamera, takvim, telefon, SMS veya hesaplarınızı kullanmaz, bu izinleri istemez.</li>
+<li>Konuşmacı etiketleri ve canlı taslak transkript, transkript gibi telefonda hesaplanır. Canlı taslak kaydedilmez.</li>
 <li>Analitik, atıf, telemetri veya çökme raporlama SDK'sı içermez.</li>
 <li>Giriş, hesap veya bulut depolama yoktur.</li>
 <li>Kayıtlarınızı veya transkriptlerinizi herhangi bir modeli eğitmek için kullanmaz.</li>
@@ -267,9 +274,19 @@
 <td>Çökmeye dayanıklı kayıt ve transkript</td>
 </tr>
 <tr>
-<td>Konuşma modelleri</td>
-<td>Google Play'in SayTape için yönettiği depolama</td>
-<td>Çevrimdışı transkript</td>
+<td>Konuşma modelleri ve konuşmacı etiketleme paketi</td>
+<td>Google Play'in SayTape için yönettiği depolama; konuşmacı paketini konuşma modelleri gibi Google Play indirir</td>
+<td>Çevrimdışı transkript ve isteğe bağlı konuşmacı etiketleri</td>
+</tr>
+<tr>
+<td>Verdiğiniz konuşmacı adları, özel sözlük</td>
+<td>Uygulamaya özel veritabanı ve depolama</td>
+<td>Transkript ve dışa aktarımlarda gösterilir; sözlük transkripte yol gösterir</td>
+</tr>
+<tr>
+<td>Transkript yan dosyaları (yalnız açarsanız)</td>
+<td><code>Documents/SayTape</code> (Android 10+) veya <code>Music/SayTape</code> uygulama klasörü (Android 8–9)</td>
+<td>Transkriptinizin size ait düz kopyası</td>
 </tr>
 <tr>
 <td>Ayarlar: tema, uygulama dili, transkript dili, model, kayıt kalitesi, kayıt klasörü, ölçülen transkript hızı, tanıtımı bitirip bitirmediğiniz</td>
@@ -280,12 +297,13 @@
 </table></div>
 <p>Uygulamaya özel depolamayı yalnız SayTape okuyabilir. Bilerek <strong>saklanmayanlar</strong>: kullanım istatistikleri, konum, cihaz tanımlayıcıları.</p>
 <h2>Yedekleme</h2>
-<p>SayTape için Android bulut yedeklemesi ve cihazdan cihaza aktarım <strong>kapalıdır</strong>. Transkriptlerinizin kopyasını tutmak için dışa aktarın.</p>
+<p>SayTape için Android bulut yedeklemesi ve cihazdan cihaza aktarım <strong>kapalı kalır</strong>.</p>
+<p>Ayarlar › Yedekle ve yeni telefona taşı, sistem dosya seçicisinde seçtiğiniz yere kaydettiğiniz tek bir <code>.saytape</code> dosyası oluşturur. İçinde kayıtlarınızın sesi, transkriptler, kelime zamanları, düzeltmeler, yer imleri, kesimler, klasörler ve konuşmacı adları bulunur; konuşma modelleri dahil değildir. <strong>Dosya şifrelenmez</strong> — dosyaya sahip olan herkes açabilir, güvendiğiniz bir yerde saklayın. SayTape bu dosyayı hiçbir yere yüklemez; sonrasında nereye gideceği seçtiğiniz yere bağlıdır. SayTape'te geri yüklemek, telefonda zaten olmayan kayıtları ekler.</p>
 <h2>Verilerinizi silme</h2>
 <ul>
 <li>SayTape'te bir kaydı silmek onu çöp kutusuna taşır; çöp kutusunu boşaltmak ses dosyasını, transkriptini ve işaretlerini siler.</li>
 <li>Bir konuşma modelini kaldırmak: Konuşma modelleri › Kaldır.</li>
-<li>SayTape'i kaldırmak uygulamaya özel depolamanın tamamını siler (transkriptler, ayarlar, içe aktarılan kopyalar, modeller). Recordings veya Music klasörünüzdeki kayıtlar sizin dosyalarınızdır ve siz silene kadar kalır.</li>
+<li>SayTape'i kaldırmak uygulamaya özel depolamanın tamamını siler (transkriptler, ayarlar, içe aktarılan kopyalar, modeller). Oluşturduğunuz yedek dosyaları ve transkript yan dosyaları siz silene kadar kalır. Recordings veya Music klasörünüzdeki kayıtlar sizin dosyalarınızdır ve siz silene kadar kalır.</li>
 </ul>
 <h2>Çocuklar</h2>
 <p>SayTape çocuklara yönelik değildir ve kimseden kişisel veri toplamaz.</p>
