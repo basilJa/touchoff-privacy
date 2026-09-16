@@ -175,10 +175,10 @@
     <p class="mark">DoSay</p>
     <p class="tagline">Say one sentence. It gets done on your phone.</p>
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated 16 September 2026</p>
+    <p class="meta">Last updated 17 September 2026</p>
     <dl class="facts">
       <dt>App</dt><dd><code>software.basilbase.dosay</code></dd>
-      <dt>Version</dt><dd>1.0.0</dd>
+      <dt>Version</dt><dd>1.1.0</dd>
       <dt>Developer</dt><dd>basilbase</dd>
       <dt>Contact</dt><dd><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></dd>
     </dl>
@@ -244,7 +244,14 @@
       </tr>
       <tr>
         <td><code>SET_ALARM</code></td>
-        <td>To hand alarms and timers to your phone's Clock app.</td>
+        <td>To hand alarms and timers to your phone's Clock app, and to ask it to dismiss an alarm.</td>
+      </tr>
+      <tr>
+        <td><code>WRITE_SETTINGS</code><br>Modify system settings</td>
+        <td>To change screen brightness when you ask. You allow it once on Android's "Modify system
+        settings" screen, the first time you ask. DoSay changes only brightness and automatic
+        brightness, reads the result back, and keeps the previous value in memory so you can undo
+        it.</td>
       </tr>
       <tr>
         <td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code>,
@@ -263,10 +270,12 @@
   </table>
   </div>
   <p><strong>Optional special access you may grant in Android settings:</strong> the digital
-  assistant role (so the side key or assistant gesture opens DoSay), and notification access
-  (so DoSay can read your notifications and see what media is playing, <em>only when you ask
-  it to</em>; nothing is read aloud on its own). Both can be withdrawn at any time in Android
-  settings.</p>
+  assistant role (so the side key or assistant gesture opens DoSay), notification access
+  (so DoSay can read your notifications, see what media is playing and reply to a notification,
+  <em>only when you ask it to</em>; nothing is read aloud or sent on its own), and “Modify system
+  settings” (brightness, above). The accessibility shortcut (Android 11+) can open DoSay; DoSay is
+  only a shortcut target there, not an accessibility service, and cannot see your screen. All can
+  be withdrawn at any time in Android settings.</p>
   <p>There is no internet, location, storage, photos, camera, calendar, account, SMS or call log
   permission, no accessibility service and no usage access.</p>
 
@@ -276,7 +285,8 @@
     <li>It does not record, store or send your voice.</li>
     <li>It does not send what you say, your contacts, notes, lists or notifications anywhere. It cannot.</li>
     <li>It does not know who you are. There is no account, identifier or advertising ID.</li>
-    <li>It does not read or send SMS or messages in other apps.</li>
+    <li>It does not read or send SMS, and does not start messages in other apps.</li>
+    <li>It replies to a notification only when you ask, after showing the text, and only when you tap Send (see below).</li>
   </ul>
 
   <h2>What is stored on your device, and only on your device</h2>
@@ -284,8 +294,10 @@
     <li>Notes you dictate, and lists with their items.</li>
     <li>Reminders you set: their text and time.</li>
     <li>Words you link to contacts (with that contact's name and number) and to apps, and the number you chose last time for a contact with several.</li>
-    <li>Command history, <strong>only if you turn it on</strong> (off by default): the text of the command, not audio.</li>
-    <li>Settings: answer style, voice and speed, card duration, lock-screen behaviour, speech language, theme and language.</li>
+    <li>Command history, <strong>only if you turn it on</strong> (off by default): the text of the command, what DoSay understood and whether it worked, not audio. You can see and delete it in Settings → Command history.</li>
+    <li>Shortcuts you create: the phrase and what it does (an app, commands, or an intent action with an optional extra).</li>
+    <li>The stopwatch's start time and elapsed time.</li>
+    <li>Settings: answer style, voice and speed, card duration, lock-screen behaviour, speech language, theme, colours and language, music app, follow-up listening, the other-apps switches.</li>
     <li>Installed language packs.</li>
   </ul>
   <p>These live in the app's private storage, which other apps cannot read. The last action is
@@ -293,8 +305,28 @@
 
   <h2>Other apps DoSay hands commands to</h2>
   <p>Alarms and timers go to your Clock app, calls to your phone app, music controls to the app
-  playing music, and “open …” opens the app you name. Those apps handle the request under their
-  own privacy policies; DoSay passes them only what the command needs (for example the alarm time).</p>
+  playing music, “play …” to your music app, new calendar events to your calendar app (you save
+  them there), and “open …” opens the app you name. Those apps handle the request under their own
+  privacy policies; DoSay passes them only what the command needs (for example the alarm time, or
+  the search words for music).</p>
+  <p><strong>Replies to notifications.</strong> When you say “reply to Anna …”, DoSay looks for the
+  newest notification from that person or app that has a Reply button, shows you the text, and
+  sends it only when you tap Send. The text goes to the app that posted the notification through
+  that notification's own reply action, and that app delivers it under its own privacy policy.
+  DoSay cannot see whether it was delivered.</p>
+  <p><strong>Other apps sending DoSay commands.</strong> Off by default. If you turn on <em>Allow
+  other apps to send commands</em>, automation apps such as Tasker can open DoSay with a sentence
+  to run, under the same lock-screen rules. DoSay returns nothing to them. Shortcuts you create can
+  send an intent (a signal with the action and optional text you entered) that other apps on the
+  phone may receive.</p>
+  <p><strong>Voice typing for other apps.</strong> Apps and keyboards that ask Android for speech
+  input can choose DoSay. DoSay recognises the sentence on the phone and returns only the text to
+  that app, which handles it under its own privacy policy.</p>
+  <p><strong>Another speech app (optional).</strong> Off by default. If you turn on <em>When no
+  language pack: use another speech app</em>, or tap that option on the card, the speech app
+  installed on your phone (for example Google's) listens instead of DoSay. <strong>That app may
+  send your voice over the internet</strong> under its own privacy policy. DoSay only receives the
+  text it returns; DoSay itself still has no internet permission.</p>
 
   <h2>Backup</h2>
   <p>DoSay turns Android backup off. Its data is excluded from cloud backup and from
@@ -307,8 +339,8 @@
 
   <h2>Data retention and deletion</h2>
   <p>There is no server, so there is nothing for us to retain. In the app, <em>Settings → Delete
-  all DoSay data</em> removes notes, lists, reminders, linked names and apps and history at once;
-  history alone can be deleted in Settings, single items in their screens. Language packs can be
+  all DoSay data</em> removes notes, lists, reminders, linked names and apps, shortcuts and history
+  at once; history alone can be deleted in Settings → Command history, single items in their screens. Language packs can be
   removed in Languages. Uninstalling the app, or <em>Clear storage</em> in Android's app settings,
   removes everything.</p>
 
