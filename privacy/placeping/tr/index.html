@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PlacePing — Gizlilik Politikası</title>
+<meta name="description" content="PlacePing bir yerde size hatırlatır. İnternet izni, hesabı, analitiği yoktur ve konum geçmişi tutmaz.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📍</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">PlacePing</p>
+    <p class="tagline">Yerinde hatırlatır. Hatırlatamayacaksa bunu da söyler.</p>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme 18 Eylül 2026 · Uygulama <code>software.basilbase.placeping</code> · Geliştirici basilbase · İletişim <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="../">English</a></p>
+  </header>
+
+<div class="lede">
+<p>PlacePing, kaydettiğiniz bir yere vardığınızda ya da oradan ayrıldığınızda sizi uyarır. Yerleriniz, hatırlatmalarınız ve listeleriniz telefonunuzda kalır. Hesap yok, analitik yok, reklam yok ve <strong>internet izni yok</strong>.</p>
+</div>
+
+<h2>Doğrulanabilir sürüm</h2>
+<p>PlacePing'in manifest'i <code>INTERNET</code> ve <code>ACCESS_NETWORK_STATE</code> izinlerini istemez; onları açıkça kaldırır. Bir Android uygulaması <code>INTERNET</code> izni olmadan ağ bağlantısı açamaz — işletim sistemi buna izin vermez. Bunu Play listesindeki izin listesinden ya da APK'yı inceleyerek doğrulayabilirsiniz.</p>
+<p>Uygulamada harita, adres araması ve kısaltılmış harita linkini çözme bu yüzden yoktur. Bunlar eksik özellikler değil; nerede olduğunuzu kimseye anlatamayan bir uygulamanın bedelidir.</p>
+
+<h2>Konum kısmı gerçekte nasıl çalışıyor</h2>
+<p>PlacePing konumunuzu izlemez. Android'e bir daireler listesi verir — kaydettiğiniz yerler ve yarıçapları — ve birini geçtiğinizde Android uygulamayı uyandırır. Bu mekanizma sistemin geofence servisidir; Google Play hizmetlerinin bir parçasıdır.</p>
+<p>Dolayısıyla uygulama konumlarınızın akışını hiç almaz ve hiçbirini saklamaz. Tek bir durumda tek bir konum ölçümü ister: bir yer oluştururken <em>Şu anki konumumu kullan</em>a dokunduğunuzda. O koordinat yalnız o yere yazılır.</p>
+<p>Sürekli takip modu, foreground service ve "konumunuz kullanılıyor" kalıcı bildirimi yoktur; çünkü bunlara ihtiyaç duyacak bir şey çalışmıyor.</p>
+
+<h2>İzinlerin tamamı</h2>
+<p>Liste budur. Başka izin yoktur.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr><th>İzin</th><th>Neden</th><th>Onsuz</th><th>Geri alma</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Hassas konum (<code>ACCESS_FINE_LOCATION</code>)</td>
+<td>Sistemin geofence servisi 100–2000 m'lik bir daireyi çevre sokaklardan ayırmak için hassas konuma ihtiyaç duyar.</td>
+<td>Hiçbir şey varışı algılayamaz.</td>
+<td>Ayarlar › Uygulamalar › PlacePing › İzinler › Konum</td>
+</tr>
+<tr>
+<td>Yaklaşık konum (<code>ACCESS_COARSE_LOCATION</code>)</td>
+<td>Android bunu hassas konumla birlikte zorunlu tutar ve ikisini tek diyalogda ister.</td>
+<td>Yukarıdakiyle aynı.</td>
+<td>Aynı yer</td>
+</tr>
+<tr>
+<td>Her zaman konum (<code>ACCESS_BACKGROUND_LOCATION</code>)</td>
+<td>Ürünün tamamı, uygulama kapalıyken gelen bir hatırlatmadır. Android buna yalnız bu izinle olanak verir.</td>
+<td>Hatırlatmalar yalnız PlacePing ekranda açıkken çalışırdı.</td>
+<td>Ayarlar › Uygulamalar › PlacePing › İzinler › Konum › Yalnızca uygulamayı kullanırken</td>
+</tr>
+<tr>
+<td>Bildirimler (<code>POST_NOTIFICATIONS</code>)</td>
+<td>Uyarının kendisi, alarm kanalında bir bildirimdir.</td>
+<td>Uygulama sessiz kalırdı.</td>
+<td>Ayarlar › Uygulamalar › PlacePing › Bildirimler</td>
+</tr>
+<tr>
+<td>Açılışta çalıştırma (<code>RECEIVE_BOOT_COMPLETED</code>)</td>
+<td>Android yeniden başlatmada bütün geofence'leri haber vermeden düşürür. Yeniden kurulum bununla yapılır.</td>
+<td>Her yeniden başlatmadan sonra hatırlatmalar sessizce çalışmaz olurdu.</td>
+<td>Kurulum zamanı; geri alınamaz</td>
+</tr>
+<tr>
+<td>Titreşim (<code>VIBRATE</code>)</td>
+<td>Alarm tarzı uyarı sesin yanında titreşir.</td>
+<td>Uyarı titreşmezdi.</td>
+<td>Kurulum zamanı; geri alınamaz</td>
+</tr>
+<tr>
+<td>Tam ekran uyarı (<code>USE_FULL_SCREEN_INTENT</code>)</td>
+<td>Yalnız "Ekranı kapla" seçeneğini açtığınız hatırlatmalar için.</td>
+<td>Bu isteğe bağlı uyarı biçimi görünmezdi.</td>
+<td>Android 14+: Ayarlar › Uygulamalar › PlacePing › Tam ekran bildirimler</td>
+</tr>
+<tr>
+<td>Wake lock (<code>WAKE_LOCK</code>)</td>
+<td>Geofence'lerinizin hâlâ kurulu olduğunu günde bir kez denetleyen WorkManager tarafından bildirilir. PlacePing kendisi wake lock almaz.</td>
+<td>Günlük güvenlik ağı kontrolü çalışamazdı.</td>
+<td>Kurulum zamanı; geri alınamaz</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2>PlacePing'in yapmadıkları</h2>
+<ul>
+<li>Konumunuzu ya da başka bir şeyi cihazdan dışarı göndermez. Gönderemez: ağ izni yoktur.</li>
+<li>Nerede olduğunuzu kaydetmez. Konum geçmişi, iz, ziyaret kaydı yoktur.</li>
+<li>Hesabı, girişi, herhangi bir kimlik numarası ve reklam kimliği yoktur.</li>
+<li>İçinde reklam, analitik, atıf veya çökme raporu kütüphanesi yoktur.</li>
+<li>Rehberinizi, takviminizi, fotoğraflarınızı, mikrofonu, kamerayı, arama kaydını ve kurulu uygulama listesini okumaz.</li>
+<li>Diğer uygulamaların üzerine çizmez, erişilebilirlik servisi kullanmaz.</li>
+<li>Yedeği hiçbir yere yüklemez. Yedek, sizin yazıp sakladığınız bir dosyadır.</li>
+</ul>
+
+<h2>Telefonunuzda saklananlar</h2>
+<div class="table-scroll"><table>
+<thead><tr><th>Saklanan</th><th>Nerede</th></tr></thead>
+<tbody>
+<tr><td>Yerler: yazdığınız ad, koordinat, yarıçap</td><td>Uygulama veritabanı, <code>placeping.db</code></td></tr>
+<tr><td>Hatırlatmalar: metin, not, yön, tekrar kuralı, günler, saatler, bekleme süresi, uyarı seçenekleri</td><td>Aynı veritabanı</td></tr>
+<tr><td>Hangi hatırlatmanın hangi yeri izlediği ve telefonun şu an içeride olup olmadığı</td><td>Aynı veritabanı</td></tr>
+<tr><td>Yerlere bağlı kontrol listeleri</td><td>Aynı veritabanı</td></tr>
+<tr><td>Kısa bir etkinlik günlüğü — son 200 satır: kayıt sonuçları, algılanan varışlar, verilen ve atlanan uyarılar, sistemin kendi hata kodlarıyla</td><td>Aynı veritabanı; Güvenilirlik ekranında görünür, oradan temizlenir</td></tr>
+<tr><td>Tema, dil, tanıtımın tamamlanıp tamamlanmadığı</td><td>Uygulama tercihleri</td></tr>
+</tbody>
+</table></div>
+<p>Başka hiçbir şey. Etkinlik günlüğü bilerek koordinat tutmaz.</p>
+
+<h2>Bilerek saklanmayanlar</h2>
+<p>Konum geçmişi, hareket izleri, nerede olduğunuzun zaman damgaları, kullanım istatistikleri, oturum sayıları, cihaz kimlikleri, çökme dökümleri.</p>
+
+<h2>Yedekleme</h2>
+<p>Android bulut yedeklemesi ve cihazdan cihaza aktarım bu uygulama için <strong>kapalıdır</strong>; yerleriniz bir Google yedeğine kopyalanmaz. Verinizi başka bir telefona taşımak kasıtlı bir iştir: Ayarlar → Dosyaya aktar, sonra diğer telefonda İçe aktar. Dosya düz JSON'dur, sizin okuyabileceğiniz biçimdedir.</p>
+
+<h2>Çocuklar</h2>
+<p>PlacePing çocuklara yönelik değildir ve hiç kimseden veri toplamaz.</p>
+
+<h2>Saklama ve silme</h2>
+<p>Her şey siz silene kadar telefonunuzda durur. Bir yer, hatırlatma veya liste maddesi uygulama içinden silinir; etkinlik günlüğü Güvenilirlik ekranından temizlenir. PlacePing'i kaldırmak veritabanını ve bütün tercihleri birlikte siler.</p>
+
+<h2>Bilinmesi gereken sınırlar</h2>
+<p>Bunlar tercih değil, Android'in sınırlarıdır ve uygulamanın içinde özellikler kadar belirgin yazar:</p>
+<ul>
+<li>Uyarı birkaç dakika gecikebilir. Android varışı genelde iki dakika içinde, telefon hareketsiz kaldıysa yaklaşık altı dakikaya kadar algılar.</li>
+<li>En küçük yarıçap 100 metredir.</li>
+<li>Hassas konum ve "Her zaman izin ver" birlikte gerekir.</li>
+<li>Üretici pil yöneticileri hatırlatmaları durdurabilir; zorla durdurulan uygulama siz açana kadar kapalı kalır.</li>
+<li>Aynı anda en fazla 100 aktif yer.</li>
+<li>Google Play hizmetleri gereklidir.</li>
+</ul>
+
+<h2>Değişiklikler</h2>
+<p>Bu politika değişirse üstteki tarih de değişir ve yeni metin bu sayfanın yerini alır. Önemli değişiklikler ayrıca uygulamanın sürüm notlarında anlatılır.</p>
+
+<footer>
+<p>PlacePing'i basilbase yayınlar. Sorular: <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+</footer>
+</div>
+</body>
+</html>

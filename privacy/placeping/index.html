@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PlacePing — Privacy Policy</title>
+<meta name="description" content="PlacePing reminds you at a place. It has no internet permission, no account, no analytics and keeps no location history.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📍</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">PlacePing</p>
+    <p class="tagline">Reminds you at the place. Tells you when it cannot.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 18 September 2026 · App <code>software.basilbase.placeping</code> · Developer basilbase · Contact <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="tr/">Türkçe</a></p>
+  </header>
+
+<div class="lede">
+<p>PlacePing alerts you when you arrive at a place you saved, or when you leave it. Your places, reminders and checklists stay on your phone. There is no account, no analytics, no advertising and <strong>no internet permission</strong>.</p>
+</div>
+
+<h2>The verifiable version</h2>
+<p>PlacePing's manifest does not request <code>INTERNET</code> or <code>ACCESS_NETWORK_STATE</code>; it explicitly removes them. An Android app cannot open a network connection without <code>INTERNET</code> — the operating system refuses. You can confirm this in the Play listing's permission list or by inspecting the APK.</p>
+<p>This is why there is no map, no address search, and no way to resolve a shortened map link inside the app. Those are not missing features; they are the cost of an app that cannot talk to anyone about where you are.</p>
+
+<h2>How the location part actually works</h2>
+<p>PlacePing does not watch your position. It hands Android a list of circles — the places you saved, with their radius — and Android wakes the app when you cross one of them. That mechanism is the system's geofencing service, part of Google Play services.</p>
+<p>The app therefore never receives a stream of your positions and never stores one. It asks for a single position fix in exactly one situation: when you tap <em>Use my current position</em> while creating a place. That coordinate is written into that place and nothing else.</p>
+<p>There is no continuous tracking mode, no foreground service and no "your location is being used" persistent notification, because there is nothing running that would need one.</p>
+
+<h2>Permissions in full</h2>
+<p>This is the complete list. There are no others.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr><th>Permission</th><th>Why</th><th>Without it</th><th>Withdraw</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Precise location (<code>ACCESS_FINE_LOCATION</code>)</td>
+<td>The system geofencing service needs a precise position to tell a 100–2000 m circle from the surrounding streets.</td>
+<td>Nothing can detect an arrival.</td>
+<td>Settings › Apps › PlacePing › Permissions › Location</td>
+</tr>
+<tr>
+<td>Approximate location (<code>ACCESS_COARSE_LOCATION</code>)</td>
+<td>Android requires this alongside the precise grant and asks for both in one dialog.</td>
+<td>Same as above.</td>
+<td>Same place</td>
+</tr>
+<tr>
+<td>Location all the time (<code>ACCESS_BACKGROUND_LOCATION</code>)</td>
+<td>The whole product is a reminder that arrives while the app is closed. Android only allows that with this grant.</td>
+<td>Reminders would only work while PlacePing is open on screen.</td>
+<td>Settings › Apps › PlacePing › Permissions › Location › Allow only while using the app</td>
+</tr>
+<tr>
+<td>Notifications (<code>POST_NOTIFICATIONS</code>)</td>
+<td>The alert itself is a notification on the alarm channel.</td>
+<td>The app would be silent.</td>
+<td>Settings › Apps › PlacePing › Notifications</td>
+</tr>
+<tr>
+<td>Run at startup (<code>RECEIVE_BOOT_COMPLETED</code>)</td>
+<td>Android drops every geofence on restart without telling the app. This is how they are registered again.</td>
+<td>Reminders would stop working after every reboot, silently.</td>
+<td>Install-time; not revocable</td>
+</tr>
+<tr>
+<td>Vibration (<code>VIBRATE</code>)</td>
+<td>The alarm-style alert vibrates as well as sounding.</td>
+<td>The alert would not vibrate.</td>
+<td>Install-time; not revocable</td>
+</tr>
+<tr>
+<td>Full-screen alerts (<code>USE_FULL_SCREEN_INTENT</code>)</td>
+<td>Only for reminders where you switched on "Take over the screen".</td>
+<td>That optional alert style would not appear.</td>
+<td>Android 14+: Settings › Apps › PlacePing › Full-screen notifications</td>
+</tr>
+<tr>
+<td>Wake lock (<code>WAKE_LOCK</code>)</td>
+<td>Declared by WorkManager, which runs the once-a-day check that your geofences still exist. PlacePing itself takes no wake lock.</td>
+<td>The daily safety-net check could not run.</td>
+<td>Install-time; not revocable</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2>What PlacePing does not do</h2>
+<ul>
+<li>It does not send your location, or anything else, off the device. It cannot: there is no network permission.</li>
+<li>It does not record where you have been. No location history, no trail, no visit log.</li>
+<li>It has no account, no sign-in, no identifier of any kind and no advertising ID.</li>
+<li>It contains no advertising, analytics, attribution or crash-reporting library.</li>
+<li>It does not read your contacts, calendar, photos, microphone, camera, call log or the list of apps installed on your phone.</li>
+<li>It does not draw over other apps and does not use accessibility services.</li>
+<li>It does not upload a backup anywhere. The backup is a file you write and keep.</li>
+</ul>
+
+<h2>What is stored on your phone</h2>
+<div class="table-scroll"><table>
+<thead><tr><th>Stored</th><th>Where</th></tr></thead>
+<tbody>
+<tr><td>Places: the name you typed, the coordinate, the radius</td><td>App database, <code>placeping.db</code></td></tr>
+<tr><td>Reminders: text, note, direction, repeat rule, days, hours, dwell time, alert options</td><td>Same database</td></tr>
+<tr><td>Which reminder watches which place, and whether the phone is currently inside it</td><td>Same database</td></tr>
+<tr><td>Checklists attached to places</td><td>Same database</td></tr>
+<tr><td>A short activity log — the last 200 entries: registration results, detected arrivals, alerts raised and skipped, with the system's own error codes</td><td>Same database; shown on the Reliability screen and clearable there</td></tr>
+<tr><td>Theme, language, whether onboarding is done</td><td>App preferences</td></tr>
+</tbody>
+</table></div>
+<p>Nothing else. The activity log deliberately holds no coordinates.</p>
+
+<h2>What is deliberately not stored</h2>
+<p>Location history, movement traces, timestamps of where you were, usage statistics, session counts, device identifiers, crash dumps.</p>
+
+<h2>Backup</h2>
+<p>Android cloud backup and device-to-device transfer are <strong>switched off</strong> for this app, so your places are not copied into a Google backup. Moving your data to another phone is deliberate: Settings → Export to a file, then Import on the other phone. The file is plain JSON, readable by you.</p>
+
+<h2>Children</h2>
+<p>PlacePing is not directed at children and collects no data from anyone.</p>
+
+<h2>Retention and deletion</h2>
+<p>Everything lives on your phone until you delete it. A place, a reminder or a checklist item is deleted from inside the app; the activity log is cleared on the Reliability screen. Uninstalling PlacePing removes the database and all preferences with it.</p>
+
+<h2>Limits worth knowing</h2>
+<p>These are limits of Android, not choices, and they are written in the app as prominently as the features:</p>
+<ul>
+<li>An alert can be a few minutes late. Android usually detects an arrival within two minutes, and up to about six when the phone has been still.</li>
+<li>The smallest radius is 100 metres.</li>
+<li>Precise location and "Allow all the time" are both required.</li>
+<li>Manufacturer battery managers can stop reminders; a force-stopped app stays stopped until you open it again.</li>
+<li>At most 100 active places at once.</li>
+<li>Google Play services is required.</li>
+</ul>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top changes with it and the new text replaces this page. Material changes are also described in the app's release notes.</p>
+
+<footer>
+<p>PlacePing is published by basilbase. Questions: <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+</footer>
+</div>
+</body>
+</html>
