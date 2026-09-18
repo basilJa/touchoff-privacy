@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LaterBell — Privacy Policy</title>
+<meta name="description" content="LaterBell holds the notifications you choose and brings them back at the times you choose. It has no internet permission at all: notification content never leaves your phone.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔔</text></svg>">
+<style>
+  :root {
+    --bg:        #eceff4;
+    --surface:   #ffffff;
+    --ink:       #0f131a;
+    --muted:     #565f6b;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde2ea;
+    --chip:      #eff2f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0c10;
+      --surface:   #161a20;
+      --ink:       #eff2f6;
+      --muted:     #9aa4b2;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #242a33;
+      --chip:      #1e242c;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="mark">LaterBell</p>
+    <p class="tagline">Notifications, together, when you choose.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 18 September 2026</p>
+    <dl class="facts">
+      <dt>App</dt><dd><code>software.basilbase.laterbell</code></dd>
+      <dt>Developer</dt><dd>basilbase</dd>
+      <dt>Contact</dt><dd><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></dd>
+    </dl>
+  </header>
+
+  <div class="lede">
+    <p><strong>The short version.</strong> LaterBell reads the notifications arriving on your
+    phone so it can decide which ones may wait, and bring them back at the times you chose.
+    That content never leaves your phone. There is no server, no account, no advertising, no
+    analytics and no crash reporting, and the app has <strong>no internet permission at
+    all</strong>.</p>
+  </div>
+
+  <h2>Why that claim is checkable</h2>
+  <p>Privacy claims are cheap, so here is how to check this one rather than believe it.</p>
+  <p>LaterBell's manifest does not request <code>INTERNET</code> or
+  <code>ACCESS_NETWORK_STATE</code>. An Android app without <code>INTERNET</code> cannot open a
+  network connection — not "does not", but <strong>cannot</strong>: the operating system
+  refuses. You can confirm this in the permission list on the Play listing, or by inspecting
+  the APK yourself.</p>
+  <p>This matters more here than in most apps. LaterBell can see every notification your phone
+  receives: messages, one-time codes, bank alerts, health reminders. An app holding that and
+  also holding network access would be asking for a great deal of trust. This one is built so
+  that the trust is not needed.</p>
+  <p>The check is also automated. Every push to the project's repository runs a build that
+  reads the merged release manifest and fails if <code>INTERNET</code>,
+  <code>QUERY_ALL_PACKAGES</code>, <code>USE_EXACT_ALARM</code>,
+  <code>SCHEDULE_EXACT_ALARM</code> or an accessibility service has appeared — including by way
+  of a dependency that declares one quietly.</p>
+
+  <h2>What LaterBell reads</h2>
+  <p>To decide whether a notification may wait, the app reads, for each notification as it
+  arrives:</p>
+  <ul>
+    <li>the app it came from</li>
+    <li>its title and text</li>
+    <li>its notification channel and category</li>
+    <li>whether it is ongoing, a media notification, a group summary or a conversation</li>
+    <li>the sender or conversation name, where the app provides one</li>
+  </ul>
+  <p>It reads this through Android's <strong>notification access</strong>, which you grant in
+  system settings and can withdraw at any time. The moment you withdraw it, LaterBell stops
+  reading.</p>
+  <p><strong>What it does with it.</strong> It compares the notification against the choices
+  you made — the apps you picked, the notification types you picked, the names you marked as
+  always coming through — and either leaves the notification alone or asks Android to hold it
+  until your next delivery time. Nothing else.</p>
+  <p><strong>What it does not read.</strong> LaterBell does not read your contacts, accounts,
+  files, location, call log or the contents of other apps. It holds no permission for any of
+  them. It does not enumerate the apps on your device: it declares a narrow query for apps with
+  a launcher icon so it can offer you a list to choose from, and it does <em>not</em> hold
+  <code>QUERY_ALL_PACKAGES</code>.</p>
+  <p><strong>One-time codes.</strong> On Android 15 and later, the system replaces the text of
+  a notification it judges to contain a verification code before any app like LaterBell can see
+  it. LaterBell cannot read those codes and does not try. A notification that looks like a code
+  is always let through immediately and is never recorded.</p>
+
+  <h2>What is stored, and for how long</h2>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th scope="col">What</th><th scope="col">Where</th><th scope="col">Default</th><th scope="col">Your control</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>What is currently held — the app, a display title, the times it arrived and returns</td>
+          <td>This phone, the app's private storage</td>
+          <td>Only while it is held</td>
+          <td>Deleted automatically at delivery, and cleared when the phone restarts</td>
+        </tr>
+        <tr>
+          <td>Notification body text</td>
+          <td><strong>Nowhere</strong></td>
+          <td>Never stored</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>Your settings: chosen apps and types, delivery times, names always let through, theme, language</td>
+          <td>This phone, the app's private storage</td>
+          <td>Kept until you change them</td>
+          <td>Changed in the app; removed entirely by uninstalling</td>
+        </tr>
+        <tr>
+          <td>Health timestamps: when a notification was last seen, when the last delivery happened</td>
+          <td>This phone</td>
+          <td>Kept</td>
+          <td>Removed by uninstalling</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>There is no history.</strong> When a delivery happens, the held list is consumed
+  and deleted. LaterBell cannot show you what it delivered yesterday, because it no longer has
+  it.</p>
+
+  <h2>Where it goes</h2>
+  <p><strong>Nowhere.</strong> No server, no cloud backup, no analytics service, no crash
+  reporter, no advertising network. There is no third party in this product to send anything
+  to. Nothing LaterBell sees is written to the system log in a released build.</p>
+
+  <h2>Permissions, and why each exists</h2>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th scope="col">Permission</th><th scope="col">Why</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Notification access<br><code>BIND_NOTIFICATION_LISTENER_SERVICE</code></td>
+          <td>The core function: it is the only way to hold a notification and give it back later. You grant it in system settings and can revoke it at any time.</td>
+        </tr>
+        <tr>
+          <td><code>POST_NOTIFICATIONS</code></td>
+          <td>To post the single summary notification at each delivery time.</td>
+        </tr>
+        <tr>
+          <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+          <td>Only to re-establish the notification connection after a restart. Nothing else runs at boot.</td>
+        </tr>
+        <tr>
+          <td><code>ACCESS_NOTIFICATION_POLICY</code></td>
+          <td>Optional, and only if you turn on Quiet mode. It lets LaterBell add one Do Not Disturb mode of its own. LaterBell never reads, changes, enables or disables a mode you or another app created.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Children</h2>
+  <p>LaterBell is not directed at children and collects nothing from anyone.</p>
+
+  <h2>Your rights</h2>
+  <p>Because nothing is collected or transmitted, there is nothing held about you to request,
+  correct or export. Everything the app stores is on your own device and is removed completely
+  when you uninstall it. To stop LaterBell reading notifications without uninstalling, withdraw
+  notification access in Android settings.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the date at the top changes with it, and the updated text is
+  published at this address before the change reaches a released version of the app.</p>
+
+  <footer>
+    <p>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
