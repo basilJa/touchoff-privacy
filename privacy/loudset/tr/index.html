@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LoudSet — Gizlilik Politikası</title>
+<meta name="description" content="LoudSet, seçtiğin uygulama açılınca telefonun tek ortak sesini değiştirir, çıkınca geri yükler. İnternet izni, hesap, analitik ve kullanım geçmişi yok.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔊</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">LoudSet</p>
+    <p class="tagline">Açtığın uygulamaya göre ses.</p>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme: 2 Ekim 2026 · Uygulama <code>software.basilbase.loudset</code> · Geliştirici basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="../">English</a></p>
+  </header>
+<div class="lede"><p>LoudSet, seçtiğin bir uygulama öne geldiğinde telefonunun herkesin paylaştığı tek sistem ses seviyesini değiştirir ve o uygulamadan çıktığında önceki seviyeyi geri koyar. Varsayılan olarak medya sesi değişir; zil, bildirim ve alarm sesi yalnız bir kuralda onları seçersen değişir. LoudSet'in bunun için gereken her şeyi telefonunda kalır.</p><p>LoudSet'in internet izni yoktur; bu yüzden hiçbir yere hiçbir şey gönderemez. Hesap yok, giriş yok, bize ait bir sunucu yok. Analitik, çökme raporlaması ve reklam kütüphanesi yok.</p></div>
+<h2>Bu iddia neden doğrulanabilir</h2>
+<ul><li><strong>İnternet izni yok.</strong> Android, <code>INTERNET</code> izni olmayan bir uygulamanın ağ bağlantısı açmasına izin vermez. İzin listesini Play sayfasında ya da APK'yı kendin inceleyerek doğrulayabilirsin.</li><li><strong>İzin listesi sabittir.</strong> Projenin her derlemesi son birleşik manifest'i okur ve aşağıda sayılanların dışında bir izin görünürse, internet izni dâhil, başarısız olur.</li><li><strong>İzleme kodu yok.</strong> Uygulama Android'in kendi AndroidX kütüphaneleri (Jetpack Compose, Core, Activity, Lifecycle, DataStore) ve Kotlin coroutines ile derlenir. Analitik, çökme raporlama veya reklam kütüphanesi içermez.</li></ul>
+<h2>LoudSet neyi okur, okunan neye dönüşür</h2>
+<div class="table-scroll"><table><thead><tr><th>Ne</th><th>Ne zaman</th><th>Ne olur</th></tr></thead><tbody><tr><td>Kullanım erişiminden son uygulama açılış ve kapanış olayları: uygulamanın paket adı, açılan ekranın adı ve zamanı</td><td>Yalnız izleme çalışırken, ekran açıkken ve izleme duraklatılmamışken. Her sorgu en fazla son 10 saniyeyi kapsar</td><td>Hangi uygulamanın önde olduğunu bulmak için bellekte kullanılır, sonra atılır. Depolamaya hiç yazılmaz, geçmiş olarak tutulmaz</td></tr><tr><td>Başlatıcı simgesi olan uygulamalar (ad ve simge)</td><td>"Uygulama seç" ekranını açtığında</td><td>Sana gösterilir. Yalnız seçtiğin uygulamanın paket adı, o kuralın içinde kaydedilir</td></tr><tr><td>Ana ekran uygulamanın ve klavyenin paket adları</td><td>LoudSet başladığında</td><td>Ana ekranın ya da klavyenin "öndeki uygulama" sanılmaması için bellekte tutulur. Kaydedilmez</td></tr><tr><td>Telefonun ses durumu: mevcut ses seviyeleri ve aralıkları, zil modu (ses, titreşim, sessiz), arama olup olmadığı, Rahatsız Etmeyin'in açık olup olmadığı, sesin uzak bir cihazda çalıp çalmadığı ve bağlı çıkış (hoparlör, kablolu veya USB, Bluetooth): türü, ürün adı ve donanım adresi</td><td>İzleme çalışırken, LoudSet ekranları açıkken ve Tanılama'daki tek adımlık testlerde</td><td>Bir seviyeyi uygulamak, geri okumak ve geri yüklemek için kullanılır. Bluetooth donanım adresi olduğu gibi asla kaydedilmez; aşağıya bak</td></tr><tr><td>Eşleşmiş Bluetooth cihazların: ad ve donanım adresi</td><td>Yalnız bir kuralda "Belirli bir Bluetooth cihazı"nı açtığında. Android 12 ve sonrasında yalnız "Yakındaki cihazlar" iznini verdikten sonra</td><td>Birini seçebilmen için gösterilir. Yalnız seçtiğin cihaz, aşağıda anlatıldığı gibi kaydedilir</td></tr></tbody></table></div>
+<h2>Telefonunda saklananlar</h2>
+<p>Aşağıdakilerin hepsi LoudSet'in başka uygulamaların okuyamadığı özel uygulama depolamasında durur.</p>
+<div class="table-scroll"><table><thead><tr><th>Ne</th><th>Neden</th><th>Nasıl silinir</th></tr></thead><tbody><tr><td>Kuralların. Her kural şunları tutar: uygulamanın paket adı; çıkış (hoparlör, kablolu veya USB, Bluetooth); kuralın açık olup olmadığı; modu (Şuna ayarla veya En fazla); seçtiğin her ses için seviye. Belirli bir Bluetooth cihazına ait kural ayrıca bir cihaz anahtarı ve o cihazın Android'in bildirdiği adını tutar (cihazın adı yoksa donanım adresinin son beş karakterini)</td><td>LoudSet'in kurallarını uygulayabilmesi için</td><td>Kuralı uygulamada sil, Ayarlar › Kuralları ve ayarları sil'i kullan ya da uygulamayı kaldır</td></tr><tr><td>Ayarlar: tanıtımı bitirip bitirmediğin, Uygulamadan çıkınca geri yükle, Ekran kapanınca geri yükle, Yeni seviyeyi öğren, tema ve dil</td><td>Seçimlerin kalıcı olsun diye</td><td>Uygulamada değiştir; Kuralları ve ayarları sil; kaldır</td></tr><tr><td>Yalnız bir kural etkinken bir kurtarma kaydı. LoudSet'in değiştirdiği her ses için: değişiklikten önceki seviye, LoudSet'in ayarladığı seviye, çıkış türü, bir çıkış kimliği ve çıkışın ürün adı. Zil veya bildirim seviyesi değiştiyse ayrıca önceki zil modu</td><td>Android LoudSet'i kapatsa, telefon yeniden başlasa ya da LoudSet bir oturumun ortasında güncellense bile önceki seviyenin geri konabilmesi için</td><td>Her giriş, seviyesi geri yüklenir yüklenmez silinir. Bir giriş yalnız seviyesi hâlâ geri konacakken kalır; örneğin ait olduğu kulaklık bağlı değilken</td></tr></tbody></table></div>
+<p><strong>Cihaz anahtarı ve çıkış kimliği hakkında.</strong> LoudSet bir Bluetooth donanım adresini depolamaya yazmaz. Onun tek yönlü SHA-256 özetini (ilk 128 biti) yazar. Bu özet yine de adresten türetilmiş sabit bir değerdir, yani her seferinde aynı cihazı tanımlar; yalnız cihazını telefonunda tanımak için kullanılır ve telefondan hiç çıkmaz. Donanım adresi olmayan bir çıkış bunun yerine geçici bir bağlantı numarasıyla tanımlanır.</p>
+<p><strong>Yeni seviyeyi öğren</strong> varsayılan olarak kapalıdır. Açarsan ve kurallı bir uygulama açıkken seviye LoudSet dışında değişirse, yeni seviye o uygulamanın kuralına kaydedilir.</p>
+<h2>LoudSet'in bilerek tutmadıkları</h2>
+<ul><li>Kullanım geçmişi yok: hangi uygulamaları ne zaman, ne kadar süre açtığının listesi yok. İstatistik ve sayaç yok.</li><li>Ses değişikliklerinin kaydı yok.</li><li>Telefonundaki uygulamaların listesi yok; yalnız kurallar için seçtiğin paket adları var.</li><li>Konum, kişiler, hesaplar, dosyalar, mikrofon veya kamera verisi yok.</li><li>Bildirim içeriği yok. Rahatsız Etmeyin erişimi LoudSet'in bildirimleri okumasına izin vermez ve LoudSet'in bildirim dinleyici erişimi yoktur.</li></ul>
+<h2>Yedekleme ve yeni telefona geçiş</h2>
+<p>LoudSet, Android'e verisini hiçbir yere kopyalamamasını söyler:</p>
+<ul><li><code>android:allowBackup="false"</code>. Android 8–11'de bu, LoudSet verisinin hem Google bulut yedeğini hem de cihazdan cihaza aktarımını kapatır. Android 12 ve sonrasında bulut yedeğini kapatır.</li><li>Android 12 ve sonrasının okuduğu veri çıkarma kuralları, uygulamanın her depolama alanını (kök, dosyalar, veritabanları, paylaşılan tercihler ve harici depolama) hem bulut yedeğinden hem de cihazdan cihaza aktarımdan hariç tutar.</li><li>Kurtarma kaydı, Android'in yedeklere hiç katmadığı "yedeklenmeyen" klasörde tutulur.</li></ul>
+<p>Bu yüzden yeni bir telefon ya da yeniden kurulum kuralsız başlar. basilbase hiçbir kopya almaz.</p>
+<h2>İzinler ve her birinin nedeni</h2>
+<div class="table-scroll"><table><thead><tr><th>İzin</th><th>Neden</th><th>Onsuz</th><th>Nasıl geri alınır</th></tr></thead><tbody><tr><td>Kullanım erişimi (<code>PACKAGE_USAGE_STATS</code>). Android ayarlarında senin açtığın özel erişim; LoudSet önce açıklar ve ayar ekranını yalnız düğmeye bastığında açar</td><td>Hangi uygulamanın öne geldiğini fark edip kuralını uygulamak ve çıktığında önceki seviyeyi geri yüklemek için</td><td>İzleme başlatılamaz. Kural oluşturabilir ve Tanılama'yı kullanabilirsin</td><td>Android ayarları › Uygulamalar › Özel uygulama erişimi › Kullanım erişimi › LoudSet. İzleme o zaman durur ve LoudSet değiştirdiklerini geri yükler</td></tr><tr><td><code>MODIFY_AUDIO_SETTINGS</code>. Kurulumda verilir</td><td>Ses seviyesi gibi ses ayarlarını değiştiren uygulamalar için Android'in standart izni</td><td>—</td><td>Kaldır</td></tr><tr><td>Rahatsız Etmeyin erişimi (<code>ACCESS_NOTIFICATION_POLICY</code>). Android ayarlarında özel erişim; yalnız bir kural zil veya bildirim sesini içerdiğinde önerilir</td><td>Android, sessiz modu ya da Rahatsız Etmeyin'i etkileyecek zil veya bildirim değişikliklerini ya da zil modu değişikliğini reddedebilir. Bu erişimle LoudSet bu değişiklikleri yapıp geri alabilir. LoudSet Rahatsız Etmeyin'i açıp kapatmaz</td><td>Medya kuralları tam çalışır. Zil veya bildirim değişiklikleri reddedilebilir; LoudSet reddedildiğinde söyler</td><td>Android ayarları › Uygulamalar › Özel uygulama erişimi › Rahatsız Etmeyin erişimi</td></tr><tr><td>Yakındaki cihazlar (<code>BLUETOOTH_CONNECT</code>). Android 12 ve sonrası; yalnız "Belirli bir Bluetooth cihazı"nı açtığında istenir</td><td>Eşleşmiş cihazlarını listelemek ve hangisinin bağlı olduğunu tanımak için</td><td>"Herhangi bir Bluetooth cihazı" kuralları yine çalışır; tek bir cihaza özel kural oluşturulamaz</td><td>Android ayarları › Uygulamalar › LoudSet › İzinler › Yakındaki cihazlar</td></tr><tr><td><code>BLUETOOTH</code>. Yalnız Android 11 ve öncesi; kurulumda verilir</td><td>Bu iznin sorulmadığı eski Android'de aynı amaç. Bu sürümlerde LoudSet bağlı Bluetooth cihazını sormadan tanıyabilir</td><td>—</td><td>Kaldır</td></tr><tr><td>Bildirimler (<code>POST_NOTIFICATIONS</code>). Android 13 ve sonrası; "Bildirimlere izin ver"e bastığında istenir</td><td>Güncel medya seviyesini Duraklat ve Durdur ve geri yükle ile gösteren kalıcı bildirim</td><td>İzleme yine çalışır; onu LoudSet'ten ya da Hızlı Ayarlar kutucuğundan yönetirsin</td><td>Android ayarları › Uygulamalar › LoudSet › Bildirimler</td></tr><tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code>. Kurulumda verilir</td><td>İzleme görünür bir ön plan hizmeti olarak çalışır. Onu yalnız sen başlatırsın (LoudSet'ten ya da Hızlı Ayarlar kutucuğundan); "Durdur ve geri yükle" bitirir</td><td>Sen başka uygulamaları kullanırken Android izlemeyi durdururdu</td><td>Durdur ve geri yükle'ye bas</td></tr><tr><td><code>RECEIVE_BOOT_COMPLETED</code>. Kurulumda verilir</td><td>Yeniden başlatma ya da LoudSet güncellemesinden sonra, yarıda kalan bir oturumun değiştirdiği seviyeyi geri koymak için. İzlemeyi asla başlatmaz</td><td>Değişmiş bir seviye, LoudSet'i bir sonraki açışına kadar kalırdı</td><td>Kaldır</td></tr><tr><td><code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> (LoudSet'in kendi izni)</td><td>AndroidX kütüphanesi ekler; yalnız başka uygulamaların LoudSet'in iç yayınlarını göndermesini engeller</td><td>—</td><td>—</td></tr></tbody></table></div>
+<p>LoudSet'in internet, konum, kişiler, depolama, mikrofon, kamera, telefon veya hesap izni yoktur ve erişilebilirlik hizmeti kullanmaz. Yalnız başlatıcı simgesi olan uygulamaları, ana ekran uygulamanı ve kullanım erişimi ayar ekranını görebilir; yüklü her paketi görmeyi istemez. Hızlı Ayarlar kutucuğuna yalnız Android'in sistem arayüzü bağlanabilir.</p>
+<h2>Çocuklar</h2>
+<p>LoudSet çocuklara yönelik değildir ve kimseden veri toplamaz.</p>
+<h2>Hakların ve her şeyi silmek</h2>
+<p>Hiçbir şey toplanmadığı ve basilbase'e aktarılmadığı için bizden isteyebileceğin, düzeltebileceğin ya da dışa aktarabileceğin, hakkında tutulan bir şey yoktur. LoudSet'in sakladığı her şey kendi telefonundadır.</p>
+<ul><li>Bir kuralı o uygulamanın kural ekranından sil.</li><li>Ayarlar › Kuralları ve ayarları sil, bütün kuralları ve ayarları siler. Bir seviye hâlâ geri yüklenmeyi beklerken LoudSet bunu reddeder; böylece geri koyması gereken bir seviyeyi unutmaz.</li><li>LoudSet'i kaldırmak bütün verisini siler. Önce Durdur ve geri yükle'ye bas: kaldırılan bir uygulamaya geri yükleme fırsatı verilmez, son seviye olduğu gibi kalabilir.</li></ul>
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Politika değişirse en üstteki tarih de değişir ve güncel metin, değişiklik uygulamanın yayımlanan bir sürümüne ulaşmadan önce aynı adreste yayımlanır.</p>
+<h2>İletişim</h2>
+<p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>

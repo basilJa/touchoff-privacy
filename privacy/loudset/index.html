@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LoudSet — Privacy Policy</title>
+<meta name="description" content="LoudSet changes your phone&#x27;s one shared volume when an app you chose opens and restores it when you leave. No internet permission, no account, no analytics, no usage history.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔊</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">LoudSet</p>
+    <p class="tagline">Volume that follows the app you open.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 2 October 2026 · App <code>software.basilbase.loudset</code> · Developer basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="tr/">Türkçe</a></p>
+  </header>
+<div class="lede"><p>LoudSet changes your phone's one shared system volume when an app you chose comes to the front, and puts the previous level back when you leave that app. Media volume is changed by default; ringtone, notification and alarm volume change only if you select them in a rule. Everything LoudSet needs for this stays on your phone.</p><p>LoudSet has no internet permission, so it cannot send anything anywhere. There is no account, no sign-in and no server of ours. There is no analytics, no crash reporting and no advertising library.</p></div>
+<h2>Why that claim is checkable</h2>
+<ul><li><strong>No internet permission.</strong> Android does not let an app without the <code>INTERNET</code> permission open network connections. You can confirm the permission list on the Play listing, or by inspecting the APK yourself.</li><li><strong>The permission list is fixed.</strong> Every build of the project reads the final merged manifest and fails if any permission beyond the ones listed below appears, the internet permission included.</li><li><strong>No tracking code.</strong> The app is built from Android's own AndroidX libraries (Jetpack Compose, Core, Activity, Lifecycle, DataStore) and Kotlin coroutines. No analytics, crash-reporting or advertising library is included.</li></ul>
+<h2>What LoudSet reads, and what happens to it</h2>
+<div class="table-scroll"><table><thead><tr><th>What</th><th>When</th><th>What happens to it</th></tr></thead><tbody><tr><td>Recent app-open and app-close events from Usage access: the app's package name, the name of the screen that opened, and the time</td><td>Only while monitoring is running, the screen is on and monitoring is not paused. Each query covers the last 10 seconds at most</td><td>Used in memory to work out which app is in front, then discarded. It is never written to storage and never kept as a history</td></tr><tr><td>The apps that have a launcher icon (name and icon)</td><td>When you open "Choose an app"</td><td>Shown to you. Only the package name of the app you pick is saved, inside that rule</td></tr><tr><td>The package names of your home screen app and your keyboard</td><td>When LoudSet starts</td><td>Kept in memory so the home screen or keyboard is not mistaken for "the app in front". Not stored</td></tr><tr><td>The phone's audio state: current volume levels and their range, ringer mode (sound, vibrate or silent), whether a call is active, whether Do Not Disturb is on, whether sound is playing on a remote device, and the connected output (speaker, wired or USB, Bluetooth) with its type, product name and hardware address</td><td>While monitoring runs, while LoudSet's screens are open, and during the one-step tests in Diagnostics</td><td>Used to apply a level, read it back and restore it. A Bluetooth hardware address is never stored as it is; see below</td></tr><tr><td>Your paired Bluetooth devices: name and hardware address</td><td>Only when you turn on "A specific Bluetooth device" in a rule. On Android 12 and later, only after you allow "Nearby devices"</td><td>Shown so you can pick one. Only the device you pick is saved, as described below</td></tr></tbody></table></div>
+<h2>What is stored on your phone</h2>
+<p>Everything below lives in LoudSet's private app storage, which other apps cannot read.</p>
+<div class="table-scroll"><table><thead><tr><th>What</th><th>Why</th><th>How to remove it</th></tr></thead><tbody><tr><td>Your rules. Each rule holds the app's package name; the output (speaker, wired or USB, Bluetooth); whether the rule is on; its mode (Set to or At most); and the level for each volume you selected. A rule for one specific Bluetooth device also holds a device key and that device's name as Android reports it (if the device has no name, the last five characters of its hardware address)</td><td>So LoudSet can apply your rules</td><td>Delete the rule in the app, use Settings › Clear rules and settings, or uninstall</td></tr><tr><td>Settings: whether you finished the introduction, Restore when leaving an app, Restore when the screen turns off, Learn the new level, theme and language</td><td>So your choices stay chosen</td><td>Change them in the app; Clear rules and settings; uninstall</td></tr><tr><td>A recovery record, only while a rule is in effect. For each volume LoudSet changed: the level before the change, the level LoudSet set, the output type, an output identifier and the output's product name. If a ringtone or notification level was changed, also the ringer mode from before</td><td>So the previous level can be put back even if Android closes LoudSet, the phone restarts or LoudSet is updated in the middle of a session</td><td>Each entry is removed as soon as its level has been restored. An entry stays only while its level still has to be put back, for example while the headset it belongs to is disconnected</td></tr></tbody></table></div>
+<p><strong>About the device key and the output identifier.</strong> LoudSet does not write a Bluetooth hardware address to storage. It writes a one-way SHA-256 hash of it (the first 128 bits). That hash is still a fixed value derived from the address, so it identifies the same device every time; it is used only to recognise your device on your phone and never leaves it. An output without a hardware address is identified by a temporary connection number instead.</p>
+<p><strong>Learn the new level</strong> is off by default. If you turn it on and the level changes outside LoudSet while a configured app is open, the new level is saved into that app's rule.</p>
+<h2>What LoudSet deliberately does not keep</h2>
+<ul><li>No usage history: no list of which apps you opened, when, or for how long. No statistics and no counts.</li><li>No log of volume changes.</li><li>No list of the apps on your phone, only the package names you chose for rules.</li><li>No location, contacts, accounts, files, microphone or camera data.</li><li>No notification content. Do Not Disturb access does not let LoudSet read notifications, and LoudSet has no notification-listener access.</li></ul>
+<h2>Backup and moving to a new phone</h2>
+<p>LoudSet tells Android not to copy its data anywhere:</p>
+<ul><li><code>android:allowBackup="false"</code>. On Android 8 to 11 this turns off both Google cloud backup and device-to-device transfer of LoudSet's data. On Android 12 and later it turns off cloud backup.</li><li>Data extraction rules, which Android 12 and later read, exclude every storage area of the app (root, files, databases, shared preferences and external storage) from both cloud backup and device-to-device transfer.</li><li>The recovery record is kept in Android's no-backup folder, which Android leaves out of backups.</li></ul>
+<p>A new phone or a reinstall therefore starts with no rules. basilbase never receives any copy.</p>
+<h2>Permissions, and why each exists</h2>
+<div class="table-scroll"><table><thead><tr><th>Permission</th><th>Why</th><th>Without it</th><th>How to withdraw it</th></tr></thead><tbody><tr><td>Usage access (<code>PACKAGE_USAGE_STATS</code>). Special access that you turn on in Android settings; LoudSet explains it first and opens the settings screen only when you tap the button</td><td>To notice which app comes to the front, so its rule is applied and the previous level is restored when you leave</td><td>Monitoring cannot start. You can still create rules and use Diagnostics</td><td>Android settings › Apps › Special app access › Usage access › LoudSet. Monitoring then stops and LoudSet restores what it changed</td></tr><tr><td><code>MODIFY_AUDIO_SETTINGS</code>. Granted at install</td><td>Android's standard permission for apps that change audio settings such as volume</td><td>—</td><td>Uninstall</td></tr><tr><td>Do Not Disturb access (<code>ACCESS_NOTIFICATION_POLICY</code>). Special access in Android settings, offered only when a rule includes ringtone or notification volume</td><td>Android can refuse ringtone or notification changes, or a change of ringer mode, that would affect silent mode or Do Not Disturb. With this access LoudSet can make and undo those changes. LoudSet does not turn Do Not Disturb on or off</td><td>Media rules work fully. Ringtone or notification changes may be refused, and LoudSet tells you when they are</td><td>Android settings › Apps › Special app access › Do Not Disturb access</td></tr><tr><td>Nearby devices (<code>BLUETOOTH_CONNECT</code>). Android 12 and later; asked only when you turn on "A specific Bluetooth device"</td><td>To list your paired devices and to recognise which one is connected</td><td>Rules for "any Bluetooth device" still work; rules for one specific device cannot be created</td><td>Android settings › Apps › LoudSet › Permissions › Nearby devices</td></tr><tr><td><code>BLUETOOTH</code>. Android 11 and older only; granted at install</td><td>The same purpose on older Android, where this permission is not asked. On those versions LoudSet can recognise the connected Bluetooth device without a prompt</td><td>—</td><td>Uninstall</td></tr><tr><td>Notifications (<code>POST_NOTIFICATIONS</code>). Android 13 and later; asked when you tap "Allow notifications"</td><td>The ongoing notification that shows the current media level with Pause and Stop and restore</td><td>Monitoring still works; you control it from LoudSet or the Quick Settings tile</td><td>Android settings › Apps › LoudSet › Notifications</td></tr><tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code>. Granted at install</td><td>Monitoring runs as a visible foreground service. Only you start it, from LoudSet or its Quick Settings tile, and "Stop and restore" ends it</td><td>Android would stop monitoring while you use other apps</td><td>Tap Stop and restore</td></tr><tr><td><code>RECEIVE_BOOT_COMPLETED</code>. Granted at install</td><td>After a restart or an update of LoudSet, to put back a level that an interrupted session left changed. It never starts monitoring</td><td>A changed level would stay until you next open LoudSet</td><td>Uninstall</td></tr><tr><td><code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> (LoudSet's own)</td><td>Added by the AndroidX library; it only stops other apps from sending LoudSet's internal broadcasts</td><td>—</td><td>—</td></tr></tbody></table></div>
+<p>LoudSet holds no internet, location, contacts, storage, microphone, camera, phone or accounts permission, and uses no accessibility service. It can see only apps that have a launcher icon, your home screen app and the usage-access settings screen; it does not ask to see every installed package. The Quick Settings tile can be bound only by Android's system interface.</p>
+<h2>Children</h2>
+<p>LoudSet is not directed at children and collects nothing from anyone.</p>
+<h2>Your rights and deleting everything</h2>
+<p>Because nothing is collected or transmitted to basilbase, there is nothing held about you to request, correct or export from us. Everything LoudSet stores is on your own phone.</p>
+<ul><li>Delete a rule from that app's rule screen.</li><li>Settings › Clear rules and settings removes all rules and settings. LoudSet refuses this while a level is still waiting to be restored, so that it does not forget a level it still has to put back.</li><li>Uninstalling LoudSet deletes all of its data. Tap Stop and restore first: an app being uninstalled gets no chance to restore, so the last level can stay in place.</li></ul>
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the date at the top changes with it, and the updated text is published at the same address before the change reaches a released version of the app.</p>
+<h2>Contact</h2>
+<p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>
