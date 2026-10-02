@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TuckAway — Gizlilik Politikası</title>
+<meta name="description" content="TuckAway makaleleri telefonunda saklar ve sesli okur. Hesap yok, bize ait sunucu yok, analitik yok, reklam yok.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">TuckAway</p>
+    <p class="tagline">Şimdi kaydet. İnternetsiz oku. Sonra dinle.</p>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme: 2 Ekim 2026 · Uygulama <code>software.basilbase.tuckaway</code> · Geliştirici basilbase ·<a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="../">English</a></p>
+  </header>
+<div class="lede"><p>TuckAway, ona verdiğin makaleleri kaydeder, telefonunda tutar ve telefonunun kendi sesiyle sesli okur. Hesap yok, giriş yok, bize ait bir sunucu yok. Reklam, analitik ve çökme raporlaması yok.</p><p>TuckAway interneti tek bir amaçla kullanır: <strong>senin</strong> kaydetmesini istediğin sayfaları indirmek ve yerleşik tarayıcıda açtığın sayfaları göstermek. Bu istekler telefonundan doğrudan ilgili web sitesine gider. basilbase'e hiçbir şey gönderilmez, çünkü basilbase'in bunu alacak bir yeri yok.</p></div>
+<h2>Bu iddia neden doğrulanabilir</h2>
+<ul><li><strong>Uygulamada analitik, reklam veya çökme raporlama kütüphanesi yok.</strong> Projenin her derlemesi tam bağımlılık listesini tarar; Firebase, Google Analytics, Google Mobile Ads, AppsFlyer, Facebook, Sentry, Amplitude, Mixpanel veya Segment görünürse derleme başarısız olur. Bu, başka bir kütüphanenin onu sessizce getirdiği durumu da kapsar.</li><li><strong>İzin listesi sabittir.</strong> Her derleme son birleşik manifest'i okur ve aşağıda sayılanların dışında bir izin görünürse başarısız olur.</li><li>İzin listesini Play sayfasında ya da APK'yı kendin inceleyerek doğrulayabilirsin.</li></ul>
+<h2>TuckAway internete ne gönderir, kime</h2>
+<div class="table-scroll"><table><thead><tr><th>Ne zaman</th><th>Ne gönderilir</th><th>Kime</th></tr></thead><tbody><tr><td>Bir link kaydettiğinde (paylaş menüsü, yapıştır düğmesi, içe aktarma)</td><td>O sayfa için sıradan bir web isteği: adresi, telefonunun IP adresi ve sonu <code>TuckAway/1.0</code> ile biten bir tarayıcı kimlik metni. Sayfa birden çok sayfaya bölünmüşse <strong>aynı sitenin</strong> sonraki sayfaları da istenir (toplamda en çok on sayfa).</td><td>Sayfayı yayımlayan web sitesi</td></tr><tr><td>Görseller açıkken (varsayılan)</td><td>Makaledeki her görsel için bir istek</td><td>Her görseli barındıran sunucu</td></tr><tr><td>Yerleşik tarayıcıda bir sayfa açtığında</td><td>Her tarayıcının gönderdiği: istek, o sitenin koyduğu çerezler, o sitenin formlarına yazdıkların</td><td>O web sitesi</td></tr></tbody></table></div>
+<p>TuckAway kütüphaneni, okumalarını, etiketlerini, vurgularını ya da seninle ilgili herhangi bir şeyi kimseye göndermez. Bir siteye başka bir siteden ne kaydettiğini söylemez.</p>
+<p><strong>Bir web sitesine giriş yapmak.</strong> Yerleşik tarayıcı, abone olduğun bir gazetenin sana Chrome'da göstereceği makaleyi burada da gösterebilmesi için var. Girişi web sitesinin kendi sayfasında yaparsın; TuckAway parolanı hiçbir zaman görmez ve saklamaz. Sitenin çerezleri, her tarayıcıda olduğu gibi oturumun açık kalsın diye telefonunda tutulur. Üçüncü taraf çerezleri kapalıdır. TuckAway ödeme duvarlarını aşmaz.</p>
+<h2>Telefonunda saklananlar</h2>
+<p>Aşağıdakilerin hepsi TuckAway'in diğer uygulamaların okuyamadığı özel depolamasındadır.</p>
+<div class="table-scroll"><table><thead><tr><th>Ne</th><th>Neden</th><th>Nasıl silinir</th></tr></thead><tbody><tr><td>Kütüphanen: kaydedilen her linkin paylaştığın ve temizlenmiş hâli, başlık, yazar, site adı, kısa bir özet, yayın tarihi, kayıt tarihi, indirme durumu ve indirme başarısızsa nedeni</td><td>Kütüphane internetsiz çalışsın diye</td><td>Makaleyi sil (çöp kutusuna gider, seçtiğin gün sayısından sonra kalıcı olarak silinir) ya da uygulamayı kaldır</td></tr><tr><td>Makalenin temizlenmiş metni ve görselleri</td><td>İnternetsiz okuma ve dinleme</td><td>Yukarıdakiyle aynı; "Görselleri de kaydet" kapatılırsa yeni görsel saklanmaz</td></tr><tr><td>Sayfanın indirildiği hâliyle sıkıştırılmış kopyası</td><td>Makale diğer yöntemle, internetsiz yeniden çıkarılabilsin diye</td><td>Makaleyle birlikte silinir</td></tr><tr><td>Başlıkların ve makale metninin arama dizini</td><td>Telefonda tam metin arama</td><td>Makaleyle birlikte silinir; eksikse kendiliğinden yeniden kurulur</td></tr><tr><td>Etiketlerin, vurguların ve vurgu notların</td><td>Bunlar senin kütüphanen</td><td>Uygulamada sil</td></tr><tr><td>Her makale için okuma ve dinleme konumu</td><td>Kaldığın yerden devam</td><td>Makaleyle birlikte silinir</td></tr><tr><td>Ayarlar: tema, dil, okuma ve dinleme tercihleri, uyku zamanlayıcısı süresi, indirme ve çöp kutusu seçenekleri</td><td>Seçimlerin kalsın diye</td><td>Uygulamada değiştir; uygulama kaldırılınca silinir</td></tr><tr><td>İndirme kuyruğu (hangi kayıtların henüz indirilmesi gerektiği)</td><td>Kayıt, uygulama kapatılsa ya da telefon yeniden başlasa da kaybolmasın diye</td><td>İndirmeler bittikçe boşalır</td></tr><tr><td>Yerleşik tarayıcıda açtığın sitelerin çerezleri ve sayfa verisi</td><td>O sitelerde oturumun açık kalsın diye</td><td>Android ayarlarında TuckAway'in depolamasını temizle ya da uygulamayı kaldır</td></tr></tbody></table></div>
+<p><strong>TuckAway'in bilerek tutmadıkları:</strong> neyi ne zaman okuduğunun geçmişi, istatistik, kullanım sayıları, telefonundaki uygulamaların listesi, konum, rehber.</p>
+<p><strong>Pano</strong> yalnız "Yapıştır ve kaydet"e bastığın anda okunur ve okunan, bir şey kaydedilmeden önce sana gösterilir. Arka planda hiçbir zaman okunmaz.</p>
+<h2>Dinleme</h2>
+<p>Makaleler telefonunda yüklü metin okuma (TTS) motoru tarafından sesli okunur; bu ayrı bir uygulamadır (örneğin Google'ın konuşma hizmetleri). TuckAway ona okunacak cümleyi verir. TuckAway yalnız indirilmiş ve ağsız çalışan sesleri seçer; motorunda bir makalenin dili için böyle bir ses yoksa hangi dilin eksik olduğunu söyler ve makaleyi başka bir sesle okumaz. Konuşma motorunun kendisinin ne yaptığı o motorun gizlilik politikasına tabidir.</p>
+<h2>Yedekleme ve yeni telefona geçiş</h2>
+<p>TuckAway Android'in kendi yedeklemesini kullanır. Google hesabında yedekleme açıksa Android <strong>kütüphane veritabanını ve ayarlarını</strong> Google hesabının yedeğine kopyalar. basilbase bu kopyayı hiçbir zaman almaz. Kopyaya bilerek <strong>dahil edilmeyenler:</strong> makale metni, görseller, kaydedilen sayfalar, arama dizini ve site çerezleri. Android her uygulamanın yedeğini 25 MB ile sınırlar ve sınır aşılırsa hiçbir şeyi yedeklemez. Yeni bir telefona geri yükledikten sonra TuckAway makale metnini yeniden indirir ve arama dizinini kendiliğinden yeniden kurar.</p>
+<p>Telefondan telefona doğrudan aktarımda (kurulum sırasında kablo veya Wi-Fi ile) böyle bir sınır yoktur ve makale dosyaları da kopyalanır.</p>
+<p><strong>Dışa aktarma.</strong> Kütüphanenin tamamını istediğin an, seçtiğin bir klasöre ZIP dosyası olarak dışa aktarabilirsin: makaleler, görseller, etiketler ve vurgular, ayrıca diğer sonra-oku uygulamalarının anladığı bir link tablosu. TuckAway yalnız seçtiğin klasöre yazar ve depolama izni tutmaz.</p>
+<h2>İzinler ve her birinin nedeni</h2>
+<div class="table-scroll"><table><thead><tr><th>İzin</th><th>Neden</th><th>Olmasa</th></tr></thead><tbody><tr><td><code>INTERNET</code></td><td>Kaydettiğin sayfaları, görsellerini ve yerleşik tarayıcıda açtığın sayfaları indirmek için</td><td>TuckAway hiçbir şey kaydedemezdi</td></tr><tr><td><code>ACCESS_NETWORK_STATE</code></td><td>İndirmeden önce bağlantıyı — ya da öyle seçtiysen yalnız Wi-Fi'yi — beklemek için</td><td>İndirme ağ yokken denenir ve başarısız olurdu</td></tr><tr><td><code>POST_NOTIFICATIONS</code></td><td>Kilit ekranındaki ve bildirim panelindeki dinleme kontrolleri</td><td>Dinleme yine çalışır; kontroller görünmez</td></tr><tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td><td>Bir podcast uygulaması gibi ekran kapalıyken sesli okumaya devam etmek için. Bildirim bu süre boyunca görünür.</td><td>Ekran kapanınca dinleme dururdu</td></tr><tr><td><code>WAKE_LOCK</code>, <code>RECEIVE_BOOT_COMPLETED</code></td><td>Android'in iş zamanlayıcısının (WorkManager) gereksinimi; kuyruktaki indirme uygulama kapatılınca ya da telefon yeniden başlayınca da bitsin diye</td><td>Kayıt, uygulamayı açana kadar "Sırada" kalabilirdi</td></tr><tr><td><code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> (TuckAway'in kendi izni)</td><td>AndroidX kütüphanesi ekler; yalnız başka uygulamaların TuckAway'in iç yayınlarını göndermesini engeller</td><td>—</td></tr></tbody></table></div>
+<p>TuckAway depolama, rehber, konum, kamera, mikrofon, hesaplar ya da telefon izni tutmaz.</p>
+<h2>Çocuklar</h2>
+<p>TuckAway çocuklara yönelik değildir ve kimseden veri toplamaz.</p>
+<h2>Hakların ve her şeyi silmek</h2>
+<p>basilbase'e hiçbir şey toplanmadığı ya da iletilmediği için bizde senin hakkında istenecek, düzeltilecek ya da dışa aktarılacak bir şey yoktur. TuckAway'in sakladığı her şey kendi telefonundadır. Uygulamayı kaldırmak hepsini siler; Google hesabının yedeğindeki kopya orada, Google hesabının ayarlarından yönetilir ve silinir.</p>
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Bu politika değişirse en üstteki tarih de değişir ve güncel metin, değişiklik uygulamanın yayınlanan bir sürümüne ulaşmadan önce aynı adreste yayımlanır.</p>
+<h2>İletişim</h2>
+<p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>

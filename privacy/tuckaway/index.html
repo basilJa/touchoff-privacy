@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TuckAway — Privacy Policy</title>
+<meta name="description" content="TuckAway saves articles on your phone and reads them aloud. No account, no server of ours, no analytics, no ads.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">TuckAway</p>
+    <p class="tagline">Save it now. Read it offline. Listen to it later.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 2 October 2026 · App <code>software.basilbase.tuckaway</code> · Developer basilbase ·<a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="tr/">Türkçe</a></p>
+  </header>
+<div class="lede"><p>TuckAway saves the articles you give it, keeps them on your phone and reads them aloud with your phone's own voice. There is no account, no sign-in and no server of ours. There is no advertising, no analytics and no crash reporting.</p><p>TuckAway does use the internet, for one purpose: to download the pages <strong>you</strong> ask it to save, and to show the pages you open in its built-in browser. Those requests go straight from your phone to the website concerned. Nothing is sent to basilbase, because basilbase has nothing to receive it.</p></div>
+<h2>Why that claim is checkable</h2>
+<ul><li><strong>No analytics, advertising or crash-reporting library is in the app.</strong> Every build of the project runs a check over the full dependency list and fails if Firebase, Google Analytics, Google Mobile Ads, AppsFlyer, Facebook, Sentry, Amplitude, Mixpanel or Segment appears, including when another library pulls one in quietly.</li><li><strong>The permission list is fixed.</strong> Every build reads the final merged manifest and fails if any permission beyond the ones listed below appears.</li><li>You can confirm the permission list on the Play listing, or by inspecting the APK yourself.</li></ul>
+<h2>What TuckAway sends over the internet, and to whom</h2>
+<div class="table-scroll"><table><thead><tr><th>When</th><th>What is sent</th><th>To whom</th></tr></thead><tbody><tr><td>You save a link (share menu, paste button, import)</td><td>A normal web request for that page: its address, your phone's IP address and a browser identification string ending in <code>TuckAway/1.0</code>. If the page is split across several pages, the following pages of <strong>the same site</strong> are requested too (up to ten pages in all).</td><td>The website that published the page</td></tr><tr><td>Pictures are switched on (the default)</td><td>A request for each picture in the article</td><td>The server that hosts each picture</td></tr><tr><td>You open a page in the built-in browser</td><td>What any browser sends: the request, cookies that site set, anything you type into that site's forms</td><td>That website</td></tr></tbody></table></div>
+<p>TuckAway does <strong>not</strong> send your library, your reading, your tags, your highlights or anything about you to anyone. It does not tell one website what you saved from another.</p>
+<p><strong>Signing in to a website.</strong> The built-in browser exists so that a newspaper you subscribe to can show you an article it would show you in Chrome. You sign in on the website's own page; TuckAway never sees or stores your password. The site's cookies are kept on your phone so you stay signed in, as in any browser. Third-party cookies are switched off. TuckAway does not get around paywalls.</p>
+<h2>What is stored on your phone</h2>
+<p>Everything below lives in TuckAway's private storage, which other apps cannot read.</p>
+<div class="table-scroll"><table><thead><tr><th>What</th><th>Why</th><th>How to remove it</th></tr></thead><tbody><tr><td>Your library: each saved link as you shared it and in cleaned form, title, author, site name, a short excerpt, publication date, save date, download state and the reason a download failed</td><td>So the library works offline</td><td>Delete the article (it goes to the bin, then is deleted for good after the number of days you chose), or uninstall</td></tr><tr><td>The article text, cleaned, and its pictures</td><td>Offline reading and listening</td><td>Same as above; turning off "Save pictures too" stops storing new pictures</td></tr><tr><td>The page exactly as it was downloaded, compressed</td><td>So the article can be extracted again with the other method, offline</td><td>Deleted with the article</td></tr><tr><td>A search index of titles and article text</td><td>Full-text search on the phone</td><td>Deleted with the article; rebuilt automatically if missing</td></tr><tr><td>Your tags, highlights and highlight notes</td><td>They are your library</td><td>Delete them in the app</td></tr><tr><td>Reading position and listening position for each article</td><td>Continue where you stopped</td><td>Deleted with the article</td></tr><tr><td>Settings: theme, language, reading and listening preferences, sleep-timer length, download and bin options</td><td>So your choices stay chosen</td><td>Change them in the app; removed by uninstalling</td></tr><tr><td>The download queue (which saved articles still need downloading)</td><td>So a save survives the app being closed or the phone restarting</td><td>Emptied as downloads finish</td></tr><tr><td>Cookies and page data of sites you opened in the built-in browser</td><td>So you stay signed in to them</td><td>Clear TuckAway's storage in Android settings, or uninstall</td></tr></tbody></table></div>
+<p><strong>What TuckAway deliberately does not keep:</strong> no history of what you read when, no statistics, no usage counts, no list of the apps on your phone, no location, no contacts.</p>
+<p><strong>The clipboard</strong> is read only at the moment you press "Paste and save", and what was read is shown to you before anything is saved. It is never read in the background.</p>
+<h2>Listening</h2>
+<p>Articles are read aloud by the text-to-speech engine installed on your phone, which is a separate app (for example Google's speech services). TuckAway hands it the sentence to speak. TuckAway chooses only voices that are already downloaded and work without a network; if your engine has no such voice for an article's language, TuckAway tells you which language is missing and does not read the article in another voice. What the speech engine itself does is governed by that engine's own privacy policy.</p>
+<h2>Backup and moving to a new phone</h2>
+<p>TuckAway uses Android's own backup. If backup is switched on for your Google account, Android copies the <strong>library database and your settings</strong> to your Google account's backup. basilbase never receives this copy. It deliberately does <strong>not</strong> include the article text, the pictures, the saved pages, the search index or website cookies: Android limits each app's backup to 25 MB, and over that limit it backs up nothing. After you restore onto a new phone, TuckAway downloads the article text again and rebuilds the search index by itself.</p>
+<p>A direct phone-to-phone transfer (cable or Wi-Fi during setup) has no such limit and also copies the article files.</p>
+<p><strong>Export.</strong> You can export your whole library at any time, to a folder you choose, as a ZIP file: the articles, pictures, tags and highlights, plus a spreadsheet of links that other read-later apps understand. TuckAway writes only to the folder you pick and holds no storage permission.</p>
+<h2>Permissions, and why each exists</h2>
+<div class="table-scroll"><table><thead><tr><th>Permission</th><th>Why</th><th>Without it</th></tr></thead><tbody><tr><td><code>INTERNET</code></td><td>To download the pages you save, their pictures, and the pages you open in the built-in browser</td><td>TuckAway could not save anything</td></tr><tr><td><code>ACCESS_NETWORK_STATE</code></td><td>To wait for a connection — or for Wi-Fi only, if you chose that — before downloading</td><td>Downloads would be attempted with no network and fail</td></tr><tr><td><code>POST_NOTIFICATIONS</code></td><td>The listening controls on the lock screen and in the notification shade</td><td>Listening still works; the controls are not shown</td></tr><tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td><td>To keep reading aloud with the screen off, as a podcast app does. The notification is visible the whole time.</td><td>Listening would stop when the screen turns off</td></tr><tr><td><code>WAKE_LOCK</code>, <code>RECEIVE_BOOT_COMPLETED</code></td><td>Required by Android's job scheduler (WorkManager) so a download in the queue finishes after the app is closed or the phone restarts</td><td>A save could stay "Queued" until you open the app</td></tr><tr><td><code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> (TuckAway's own)</td><td>Added by the AndroidX library; it only stops other apps from sending TuckAway's internal broadcasts</td><td>—</td></tr></tbody></table></div>
+<p>TuckAway holds no storage, contacts, location, camera, microphone, accounts or phone permission.</p>
+<h2>Children</h2>
+<p>TuckAway is not directed at children and collects nothing from anyone.</p>
+<h2>Your rights and deleting everything</h2>
+<p>Because nothing is collected or transmitted to basilbase, there is nothing held about you to request, correct or export from us. Everything TuckAway stores is on your own phone. Uninstalling TuckAway deletes all of it; a copy in your Google account's backup is managed and deleted there, under your Google account's settings.</p>
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the date at the top changes with it, and the updated text is published at the same address before the change reaches a released version of the app.</p>
+<h2>Contact</h2>
+<p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>
