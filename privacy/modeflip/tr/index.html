@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ModeFlip — Gizlilik Politikası</title>
+<meta name="description" content="ModeFlip telefon ayarlarını moda göre değiştirir ve değiştirdiğini geri yükler. İnternet izni istemez; her şey telefonda kalır.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔁</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">ModeFlip</p>
+    <p class="tagline">Gününe uyan modlar.</p>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme: 2 Ekim 2026 · Uygulama <code>software.basilbase.modeflip</code> · Geliştirici basilbase ·<a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="../">English</a></p>
+  </header>
+<div class="lede"><p>ModeFlip, telefonunuzun ayarlarını moda göre değiştirir — örneğin Uyku, İş veya Toplantı —; bunu bir saat, bir takvim etkinliği, bir Bluetooth cihazı, bir Wi-Fi ağı veya şarj aleti gerektirdiğinde ya da siz dokunduğunuzda yapar. Mod bitince yalnız kendi değiştirdiği ayarları geri koyar.</p><p>ModeFlip'in okuduğu ve sakladığı her şey telefonunuzda kalır. <strong>ModeFlip internet izni istemez</strong>; bu yüzden kendi başına internet üzerinden hiçbir şey gönderemez. Hesap, giriş, bize ait bir sunucu, analitik ve çökme raporlaması yoktur. basilbase uygulamadan hiçbir şey almaz.</p><p>İki tür veri ayrıca belirtilmeli. Android, bağlı olduğunuz <strong>Wi-Fi ağının adını</strong> konum bilgisi sayar; bu yüzden Wi-Fi tetiği tam konum izni ister — ModeFlip bu izni yalnız o ağ adını okumak için kullanır, nerede olduğunuzu öğrenmek için asla kullanmaz. Bir mod <strong>metni sesli okuyacak</strong> şekilde ayarlandığında ise ModeFlip o metni telefonunuzda yüklü metin okuma (TTS) motoruna verir; bu motor ayrı bir uygulamadır.</p></div>
+<h2>İnternet iddiası neden doğrulanabilir</h2>
+<ul><li><strong>İzin listesi sabittir.</strong> Projenin her derlemesi release sürümünün son birleşik manifest'ini okur ve aşağıda sayılanların dışında bir izin görünürse başarısız olur. <code>INTERNET</code>, arka plan konumu, kamera, mikrofon, kişiler, SMS ve erişilebilirlik ile birlikte bu kontrolün yasak listesindedir.</li><li><strong>Uygulamada analitik veya çökme raporlama kütüphanesi yoktur.</strong> Her release derlemesi tam bağımlılık ağacını listeler; Firebase, Crashlytics, Google Analytics, AppsFlyer, Sentry, Amplitude, Mixpanel, Segment, Bugsnag, Instabug veya Flurry görünürse başarısız olur. Bu, başka bir kütüphanenin onu getirdiği durumu da kapsar.</li><li>İzin listesini kendiniz doğrulayabilirsiniz: Play sayfasında "Uygulama izinleri" altında ya da APK'yı inceleyerek.</li><li>İnternet izni olmayan bir uygulama ağ bağlantısı açamaz. ModeFlip'in birlikte çalıştığı diğer uygulamalar (metin okuma motorunuz, tarayıcınız, e-posta uygulamanız) kendi izinleri ve gizlilik politikaları olan ayrı uygulamalardır.</li></ul>
+<h2>ModeFlip neyi, ne zaman okur</h2>
+<div class="table-scroll"><table><thead><tr><th>Bilgi</th><th>Ne zaman okunur</th><th>Ne olur</th></tr></thead><tbody><tr><td>Bağlı olduğunuz Wi-Fi ağının adı (SSID)</td><td>Yalnız bir mod Wi-Fi tetiğini kullanıyorsa: "Bağlı ağı kullan"a dokunduğunuzda ve Wi-Fi izleme çalışırken</td><td>Modunuzda kayıtlı ağ adıyla karşılaştırılır. Şu anki ad yalnız bellekte tutulur, depolamaya hiç yazılmaz. Ağ geçmişi tutulmaz. ModeFlip yakındaki ağları taramaz ve modemin donanım adresini (BSSID) kullanmaz.</td></tr><tr><td>Konumunuz (GPS veya ağ konumu)</td><td><strong>Hiçbir zaman.</strong> ModeFlip Android'den koordinatınızı istemez</td><td>—</td></tr><tr><td>Takvim etkinlikleri: başlık, başlangıç ve bitiş</td><td>Yalnız bir takvim modu açıkken: her kontrolde, telefonunuzda gösterilen takvimlerde bir gün öncesinden sekiz gün sonrasına kadarki etkinlikler için; "boş" işaretli etkinlikler ve reddettiğiniz davetler atlanır</td><td>Başlıklar modunuzdaki isteğe bağlı anahtar kelimeyle bellekte karşılaştırılır. Başlangıç ve bitiş saatleri bir sonraki kontrolün ne zaman yapılacağını belirler. Takviminizden hiçbir şey saklanmaz; ModeFlip takviminize hiçbir şey yazmaz.</td></tr><tr><td>Eşleşmiş Bluetooth cihazları: adları ve donanım adresleri</td><td>"Eşleşmiş cihaz seç"e dokunduğunuzda</td><td>Birini seçebilmeniz için size gösterilir. Modda yalnız seçtiğiniz cihazın adresi saklanır.</td></tr><tr><td>Seçilen Bluetooth cihazının bağlı olup olmadığı</td><td>Android bir bağlanma veya kopma bildirdiğinde ve ModeFlip, Android'e hangi kulaklık, ses cihazı ve Bluetooth Low Energy cihazlarının bağlı olduğunu sorduğunda</td><td>Yalnız bir modda seçtiğiniz cihazlar için küçük bir bağlantı kaydında saklanır (bkz. "Telefonunuzda saklananlar"). ModeFlip Bluetooth cihazı taramaz.</td></tr><tr><td>Telefonun şarj olup olmadığı</td><td>Bir şarj modu için izleme çalışırken</td><td>Hemen kullanılır; saklanmaz</td></tr><tr><td>Bir modun değiştirmek üzere olduğu her ayarın o anki değeri: zil modu, medya/zil/bildirim/alarm ses düzeyi, parlaklık ve otomatik parlaklık, ekran zaman aşımı, otomatik döndürme, fener ve Android 8–14'te Rahatsız Etmeyin filtresi ve kuralı</td><td>ModeFlip o ayarı değiştirmeden hemen önce</td><td>Mod bitince geri konabilmesi için kurtarma kaydına yazılır. Her kayıt, ayarı geri yüklendiğinde silinir.</td></tr><tr><td>Duvar kâğıdının kimlik numarası (görüntünün kendisi değil)</td><td>Duvar kâğıdı olan bir mod başladığında veya bittiğinde</td><td>Duvar kâğıdını sizin değiştirip değiştirmediğinizi anlamak için kullanılır. ModeFlip duvar kâğıdı görüntünüzü hiç okumaz.</td></tr><tr><td>Ana ekran simgesi olan uygulamaların listesi</td><td>"Uygulama seç"e dokunduğunuzda</td><td>Size gösterilir; yalnız seçtiğiniz uygulamanın paket adı saklanır. ModeFlip "tüm paketleri sorgulama" iznine sahip değildir.</td></tr><tr><td>Metin okuma motorunuzun sesleri</td><td>Bir mod metin okuyacağı zaman</td><td>Uygulama dilinde çevrimdışı bir ses seçmek için kullanılır</td></tr><tr><td>Konum ayarının açık olup olmadığı ve her erişimin verilip verilmediği</td><td>ModeFlip bir modun sağlığını kontrol ettiğinde</td><td>Sağlık ekranında gösterilir; saklanmaz</td></tr></tbody></table></div>
+<h2>Telefonunuzda saklananlar</h2>
+<p>Aşağıdakilerin hepsi ModeFlip'in diğer uygulamaların okuyamadığı özel uygulama depolamasında durur.</p>
+<div class="table-scroll"><table><thead><tr><th>Ne</th><th>Neden</th><th>Nasıl silinir</th></tr></thead><tbody><tr><td>Modlarınız: ad, hazır mod türü, açık/kapalı durumu, öncelik sırası, tetik (program saatleri ve günleri, takvim anahtar kelimesi, Wi-Fi ağ adı, Bluetooth cihaz adresi veya şarj seçimi), eylemler ve değerleri, sesli okunacak metin (en çok 500 karakter) ve açılacak uygulamanın paket adı</td><td>Modlarınız çalışmaya devam etsin diye</td><td>Modu silin ya da Ayarlar → Yerel verileri sil</td></tr><tr><td>Uygulama ayarları: tema, dil, kutucuk ve widget'ın kontrol ettiği hızlı mod, otomasyonun duraklatılıp duraklatılmadığı ve izlemenin açık olup olmadığı, hangi modların etkin olduğu ya da elle açılıp kapatıldığı ve Android 15 ve sonrasında ModeFlip'in oluşturduğu sistem Modu kurallarının kimlikleri</td><td>Seçimleriniz kalsın ve uygulama kapansa da etkin bir mod sürsün diye</td><td>Ayarlar → Yerel verileri sil bunları sıfırlar; kaldırmak siler</td></tr><tr><td>Kurtarma kaydı: bir modun değiştirdiği her ayar için önceki değer ve ModeFlip'in yazdığı değer</td><td>ModeFlip, uygulama kapanmış olsa bile yalnız kendi değiştirdiğini geri yükleyebilsin diye</td><td>Her kayıt, ayarı geri yüklenince silinir; "Durdur ve geri yükle" ModeFlip'in hâlâ sahip olduğu her şeyi geri yükler</td></tr><tr><td>Seçtiğiniz duvar kâğıdı görsellerinin kopyaları (mod görseli ve geri dönülecek görsel), uzun kenarı en çok 2000 piksel olacak şekilde JPEG olarak yeniden kaydedilir</td><td>Android, uygulamaların mevcut duvar kâğıdını güvenilir biçimde okumasına izin vermez; bu yüzden geri dönülecek görseli siz seçersiniz</td><td>Hiçbir modun ve bitmemiş hiçbir geri yüklemenin artık ihtiyaç duymadığı görseller, Yerel verileri sil'i kullandığınızda veya bir yedeği içeri aktardığınızda silinir. Bir modda değiştirdiğiniz veya kaldırdığınız görsel o zamana kadar ya da uygulamayı kaldırana kadar özel depolamada kalır.</td></tr><tr><td>Duvar kâğıdı kaydı: ModeFlip'in ayarladığı duvar kâğıdının kimlik numarası ve iki görsel dosyasının adı</td><td>Duvar kâğıdının hâlâ ModeFlip'in ayarladığı görsel olup olmadığını bilmek için</td><td>Modun duvar kâğıdı geri yüklenince ya da bırakılınca kapanır</td></tr><tr><td>Bluetooth bağlantı kaydı: yalnız bir modda seçilen cihazlar için adresleri, her birinin en son bağlı mı kopmuş mu görüldüğü ve telefonun yeniden başlatma sayacı</td><td>Android uygulamayı kapattığında hâlâ bağlı olan bir cihaz unutulmasın diye; yeniden başlatma her cihazı kopmuş sayar</td><td>Artık hiçbir modun kullanmadığı cihazlar bir sonraki Bluetooth bağlantı değişikliğinde veya yeniden başlatmada çıkarılır</td></tr></tbody></table></div>
+<p><strong>ModeFlip'in bilerek saklamadıkları:</strong> konum koordinatı (hiç istenmez), Wi-Fi ağ geçmişi, takvim başlıkları veya saatleri, kişiler, uygulamalarınızın listesi, modların ne zaman çalıştığına dair kayıt, kullanım istatistiği ve kendi duvar kâğıdınızın kopyası.</p>
+<p><strong>Yıldızlı kişiler.</strong> Rahatsız Etmeyin'deki "Yıldızlı arayanlara izin ver", Android'in zaten yönettiği yıldızlı kişileri kullanır. ModeFlip'in kişiler izni yoktur ve kişilerinizi hiç okumaz.</p>
+<h2>Metnin sesli okunması</h2>
+<p>Sesli okunacak metni olan bir mod başladığında ModeFlip o metni, Android'in standart metin okuma arayüzü üzerinden telefonunuzda yüklü metin okuma motoruna (örneğin Google'ın konuşma hizmetleri ya da telefon üreticinizin motoru) verir. Bu motor ayrı bir uygulamadır. ModeFlip yalnız motorun ağ bağlantısı gerektirmediğini bildirdiği sesleri seçer; motorunuzda uygulama dili için böyle bir ses yoksa ModeFlip konuşmaz ve bunu Sağlık ekranında söyler. Okuma en çok 60 saniye sonra durur. Metin okuma motorunun metinle ne yaptığı o motorun kendi gizlilik politikasına tabidir.</p>
+<h2>Android 15 ve sonrasında sistem Modları</h2>
+<p>Android 15 ve sonrasında her ModeFlip modu, modun adıyla Android'e bir sistem Modu kuralı olarak kaydedilir; ModeFlip Rahatsız Etmeyin'i ve gri tonlama, soluk duvar kâğıdı, koyu tema ve her zaman açık ekran efektlerini bu yolla uygular. Android bu kuralları kendi ayarlarında gösterir. ModeFlip, modu sildiğinizde veya Yerel verileri sil'i kullandığınızda kuralı kaldırır. Uygulamayı kaldırdıktan sonra bir ModeFlip kuralı telefonunuzun ayarlarında hâlâ görünüyorsa onu oradan silebilirsiniz.</p>
+<h2>ModeFlip'in açtığı diğer uygulamalar</h2>
+<ul><li><strong>Bildirimle açılacak uygulama:</strong> bir mod başladığında ModeFlip bir bildirim gösterir; ona dokunmak seçtiğiniz uygulamayı açar. ModeFlip o uygulamaya hiçbir veri vermez.</li><li><strong>Medyayı oynat / duraklat:</strong> ModeFlip en son kullandığınız medya oynatıcıya oynat veya duraklat tuşu gönderir. Bununla birlikte hiçbir veri gönderilmez.</li><li><strong>Sistem panelleri:</strong> Android'in kendi Wi-Fi, internet, Bluetooth, hotspot, uçak modu, pil tasarrufu, konum, NFC ve ses ayarlarını sizin değiştirmeniz için açan kısayollar.</li><li><strong>Gizlilik politikası ve iletişim bağlantıları</strong> tarayıcınızı ve e-posta uygulamanızı açar.</li></ul>
+<p>Bu uygulamaların her birinin kendi gizlilik uygulamaları vardır.</p>
+<h2>Dışa aktardığınız yedek dosyaları</h2>
+<p><strong>Yedeği dışa aktar</strong>, Android'in dosya seçicisiyle seçtiğiniz yere tek bir dosya yazar. Dosyada modlarınız — adlar, Wi-Fi ağ adları, Bluetooth cihaz adresleri, takvim anahtar kelimeleri, sesli okunacak metin, açılacak uygulamaların paket adları dahil —, temanız, diliniz, hızlı modunuz ve seçtiğiniz duvar kâğıdı görselleri bulunur. Kurtarma kayıtları, hangi modların etkin olduğu ve sistem kuralı kimlikleri dosyada yoktur; dosyadaki her mod kapalıdır. Dosyanın nereye gideceği sizin kararınızdır; bir bulut klasörüne kaydederseniz o hizmetin gizlilik politikası geçerli olur.</p>
+<p><strong>Yedeği içeri aktar</strong>, seçtiğiniz dosyayı okur, tamamını bellekte denetler ve siz onaylayana kadar hiçbir şeyi değiştirmez. İçeri aktarılan modlar kapalı başlar ve otomasyon duraklatılmış başlar. ModeFlip'in depolama izni yoktur: yalnız sizin seçtiğiniz dosyaları okuyup yazabilir.</p>
+<h2>Android yedeği ve yeni telefona geçiş</h2>
+<p>ModeFlip Android'in kendi yedeğini kapatır. Uygulama <code>allowBackup="false"</code> bildirir ve yedek kuralları her depolama alanını hem bulut yedeğinden hem cihazdan cihaza aktarımdan hariç tutar. Bu yüzden Android, ModeFlip'in verilerini Google hesabınıza veya yeni bir telefona kopyalamaz. Modlarınızı taşımak için Yedeği dışa aktar ve Yedeği içeri aktar'ı kullanın.</p>
+<h2>İzinler ve her birinin nedeni</h2>
+<div class="table-scroll"><table><thead><tr><th>İzin</th><th>Neden</th><th>Onsuz</th><th>Nasıl geri alınır</th></tr></thead><tbody><tr><td>Tam ve yaklaşık konum (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>)</td><td>Yalnız Wi-Fi ağı tetikleri için: Android bağlı Wi-Fi ağının adını yalnız tam konum erişimi olan uygulamalara ve yalnız Konum açıkken gösterir. Bir Wi-Fi modu için "Bağlı ağı kullan"a veya "Erişimi incele"ye dokunduğunuzda istenir.</td><td>Wi-Fi modları çalışamaz; diğer bütün tetikler çalışır</td><td>Android Ayarlar → Uygulamalar → ModeFlip → İzinler → Konum. Wi-Fi modları o zaman biter ve Sağlık ekranı nedenini söyler.</td></tr><tr><td>Ön plan servisi, konum türü (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_LOCATION</code>)</td><td>Uygulamadan çıktıktan sonra Wi-Fi izlemesinin sürmesini sağlar. Yalnız açık uygulamadan başlar — izlemeyi başlattığınızda ve izleme açıkken uygulamayı her açtığınızda —; bütün süre boyunca "Durdur ve geri yükle" düğmeli bir bildirim görünür. Yeniden başlatma veya sistemin durdurması sonrasında kendiliğinden yeniden başlamaz.</td><td>Wi-Fi modları yalnız uygulama açıkken çalışır</td><td>Bildirimdeki "Durdur ve geri yükle"ye dokunun</td></tr><tr><td>Ön plan servisi, özel kullanım (<code>FOREGROUND_SERVICE_SPECIAL_USE</code>)</td><td>Şarj tetikleri için aynı görünür izleme servisi: Android, şarj aletinin takıldığını veya çıkarıldığını kapalı uygulamalara bildirmez</td><td>Şarj modları yalnız uygulama açıkken çalışır</td><td>Bildirimdeki "Durdur ve geri yükle"ye dokunun</td></tr><tr><td>Ön plan servisi, medya oynatma (<code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>)</td><td>Yalnız bir modun metni sesli okunurken, en çok 60 saniye, bir bildirimle</td><td>Uygulama kapalıyken metin sesli okunamazdı</td><td>Kendiliğinden biter</td></tr><tr><td>Takvim (<code>READ_CALENDAR</code>)</td><td>Yalnız takvim tetikleri için; salt okuma</td><td>Takvim modları çalışamaz</td><td>Android Ayarlar → Uygulamalar → ModeFlip → İzinler → Takvim</td></tr><tr><td>Yakındaki cihazlar (<code>BLUETOOTH_CONNECT</code>, Android 12 ve sonrası) ve <code>BLUETOOTH</code> (Android 11 ve öncesi)</td><td>Eşleşmiş cihazlarınızı listelemek ve seçileni ne zaman bağlandığını bilmek için. ModeFlip Bluetooth taraması izni istemez.</td><td>Bluetooth modları çalışamaz</td><td>Android Ayarlar → Uygulamalar → ModeFlip → İzinler → Yakındaki cihazlar</td></tr><tr><td>Wi-Fi ve ağ durumu (<code>ACCESS_WIFI_STATE</code>, <code>ACCESS_NETWORK_STATE</code>)</td><td>Wi-Fi bağlantısı değiştiğinde haber almak ve ayrıntılarını okumak için</td><td>— (kurulumda verilir)</td><td>Uygulamayı kaldırın</td></tr><tr><td>Rahatsız Etmeyin erişimi (<code>ACCESS_NOTIFICATION_POLICY</code>)</td><td>Zil modunu değiştirmek, Rahatsız Etmeyin'i açıp kapatmak ve Android 15 ve sonrasında sistem Modu kurallarını ve efektlerini oluşturmak için</td><td>Zil modunu, zil veya bildirim ses düzeyini, Rahatsız Etmeyin'i ya da sistem efektlerini değiştiren bir mod başlamaz; Sağlık ekranı hangi erişimin eksik olduğunu söyler. Medya ve alarm ses düzeyi onsuz da çalışır.</td><td>Android Ayarlar → Rahatsız Etmeyin erişimi (adı telefona göre değişir)</td></tr><tr><td>Sistem ayarlarını değiştirme (<code>WRITE_SETTINGS</code>)</td><td>Parlaklık, otomatik parlaklık, ekran zaman aşımı ve otomatik döndürme</td><td>Ekran eylemleri olan bir mod başlamaz</td><td>Android Ayarlar → Uygulamalar → ModeFlip → Sistem ayarlarını değiştirme</td></tr><tr><td>Ses ayarlarını değiştirme (<code>MODIFY_AUDIO_SETTINGS</code>)</td><td>Medya, zil, bildirim ve alarm ses düzeyi</td><td>— (kurulumda verilir)</td><td>Uygulamayı kaldırın</td></tr><tr><td>Alarmlar ve hatırlatıcılar (<code>SCHEDULE_EXACT_ALARM</code>)</td><td>Modları program saatlerinde ve takvim etkinliklerinin başında/sonunda zamanında başlatıp bitirmek için</td><td>Android bu kontrolleri geciktirebilir; Sağlık ekranı zamanlamanın gecikebileceğini söyler</td><td>Android Ayarlar → Özel uygulama erişimi → Alarmlar ve hatırlatıcılar</td></tr><tr><td>Açılışta çalışma (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>Yeniden başlatmadan sonra: bir sonraki kontrolü yeniden zamanlamak ve Bluetooth cihazlarını kopmuş saymak için. İzlemeyi başlatmaz.</td><td>Zamanlı modlar siz uygulamayı açana kadar beklerdi</td><td>Uygulamayı kaldırın</td></tr><tr><td>Bildirimler (<code>POST_NOTIFICATIONS</code>, Android 13 ve sonrası)</td><td>İzleme bildirimi, "Durdur ve geri yükle" düğmeli etkin modlar bildirimi ve bir uygulamayı dokunarak açma bildirimi</td><td>Wi-Fi ve şarj izlemesi başlayamaz; uygulama açma eylemi gösterilmez</td><td>Android Ayarlar → Uygulamalar → ModeFlip → Bildirimler</td></tr><tr><td>Duvar kâğıdı ayarlama (<code>SET_WALLPAPER</code>)</td><td>Duvar kâğıdı eylemi</td><td>— (kurulumda verilir)</td><td>Uygulamayı kaldırın</td></tr><tr><td><code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> (ModeFlip'in kendi izni)</td><td>AndroidX kütüphanesi ekler; yalnız diğer uygulamaların ModeFlip'in iç yayınlarını göndermesini engeller</td><td>—</td><td>—</td></tr></tbody></table></div>
+<p>Fener, Android'in fener arayüzüyle açılıp kapatılır; bu arayüz kamera izni gerektirmez. ModeFlip kamerayı hiç açmaz ve fotoğraf çekmez.</p>
+<p>ModeFlip'in internet, depolama, kişiler, kamera, mikrofon, telefon, SMS, hesaplar, erişilebilirlik, bildirim erişimi, kullanım erişimi, arka plan konumu veya "tüm paketleri sorgulama" izni <strong>yoktur</strong>.</p>
+<h2>Ayarların geri yüklenmesi ve sınırları</h2>
+<p>Bir mod bitince ModeFlip yalnız kendi değiştirdiği ve hâlâ sahip olduğu ayarları geri koyar. Mod etkinken bir ayarı elle değiştirdiyseniz ModeFlip sizin değerinize dokunmaz. ModeFlip Wi-Fi'yi, mobil veriyi, hotspot'u, uçak modunu, pil tasarrufunu, Bluetooth'u, Konum'u veya NFC'yi açıp kapatamaz; bunun yerine sizin için sistem panelini açar. Sistem Modu efektleri yalnız Android 15 ve sonrasında çalışır. Telefonlar farklıdır: bazı üreticiler zil ve bildirim ses düzeyini birbirine bağlar, bazıları arka plandaki uygulamaları daha sert durdurur.</p>
+<p>ModeFlip'i bir mod etkinken kaldırırsanız, depolamasını temizlerseniz ya da Sistem ayarlarını değiştirme veya Rahatsız Etmeyin erişimini geri alırsanız, ModeFlip değiştirdiklerini artık geri yükleyemez ve bu ayarlar olduğu gibi kalır. Önce "Durdur ve geri yükle"yi kullanın.</p>
+<h2>Çocuklar</h2>
+<p>ModeFlip çocuklara yönelik değildir ve kimseden hiçbir veri toplamaz.</p>
+<h2>Seçimleriniz ve verilerinizi silme</h2>
+<ul><li><strong>Bir modu</strong> mod düzenleyicide <strong>silin.</strong> Hâlâ sahip olduğu ayarlar önce geri yüklenir.</li><li><strong>Ayarlar → Yerel verileri sil</strong>, ModeFlip'in hâlâ sahip olduğu ayarları geri yükler, bütün modları altı hazır modla (kapalı olarak) değiştirir, tema ve dili sıfırlar, ModeFlip'in sistem Modu kurallarını kaldırır ve artık gerekmeyen duvar kâğıdı kopyalarını siler. Bluetooth bağlantı kaydı bir sonraki Bluetooth bağlantı değişikliğinde veya yeniden başlatmada boşaltılır.</li><li><strong>Android Ayarlar → Uygulamalar → ModeFlip → Depolama → Depolamayı temizle</strong> ya da <strong>uygulamayı kaldırmak</strong>, ModeFlip'in telefonda sakladığı her şeyi siler.</li><li><strong>Dışa aktardığınız dosyalar</strong> sizindir; onları kaydettiğiniz yerden silin.</li></ul>
+<p>basilbase'e hiçbir şey iletilmediği için basilbase'in elinde sizinle ilgili erişilecek, düzeltilecek veya silinecek bir bilgi yoktur.</p>
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Bu politika değişirse üstteki tarih de değişir; güncellenen metin, değişiklik uygulamanın yayımlanan bir sürümüne ulaşmadan önce aynı adreste yayımlanır.</p>
+<h2>İletişim</h2>
+<p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>

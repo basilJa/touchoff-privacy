@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ModeFlip — Privacy Policy</title>
+<meta name="description" content="ModeFlip switches phone settings by mode and restores what it changed. It requests no internet permission; everything stays on the phone.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔁</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">ModeFlip</p>
+    <p class="tagline">Your day, your modes.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 2 October 2026 · App <code>software.basilbase.modeflip</code> · Developer basilbase ·<a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="tr/">Türkçe</a></p>
+  </header>
+<div class="lede"><p>ModeFlip switches your phone's settings by mode — for example Sleep, Work or Meeting — when a time, a calendar event, a Bluetooth device, a Wi-Fi network or the charger says so, or when you tap it. When the mode ends it puts back only the settings it changed itself.</p><p>Everything ModeFlip reads and stores stays on your phone. <strong>ModeFlip does not request the internet permission</strong>, so it has no way to send anything over the internet by itself. There is no account, no sign-in, no server of ours, no analytics and no crash reporting. basilbase receives nothing from the app.</p><p>Two kinds of data deserve special mention. Android treats the <strong>name of the Wi-Fi network</strong> you are connected to as location information, so the Wi-Fi trigger needs the precise location permission — ModeFlip uses it only to read that network name, never to find out where you are. And when a mode is set to <strong>read text aloud</strong>, ModeFlip hands that text to the text-to-speech engine installed on your phone, which is a separate app.</p></div>
+<h2>Why the internet claim is checkable</h2>
+<ul><li><strong>The permission list is fixed.</strong> Every build of the project reads the final merged manifest of the release and fails if any permission other than the ones listed below appears. <code>INTERNET</code> is on that check's forbidden list, together with background location, camera, microphone, contacts, SMS and accessibility.</li><li><strong>No analytics or crash-reporting library is in the app.</strong> Every release build lists its full dependency tree and fails if Firebase, Crashlytics, Google Analytics, AppsFlyer, Sentry, Amplitude, Mixpanel, Segment, Bugsnag, Instabug or Flurry appears, including when another library pulls one in.</li><li>You can confirm the permission list yourself: on the Play listing under "App permissions", or by inspecting the APK.</li><li>Without the internet permission, an app cannot open network connections. The other apps that ModeFlip works with (your speech engine, your browser, your email app) are separate apps with their own permissions and privacy policies.</li></ul>
+<h2>What ModeFlip reads, and when</h2>
+<div class="table-scroll"><table><thead><tr><th>Information</th><th>When it is read</th><th>What happens to it</th></tr></thead><tbody><tr><td>The name (SSID) of the Wi-Fi network you are connected to</td><td>Only if a mode uses the Wi-Fi trigger: when you tap "Use current network", and while Wi-Fi monitoring is running</td><td>Compared with the network name saved in your mode. The current name is kept in memory only and is never written to storage. No history of networks is kept. ModeFlip does not scan for nearby networks and does not use the router's hardware address (BSSID).</td></tr><tr><td>Your position (GPS or network location)</td><td><strong>Never.</strong> ModeFlip does not ask Android for your coordinates</td><td>—</td></tr><tr><td>Calendar events: title, start and end</td><td>Only while a calendar mode is switched on: at each check, for events from one day ago to eight days ahead in calendars shown on your phone, skipping events marked as available rather than busy, and invitations you declined</td><td>Titles are compared with the optional keyword in your mode, in memory. Start and end times decide when the next check is scheduled. Nothing from your calendar is stored, and ModeFlip never writes to your calendar.</td></tr><tr><td>Paired Bluetooth devices: names and hardware addresses</td><td>When you tap "Choose paired device"</td><td>Shown to you so you can pick one. Only the address of the device you pick is saved in the mode.</td></tr><tr><td>Whether a selected Bluetooth device is connected</td><td>When Android reports a connection or disconnection, and when ModeFlip asks Android which headsets, audio devices and Bluetooth Low Energy devices are connected</td><td>Saved in a small connection record, only for devices you selected in a mode (see "What is stored"). ModeFlip does not scan for Bluetooth devices.</td></tr><tr><td>Whether the phone is charging</td><td>While monitoring runs for a charging mode</td><td>Used immediately; not stored</td></tr><tr><td>The current value of each setting a mode is about to change: ringer mode, media/ring/notification/alarm volume, brightness and automatic brightness, screen timeout, auto-rotate, the flashlight, and on Android 8–14 the Do Not Disturb filter and policy</td><td>Just before ModeFlip changes that setting</td><td>Saved as a recovery record, so it can be put back when the mode ends. Each entry is deleted once its setting has been restored.</td></tr><tr><td>The wallpaper's ID number (not the image)</td><td>When a mode with a wallpaper starts or ends</td><td>Used to tell whether you replaced the wallpaper yourself. ModeFlip never reads your wallpaper image.</td></tr><tr><td>The list of apps that have a launcher icon</td><td>When you tap "Choose an app"</td><td>Shown to you; only the package name of the app you pick is saved. ModeFlip does not hold the "query all packages" permission.</td></tr><tr><td>The voices of your text-to-speech engine</td><td>When a mode reads text aloud</td><td>Used to pick an offline voice in the app's language</td></tr><tr><td>Whether Location is on, and whether each access is granted</td><td>When ModeFlip checks a mode's health</td><td>Shown on the Health screen; not stored</td></tr></tbody></table></div>
+<h2>What is stored on your phone</h2>
+<p>Everything below lives in ModeFlip's private app storage, which other apps cannot read.</p>
+<div class="table-scroll"><table><thead><tr><th>What</th><th>Why</th><th>How to remove it</th></tr></thead><tbody><tr><td>Your modes: name, ready-made type, on/off, priority order, the trigger (schedule times and days, calendar keyword, Wi-Fi network name, Bluetooth device address or charging choice), the actions and their values, the text to read aloud (up to 500 characters) and the package name of an app to open</td><td>So your modes keep working</td><td>Delete the mode, or use Settings → Delete local data</td></tr><tr><td>App settings: theme, language, the quick mode for the tile and widget, whether automation is paused or monitoring is on, which modes are active or were switched on or off by hand, and the IDs of the system Mode rules ModeFlip created on Android 15 and later</td><td>So your choices stay chosen and an active mode survives the app being closed</td><td>Settings → Delete local data resets them; uninstalling removes them</td></tr><tr><td>Recovery record: for each setting a mode changed, the value before and the value ModeFlip wrote</td><td>So ModeFlip can restore only what it changed, even after the app was closed</td><td>Each entry is deleted once its setting is restored; "Stop and restore" restores everything ModeFlip still owns</td></tr><tr><td>Copies of the wallpaper images you picked (the mode image and the return image), re-saved as JPEG at up to 2000 pixels on the long side</td><td>Android does not let apps reliably read your current wallpaper, so you choose the image to return to</td><td>Images that no mode and no unfinished restore needs any more are deleted when you use Delete local data or import a backup. An image you replace or clear in a mode stays in private storage until then, or until you uninstall.</td></tr><tr><td>Wallpaper record: the wallpaper ID number ModeFlip set and the names of the two image files</td><td>To know whether the wallpaper is still the one ModeFlip set</td><td>Closed when the mode's wallpaper is restored or released</td></tr><tr><td>Bluetooth connection record: for devices selected in a mode only, their addresses, whether each was last seen connected or disconnected, and the phone's restart counter</td><td>So a device that is still connected is not forgotten when Android closes the app; a restart marks every device as disconnected</td><td>Devices no longer used by any mode are dropped at the next Bluetooth connection change or restart</td></tr></tbody></table></div>
+<p><strong>What ModeFlip deliberately does not store:</strong> no location coordinates (they are never requested), no history of Wi-Fi networks, no calendar titles or times, no contacts, no list of your apps, no log of when modes ran, no usage statistics and no copy of your own wallpaper.</p>
+<p><strong>Starred contacts.</strong> "Allow starred callers" in Do Not Disturb uses the starred contacts Android already manages. ModeFlip has no contacts permission and never reads your contacts.</p>
+<h2>Reading text aloud</h2>
+<p>When a mode that has text to read aloud starts, ModeFlip passes that text to the text-to-speech engine installed on your phone (for example Google's speech services or your phone maker's engine) through Android's standard text-to-speech interface. That engine is a separate app. ModeFlip only chooses voices the engine reports as working without a network connection; if your engine has no such voice for the app's language, ModeFlip does not speak and says so on the Health screen. Speaking stops after 60 seconds at most. What the speech engine itself does with the text is governed by that engine's own privacy policy.</p>
+<h2>System Modes on Android 15 and later</h2>
+<p>On Android 15 and later, each ModeFlip mode is registered with Android as a system Mode rule under the mode's name, which is how ModeFlip applies Do Not Disturb and the grayscale, dim-wallpaper, dark-theme and always-on-display effects. Android shows these rules in its own settings. ModeFlip removes a rule when you delete its mode or use Delete local data. If a ModeFlip rule is still listed in your phone's settings after you uninstall the app, you can delete it there.</p>
+<h2>Other apps ModeFlip opens</h2>
+<ul><li><strong>App to open by notification:</strong> when a mode starts, ModeFlip shows a notification; tapping it opens the app you chose. ModeFlip passes no data to that app.</li><li><strong>Play / pause media:</strong> ModeFlip sends a play or pause key to the media player you used last. No data is sent with it.</li><li><strong>System panels:</strong> shortcuts that open Android's own Wi-Fi, internet, Bluetooth, hotspot, airplane-mode, battery-saver, location, NFC and sound settings for you to change.</li><li><strong>Privacy policy and contact links</strong> open your browser and your email app.</li></ul>
+<p>Each of those apps has its own privacy practices.</p>
+<h2>Backup files you export</h2>
+<p><strong>Export backup</strong> writes one file to a place you choose with Android's file picker. It contains your modes — including names, Wi-Fi network names, Bluetooth device addresses, calendar keywords, the text to read aloud, the package names of apps to open — your theme, language and quick mode, and the wallpaper images you picked. It does not contain recovery records, which modes are active, or system rule IDs, and every mode in it is switched off. Where the file goes is your decision; if you save it to a cloud folder, that service's privacy policy applies to it.</p>
+<p><strong>Import backup</strong> reads a file you pick, checks all of it in memory, and changes nothing until you confirm. Imported modes start switched off and automation starts paused. ModeFlip holds no storage permission: it can read and write only the files you pick.</p>
+<h2>Android backup and moving to a new phone</h2>
+<p>ModeFlip switches Android's own backup off. The app declares <code>allowBackup="false"</code>, and its backup rules exclude every storage area both from cloud backup and from device-to-device transfer. So Android does not copy ModeFlip's data to your Google account or to a new phone. To take your modes with you, use Export backup and Import backup.</p>
+<h2>Permissions, and why each exists</h2>
+<div class="table-scroll"><table><thead><tr><th>Permission</th><th>Why</th><th>Without it</th><th>How to withdraw it</th></tr></thead><tbody><tr><td>Precise and approximate location (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>)</td><td>Only for Wi-Fi network triggers: Android reveals the name of the connected Wi-Fi network only to apps with precise location access and only while Location is on. Asked when you tap "Use current network" or "Review access" for a Wi-Fi mode.</td><td>Wi-Fi modes cannot run; every other trigger works</td><td>Android Settings → Apps → ModeFlip → Permissions → Location. Wi-Fi modes then end and the Health screen says why.</td></tr><tr><td>Foreground service, location type (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_LOCATION</code>)</td><td>Keeps the Wi-Fi watch running after you leave the app. It starts only from the open app — when you start monitoring, and again whenever you open the app while monitoring is on — and a notification is visible the whole time with a "Stop and restore" button. After a restart or a system stop it does not restart by itself.</td><td>Wi-Fi modes only work while the app is open</td><td>Tap "Stop and restore" in the notification</td></tr><tr><td>Foreground service, special use (<code>FOREGROUND_SERVICE_SPECIAL_USE</code>)</td><td>The same visible monitoring service, for charging triggers: Android does not tell closed apps when a charger is plugged in or out</td><td>Charging modes only work while the app is open</td><td>Tap "Stop and restore" in the notification</td></tr><tr><td>Foreground service, media playback (<code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>)</td><td>Only while a mode's text is being read aloud, at most 60 seconds, with a notification</td><td>Text could not be read aloud while the app is closed</td><td>It ends by itself</td></tr><tr><td>Calendar (<code>READ_CALENDAR</code>)</td><td>Only for calendar triggers; read-only</td><td>Calendar modes cannot run</td><td>Android Settings → Apps → ModeFlip → Permissions → Calendar</td></tr><tr><td>Nearby devices (<code>BLUETOOTH_CONNECT</code>, Android 12 and later) and <code>BLUETOOTH</code> (Android 11 and earlier)</td><td>To list your paired devices and know when the selected one connects. ModeFlip does not request Bluetooth scanning.</td><td>Bluetooth modes cannot run</td><td>Android Settings → Apps → ModeFlip → Permissions → Nearby devices</td></tr><tr><td>Wi-Fi and network state (<code>ACCESS_WIFI_STATE</code>, <code>ACCESS_NETWORK_STATE</code>)</td><td>To be told when the Wi-Fi connection changes and read its details</td><td>— (granted at install)</td><td>Uninstall</td></tr><tr><td>Do Not Disturb access (<code>ACCESS_NOTIFICATION_POLICY</code>)</td><td>To change the ringer mode, turn Do Not Disturb on and off, and create the system Mode rules and their effects on Android 15 and later</td><td>A mode that changes the ringer, ring or notification volume, Do Not Disturb or system effects does not start; the Health screen says which access is missing. Media and alarm volume work without it.</td><td>Android Settings → Do Not Disturb access (name varies by phone)</td></tr><tr><td>Modify system settings (<code>WRITE_SETTINGS</code>)</td><td>Brightness, automatic brightness, screen timeout and auto-rotate</td><td>A mode with display actions does not start</td><td>Android Settings → Apps → ModeFlip → Modify system settings</td></tr><tr><td>Change audio settings (<code>MODIFY_AUDIO_SETTINGS</code>)</td><td>Media, ring, notification and alarm volume</td><td>— (granted at install)</td><td>Uninstall</td></tr><tr><td>Alarms and reminders (<code>SCHEDULE_EXACT_ALARM</code>)</td><td>To start and end modes on time at schedule times and calendar event boundaries</td><td>Android may delay these checks; the Health screen says timing may be delayed</td><td>Android Settings → Special app access → Alarms and reminders</td></tr><tr><td>Run at startup (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>After a restart: reschedule the next check and mark Bluetooth devices as disconnected. It does not start monitoring.</td><td>Timed modes would wait until you open the app</td><td>Uninstall</td></tr><tr><td>Notifications (<code>POST_NOTIFICATIONS</code>, Android 13 and later)</td><td>The monitoring notification, the active-modes notification with "Stop and restore", and the tap-to-open notification for an app</td><td>Wi-Fi and charging monitoring cannot start, and the app-opening action is not shown</td><td>Android Settings → Apps → ModeFlip → Notifications</td></tr><tr><td>Set wallpaper (<code>SET_WALLPAPER</code>)</td><td>The wallpaper action</td><td>— (granted at install)</td><td>Uninstall</td></tr><tr><td><code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> (ModeFlip's own)</td><td>Added by the AndroidX library; it only stops other apps from sending ModeFlip's internal broadcasts</td><td>—</td><td>—</td></tr></tbody></table></div>
+<p>The flashlight is switched through Android's torch interface, which needs no camera permission; ModeFlip never opens the camera and takes no pictures.</p>
+<p>ModeFlip holds <strong>no</strong> internet, storage, contacts, camera, microphone, phone, SMS, accounts, accessibility, notification-access, usage-access, background-location or "query all packages" permission.</p>
+<h2>Restoring settings, and its limits</h2>
+<p>When a mode ends, ModeFlip puts back only the settings it changed and still owns. If you changed a setting by hand while the mode was active, ModeFlip leaves your value alone. ModeFlip cannot switch Wi-Fi, mobile data, hotspot, airplane mode, battery saver, Bluetooth, Location or NFC on or off; it opens the system panel for you instead. System Mode effects work only on Android 15 and later. Phones differ: some makers link ring and notification volume, and some stop background apps more aggressively.</p>
+<p>If you uninstall ModeFlip, clear its storage, or withdraw Modify system settings or Do Not Disturb access while a mode is active, ModeFlip can no longer restore what it changed, and those settings stay as they are. Use "Stop and restore" first.</p>
+<h2>Children</h2>
+<p>ModeFlip is not directed at children and collects nothing from anyone.</p>
+<h2>Your choices and deleting your data</h2>
+<ul><li><strong>Delete a mode</strong> in the mode editor. Settings it still owns are restored first.</li><li><strong>Settings → Delete local data</strong> restores the settings ModeFlip still owns, replaces all modes with the six ready-made modes (switched off), resets theme and language, removes ModeFlip's system Mode rules and deletes the wallpaper copies that are no longer needed. The Bluetooth connection record is emptied at the next Bluetooth connection change or restart.</li><li><strong>Android Settings → Apps → ModeFlip → Storage → Clear storage</strong>, or <strong>uninstalling</strong>, deletes everything ModeFlip stored on the phone.</li><li><strong>Exported files</strong> are yours; delete them where you saved them.</li></ul>
+<p>Because nothing is transmitted to basilbase, basilbase holds nothing about you to access, correct or delete.</p>
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the date at the top changes with it, and the updated text is published at the same address before the change reaches a released version of the app.</p>
+<h2>Contact</h2>
+<p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>
