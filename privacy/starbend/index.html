@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Starbend — Privacy Policy</title>
+<meta name="description" content="Starbend is an offline gravity puzzle and universe sandbox. No account. Anonymous play statistics go to Google Analytics for Firebase only if you allow them; no advertising ID.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪐</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">Starbend</p>
+    <p class="tagline">Bend orbits. Break worlds.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 5 October 2026 · App <code>software.basilbase.starbend</code> · Developer basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="tr/">Türkçe</a></p>
+  </header>
+<div class="lede"><p>Starbend is a gravity puzzle game. You place planets, moons and black holes, and the game simulates them on your phone. Every mode works offline and there is no account.</p><p>The game can send anonymous play statistics to Google Analytics for Firebase, but only if you allow it. It asks once, on first start, with no answer selected in advance, and you can change your answer at any time in Settings. Until you allow it, nothing is sent.</p></div>
+<h2>What is sent, and only if you allow statistics</h2>
+<p>When statistics are on and the phone is online, Starbend sends these events to Google Analytics for Firebase:</p>
+<div class="table-scroll"><table><thead><tr><th>Event</th><th>What it contains</th></tr></thead><tbody><tr><td><code>level_start</code></td><td>The level id, for example "2-5"</td></tr><tr><td><code>level_complete</code></td><td>The level id, the stars earned, and which attempt it was</td></tr><tr><td><code>level_fail</code></td><td>The level id, why it was lost (for example "time ran out"), and how many attempts have failed</td></tr><tr><td><code>daily_start</code></td><td>That the daily challenge was started</td></tr><tr><td><code>daily_complete</code></td><td>That the daily challenge was finished, and the stars</td></tr><tr><td><code>sandbox_open</code></td><td>That the sandbox was opened</td></tr><tr><td><code>code_export</code></td><td>That a system code was copied or shared. Not the code itself</td></tr><tr><td><code>code_import</code></td><td>That a system code was loaded, and whether it worked. Not the code itself</td></tr></tbody></table></div>
+<p>Google Analytics for Firebase also records some things on its own: a random identifier for this installation of the app (the "app instance ID"), the device model, the Android and app version, the language, an approximate location (country, region and city) that Google derives from the network address, when the app is first opened or updated, which screens are shown, and when sessions start and how long they last. Google states that Analytics does not log or store the IP address itself. This list is Google's own description of its product: <a href="https://support.google.com/analytics/answer/11582702">https://support.google.com/analytics/answer/11582702</a></p>
+<p>What is never sent:</p>
+<ul><li>Your name, email address, contacts, photos, files or location from the phone's location services.</li><li>The advertising ID. Starbend removes Android's advertising-ID permission from the app and turns advertising-ID collection off.</li><li>Where the app was installed from. The install-referrer and ad-attribution permissions are removed as well.</li><li>Anything you type, including system codes.</li><li>Anything at all while statistics are off.</li></ul>
+<p>The purpose is to learn which levels are too hard or too easy, and whether players come back to the game.</p>
+<h2>Why these claims can be checked</h2>
+<ul><li><strong>Statistics are off until you choose.</strong> The app ships with Firebase Analytics collection disabled. It is switched on only by your choice in the first-start screen or in Settings.</li><li><strong>The permission list is fixed.</strong> Every build reads the final merged manifest and fails if a permission other than the four listed below appears, or if the advertising-ID, install-referrer or ad-attribution permission comes back.</li><li><strong>The libraries are known.</strong> Apart from Android's own AndroidX libraries, Kotlin and the libGDX game engine, the app contains Firebase Analytics and Google Play's in-app review library. It contains no crash-reporting library.</li></ul>
+<h2>What is stored on your phone</h2>
+<p>Everything below lives in Starbend's private app storage, which other apps cannot read.</p>
+<div class="table-scroll"><table><thead><tr><th>What</th><th>Why</th><th>How to remove it</th></tr></thead><tbody><tr><td>Progress: which levels are open, the best stars per level, how many times a level was failed, daily challenge results, the day you first played, and whether the review card was already requested</td><td>So your progress stays</td><td>Uninstall the app, or clear its storage in Android settings</td></tr><tr><td>The last sandbox system, as a short code</td><td>So the sandbox opens where you left it</td><td>Use Clear in the sandbox and leave it (the empty sandbox is saved), or uninstall</td></tr><tr><td>Settings: theme, language, your statistics choice, whether you finished the introduction</td><td>So your choices stay chosen</td><td>Change them in Settings, or uninstall</td></tr><tr><td>A screenshot file, only after you tap Share</td><td>Passed, with the system code, to the app you choose in Android's share sheet. basilbase does not receive it</td><td>It is replaced by the next screenshot and removed with the app's cache</td></tr></tbody></table></div>
+<h2>Backup</h2>
+<p>Your progress and the last sandbox system are included in Android's own backup, so a new phone restored from your Google account can keep them. That backup is made and stored by Android and Google under your account; basilbase never receives it. Settings and your statistics choice are not backed up.</p>
+<h2>Permissions</h2>
+<div class="table-scroll"><table><thead><tr><th>Permission</th><th>Why</th><th>Without it</th></tr></thead><tbody><tr><td><code>INTERNET</code></td><td>Declared by the Firebase Analytics library; sending statistics, if you allow them</td><td>The game works the same; statistics cannot be sent</td></tr><tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Declared by the Firebase Analytics library, which checks the connection before it sends</td><td>—</td></tr><tr><td><code>WAKE_LOCK</code></td><td>Declared by the Firebase Analytics library for its background sending. Starbend itself never keeps the screen or the phone awake</td><td>—</td></tr><tr><td><code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> (Starbend's own)</td><td>Added by an AndroidX library; it only stops other apps from sending Starbend's internal broadcasts</td><td>—</td></tr></tbody></table></div>
+<p>All four are granted at install; Starbend asks for no permission while you play. It has no location, contacts, storage, microphone, camera, phone or accounts permission, and uses no accessibility service.</p>
+<h2>Who receives the data</h2>
+<p>Statistics go to Google, which runs Google Analytics for Firebase for basilbase as a service provider, under Google's terms for that service. Google may process them on servers outside your country. basilbase sees them only as counts in the Google Analytics console. basilbase does not sell or share them with anyone else.</p>
+<p>Google keeps this event data for the retention period set in basilbase's Google Analytics settings, which is 2 months. If that setting changes, this policy will be updated first.</p>
+<h2>Children</h2>
+<p>Starbend is not directed at children under 13.</p>
+<h2>Your choices and deleting data</h2>
+<ul><li>Settings › Share anonymous statistics turns sending off at once. Nothing more is sent after that.</li><li>Statistics are tied only to the random app instance ID, not to your name or account. basilbase therefore cannot find "your" records on request. If you uninstall the app, the ID goes with it, and data already sent is deleted by Google when the retention period ends.</li><li>Uninstalling Starbend deletes everything it stored on your phone.</li></ul>
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the date at the top changes with it, and the updated text is published at the same address before the change reaches a released version of the app.</p>
+<h2>Contact</h2>
+<p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>

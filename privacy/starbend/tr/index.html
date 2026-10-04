@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Starbend — Gizlilik Politikası</title>
+<meta name="description" content="Starbend internetsiz çalışan bir yerçekimi bulmacası ve evren sandbox&#x27;ıdır. Hesap yok. Anonim oynanış istatistikleri yalnızca izin verirsen Google Analytics for Firebase&#x27;e gider; reklam kimliği yok.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪐</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">Starbend</p>
+    <p class="tagline">Yörüngeleri bük. Dünyaları parçala.</p>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme 5 Ekim 2026 · Uygulama <code>software.basilbase.starbend</code> · Geliştirici basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="../">English</a></p>
+  </header>
+<div class="lede"><p>Starbend bir yerçekimi bulmaca oyunudur. Gezegen, ay ve kara delik yerleştirirsin; oyun bunları telefonunda simüle eder. Her mod internetsiz çalışır ve hesap gerekmez.</p><p>Oyun anonim oynanış istatistiklerini Google Analytics for Firebase'e gönderebilir, ama yalnızca izin verirsen. İlk açılışta bir kez sorar; cevaplardan hiçbiri önceden seçili değildir ve cevabını Ayarlar'dan istediğin zaman değiştirebilirsin. İzin verene kadar hiçbir şey gönderilmez.</p></div>
+<h2>Ne gönderilir (yalnızca istatistiğe izin verirsen)</h2>
+<p>İstatistik açıkken ve telefon internete bağlıyken Starbend şu olayları Google Analytics for Firebase'e gönderir:</p>
+<div class="table-scroll"><table><thead><tr><th>Olay</th><th>İçeriği</th></tr></thead><tbody><tr><td><code>level_start</code></td><td>Seviye kimliği, örneğin "2-5"</td></tr><tr><td><code>level_complete</code></td><td>Seviye kimliği, alınan yıldız ve kaçıncı deneme olduğu</td></tr><tr><td><code>level_fail</code></td><td>Seviye kimliği, neden kaybedildiği (örneğin "süre doldu") ve kaç denemenin başarısız olduğu</td></tr><tr><td><code>daily_start</code></td><td>Günlük meydan okumanın başlatıldığı</td></tr><tr><td><code>daily_complete</code></td><td>Günlük meydan okumanın bitirildiği ve yıldızlar</td></tr><tr><td><code>sandbox_open</code></td><td>Serbest modun açıldığı</td></tr><tr><td><code>code_export</code></td><td>Bir sistem kodunun kopyalandığı ya da paylaşıldığı. Kodun kendisi gönderilmez</td></tr><tr><td><code>code_import</code></td><td>Bir sistem kodunun yüklendiği ve yüklemenin işe yarayıp yaramadığı. Kodun kendisi gönderilmez</td></tr></tbody></table></div>
+<p>Google Analytics for Firebase bazı bilgileri de kendiliğinden kaydeder: uygulamanın bu kurulumuna ait rastgele bir kimlik ("uygulama örneği kimliği"), cihaz modeli, Android ve uygulama sürümü, dil, Google'ın ağ adresinden çıkardığı yaklaşık konum (ülke, bölge ve şehir), uygulamanın ilk açıldığı ya da güncellendiği an, hangi ekranların gösterildiği, oturumların ne zaman başladığı ve ne kadar sürdüğü. Google, Analytics'in IP adresinin kendisini kaydetmediğini ya da saklamadığını belirtir. Bu liste Google'ın kendi ürününü tarif edişidir: <a href="https://support.google.com/analytics/answer/11582702">https://support.google.com/analytics/answer/11582702</a></p>
+<p>Asla gönderilmeyenler:</p>
+<ul><li>Adın, e-posta adresin, kişilerin, fotoğrafların, dosyaların ya da telefonun konum hizmetlerinden gelen konumun.</li><li>Reklam kimliği. Starbend, Android'in reklam kimliği iznini uygulamadan kaldırır ve reklam kimliği toplamayı kapatır.</li><li>Uygulamanın nereden yüklendiği. Yükleme kaynağı ve reklam ilişkilendirme izinleri de kaldırılmıştır.</li><li>Yazdığın hiçbir şey, sistem kodları dahil.</li><li>İstatistik kapalıyken hiçbir şey.</li></ul>
+<p>Amaç, hangi seviyelerin fazla zor ya da fazla kolay olduğunu ve oyuncuların oyuna geri dönüp dönmediğini öğrenmektir.</p>
+<h2>Bu iddialar neden doğrulanabilir</h2>
+<ul><li><strong>Sen seçene kadar istatistik kapalıdır.</strong> Uygulama Firebase Analytics toplaması kapalı olarak gelir. Yalnızca ilk açılış ekranındaki ya da Ayarlar'daki seçiminle açılır.</li><li><strong>İzin listesi sabittir.</strong> Her derleme son birleşik manifest'i okur. Aşağıdaki dört izin dışında bir izin görünürse ya da reklam kimliği, yükleme kaynağı veya reklam ilişkilendirme izni geri gelirse derleme başarısız olur.</li><li><strong>Kütüphaneler bellidir.</strong> Android'in kendi AndroidX kütüphaneleri, Kotlin ve libGDX oyun motoru dışında uygulamada Firebase Analytics ve Google Play'in uygulama içi değerlendirme kütüphanesi vardır. Çökme raporlama kütüphanesi yoktur.</li></ul>
+<h2>Telefonunda ne saklanır</h2>
+<p>Aşağıdakilerin hepsi Starbend'in, başka uygulamaların okuyamadığı özel depolama alanındadır.</p>
+<div class="table-scroll"><table><thead><tr><th>Ne</th><th>Neden</th><th>Nasıl silinir</th></tr></thead><tbody><tr><td>İlerleme: hangi seviyelerin açık olduğu, seviye başına en iyi yıldız, bir seviyenin kaç kez kaybedildiği, günlük meydan okuma sonuçları, ilk oynadığın gün ve değerlendirme kartının daha önce istenip istenmediği</td><td>İlerlemen kaybolmasın diye</td><td>Uygulamayı kaldır ya da Android ayarlarından depolamasını temizle</td></tr><tr><td>Son serbest mod sistemi, kısa bir kod olarak</td><td>Serbest mod bıraktığın yerden açılsın diye</td><td>Serbest modda Temizle'ye dokunup moddan çık (boş sistem kaydedilir) ya da uygulamayı kaldır</td></tr><tr><td>Ayarlar: tema, dil, istatistik seçimin, tanıtımı bitirip bitirmediğin</td><td>Seçimlerin kalsın diye</td><td>Ayarlar'dan değiştir ya da uygulamayı kaldır</td></tr><tr><td>Bir ekran görüntüsü dosyası, yalnızca Paylaş'a dokunduğunda</td><td>Sistem koduyla birlikte, Android'in paylaşım ekranında seçtiğin uygulamaya verilir. basilbase bunu almaz</td><td>Sonraki ekran görüntüsüyle değiştirilir ve uygulamanın önbelleğiyle silinir</td></tr></tbody></table></div>
+<h2>Yedekleme</h2>
+<p>İlerlemen ve son serbest mod sistemi Android'in kendi yedeğine dahildir; böylece Google hesabından geri yüklenen yeni bir telefon bunları koruyabilir. Bu yedeği Android ve Google senin hesabın altında oluşturur ve saklar; basilbase bunu asla almaz. Ayarlar ve istatistik seçimin yedeklenmez.</p>
+<h2>İzinler</h2>
+<div class="table-scroll"><table><thead><tr><th>İzin</th><th>Neden</th><th>Olmazsa</th></tr></thead><tbody><tr><td><code>INTERNET</code></td><td>Firebase Analytics kütüphanesi bildirir; izin verirsen istatistik göndermek için</td><td>Oyun aynı çalışır; istatistik gönderilemez</td></tr><tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Firebase Analytics kütüphanesi bildirir; göndermeden önce bağlantıyı denetler</td><td>—</td></tr><tr><td><code>WAKE_LOCK</code></td><td>Firebase Analytics kütüphanesi arka planda gönderim için bildirir. Starbend'in kendisi ekranı ya da telefonu asla uyanık tutmaz</td><td>—</td></tr><tr><td><code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> (Starbend'in kendi izni)</td><td>Bir AndroidX kütüphanesi ekler; yalnızca başka uygulamaların Starbend'in iç yayınlarını göndermesini engeller</td><td>—</td></tr></tbody></table></div>
+<p>Dördü de kurulumda verilir; Starbend oynarken izin istemez. Konum, kişiler, depolama, mikrofon, kamera, telefon ya da hesap izni yoktur ve erişilebilirlik hizmeti kullanmaz.</p>
+<h2>Verileri kim alır</h2>
+<p>İstatistikler, Google Analytics for Firebase'i basilbase adına hizmet sağlayıcı olarak çalıştıran Google'a, Google'ın bu hizmete ait koşulları çerçevesinde gider. Google bunları ülken dışındaki sunucularda işleyebilir. basilbase bunları yalnızca Google Analytics konsolundaki sayılar olarak görür. basilbase bunları kimseye satmaz ya da başka kimseyle paylaşmaz.</p>
+<p>Google bu olay verilerini basilbase'in Google Analytics ayarlarındaki saklama süresi boyunca, yani 2 ay tutar. Bu ayar değişirse önce bu politika güncellenir.</p>
+<h2>Çocuklar</h2>
+<p>Starbend 13 yaşından küçük çocuklara yönelik değildir.</p>
+<h2>Seçimlerin ve verilerin silinmesi</h2>
+<ul><li>Ayarlar › Anonim istatistik paylaş, gönderimi hemen kapatır. Bundan sonra başka bir şey gönderilmez.</li><li>İstatistikler yalnızca rastgele uygulama örneği kimliğine bağlıdır, adına ya da hesabına değil. Bu yüzden basilbase istek üzerine "senin" kayıtlarını bulamaz. Uygulamayı kaldırırsan kimlik de gider; daha önce gönderilmiş veriler saklama süresi dolunca Google tarafından silinir.</li><li>Starbend'i kaldırmak, telefonunda sakladığı her şeyi siler.</li></ul>
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Bu politika değişirse üstteki tarih de değişir ve güncel metin, değişiklik uygulamanın yayımlanmış bir sürümüne ulaşmadan önce aynı adreste yayımlanır.</p>
+<h2>İletişim</h2>
+<p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>
