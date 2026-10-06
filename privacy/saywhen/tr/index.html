@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SayWhen — Gizlilik Politikası</title>
+<meta name="description" content="SayWhen hatırlatmalarını, geri sayımlarını ve kontrol listelerini belirlediğin saatlerde telefonun kendi konuşma motoruyla okur. İnternet izni, hesap ve analitik yok.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔔</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">SayWhen</p>
+    <p class="tagline">Rutinlerin, belirlediğin saatte sesli.</p>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme: 6 Ekim 2026 · Uygulama <code>software.basilbase.saywhen</code> · Geliştirici basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="../">English</a></p>
+  </header>
+<div class="lede"><p>SayWhen, kurduğun hatırlatmaları, geri sayımları, kontrol listelerini, saati ve sabah özetini seçtiğin saatlerde, telefonunda kurulu konuşma motoruyla sesli okur. Rutinlerin, ayarların ve geçmişin telefonunda kalır.</p><p>SayWhen'in internet izni yoktur; bu yüzden hiçbir yere hiçbir şey gönderemez. Hesap yok, giriş yok, bize ait bir sunucu yok. Analitik ve çökme raporlaması yok.</p></div>
+<h2>Bu iddia neden doğrulanabilir</h2>
+<ul><li><strong>İnternet izni yok.</strong> Android, <code>INTERNET</code> izni olmayan bir uygulamanın ağ bağlantısı açmasına izin vermez. İzin listesini Play sayfasında ya da APK'yı kendin inceleyerek doğrulayabilirsin.</li><li><strong>Yasak izinler her derlemede denetlenir.</strong> Projenin her derlemesi son birleşik manifest'i okur; internet izni ya da SayWhen'in kullanmayacağını söylediği diğer izinlerden biri görünürse başarısız olur.</li><li><strong>İzleme kodu yok.</strong> Uygulama Android'in kendi AndroidX kütüphaneleri (Jetpack Compose, Core, Activity, Lifecycle, DataStore) ve Kotlin coroutines ile derlenir. Analitik veya çökme raporlama kütüphanesi içermez.</li></ul>
+<h2>Konuşma motoru ayrı bir uygulamadır</h2>
+<p>SayWhen'in kendi sesi yoktur. Konuşmak için sözcükleri Android ayarlarında seçtiğin metin okuma (TTS) motoruna verir (örneğin telefonunla gelen motor). O motor, kendi gizlilik koşulları olan başka bir uygulamadır.</p>
+<ul><li>Motora verilen: o anda okunan duyurunun metni. Rutine göre bu; kendi yazdığın mesaj, bir kontrol listesi adımı, saat ve tarih, bugün doğum günü olan kişilerin adları, bugünkü takvim etkinliklerinin başlıkları ve saatleri ya da telefondaki bir sonraki alarmın saatidir.</li><li>SayWhen yalnızca motorun kurulu ve ağ bağlantısı gerektirmeyen olarak bildirdiği sesleri kullanır. Bir dil için böyle bir ses yoksa başka bir sesle okumaz, eksik ses olarak bildirir.</li><li>SayWhen motorun kendi yaptıklarını göremez ve denetleyemez. Bazı motorlar bazı özellikleri için internet kullanabilir. Bu senin için önemliyse motorunun ayarlarına ve politikasına bak.</li></ul>
+<h2>SayWhen neyi okur, okunan neye dönüşür</h2>
+<div class="table-scroll"><table><thead><tr><th>Ne</th><th>Ne zaman</th><th>Ne olur</th></tr></thead><tbody><tr><td>Rehberindeki adlar ve doğum günü tarihleri (yalnız kişinin görünen adı ve doğum günü kaydının tarihi)</td><td>Yalnız "Rehber doğum günlerini ekle" anahtarını açar ve rehber iznini verirsen. Doğum günü duyurusu ya da sabah özeti okunurken ve Doğum günleri ekranını açtığında okunur</td><td>Sesli okunur ya da ekranda gösterilir. Yalnız bellekte tutulur; SayWhen'in deposuna asla yazılmaz, yedek dosyasına asla girmez</td></tr><tr><td>Bugünkü takvim etkinlikleri: başlık, başlangıç ve bitiş saati, tüm gün olup olmadığı; yalnız görünür olarak ayarlı takvimlerden</td><td>Yalnız "Bugünün takvimini ekle" anahtarını açar ve takvim iznini verirsen. Sabah özeti okunurken ve Sabah özeti ekranını açtığında okunur</td><td>Sesli okunur ya da ekranda gösterilir. Yalnız bellekte tutulur, saklanmaz. SayWhen takvimini asla değiştirmez</td></tr><tr><td>Telefonda kurulu bir sonraki alarmın saati, Android'in bildirdiği şekliyle</td><td>Sabah özeti okunurken</td><td>Sesli okunur. Saklanmaz. Android SayWhen'in duyurularını da alarm olarak listelediği için bu, SayWhen'in kendi duyurularından biri olabilir</td></tr><tr><td>Telefonun ses durumu: zil modu (ses, titreşim, sessiz) ve Rahatsız Etmeyin'in açık olup olmadığı</td><td>Bir duyurudan hemen önce</td><td>Normal bir duyurunun sessiz kalıp kalmayacağına karar vermek için kullanılır. Saklanmaz</td></tr><tr><td>İzin ve pil durumu: kesin alarmlara ve bildirimlere izin verilip verilmediği, pil optimizasyonunun SayWhen'e uygulanıp uygulanmadığı</td><td>SayWhen'in ekranları açıkken</td><td>Uygulamada ve Tanılama'da gösterilir. Saklanmaz</td></tr><tr><td>Konuşma motorunun desteklenen dokuz dil için sunduğu sesler</td><td>Tanılama açıkken ve konuşmadan önce</td><td>Kurulu, çevrimdışı bir ses seçmek ve hangi dillerin hazır olduğunu göstermek için kullanılır. Saklanmaz</td></tr></tbody></table></div>
+<h2>Telefonunda saklananlar</h2>
+<p>Aşağıdakilerin tamamı SayWhen'in, başka uygulamaların okuyamadığı özel uygulama deposunda durur.</p>
+<div class="table-scroll"><table><thead><tr><th>Ne</th><th>Neden</th><th>Nasıl silinir</th></tr></thead><tbody><tr><td>Rutinlerin: ad, okunacak sözcükler, tür, program (saat, günler, tarih ya da aralık), geri sayım uyarıları, kontrol listesi adımları, Normal ya da Mutlaka duyulsun, ses düzeyi, okuma sayısı, zil, açık/kapalı, grup, konuşma dili ve bir sonrakini atladıysan bir işaret</td><td>SayWhen onları okuyabilsin diye</td><td>Rutini uygulamada sil; Yedekleme ve geri yükleme › Tüm uygulama verilerini sil; uygulamayı kaldır</td></tr><tr><td>Ayarlar: tema, dil, tanıtımı bitirip bitirmediğin, sessiz saatler, duraklatmanın bitiş zamanı, kapattığın gruplar, rehber doğum günleri ve takvimin açık olup olmadığı, Aile merkezi ekranının ekranı açık tutup tutmadığı</td><td>Seçimlerin kalsın diye</td><td>Uygulamada değiştir; Tüm uygulama verilerini sil; uygulamayı kaldır</td></tr><tr><td>Kendin girdiğin doğum günleri: ad, ay ve gün</td><td>Doğum günü duyuruları ve sabah özeti için</td><td>Uygulamada sil; Tüm uygulama verilerini sil; uygulamayı kaldır</td></tr><tr><td>Teslim geçmişi, en çok 1.024 kayıt: hangi rutin, planlanan saat, alarmın geldiği an, konuşmanın başladığı ve bittiği an ve sonuç (örneğin okundu, durduruldu, sessizdi, kaçırıldı)</td><td>Tanılama, duyuruların zamanında gelip gelmediğini ve birinin neden duyulmadığını gösterebilsin diye</td><td>Önce en eski bitmiş kayıtlar silinir; Tüm uygulama verilerini sil; uygulamayı kaldır</td></tr><tr><td>İşleyiş kayıtları: işlenmiş duyuruların listesi (hiçbiri iki kez okunmasın diye), o an kurulu alarm ve bugünkü kontrol listelerinde nereye kadar geldiğin</td><td>Teslim, yeniden başlatma ve güncellemelerden sonra tekrar olmadan sürsün diye</td><td>Tüm uygulama verilerini sil ile ve uygulamayı kaldırınca silinir</td></tr><tr><td>Seçtiğin uygulama dili, küçük ayrı bir dosyada ikinci kez</td><td>Ana depo yüklenmeden ekran senin dilinde açılsın diye</td><td>Dili değiştir; uygulamayı kaldır</td></tr></tbody></table></div>
+<p>SayWhen ses kaydı tutmaz ve mikrofonu kullanmaz. Rehberinin ya da takviminin kopyasını saklamaz.</p>
+<h2>Başka uygulamaların görebildiği bildirimler ve alarmlar</h2>
+<ul><li><strong>Alarm simgesi ve sonraki alarm.</strong> SayWhen duyuruları, Android'in kendin belirlediğin saatler için önerdiği şekilde, çalar saat alarmı olarak kurar. Bir duyuru planlıyken Android durum çubuğunda bir alarm simgesi gösterir; bir sonraki duyurunun saati, Android'in sonraki alarmı gösterdiği her yerde (örneğin bir saat widget'ı ya da kilit ekranı) görünebilir. Bu yolla yalnız saat paylaşılır, sözcükler paylaşılmaz.</li><li><strong>Konuşurken</strong> sessiz bir bildirim "SayWhen" yazısını ve Durdur düğmesini gösterir. İçeriği kilitli ekranda gizlenir. Bir kontrol listesi başladıktan sonra ayrı bir bildirim listenin hazır olduğunu söyleyebilir; 30 dakika sonra kaybolur. İki bildirim de rutininin sözcüklerini içermez.</li></ul>
+<h2>Kendi yaptığın yedek dosyaları</h2>
+<p>Yedekleme ve geri yükleme, Android'in dosya seçicisiyle seçtiğin bir yere yedek dosyası yazabilir ve onu geri okuyabilir.</p>
+<ul><li>Dosyada rutinlerin, ayarların ve kendin girdiğin doğum günleri bulunur. Rehber doğum günleri ve takvim anahtarları kapalı olarak kaydedilir. Teslim geçmişi, rehber verisi, takvim verisi ve sesler asla dosyaya girmez.</li><li>Dosya şifrelenmez. Bir bulut klasörüne kaydedersen o hizmet onu kendi koşullarıyla saklar ve eşitleyebilir. basilbase hiçbir kopyasını almaz.</li><li>Geri yükleme, bir önizlemeyi onaylamandan sonra rutinleri, ayarları ve elle girilen doğum günlerini değiştirir. Telefondaki teslim geçmişi korunur.</li></ul>
+<h2>Android yedeği ve yeni telefona geçiş</h2>
+<p>SayWhen, Android'e verilerini hiçbir yere kopyalamamasını söyler:</p>
+<ul><li><code>android:allowBackup="false"</code>. Android 8–11'de bu, SayWhen verisinin hem Google bulut yedeğini hem cihazdan cihaza aktarımını kapatır. Android 12 ve sonrasında bulut yedeğini kapatır.</li><li>Eski Android sürümleri için yedek kuralları ve Android 12 ve sonrası için veri çıkarma kuralları, uygulamanın tüm depolama alanlarını (root, dosyalar, veritabanları, paylaşılan tercihler ve harici depolama) hem bulut yedeğinin hem cihazdan cihaza aktarımın dışında bırakır.</li></ul>
+<p>Bu yüzden yeni bir telefon ya da yeniden kurulum, kendi yaptığın bir yedek dosyasını geri yüklemedikçe boş başlar.</p>
+<h2>İzinler ve her birinin nedeni</h2>
+<div class="table-scroll"><table><thead><tr><th>İzin</th><th>Neden</th><th>Olmazsa</th><th>Nasıl geri alınır</th></tr></thead><tbody><tr><td>Alarmlar ve hatırlatıcılar (<code>SCHEDULE_EXACT_ALARM</code>). Android 12 ve sonrasında özel erişim; SayWhen ayar ekranını yalnız düğmesine bastığında açar</td><td>Belirlediğin dakikada konuşmak için</td><td>SayWhen rutinlerini saklar ama okumaz, ve bunu ana ekranda söyler</td><td>Android ayarları › Uygulamalar › Özel uygulama erişimi › Alarmlar ve hatırlatıcılar</td></tr><tr><td>Bildirimler (<code>POST_NOTIFICATIONS</code>). Android 13 ve sonrası; yalnız Tanılama'daki düğmeye bastığında istenir</td><td>Konuşurken Durdur düğmesi ve kontrol listesi bildirimi</td><td>Duyurular yine okunur; onları uygulamadan durdurursun</td><td>Android ayarları › Uygulamalar › SayWhen › Bildirimler</td></tr><tr><td>Rehber (<code>READ_CONTACTS</code>). Yalnız rehber doğum günlerini açıp açıklamayı okuduktan sonra istenir</td><td>Doğum günü duyuruları ve sabah özeti için adları ve doğum günü tarihlerini okumak</td><td>Kendin girdiğin doğum günleri yine çalışır</td><td>Anahtarı kapat ya da Android ayarları › Uygulamalar › SayWhen › İzinler</td></tr><tr><td>Takvim (<code>READ_CALENDAR</code>). Yalnız sabah özetinde bugünkü takvimi açıp açıklamayı okuduktan sonra istenir</td><td>Sabah özeti için bugünkü etkinlik başlıklarını ve saatlerini okumak</td><td>Sabah özetinin geri kalanı yine çalışır</td><td>Anahtarı kapat ya da Android ayarları › Uygulamalar › SayWhen › İzinler</td></tr><tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>. Kurulumda verilir</td><td>Konuşma, bildirimi olan görünür bir medya görevi olarak çalışır; böylece ekran kapalıyken Android sesi kesmez. Duyuru bitince görev de biter</td><td>Duyurular yarıda kesilebilir</td><td>Durdur'a bas; uygulamayı kaldır</td></tr><tr><td><code>WAKE_LOCK</code>. Kurulumda verilir</td><td>Alarm ile konuşmanın başlaması arasındaki birkaç saniye ve konuşma süresince (duyuru başına en çok iki dakika) işlemciyi uyanık tutar</td><td>Ekran kapalıyken duyurular yarıda kalabilir</td><td>Uygulamayı kaldır</td></tr><tr><td><code>RECEIVE_BOOT_COMPLETED</code>. Kurulumda verilir</td><td>Yeniden başlatma, uygulama güncellemesi, saat ya da saat dilimi değişikliği veya alarm erişiminin değişmesinden sonra SayWhen alarmlarını yeniden kurar. O anda asla konuşmaz</td><td>SayWhen'i açana kadar duyurular planlanmamış kalır</td><td>Uygulamayı kaldır</td></tr><tr><td><code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> (SayWhen'in kendi izni)</td><td>AndroidX kütüphanesi ekler; yalnız başka uygulamaların SayWhen'in iç yayınlarını göndermesini engeller</td><td>—</td><td>—</td></tr></tbody></table></div>
+<p>SayWhen'in internet, konum, mikrofon, kamera, depolama, telefon, SMS ya da hesap izni yoktur. Rahatsız Etmeyin erişimi, diğer uygulamaların üzerinde gösterme ya da pil optimizasyonu muafiyeti istemez; bir duyuru kaçırıldıysa ya da geç kaldıysa Tanılama, karar senin olmak üzere pil ayarlarını açabilir. SayWhen'in Android'den görmek istediği diğer uygulamalar yalnız kurulu konuşma motorlarıdır.</p>
+<h2>Çocuklar</h2>
+<p>SayWhen evler ve günlük rutinler için bir araçtır; çocukların tek başına kullanması için tasarlanmamıştır. Kimseden hiçbir şey toplamaz.</p>
+<h2>Hakların ve her şeyi silmek</h2>
+<p>basilbase'e hiçbir şey toplanmadığı ya da gönderilmediği için, bizden isteyebileceğin, düzelttirebileceğin ya da dışa aktarabileceğin bir verin yoktur. SayWhen'in sakladığı her şey kendi telefonundadır.</p>
+<ul><li>Bir rutini ya da doğum gününü uygulamada sil.</li><li>Yedekleme ve geri yükleme › Tüm uygulama verilerini sil, bu telefondaki rutinleri, doğum günlerini, ayarları ve geçmişi siler. Başka yere kaydettiğin yedek dosyaları kalır; onları kendin sil.</li><li>SayWhen'i kaldırmak tüm verilerini siler.</li></ul>
+<h2>Bize yazmak ve bu sayfa</h2>
+<p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a> adresine yazarsan, e-posta adresin dâhil gönderdiğini alırız ve yalnız sana cevap vermek için kullanırız. İletişim düğmesi yalnız kendi e-posta uygulamanı açar; sen göndermeden hiçbir şey gitmez.</p>
+<p>Gizlilik politikası düğmesi bu sayfayı tarayıcında açar. Sayfa GitHub Pages'te barındırılır; tarayıcının isteği SayWhen üzerinden değil, doğrudan o barındırıcıya gider.</p>
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Bu politika değişirse en üstteki tarih de değişir; güncel metin, değişiklik uygulamanın yayımlanan bir sürümüne ulaşmadan önce aynı adreste yayımlanır.</p>
+<h2>İletişim</h2>
+<p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>
