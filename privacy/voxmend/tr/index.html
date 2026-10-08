@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VoxMend — Gizlilik Politikası</title>
+<meta name="description" content="VoxMend konuşmayı telefonunuzda metne çevirir. İnternet izni, hesap ve analiz yoktur.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✍️</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">VoxMend</p>
+    <p class="tagline">Söyleyin, sesle düzeltin, sonra gönderin. Tanıma telefonunuzda.</p>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme 9 Ekim 2026 · Uygulama <code>software.basilbase.voxmend</code> · Geliştirici basilbase · İletişim <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="../">English</a></p>
+  </header>
+<h2>Kısaca</h2>
+<p>VoxMend, siz dikte ederken konuşmanızı <strong>telefonunuzda</strong> metne çevirir ve kopyalamadan ya da göndermeden önce düzeltmenizi sağlar. Söyledikleriniz ve yazdıklarınız VoxMend üzerinden cihazdan çıkmaz. Hesap, analiz ve çökme raporlaması yoktur. VoxMend'in internet izni yoktur.</p>
+<h2>Doğrulanabilir hâli</h2>
+<p>VoxMend'in manifest dosyası <code>INTERNET</code> veya <code>ACCESS_NETWORK_STATE</code> istemez; bunları açıkça kaldırır. Bir Android uygulaması <code>INTERNET</code> izni olmadan ağ bağlantısı açamaz — işletim sistemi reddeder. Bunu Play sayfasındaki izin listesinden veya APK'yı inceleyerek doğrulayabilirsiniz.</p>
+<p>Konuşma modelleri VoxMend tarafından değil, Play Asset Delivery ile <strong>Google Play Store uygulaması</strong> tarafından bir kez indirilir. Bu indirme Google'ın kendi gizlilik politikasına tabidir; VoxMend bununla birlikte hiçbir şey göndermez.</p>
+<h2>İzinlerin tamamı</h2>
+<p>Liste bu kadardır. Başka izin yoktur.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>İzin</th>
+<th>Neden</th>
+<th>Olmazsa</th>
+<th>Geri alma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mikrofon (<code>RECORD_AUDIO</code>)</td>
+<td>Dikte ederken sizi duymak için: mikrofona dokunduğunuz andan dinleme bitene kadar. İlk dokunuşta istenir, öncesinde değil.</td>
+<td>Dikte çalışmaz. Yazma, elle düzeltme, kopyalama ve paylaşma çalışmaya devam eder.</td>
+<td>Ayarlar › Uygulamalar › VoxMend › İzinler › Mikrofon</td>
+</tr>
+<tr>
+<td>Ön plan hizmeti, veri eşitleme türü (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code>)</td>
+<td>Google'ın Play Asset Delivery kitaplığı ekler; Android 14 ve sonrasında indirilen konuşma modelini açmak için kullanabilir. VoxMend'in kendi kodunda ön plan hizmeti yoktur ve arka planda asla dinlemez. Hiçbir şey hiçbir yere eşitlenmez.</td>
+<td>Yeni Android sürümlerinde model indirmesi tamamlanamayabilir.</td>
+<td>Kullanıcı tarafından kapatılamaz; kaldırınca gider</td>
+</tr>
+<tr>
+<td>Uyanık tutma (<code>WAKE_LOCK</code>) ve açılışta çalışma (<code>RECEIVE_BOOT_COMPLETED</code>)</td>
+<td>Aynı kitaplık (Android WorkManager aracılığıyla) ekler; model indirmesini zamanlar ve yeniden başlatmadan sonra sürdürür. VoxMend'in kendi kodu açılışta başlamaz ve açılışta dinlemez.</td>
+<td>Model indirmesi yeniden başlatmadan sonra sürdürülemez.</td>
+<td>Kullanıcı tarafından kapatılamaz; kaldırınca gider</td>
+</tr>
+</tbody>
+</table></div>
+<p>VoxMend ayrıca şunları sunar, ama asla zorlamaz:</p>
+<ul>
+<li><strong>Sesli klavye.</strong> Yalnız siz, Android'in klavye ayarlarından açabilirsiniz; Android, bir klavyenin yazdıklarınızı görebileceğine dair standart uyarısını gösterir. VoxMend klavyesi yalnız dikte eder. Şifre alanlarında çalışmaz. Başka bir uygulamaya gönderdiği metin, dikte ettiğinizin bir kopyasıdır; o uygulamanın neyi sakladığı o uygulamaya bağlıdır.</li>
+<li><strong>Diğer uygulamalar için konuşma tanıyıcı.</strong> Android'den konuşma girişi isteyen uygulamalar, siz seçerseniz VoxMend'i kullanabilir. VoxMend yalnız o tek istek için dinler ve metni isteyen uygulamaya döndürür. Bu isteklerden hiçbir şey VoxMend tarafından saklanmaz.</li>
+</ul>
+<p>VoxMend depolama izni <strong>istemez</strong>. Kaydettiğiniz metin dosyaları ve kelime listeleri yalnız sistem dosya seçicisinde sizin seçtiğiniz yere gider.</p>
+<h2>VoxMend'in yapmadıkları</h2>
+<ul>
+<li>Siz mikrofona dokunmadan (editörde, sesli klavyede veya başka bir uygulamanın konuşma düğmesinde) dinlemez; kendiliğinden, zamanlanmış olarak veya telefon açılırken dinlemeye başlamaz.</li>
+<li>Sesi dosyaya kaydetmez. Ses yalnız tanınırken bellekte tutulur ve sonra atılır.</li>
+<li>Söylediklerinizi çevirmez, yeniden yazmaz veya "iyileştirmez"; metni hiçbir yere göndermez. Paylaşım yalnız Paylaş düğmesini kullandığınızda, seçtiğiniz uygulamaya olur.</li>
+<li>Şifre alanlarında veya klavyelerden öğrenmemesini isteyen alanlarda (gizli/incognito alanlar) yazılan ya da dikte edilen metni saklamaz.</li>
+<li>Konumunuzu, kişilerinizi, kameranızı, takviminizi, telefonunuzu, SMS'lerinizi veya hesaplarınızı kullanmaz ve bu izinleri istemez.</li>
+<li>Analiz, reklam, atıf, telemetri veya çökme raporlama SDK'sı içermez.</li>
+<li>Giriş, hesap veya bulut depolama yoktur.</li>
+<li>Metninizi veya sesinizi hiçbir modeli eğitmek için kullanmaz.</li>
+</ul>
+<h2>Cihazınızda saklananlar</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Veri</th>
+<th>Nerede</th>
+<th>Neden</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kayıtlı metinler: editörde yazdığınız veya dikte ettiğiniz metin ve sesli klavyeyle dikte ettiğiniz metin (şifre ve gizli alanlar hariç), Geri al için gereken geçmişle birlikte</td>
+<td>Uygulamaya özel veritabanı</td>
+<td>Uygulama kapanınca metniniz kaybolmasın diye. Ayarladığınız sürenin sonunda kendiliğinden silinir (varsayılan 24 saat, en fazla 20 metin)</td>
+</tr>
+<tr>
+<td>Kelimelerim: "bunu duyunca şunu yaz" girdileri</td>
+<td>Uygulamaya özel veritabanı</td>
+<td>Dikte edilen metne uygulanır</td>
+</tr>
+<tr>
+<td>Son hatanın kısa kodu (ör. "konuşma duyulmadı"); söylenen asla değil</td>
+<td>Uygulamaya özel depolama</td>
+<td>Tanılama ekranında gösterilir</td>
+</tr>
+<tr>
+<td>Ayarlar: tema, uygulama dili, konuşma dilleri, model seçimi, noktalama, zamanlama ve saklama sınırları, bu telefondaki ortalama tanıma süresi</td>
+<td>Uygulamaya özel depolama</td>
+<td>Seçimlerinizi hatırlamak için</td>
+</tr>
+<tr>
+<td>Konuşma modelleri ve ses algılayıcı</td>
+<td>Google Play'in VoxMend için yönettiği depolama; ses algılayıcı uygulamanın içinde gelir</td>
+<td>Çevrimdışı tanıma</td>
+</tr>
+</tbody>
+</table></div>
+<p>Uygulamaya özel depolamayı yalnız VoxMend okuyabilir. Bilerek <strong>saklanmayanlar:</strong> ses kayıtları, kullanım istatistikleri, konum, cihaz kimlikleri, dikte ettiğiniz uygulamaların adları.</p>
+<h2>Yedekleme</h2>
+<p>VoxMend için Android bulut yedeklemesi ve cihazdan cihaza aktarım <strong>kapalıdır</strong>: kayıtlı metinler, kelimeleriniz ve ayarlar yedeklenmez. Kelimelerinizi başka bir telefona taşımak için Kelimelerim › Dosya olarak kaydet'i kullanın; seçtiğiniz yere bir JSON dosyası yazılır ve şifrelenmez.</p>
+<h2>Verilerinizi silmek</h2>
+<ul>
+<li>Tek bir kayıtlı metni veya tümünü Kayıtlı metinler ekranından silin.</li>
+<li>Bir kelimeyi Kelimelerim ekranından silin.</li>
+<li>Bir konuşma modelini Model ve diller › Kaldır ile kaldırın.</li>
+<li>VoxMend'i kaldırmak, uygulamaya özel depolamanın tamamını (kayıtlı metinler, kelimeler, ayarlar, modeller) siler. Dosya seçiciyle kaydettiğiniz dosyalar siz silene kadar kalır.</li>
+</ul>
+<h2>Çocuklar</h2>
+<p>VoxMend çocuklara yönelik değildir ve kimseden kişisel veri toplamaz.</p>
+<h2>Değişiklikler</h2>
+<p>VoxMend'in davranışı bu politikayı etkileyecek şekilde değişirse, politika o sürüm yayınlanmadan önce güncellenir ve yukarıdaki tarih değişir.</p>
+<h2>İletişim</h2>
+<p>basilbase — <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>
