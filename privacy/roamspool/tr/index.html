@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RoamSpool — Gizlilik Politikası</title>
+<meta name="description" content="RoamSpool konum geçmişinizi telefonunuzda tutar. İnternet izni, hesap ve analitik yoktur.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧵</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">RoamSpool</p>
+    <p class="tagline">Telefonunuzda duran kendi konum günlüğünüz.</p>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme 9 Ekim 2026 · Uygulama <code>software.basilbase.roamspool</code> · Geliştirici basilbase · İletişim <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="../">English</a></p>
+  </header>
+
+<div class="lede">
+<p>RoamSpool kişisel bir konum günlüğüdür. Kaydı siz açtığınızda telefonun konumunu kaydeder ve bunu duraklara, yolculuklara ve boşluklara dönüştürür. Bu geçmiş telefonunuzda kalır. Hesap, analitik, reklam ve <strong>internet izni yoktur</strong>.</p>
+</div>
+<h2>Doğrulanabilir sürüm</h2>
+<p>RoamSpool manifesti <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code> veya <code>ACCESS_WIFI_STATE</code> istemez; bunları açıkça kaldırır. <code>INTERNET</code> izni olmayan bir Android uygulaması ağ bağlantısı açamaz — işletim sistemi reddeder. Bunu Play sayfasındaki izin listesinden veya APK'yı inceleyerek doğrulayabilirsiniz.</p>
+<p>Bu yüzden uygulama harita göstermez ve adres aramaz: harita, bir harita sunucusuna nerede olduğunuzu söylemek demektir. Gün ekranı rotanızı kendi kaydettiğiniz noktalardan çizer; yerlerin adı sizin verdiğiniz addır.</p>
+<h2>Ne toplanır, ne zaman</h2>
+<ul>
+<li><strong>Konum, yalnız kayıt açıkken.</strong> RoamSpool neyi topladığını açıkladıktan sonra kaydı siz açarsınız. Kayıt açıkken uygulama, ayarladığınız aralıkta (15–600 saniye, varsayılan 60) Android'den konum ister; uygulama kapalıyken veya kullanılmıyorken de. Bu süre boyunca Duraklat ve Durdur düğmeli bir bildirim görünür.</li>
+<li>Kaydedilen her konumda şunlar bulunur: zaman (UTC), telefonun kullandığı saat dilimi farkı, enlem, boylam, Android'in bildirdiği doğruluk, Android'in sahte konum olarak işaretleyip işaretlemediği, telefon açıldığından beri geçen süre ve yeniden başlatma sayısı (bir açılış içinde sırayı korumak için) ve kaydın kaydedilmiş, içe aktarılmış ya da elle eklenmiş olduğu.</li>
+<li>Kayıt duraklatılmış veya durdurulmuşken hiçbir şey toplanmaz. Duraklat ve Durdur telefon yeniden başladıktan sonra da geçerli kalır.</li>
+</ul>
+<p><strong>Konum nereden gelir.</strong> RoamSpool, Google Play hizmetlerinin parçası olan Android birleşik konum sağlayıcısını kullanır. Google Play hizmetlerinin konumu nasıl bulduğu (uydu, Wi‑Fi, mobil ağ) telefonunuzun konum ayarlarına ve Google'ın kendi koşullarına bağlıdır. RoamSpool sonucu telefonda alır ve hiçbir yere göndermez.</p>
+<h2>İzinlerin tamamı</h2>
+<p>Tam liste budur. Başkası yoktur.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>İzin</th>
+<th>Neden</th>
+<th>Olmazsa</th>
+<th>Geri alma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hassas konum (<code>ACCESS_FINE_LOCATION</code>)</td>
+<td>Kayıt açıkken nerede olduğunuzu kaydetmek.</td>
+<td>Duraklar ve rotalar daha az kesin olur (yalnız yaklaşık) veya kayıt çalışamaz.</td>
+<td>Ayarlar › Uygulamalar › RoamSpool › İzinler › Konum</td>
+</tr>
+<tr>
+<td>Yaklaşık konum (<code>ACCESS_COARSE_LOCATION</code>)</td>
+<td>Android hassas konumla birlikte ister; RoamSpool yalnız yaklaşık konumla da, daha az kesin, çalışır.</td>
+<td>Kayıt çalışamaz. İçe aktarma, görüntüleme ve yedek çalışır.</td>
+<td>Aynı yer</td>
+</tr>
+<tr>
+<td>Her zaman konum (<code>ACCESS_BACKGROUND_LOCATION</code>)</td>
+<td>İsteğe bağlı, ayrıca sorulur. Açık bıraktığınız kaydın telefon yeniden başladıktan veya Android kayıt servisini yeniden oluşturduktan sonra kendiliğinden sürmesini sağlar.</td>
+<td>Uygulamadan başlatılan kayıt yine çalışır. Yeniden başlatmadan sonra bir uyarı görürsünüz ve kayıt uygulamayı açınca sürer.</td>
+<td>Ayarlar › Uygulamalar › RoamSpool › İzinler › Konum › Yalnızca uygulama kullanılırken izin ver</td>
+</tr>
+<tr>
+<td>Ön plan hizmeti, konum türü (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_LOCATION</code>)</td>
+<td>Kayıt servisi bildirimiyle birlikte görünür, konum türünde bir ön plan hizmeti olarak çalışır.</td>
+<td>Kayıt mümkün olmaz.</td>
+<td>Uygulamadan veya bildirimden kaydı durdurun</td>
+</tr>
+<tr>
+<td>Bildirimler (<code>POST_NOTIFICATIONS</code>)</td>
+<td>Duraklat ve Durdur düğmeli kayıt bildirimi ve açık bıraktığınız kayıt sürdürülemediğinde bir uyarı.</td>
+<td>Bildirim gizlenir; kayıt yine çalışır ve durumu uygulamada görünür.</td>
+<td>Ayarlar › Uygulamalar › RoamSpool › Bildirimler</td>
+</tr>
+<tr>
+<td>Açılışta çalışma (<code>RECEIVE_BOOT_COMPLETED</code>)</td>
+<td>Yeniden başlatmadan sonra kaydı açık bırakıp bırakmadığınızı kontrol etmek. Kaydı asla kendiliğinden açmaz.</td>
+<td>Açık bıraktığınız kayıt, uygulamayı açana kadar yeniden başlatmadan sonra sürmez.</td>
+<td>Kurulumda verilir; geri alınamaz</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Fotoğraflar</h2>
+<p>Bir durağa Android'in sistem fotoğraf seçicisiyle fotoğraf ekleyebilirsiniz. RoamSpool yalnız seçtiğiniz fotoğrafları görür; fotoğraf kitaplığınıza erişim istemez. Seçilen her fotoğrafın bağlantısını saklar ve durak sırasında çekilip çekilmediğini göstermek için çekim zamanını okur. Fotoğraflar kopyalanmaz, yedeğe ve dışa aktarılan dosyalara girmez.</p>
+<h2>RoamSpool ne yapmaz</h2>
+<ul>
+<li>Konumunuzu veya başka bir şeyi cihazdan dışarı göndermez. Gönderemez: ağ izni yoktur.</li>
+<li>Başkasını izlemez, konumunuzu kimseyle paylaşmaz, aile veya güvenlik bulucusu olarak çalışmaz.</li>
+<li>Hesap, oturum açma, reklam kimliği veya herhangi bir tanımlayıcı yoktur.</li>
+<li>Reklam, analitik, atıf veya çökme raporlama kitaplığı içermez.</li>
+<li>Kişilerinizi, takviminizi, mikrofonu, kamerayı, arama kaydını, mesajları veya yüklü uygulama listesini okumaz.</li>
+<li>Yedekleri hiçbir yere yüklemez. Yedek, sizin seçtiğiniz yere kaydettiğiniz bir dosyadır.</li>
+</ul>
+<h2>Telefonunuzda saklananlar</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Saklanan</th>
+<th>Nerede</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yukarıda tarif edilen kaydedilmiş konumlar</td>
+<td>Uygulama veritabanı <code>roamspool.db</code></td>
+</tr>
+<tr>
+<td>Onayladığınız, düzenlediğiniz, elle eklediğiniz veya kaldırdığınız duraklar ve notları</td>
+<td>Aynı veritabanı</td>
+</tr>
+<tr>
+<td>Yerler: verdiğiniz ad, koordinat, yarıçap, not, dışa aktarmada özel olup olmadığı</td>
+<td>Aynı veritabanı</td>
+</tr>
+<tr>
+<td>Kayıt olayları: başlatma, duraklatma, sürdürme ve durdurma zamanları (boşluklar açıklanabilsin diye)</td>
+<td>Aynı veritabanı</td>
+</tr>
+<tr>
+<td>İçe aktarılan dosyalar: dosya adı, dosyanın SHA-256 parmak izi, sayılar ve tarih aralığı (aynı dosya sonra tanınsın diye)</td>
+<td>Aynı veritabanı</td>
+</tr>
+<tr>
+<td>Durak düzenlemelerinin geri alma geçmişi</td>
+<td>Aynı veritabanı</td>
+</tr>
+<tr>
+<td>Fotoğraf bağlantıları ve çekim zamanları</td>
+<td>Aynı veritabanı</td>
+</tr>
+<tr>
+<td>Ayarlar: tema, dil, aralık, doğruluk, dışa aktarmada maskeleme, geçmiş sınırı, kayıt durumu, son yedek ve son doğrulanmış yedek zamanı</td>
+<td>Uygulama tercihleri</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Bilerek saklanmayanlar</h2>
+<p>Yedek parolaları, kullanım istatistikleri, cihaz tanımlayıcıları, çökme dökümleri. Kayıt sağlığı bilgisi o ekranı açtığınızda Android'den okunur ve kaydedilmez.</p>
+<h2>Oluşturduğunuz dosyalar</h2>
+<p>Dışa aktarmalar (GPX, CSV, RoamSpool JSON) ve yedekler yalnız siz istediğinizde, Android dosya seçicisiyle seçtiğiniz yere yazılır. Dışa aktarmalar <strong>şifreli değildir</strong> — dosyaya sahip olan herkes okuyabilir. Yedekler seçtiğiniz parolayla şifrelenir (PBKDF2-HMAC-SHA256 anahtar türetme, AES-256-GCM); RoamSpool parolayı saklamaz, parola kaybolursa yedek açılamaz.</p>
+<p><strong>Dışa aktarmada özel yerler.</strong> Yerleri özel olarak işaretleyebilirsiniz; içlerindeki konumlar ve duraklar dışa aktarılan dosyalara girmez. Bu, paylaşılan bir dosyanın gösterdiğini azaltır ama rutininizi tamamen gizlemez — saatler ve alanın kenarı yine de ele verebilir. Yedekler her zaman her şeyi içerir.</p>
+<h2>Yedek ve yeni telefona geçiş</h2>
+<p>RoamSpool için Android bulut yedeği ve cihazdan cihaza aktarım <strong>kapalıdır</strong>; geçmişiniz bir Google yedeğine kopyalanmaz. Taşıma bilinçli bir işlemdir: uygulamada yedek dosyası oluşturun, sonra diğer telefonda geri yükleyin.</p>
+<h2>Çocuklar</h2>
+<p>RoamSpool çocuklara yönelik değildir ve kimseden veri toplamaz.</p>
+<h2>Saklama ve silme</h2>
+<p>Siz silene kadar her şey telefonunuzda kalır. Uygulamada bir günü veya tüm geçmişi silebilir (silmeden önce ne kadarının silineceğini görürsünüz), tek tek durak kaldırabilir, yer silebilir ve her açılışta eski geçmişi silen bir geçmiş sınırı (varsayılan kapalı) ayarlayabilirsiniz. Uygulama içinden silme, başka yere kaydettiğiniz yedek veya dışa aktarma dosyalarına dokunmaz. RoamSpool'u kaldırmak veritabanını ve tercihleri siler.</p>
+<h2>Bilinmesi gereken sınırlar</h2>
+<ul>
+<li>Android ve bazı telefon üreticileri arka plandaki uygulamaları durdurur; kayıtta boşluk olabilir. Uygulama boşlukları gösterir ve tahmini rotayla doldurmaz.</li>
+<li>Aralık Android'den bir istektir, garanti değildir.</li>
+<li>Pil kullanımı henüz telefonlar arasında ölçülmedi.</li>
+<li>Kayıt için Google Play hizmetleri gerekir.</li>
+</ul>
+<h2>Değişiklikler</h2>
+<p>Bu politika değişirse üstteki tarih de değişir ve yeni metin bu sayfanın yerini alır. Önemli değişiklikler uygulamanın sürüm notlarında da anlatılır.</p>
+
+<footer>
+<p>RoamSpool, basilbase tarafından yayımlanır. Sorular: <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+</footer>
+</div>
+</body>
+</html>

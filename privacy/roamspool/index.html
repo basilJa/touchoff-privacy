@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RoamSpool — Privacy Policy</title>
+<meta name="description" content="RoamSpool keeps your location history on your phone. No internet permission, no account, no analytics.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧵</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">RoamSpool</p>
+    <p class="tagline">Your own location diary, kept on your phone.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 9 October 2026 · App <code>software.basilbase.roamspool</code> · Developer basilbase · Contact <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="tr/">Türkçe</a></p>
+  </header>
+
+<div class="lede">
+<p>RoamSpool is a personal location diary. While you have recording switched on, it saves your phone's location and turns it into stops, journeys and gaps. That history stays on your phone. There is no account, no analytics, no advertising and <strong>no internet permission</strong>.</p>
+</div>
+<h2>The verifiable version</h2>
+<p>RoamSpool's manifest does not request <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code> or <code>ACCESS_WIFI_STATE</code>; it explicitly removes them. An Android app cannot open a network connection without <code>INTERNET</code> — the operating system refuses. You can confirm this in the Play listing's permission list or by inspecting the APK.</p>
+<p>That is why the app shows no map and looks up no addresses: a map would mean telling a map server where you are. The day screen draws your route from your own saved points, and places are called what you name them.</p>
+<h2>What is collected, and when</h2>
+<ul>
+<li><strong>Location, only while recording is on.</strong> You switch recording on yourself after RoamSpool explains what it collects. While it is on, the app asks Android for a location at the interval you set (15 to 600 seconds, 60 by default), including when the app is closed or not in use. A notification is shown the whole time, with Pause and Stop.</li>
+<li>Each saved location holds: time (UTC), the time zone offset the phone used, latitude, longitude, the accuracy Android reported, whether Android marked it as a mock location, the time since the phone started and its restart count (to keep order within one start), and whether it was recorded, imported or added by hand.</li>
+<li>Nothing is collected while recording is paused or stopped. Pause and Stop stay in effect after the phone restarts.</li>
+</ul>
+<p><strong>Where the position comes from.</strong> RoamSpool uses Android's fused location provider, part of Google Play services. How Google Play services works out a position (satellites, Wi‑Fi, mobile networks) is governed by your phone's location settings and Google's own terms. RoamSpool receives the result on the phone and sends it nowhere.</p>
+<h2>Permissions in full</h2>
+<p>This is the complete list. There are no others.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Why</th>
+<th>Without it</th>
+<th>Withdraw</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Precise location (<code>ACCESS_FINE_LOCATION</code>)</td>
+<td>Record where you are while recording is on.</td>
+<td>Stops and routes are less exact (approximate only) or recording cannot run.</td>
+<td>Settings › Apps › RoamSpool › Permissions › Location</td>
+</tr>
+<tr>
+<td>Approximate location (<code>ACCESS_COARSE_LOCATION</code>)</td>
+<td>Android asks for it together with precise location; RoamSpool works with approximate only, less exactly.</td>
+<td>Recording cannot run. Import, viewing and backups still work.</td>
+<td>Same place</td>
+</tr>
+<tr>
+<td>Location all the time (<code>ACCESS_BACKGROUND_LOCATION</code>)</td>
+<td>Optional, asked separately. Lets recording that you left on continue by itself after the phone restarts or after Android recreates the recording service.</td>
+<td>Recording still works when started from the app. After a restart you see a notice and recording continues when you open the app.</td>
+<td>Settings › Apps › RoamSpool › Permissions › Location › Allow only while using the app</td>
+</tr>
+<tr>
+<td>Foreground service, location type (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_LOCATION</code>)</td>
+<td>The recording service runs as a visible foreground service of type location, with its notification.</td>
+<td>Recording would not be possible.</td>
+<td>Stop recording in the app or the notification</td>
+</tr>
+<tr>
+<td>Notifications (<code>POST_NOTIFICATIONS</code>)</td>
+<td>The recording notification with Pause and Stop, and a notice when recording you left on could not continue.</td>
+<td>The notification is hidden; recording still runs and its state is shown in the app.</td>
+<td>Settings › Apps › RoamSpool › Notifications</td>
+</tr>
+<tr>
+<td>Run at startup (<code>RECEIVE_BOOT_COMPLETED</code>)</td>
+<td>After a restart, check whether you left recording on. It never switches recording on by itself.</td>
+<td>Recording you left on would not resume after a restart until you open the app.</td>
+<td>Install-time; not revocable</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Photos</h2>
+<p>You can attach photos to a stop with Android's system photo picker. RoamSpool sees only the photos you pick; it does not request access to your photo library. It keeps a link to each picked photo and reads its capture time to show whether it was taken during the stop. Photos are not copied, not included in backups and not included in exported files.</p>
+<h2>What RoamSpool does not do</h2>
+<ul>
+<li>It does not send your location, or anything else, off the device. It cannot: there is no network permission.</li>
+<li>It does not track anyone else, share your location with anyone, or work as a family or safety locator.</li>
+<li>It has no account, no sign-in, no advertising ID and no identifier of any kind.</li>
+<li>It contains no advertising, analytics, attribution or crash-reporting library.</li>
+<li>It does not read your contacts, calendar, microphone, camera, call log, messages or the list of installed apps.</li>
+<li>It does not upload backups anywhere. A backup is a file you save where you choose.</li>
+</ul>
+<h2>What is stored on your phone</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Stored</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Saved locations as described above</td>
+<td>App database <code>roamspool.db</code></td>
+</tr>
+<tr>
+<td>Stops you confirmed, edited, added by hand or removed, with notes</td>
+<td>Same database</td>
+</tr>
+<tr>
+<td>Places: the name you gave, coordinate, radius, note, whether it is private in exports</td>
+<td>Same database</td>
+</tr>
+<tr>
+<td>Recording events: when you started, paused, resumed and stopped (so gaps can be explained)</td>
+<td>Same database</td>
+</tr>
+<tr>
+<td>Imported files: file name, a SHA-256 fingerprint of the file, counts and date range (so the same file is recognised later)</td>
+<td>Same database</td>
+</tr>
+<tr>
+<td>Undo history for stop edits</td>
+<td>Same database</td>
+</tr>
+<tr>
+<td>Photo links and their capture times</td>
+<td>Same database</td>
+</tr>
+<tr>
+<td>Settings: theme, language, interval, accuracy, export masking, history limit, recording state, time of the last backup and last verified backup</td>
+<td>App preferences</td>
+</tr>
+</tbody>
+</table></div>
+<h2>What is deliberately not stored</h2>
+<p>Backup passwords, usage statistics, device identifiers, crash dumps. Recording-health information is read from Android when you open that screen and is not logged.</p>
+<h2>Files you create</h2>
+<p>Exports (GPX, CSV, RoamSpool JSON) and backups are written only when you ask, to the place you choose with Android's file picker. Exports are <strong>not encrypted</strong> — anyone with the file can read it. Backups are encrypted with a password you choose (PBKDF2-HMAC-SHA256 key derivation, AES-256-GCM); RoamSpool does not keep the password, so a lost password means the backup cannot be opened.</p>
+<p><strong>Private places in exports.</strong> You can mark places as private; locations and stops inside them are then left out of exported files. This reduces what a shared file shows but does not hide your routine completely — times and the edge of the area can still give it away. Backups always contain everything.</p>
+<h2>Backup and moving to a new phone</h2>
+<p>Android cloud backup and device-to-device transfer are <strong>switched off</strong> for RoamSpool, so your history is not copied into a Google backup. Moving it is deliberate: make a backup file in the app, then restore it on the other phone.</p>
+<h2>Children</h2>
+<p>RoamSpool is not directed at children and collects no data from anyone.</p>
+<h2>Retention and deletion</h2>
+<p>Everything stays on your phone until you delete it. In the app you can delete one day or all history (you see how much before anything is deleted), remove single stops, delete places, and set a history limit (off by default) that deletes older history each time the app starts. Deleting inside the app does not touch backup or export files you saved elsewhere. Uninstalling RoamSpool removes its database and preferences.</p>
+<h2>Limits worth knowing</h2>
+<ul>
+<li>Android and some phone makers stop background apps; recording can have gaps. The app shows gaps and does not fill them with guessed routes.</li>
+<li>The interval is a request to Android, not a guarantee.</li>
+<li>Battery use has not been measured across phones yet.</li>
+<li>Google Play services is required for recording.</li>
+</ul>
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top changes with it and the new text replaces this page. Material changes are also described in the app's release notes.</p>
+
+<footer>
+<p>RoamSpool is published by basilbase. Questions: <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+</footer>
+</div>
+</body>
+</html>
