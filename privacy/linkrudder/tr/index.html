@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — LinkRudder</title>
+<meta name="description" content="basilbase LinkRudder gizlilik politikası.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">LinkRudder</p>
+    <p class="tagline">Her bağlantı için uygulamayı seç. Açılmadan önce neyin değiştiğini gör.</p>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme 9 Ekim 2026 · Uygulama <code>software.basilbase.linkrudder</code> · Geliştirici basilbase · İletişim <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="../">English</a></p>
+  </header>
+
+<div class="lede">
+<p>LinkRudder her web bağlantısını hangi uygulamanın açacağını seçmenizi sağlar ve bağlantı açılmadan önce neyin değişeceğini gösterir. Kurallarınız telefonunuzda kalır. Hesap, analiz, reklam ve çökme raporu yoktur. Uygulama internet iznini yalnızca tek bir şey için tutar: <strong>Kısa bağlantıyı çöz</strong> düğmesi, ve yalnızca siz ona bastıktan sonra.</p>
+</div>
+
+<h2>Doğrulanabilir sürüm</h2>
+<p>LinkRudder'ın manifest'i, Android'in Play sayfasında gösterdiği tek bir izin ister: <code>INTERNET</code>. <code>QUERY_ALL_PACKAGES</code>, <code>ACCESS_NETWORK_STATE</code>, bildirim, konum, kişiler, depolama, erişilebilirlik veya kullanım erişimi istemez. Bunu Play sayfasındaki izin listesinden veya APK'yı inceleyerek doğrulayabilirsiniz.</p>
+<p>Uygulamanın kodu ağ isteğini tek bir yerde yapar: kısa bağlantı çözücü. Bu, <strong>Kısa bağlantıyı çöz</strong> düğmesine basıp bağlanılacak sunucuyu adıyla gösteren onay penceresini kabul ettikten sonra çalışır. Bağlantıları açmak, uygulama seçmek, temizlemek ve yönlendirme bağlantısının içinden gerçek hedefi okumak telefonda, ağ olmadan yapılır. Arka planda hiçbir şey çalışmaz ve temizleme listesi internet üzerinden hiç güncellenmez.</p>
+<h2>"Kısa bağlantıyı çöz"e bastığınızda ne olur</h2>
+<p>Kısa bağlantılar (ör. bir bağlantı kısaltıcı) hedeflerini ancak sunucularına sorulduğunda gösterir. Düğmeye basıp onayladığınızda:</p>
+<ul>
+<li>LinkRudder bağlantıdaki sunucuya bir istek gönderir ve en fazla 5 yönlendirmeyi izler. Önce <code>HEAD</code> ile sorar; sunucu reddederse tek bayt ile sınırlı bir <code>GET</code> kullanır. Sayfa içeriğini hiç okumaz.</li>
+<li>Çerez, hesap, oturum bilgisi veya cihaz kimliği göndermez. İstek yalnızca bağlantının kendisini ve <code>LinkRudder</code> kullanıcı aracısını taşır.</li>
+<li>Yalnızca güvenli <code>https</code> sunuculara bağlanır. Düz <code>http</code> bağlantıya bağlanılmaz.</li>
+<li>Özel veya yerel ağ adreslerine (ör. 192.168.x.x, 10.x.x.x veya localhost) hiçbir zaman bağlanmaz; bir yönlendirme oraya gösterse bile.</li>
+<li>Her web isteğinde olduğu gibi sunucu IP adresinizi ve istenen bağlantıyı görür. Bazı bağlantılar yalnızca bir kez çalışır (ör. giriş veya ödeme bağlantıları); onları istemek bağlantıyı kullanılmış hâle getirebilir. Bir bağlantı böyle göründüğünde uygulama sizi uyarır.</li>
+<li>Sonuç size gösterilir. Hakkında hiçbir şey saklanmaz veya başka bir yere gönderilmez.</li>
+</ul>
+<h2>İzinlerin tamamı</h2>
+<p>Tam liste budur.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>İzin</th>
+<th>Neden</th>
+<th>Olmadan</th>
+<th>Geri alma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>İnternet (<code>INTERNET</code>)</td>
+<td>Yalnızca Kısa bağlantıyı çöz düğmesi için, siz bastıktan sonra.</td>
+<td>Kısa bağlantılar çözülemezdi; geri kalan her şey aynı çalışır.</td>
+<td>Kurulumda verilir; geri alınamaz. Düğmeye basmamanız yeterli.</td>
+</tr>
+<tr>
+<td>Varsayılan tarayıcı (sistem rolü, isteğe bağlı)</td>
+<td>Seçerseniz Android, çoğu uygulamada dokunduğunuz web bağlantılarını LinkRudder'a gönderir.</td>
+<td>LinkRudder'ı Paylaş menüsünden veya "Kopyalanan bağlantıyı aç" ile yine kullanabilirsiniz.</td>
+<td>Ayarlar › Uygulamalar › Varsayılan uygulamalar › Tarayıcı uygulaması</td>
+</tr>
+</tbody>
+</table></div>
+<p>Manifest'teki <code>&lt;queries&gt;</code> girdisi LinkRudder'ın yalnızca web bağlantısı açan uygulamaları (tarayıcılar ve belirli siteler için bağlantısı olan uygulamalar) görmesini sağlar; böylece onları listeleyebilir. Diğer uygulamalarınızı göremez ve uygulama kullanımınızı hiç okumaz.</p>
+<h2>LinkRudder'ın yapmadıkları</h2>
+<ul>
+<li>Kişisel veri toplamaz, satmaz veya paylaşmaz. Bir şey alan bir sunucumuz yoktur.</li>
+<li>Siz geçmişi kendiniz açmadıkça açtığınız bağlantıların geçmişini tutmaz (aşağıya bakın). Açtığınızda bile tam bağlantıyı değil, yalnızca site adını tutar.</li>
+<li>Panonuzu arka planda okumaz. Yalnızca "Kopyalanan bağlantıyı aç" veya "Yapıştır"a bastığınızda okur.</li>
+<li>Bir uygulamanın kendi içinde açtığı bağlantıları veya Android'in doğrulanmış bağlantıları olan bir uygulamaya doğrudan gönderdiği bağlantıları görmez.</li>
+<li>Bir sitenin güvenli olup olmadığını denetlemez. Temizlenmiş veya çözülmüş bir bağlantı, denetlenmiş bir bağlantı değildir.</li>
+<li>Bağlantıları günlüğe yazmaz. Bağlantılar giriş anahtarları taşıyabildiği için sistem günlüğünün dışında tutulur.</li>
+</ul>
+<h2>Telefonunuzda saklananlar</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ne</th>
+<th>Nerede</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kurallarınız: site adı, tam site veya alt alanlar, isteğe bağlı yol kalıbı, seçilen uygulama (paket adı, adı ve imza sertifikasının parmak izi), temizleme açık/kapalı</td>
+<td>Uygulama tercihleri</td>
+</tr>
+<tr>
+<td>Kuralı olmayan bağlantılarda ne olacağı (sor veya seçilen bir tarayıcı)</td>
+<td>Uygulama tercihleri</td>
+</tr>
+<tr>
+<td>Kapattığınız temizleme girdileri</td>
+<td>Uygulama tercihleri</td>
+</tr>
+<tr>
+<td>Sabitlenen uygulamalar ve sırası</td>
+<td>Uygulama tercihleri</td>
+</tr>
+<tr>
+<td>Oluşturduğunuz ana ekran kısayolları: bağlantı, uygulama ve kısayol adı olarak kullanılan site adı</td>
+<td>Uygulama tercihleri</td>
+</tr>
+<tr>
+<td>Geçmiş, yalnızca açarsanız: zaman, site adı, ne olduğu ve uygulama; seçtiğiniz gün sayısı (1–30) kadar</td>
+<td>Uygulama tercihleri</td>
+</tr>
+<tr>
+<td>Tema, dil, "temizlenmiş bağlantıyla başla" ayarı</td>
+<td>Uygulama tercihleri</td>
+</tr>
+</tbody>
+</table></div>
+<p>İmza sertifikası parmak izi, seçilen bir uygulamanın başka biri tarafından imzalanmış bir uygulamayla değiştirildiğini fark etmeyi sağlar; bu durumda kural açmak yerine sorar.</p>
+<h2>Bilerek saklanmayanlar</h2>
+<p>Geçmişte tam bağlantılar, sayfa içeriği, gezinme istatistikleri, kullanım sayıları, cihaz kimlikleri, çökme dökümleri.</p>
+<h2>Yedekleme</h2>
+<p>Android bulut yedeklemesi ve cihazdan cihaza aktarım bu uygulama için <strong>kapalıdır</strong>; kurallarınız bir Google yedeğine kopyalanmaz. Taşımak için Yedek › Dosyaya kaydet, ardından diğer telefonda Dosyadan yükle'yi kullanın. Dosya düz JSON'dur. Kurallarınızı, varsayılan seçimi ve temizleme anahtarlarını içerir; geçmiş veya bağlantı içermez.</p>
+<h2>Geri bildirim</h2>
+<p>Geri bildirim gönder ekranı bir mesaj yazar ve sonuna telefon modeli, Android sürümü, uygulama sürümü ve uygulama dili eklenmiş olarak kendi e-posta uygulamanıza verir. LinkRudder bunu kendisi göndermez; mesaj contact@basilbase.com adresine gitmeden önce e-posta uygulamanızda görürsünüz.</p>
+<h2>Çocuklar</h2>
+<p>LinkRudder çocuklara yönelik değildir ve kimseden veri toplamaz.</p>
+<h2>Saklama ve silme</h2>
+<p>Her şey siz silene kadar telefonunuzda kalır. Gizlilik › Her şeyi sil; kuralları, geçmişi, sabitlenen uygulamaları ve kısayolları kaldırır. Geçmişi kapatmak geçmişi hemen siler. LinkRudder'ı kaldırmak tüm verisini siler. LinkRudder varsayılan tarayıcınızsa sistem ayarlarından başka birini seçin; uygulama bunun için bir düğme gösterir.</p>
+<h2>Değişiklikler</h2>
+<p>Bu politika değişirse üstteki tarih de değişir ve yeni metin bu sayfanın yerini alır. Önemli değişiklikler uygulamanın sürüm notlarında da anlatılır.</p>
+<footer>
+<p>LinkRudder'ı basilbase yayımlar. Sorular: <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+</footer>
+</div>
+</body>
+</html>

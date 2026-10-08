@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — LinkRudder</title>
+<meta name="description" content="Privacy policy for LinkRudder by basilbase.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">LinkRudder</p>
+    <p class="tagline">Choose the app for each link. See what changes before it opens.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 9 October 2026 · App <code>software.basilbase.linkrudder</code> · Developer basilbase · Contact <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="tr/">Türkçe</a></p>
+  </header>
+
+<div class="lede">
+<p>LinkRudder lets you choose which app opens each web link, and shows what will change in a link before it opens. Your rules stay on your phone. There is no account, no analytics, no advertising and no crash reporting. The app holds the internet permission for exactly one thing: the <strong>Resolve short link</strong> button, and only after you press it.</p>
+</div>
+
+<h2>The verifiable version</h2>
+<p>LinkRudder's manifest requests one permission that Android shows in the Play listing: <code>INTERNET</code>. It does not request <code>QUERY_ALL_PACKAGES</code>, <code>ACCESS_NETWORK_STATE</code>, notifications, location, contacts, storage, accessibility or usage access. You can confirm this in the Play listing's permission list or by inspecting the APK.</p>
+<p>The app's code makes a network request in one place only: the short-link resolver, which runs after you press <strong>Resolve short link</strong> and confirm the dialog that names the server it will contact. Opening, choosing, cleaning and unwrapping links all happen on the phone, without the network. Nothing runs in the background, and the clean-up list is never updated over the internet.</p>
+<h2>What happens when you press "Resolve short link"</h2>
+<p>Short links (for example a link shortener) only reveal their destination when their server is asked. When you press the button and confirm:</p>
+<ul>
+<li>LinkRudder sends a request to the server in that link, and follows at most 5 redirects. It asks with <code>HEAD</code> first, and if the server refuses, with a <code>GET</code> limited to one byte. It never reads page content.</li>
+<li>It sends no cookies, no account, no sign-in data and no device identifier. The request carries the link itself and the user agent <code>LinkRudder</code>.</li>
+<li>It only contacts secure <code>https</code> servers. A plain <code>http</code> link is not contacted.</li>
+<li>It never contacts private or local network addresses (for example 192.168.x.x, 10.x.x.x or localhost), also when a redirect points there.</li>
+<li>Like any web request, the server sees your IP address and the link that was requested. Some links work only once (for example sign-in or payment links); requesting them can use them up. The app warns you when a link looks like one of these.</li>
+<li>The result is shown to you. Nothing about it is stored or sent anywhere else.</li>
+</ul>
+<h2>Permissions in full</h2>
+<p>This is the complete list.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Why</th>
+<th>Without it</th>
+<th>Withdraw</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Internet (<code>INTERNET</code>)</td>
+<td>Only for the Resolve short link button, after you press it.</td>
+<td>Short links could not be resolved; everything else works the same.</td>
+<td>Install-time; not revocable. Simply do not press the button.</td>
+</tr>
+<tr>
+<td>Default browser (system role, optional)</td>
+<td>If you choose it, Android sends the web links you tap in most apps to LinkRudder.</td>
+<td>You can still use LinkRudder from the Share menu or with "Open copied link".</td>
+<td>Settings › Apps › Default apps › Browser app</td>
+</tr>
+</tbody>
+</table></div>
+<p>The <code>&lt;queries&gt;</code> entry in the manifest lets LinkRudder see only the apps that open web links (browsers and apps with links for particular sites), so it can list them. It cannot see your other apps, and it never reads your app usage.</p>
+<h2>What LinkRudder does not do</h2>
+<ul>
+<li>It does not collect, sell or share personal data. There is no server of ours that receives anything.</li>
+<li>It does not keep a history of the links you open, unless you switch history on yourself (see below). Even then it keeps only the site name, never the full link.</li>
+<li>It does not read your clipboard in the background. It reads it only when you press "Open copied link" or "Paste".</li>
+<li>It does not see links that an app opens inside itself, or that Android sends straight to an app with verified links.</li>
+<li>It does not check whether a site is safe. A cleaned or resolved link is not a checked link.</li>
+<li>It does not log links. Links can carry sign-in tokens, so they are kept out of the system log.</li>
+</ul>
+<h2>What is stored on your phone</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>What</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Your rules: site name, exact site or subdomains, optional path pattern, the chosen app (package name, its label and a fingerprint of its signing certificate), clean-up on or off</td>
+<td>App preferences</td>
+</tr>
+<tr>
+<td>What happens for links without a rule (ask, or a chosen browser)</td>
+<td>App preferences</td>
+</tr>
+<tr>
+<td>Clean-up entries you switched off</td>
+<td>App preferences</td>
+</tr>
+<tr>
+<td>Pinned apps and their order</td>
+<td>App preferences</td>
+</tr>
+<tr>
+<td>Home-screen shortcuts you made: the link, the app, and the site name used as the shortcut label</td>
+<td>App preferences</td>
+</tr>
+<tr>
+<td>History, only if you switch it on: time, site name, what happened and the app, kept for the number of days you choose (1–30)</td>
+<td>App preferences</td>
+</tr>
+<tr>
+<td>Theme, language, the "start with the cleaned link" setting</td>
+<td>App preferences</td>
+</tr>
+</tbody>
+</table></div>
+<p>The signing-certificate fingerprint lets the app notice when a chosen app was replaced by one signed by someone else; the rule then asks instead of opening.</p>
+<h2>What is deliberately not stored</h2>
+<p>Full links in history, page content, browsing statistics, usage counts, device identifiers, crash dumps.</p>
+<h2>Backup</h2>
+<p>Android cloud backup and device-to-device transfer are <strong>switched off</strong> for this app, so your rules are not copied into a Google backup. To move them, use Backup › Save to a file, then Load from a file on the other phone. The file is plain JSON. It holds your rules, the default choice and the clean-up switches, and no history or links.</p>
+<h2>Feedback</h2>
+<p>The Send feedback screen writes a message and hands it to your own email app, with your phone model, Android version, app version and app language added at the end. LinkRudder does not send it itself; you see the message in your email app before it goes to contact@basilbase.com.</p>
+<h2>Children</h2>
+<p>LinkRudder is not directed at children and collects no data from anyone.</p>
+<h2>Retention and deletion</h2>
+<p>Everything stays on your phone until you delete it. Privacy › Delete everything removes rules, history, pinned apps and shortcuts. Turning history off deletes the history at once. Uninstalling LinkRudder removes all of its data. If LinkRudder is your default browser, choose another one in the system settings; the app shows a button for this.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top changes with it and the new text replaces this page. Material changes are also described in the app's release notes.</p>
+<footer>
+<p>LinkRudder is published by basilbase. Questions: <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+</footer>
+</div>
+</body>
+</html>
