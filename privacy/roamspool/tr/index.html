@@ -188,6 +188,7 @@
 <li><strong>Konum, yalnız kayıt açıkken.</strong> RoamSpool neyi topladığını açıkladıktan sonra kaydı siz açarsınız. Kayıt açıkken uygulama, ayarladığınız aralıkta (15–600 saniye, varsayılan 60) Android'den konum ister; uygulama kapalıyken veya kullanılmıyorken de. Bu süre boyunca Duraklat ve Durdur düğmeli bir bildirim görünür.</li>
 <li>Kaydedilen her konumda şunlar bulunur: zaman (UTC), telefonun kullandığı saat dilimi farkı, enlem, boylam, Android'in bildirdiği doğruluk, Android'in sahte konum olarak işaretleyip işaretlemediği, telefon açıldığından beri geçen süre ve yeniden başlatma sayısı (bir açılış içinde sırayı korumak için) ve kaydın kaydedilmiş, içe aktarılmış ya da elle eklenmiş olduğu.</li>
 <li>Kayıt duraklatılmış veya durdurulmuşken hiçbir şey toplanmaz. Duraklat ve Durdur telefon yeniden başladıktan sonra da geçerli kalır.</li>
+<li>RoamSpool "Her zaman izin ver" konum erişimi istemez. Telefon yeniden başladığında kayıt durur; bir bildirim görürsünüz ve kayıt uygulamayı açınca sürer.</li>
 </ul>
 <p><strong>Konum nereden gelir.</strong> RoamSpool, Google Play hizmetlerinin parçası olan Android birleşik konum sağlayıcısını kullanır. Google Play hizmetlerinin konumu nasıl bulduğu (uydu, Wi‑Fi, mobil ağ) telefonunuzun konum ayarlarına ve Google'ın kendi koşullarına bağlıdır. RoamSpool sonucu telefonda alır ve hiçbir yere göndermez.</p>
 <h2>İzinlerin tamamı</h2>
@@ -215,12 +216,6 @@
 <td>Aynı yer</td>
 </tr>
 <tr>
-<td>Her zaman konum (<code>ACCESS_BACKGROUND_LOCATION</code>)</td>
-<td>İsteğe bağlı, ayrıca sorulur. Açık bıraktığınız kaydın telefon yeniden başladıktan veya Android kayıt servisini yeniden oluşturduktan sonra kendiliğinden sürmesini sağlar.</td>
-<td>Uygulamadan başlatılan kayıt yine çalışır. Yeniden başlatmadan sonra bir uyarı görürsünüz ve kayıt uygulamayı açınca sürer.</td>
-<td>Ayarlar › Uygulamalar › RoamSpool › İzinler › Konum › Yalnızca uygulama kullanılırken izin ver</td>
-</tr>
-<tr>
 <td>Ön plan hizmeti, konum türü (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_LOCATION</code>)</td>
 <td>Kayıt servisi bildirimiyle birlikte görünür, konum türünde bir ön plan hizmeti olarak çalışır.</td>
 <td>Kayıt mümkün olmaz.</td>
@@ -234,8 +229,8 @@
 </tr>
 <tr>
 <td>Açılışta çalışma (<code>RECEIVE_BOOT_COMPLETED</code>)</td>
-<td>Yeniden başlatmadan sonra kaydı açık bırakıp bırakmadığınızı kontrol etmek. Kaydı asla kendiliğinden açmaz.</td>
-<td>Açık bıraktığınız kayıt, uygulamayı açana kadar yeniden başlatmadan sonra sürmez.</td>
+<td>Yeniden başlatmadan sonra kaydı açık bırakıp bırakmadığınızı kontrol etmek ve öyleyse kaydın durduğunu bildirmek. Kaydı asla kendiliğinden açmaz.</td>
+<td>Yeniden başlatmada kaydın durduğu size bildirilmez.</td>
 <td>Kurulumda verilir; geri alınamaz</td>
 </tr>
 </tbody>

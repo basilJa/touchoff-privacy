@@ -188,6 +188,7 @@
 <li><strong>Location, only while recording is on.</strong> You switch recording on yourself after RoamSpool explains what it collects. While it is on, the app asks Android for a location at the interval you set (15 to 600 seconds, 60 by default), including when the app is closed or not in use. A notification is shown the whole time, with Pause and Stop.</li>
 <li>Each saved location holds: time (UTC), the time zone offset the phone used, latitude, longitude, the accuracy Android reported, whether Android marked it as a mock location, the time since the phone started and its restart count (to keep order within one start), and whether it was recorded, imported or added by hand.</li>
 <li>Nothing is collected while recording is paused or stopped. Pause and Stop stay in effect after the phone restarts.</li>
+<li>RoamSpool does not request "Allow all the time" location access. When the phone restarts, recording stops; you get a notice, and recording continues when you open the app.</li>
 </ul>
 <p><strong>Where the position comes from.</strong> RoamSpool uses Android's fused location provider, part of Google Play services. How Google Play services works out a position (satellites, Wi‑Fi, mobile networks) is governed by your phone's location settings and Google's own terms. RoamSpool receives the result on the phone and sends it nowhere.</p>
 <h2>Permissions in full</h2>
@@ -215,12 +216,6 @@
 <td>Same place</td>
 </tr>
 <tr>
-<td>Location all the time (<code>ACCESS_BACKGROUND_LOCATION</code>)</td>
-<td>Optional, asked separately. Lets recording that you left on continue by itself after the phone restarts or after Android recreates the recording service.</td>
-<td>Recording still works when started from the app. After a restart you see a notice and recording continues when you open the app.</td>
-<td>Settings › Apps › RoamSpool › Permissions › Location › Allow only while using the app</td>
-</tr>
-<tr>
 <td>Foreground service, location type (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_LOCATION</code>)</td>
 <td>The recording service runs as a visible foreground service of type location, with its notification.</td>
 <td>Recording would not be possible.</td>
@@ -234,8 +229,8 @@
 </tr>
 <tr>
 <td>Run at startup (<code>RECEIVE_BOOT_COMPLETED</code>)</td>
-<td>After a restart, check whether you left recording on. It never switches recording on by itself.</td>
-<td>Recording you left on would not resume after a restart until you open the app.</td>
+<td>After a restart, check whether you left recording on and, if so, show a notice that recording stopped. It never switches recording on by itself.</td>
+<td>You would not be told that recording stopped at a restart.</td>
 <td>Install-time; not revocable</td>
 </tr>
 </tbody>
