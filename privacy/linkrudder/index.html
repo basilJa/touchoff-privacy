@@ -194,6 +194,7 @@
 <li>Like any web request, the server sees your IP address and the link that was requested. Some links work only once (for example sign-in or payment links); requesting them can use them up. The app warns you when a link looks like one of these.</li>
 <li>The result is shown to you. Nothing about it is stored or sent anywhere else.</li>
 </ul>
+<p>Only the short link you choose to resolve is sent to that link's own server. In Google Play's Data safety section this appears as <strong>Web browsing history: collected, optional</strong> (only when you press Resolve short link), <strong>for app functionality, not shared, encrypted in transit (https only), not stored by LinkRudder</strong>.</p>
 <h2>Permissions in full</h2>
 <p>This is the complete list.</p>
 <div class="table-scroll"><table>
@@ -223,7 +224,7 @@
 <p>The <code>&lt;queries&gt;</code> entry in the manifest lets LinkRudder see only the apps that open web links (browsers and apps with links for particular sites), so it can list them. It cannot see your other apps, and it never reads your app usage.</p>
 <h2>What LinkRudder does not do</h2>
 <ul>
-<li>It does not collect, sell or share personal data. There is no server of ours that receives anything.</li>
+<li>It has no server of its own and does not sell or share personal data. Only the short link you choose to resolve is sent to that link's own server.</li>
 <li>It does not keep a history of the links you open, unless you switch history on yourself (see below). Even then it keeps only the site name, never the full link.</li>
 <li>It does not read your clipboard in the background. It reads it only when you press "Open copied link" or "Paste".</li>
 <li>It does not see links that an app opens inside itself, or that Android sends straight to an app with verified links.</li>
