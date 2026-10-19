@@ -175,19 +175,19 @@
     <p class="mark">AppBright</p>
     <p class="tagline">The right brightness for every app.</p>
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated 8 September 2026</p>
+    <p class="meta">Last updated 19 October 2026</p>
     <dl class="facts">
       <dt>App</dt><dd><code>software.basilbase.applight</code></dd>
-      <dt>Version</dt><dd>1.0.0</dd>
+      <dt>Version</dt><dd>1.1.3</dd>
       <dt>Developer</dt><dd>basilbase</dd>
       <dt>Contact</dt><dd><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></dd>
     </dl>
   </header>
 
   <div class="lede">
-    <p><strong>The short version.</strong> AppBright does not collect, store or transmit any
-    personal data. It has no internet permission. There are no accounts, no advertising, no
-    analytics and no crash reporting. Your rules and settings stay on your device.</p>
+    <p><strong>The short version.</strong> AppBright stores rules and preferences locally and does not send them to the developer.
+    It has no internet permission, accounts, advertising, analytics or crash reporting.
+    If you choose to export settings, your selected document provider receives the backup file.</p>
   </div>
 
   <h2>The verifiable version</h2>
@@ -199,10 +199,11 @@
   APK yourself.</p>
   <p>This matters more than usual here. AppBright needs to know which app is on your screen in
   order to do its job at all, and that is exactly the kind of signal that is worth money to
-  somebody. Without network access it cannot leave your phone, whatever anyone's intentions.</p>
+  somebody. AppBright does not upload foreground-app observations. A settings backup that you
+  explicitly export contains configured package names and rules, and can be stored by your selected provider.</p>
 
   <h2>Permissions in full</h2>
-  <p>This is the complete set AppBright requests. There are no others.</p>
+  <p>These are the permissions and special access used by AppBright features. AndroidX can also declare an app-specific signature permission for internal receiver protection; it does not grant access to your personal data.</p>
   <div class="table-scroll">
     <table>
       <thead>
@@ -255,13 +256,14 @@
     <li>It does not read, capture, record or analyse your screen.</li>
     <li>It does not record where you tap.</li>
     <li>It does not access your camera, microphone, location, contacts, calendar, phone, photos,
-      files or accounts, and does not request those permissions.</li>
+      files or accounts through broad permissions. For manual settings export and import,
+      it accesses only the document you select through Android’s system picker.</li>
     <li>It does not use an accessibility service.</li>
     <li>It contains no advertising, attribution, analytics, telemetry or crash-reporting SDK.</li>
     <li>It has no login, no account and no cloud sync.</li>
   </ul>
 
-  <h2>What is stored on your device, and only on your device</h2>
+  <h2>What is stored locally</h2>
   <div class="table-scroll">
     <table>
       <thead>
@@ -301,6 +303,17 @@
   app stores — rules, settings or checkpoint — is copied to Google's servers as part of a device
   backup.</p>
 
+  <h2>Manual settings backup and import (version 1.1.3)</h2>
+  <p>If you choose Export settings, Android’s system document picker writes a readable,
+  <strong>unencrypted JSON file</strong> to the location you select. The file contains configured
+  app package names, rules and portable preferences. Your selected document provider can receive
+  and store this file, including in cloud storage if you choose a cloud provider. The app warns
+  you about these contents before export.</p>
+  <p>The backup excludes permission grants, monitoring/running state, pause state and recovery
+  checkpoints. Import requires stopped monitoring and an explicit merge or replace confirmation;
+  it does not grant permissions or start monitoring. Exported files require separate deletion
+  through the location/provider you selected; uninstalling AppBright does not delete those files.</p>
+
   <h2>Children</h2>
   <p>AppBright is a general-purpose utility. It collects no data from anyone, of any age.</p>
 
@@ -320,7 +333,8 @@
 
   <h2>Data retention and deletion</h2>
   <p>There is no server, so there is nothing for us to retain or delete. Delete a rule in the app
-  to remove it, or uninstall AppBright to remove everything it stored.</p>
+  to remove it, or uninstall AppBright to remove its private storage. Delete exported backup
+  files separately from the document provider where you saved them.</p>
 
   <h2>Changes</h2>
   <p>If a future version of AppBright ever collects data, this policy will be updated before that
