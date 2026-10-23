@@ -159,7 +159,11 @@
     h1 { font-size: 1.55rem; }
     td:first-child { white-space: normal; }
   }
-</style></head><body><main class="wrap"><header><p class="mark">Sofrune</p><nav><a href="../">English</a></nav></header><h1>Sofrune Gizlilik Politikası</h1>
+
+ body:has(#theme-light:target) { --bg:#ebf0eb;--surface:#fff;--ink:#10160f;--muted:#56605a;--accent:#3a8f5c;--accent-dk:#1c5032;--line:#dde5de;--chip:#f0f4f0; }
+ body:has(#theme-dark:target) { --bg:#0a0d0b;--surface:#171b18;--ink:#f0f3f0;--muted:#9ba69e;--accent:#7dc38d;--accent-dk:#a8d7b3;--line:#2a322c;--chip:#212722; }
+ nav { margin-top:1rem; } nav a { display:inline-block;margin-right:1rem; } a { color:var(--accent-dk); }
+ </style></head><body><span hidden id="theme-light"></span><span hidden id="theme-dark"></span><span hidden id="theme-system"></span><main class="wrap"><header><p class="mark">Sofrune</p><nav><a href="../">English</a><a href="#theme-light">Açık</a><a href="#theme-dark">Koyu</a><a href="#theme-system">Sistem</a></nav></header><h1>Sofrune Gizlilik Politikası</h1>
 <p>Son güncelleme: 23 Ekim 2026</p>
 <p>Sofrune, <strong>basilbase</strong> tarafından yayımlanır. İletişim: <strong>contact@basilbase.com</strong>. Bu politika <code>software.basilbase.sofrune</code> Android uygulamasını kapsar.</p>
 <h2>Sofrune ne yapar?</h2>
