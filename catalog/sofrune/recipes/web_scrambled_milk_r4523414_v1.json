@@ -1,0 +1,247 @@
+{
+  "schema": 1,
+  "revision": 2,
+  "published": "2026-10-23",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "activeIds": [
+    "web_scrambled_milk_r4523414_v1"
+  ],
+  "foodSource": "USDA SR Legacy 2018-04 (CC0)",
+  "foods": [
+    {
+      "id": "web_garlic_v1",
+      "fdc": "169230",
+      "description": "Garlic, raw",
+      "nutrition": {
+        "carbs": 33.06,
+        "kcal": 149.0,
+        "vitc": 31.2,
+        "b12": 0.0,
+        "fiber": 2.1,
+        "iron": 1.7,
+        "sodium": 17.0,
+        "protein": 6.36,
+        "calcium": 181.0,
+        "potassium": 401.0,
+        "fat": 0.5
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Garlic, raw",
+        "tr": "Çiğ sarımsak",
+        "ar": "الثوم الخام",
+        "de": "Knoblauch, roh",
+        "es": "Ajo, crudo",
+        "fr": "Ail, cru",
+        "ja": "ニンニク、生",
+        "pt-BR": "Alho cru",
+        "ru": "Чеснок, сырой"
+      }
+    },
+    {
+      "id": "web_salt_v1",
+      "fdc": "173468",
+      "description": "Salt, table",
+      "nutrition": {
+        "fiber": 0.0,
+        "iron": 0.33,
+        "sodium": 38758.0,
+        "vitc": 0.0,
+        "b12": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "carbs": 0.0,
+        "kcal": 0.0,
+        "calcium": 24.0,
+        "potassium": 8.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Salt, table",
+        "tr": "Sofra tuzu",
+        "ar": "ملح، طاولة",
+        "de": "Salz, Tisch",
+        "es": "sal, mesa",
+        "fr": "Sel de table",
+        "ja": "塩、テーブル",
+        "pt-BR": "Sal, mesa",
+        "ru": "Соль столовая"
+      }
+    },
+    {
+      "id": "web_pepper_v1",
+      "fdc": "170931",
+      "description": "Spices, pepper, black",
+      "nutrition": {
+        "b12": 0.0,
+        "fat": 3.26,
+        "carbs": 63.95,
+        "kcal": 251.0,
+        "calcium": 443.0,
+        "potassium": 1329.0,
+        "protein": 10.39,
+        "fiber": 25.3,
+        "iron": 9.71,
+        "sodium": 20.0,
+        "vitc": 0.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Ground black pepper",
+        "tr": "Öğütülmüş karabiber",
+        "ar": "فلفل أسود مطحون",
+        "de": "Gemahlener schwarzer Pfeffer",
+        "es": "Pimienta negra molida",
+        "fr": "Poivre noir moulu",
+        "ja": "挽いた黒胡椒",
+        "pt-BR": "Pimenta preta moída",
+        "ru": "Черный молотый перец"
+      }
+    },
+    {
+      "id": "web_butter_v1",
+      "fdc": "173430",
+      "description": "Butter, without salt",
+      "nutrition": {
+        "calcium": 24.0,
+        "kcal": 717.0,
+        "iron": 0.02,
+        "b12": 0.17,
+        "potassium": 24.0,
+        "fat": 81.11,
+        "carbs": 0.06,
+        "protein": 0.85,
+        "fiber": 0.0,
+        "vitc": 0.0,
+        "sodium": 11.0
+      },
+      "unknown": [],
+      "allergens": [
+        "milk"
+      ],
+      "animal": "dairy",
+      "names": {
+        "en": "Unsalted butter",
+        "tr": "Tuzsuz tereyağı",
+        "ar": "زبدة غير مملحة",
+        "de": "Ungesalzene Butter",
+        "es": "mantequilla sin sal",
+        "fr": "Beurre non salé",
+        "ja": "無塩バター",
+        "pt-BR": "Manteiga sem sal",
+        "ru": "Масло несоленое"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "web_scrambled_milk_r4523414_v1",
+      "lead": "egg",
+      "titles": {
+        "en": "Scrambled eggs with milk",
+        "tr": "Sütlü çırpılmış yumurta",
+        "ar": "بيض مخفوق مع الحليب",
+        "de": "Rührei mit Milch",
+        "es": "Huevos revueltos con leche",
+        "fr": "Oeufs brouillés au lait",
+        "ja": "スクランブルエッグとミルク",
+        "pt-BR": "Ovos mexidos com leite",
+        "ru": "Яичница с молоком"
+      },
+      "ingredients": [
+        {
+          "food": "egg",
+          "grams": 150
+        },
+        {
+          "food": "milk",
+          "grams": 40
+        },
+        {
+          "food": "web_butter_v1",
+          "grams": 10
+        },
+        {
+          "food": "web_salt_v1",
+          "grams": 0.5
+        },
+        {
+          "food": "web_pepper_v1",
+          "grams": 0.1
+        }
+      ],
+      "waterMl": 0,
+      "minutes": 12,
+      "group": "egg",
+      "snack": false,
+      "steps": {
+        "en": [
+          "Beat the weighed edible eggs with the listed milk, if any, and salt until evenly mixed.",
+          "Melt the listed unsalted butter in a pan over medium heat. Add the eggs and stir, bringing uncooked egg into contact with the pan.",
+          "For this adaptation cook until fully set, with no runny egg. Add the listed pepper after cooking. Serve promptly, with the listed bread if present."
+        ],
+        "tr": [
+          "Tartılmış yenebilir yumurtayı listede varsa süt ve tuzla eşitçe karışana dek çırp.",
+          "Listedeki tuzsuz tereyağını tavada orta ateşte erit. Yumurtayı ekleyip pişmemiş kısımlar tavaya değecek şekilde karıştır.",
+          "Bu uyarlamada akışkan yumurta kalmadan tamamen katılaşana dek pişir. Listedeki karabiberi piştikten sonra ekle. Varsa listedeki ekmekle bekletmeden sun."
+        ],
+        "ar": [
+          "يخفق البيض الصالح للأكل مع الحليب المدرج، إن وجد، والملح حتى يمتزجوا بالتساوي.",
+          "تذوب الزبدة غير المملحة المذكورة في مقلاة على نار متوسطة. يُضاف البيض ويُحرَّك حتى يلامس البيض غير المطبوخ المقلاة.",
+          "للقيام بذلك، قم بالطهي حتى يتم نضجه بالكامل، دون وجود بيضة سائلة. أضف الفلفل المدرج بعد الطهي. يقدم على الفور مع الخبز المدرج إذا كان موجودا."
+        ],
+        "de": [
+          "Schlagen Sie die abgewogenen essbaren Eier mit der aufgeführten Milch (sofern vorhanden) und Salz auf, bis eine gleichmäßige Mischung entsteht.",
+          "Die aufgeführte ungesalzene Butter in einer Pfanne bei mittlerer Hitze schmelzen. Fügen Sie die Eier hinzu und rühren Sie um, indem Sie das ungekochte Ei mit der Pfanne in Kontakt bringen.",
+          "Für diese Anpassung kochen, bis das Ei vollständig fest ist, ohne dass das Ei ausläuft. Nach dem Kochen den aufgeführten Pfeffer hinzufügen. Sofort servieren, mit dem aufgeführten Brot, falls vorhanden."
+        ],
+        "es": [
+          "Batir los huevos comestibles pesados ​​con la leche indicada, si corresponde, y la sal hasta que se mezclen uniformemente.",
+          "Derrita la mantequilla sin sal indicada en una sartén a fuego medio. Agrega los huevos y revuelve, poniendo el huevo crudo en contacto con la sartén.",
+          "Para esta adaptación, cocine hasta que esté completamente cuajado, sin huevo líquido. Agregue el pimiento indicado después de cocinar. Sirva rápidamente, con el pan indicado si está presente."
+        ],
+        "fr": [
+          "Battez les œufs comestibles pesés avec le lait indiqué, le cas échéant, et salez jusqu'à ce que le mélange soit homogène.",
+          "Faire fondre le beurre non salé indiqué dans une poêle à feu moyen. Ajouter les œufs et remuer en mettant l'œuf cru en contact avec la poêle.",
+          "Pour cette version, faites cuire jusqu'à ce qu'il soit complètement pris, sans œuf qui coule. Ajoutez le poivre indiqué après la cuisson. Servir rapidement, avec le pain indiqué s'il est présent."
+        ],
+        "ja": [
+          "計量した食用卵を、記載されている牛乳（ある場合）と塩で均一に混ざるまで混ぜます。",
+          "記載されている無塩バターを鍋に入れて中火で溶かします。卵を加えてかき混ぜ、生卵を鍋に接触させます。",
+          "この適応のために、卵がとろとろにならずに完全に固まるまで調理します。調理後に記載のコショウを加えます。記載されているパンがある場合は添えて、すぐにお召し上がりください。"
+        ],
+        "pt-BR": [
+          "Bata os ovos comestíveis pesados ​​com o leite listado, se houver, e sal até ficar homogêneo.",
+          "Derreta a manteiga sem sal listada em uma panela em fogo médio. Adicione os ovos e mexa, colocando o ovo cru em contato com a frigideira.",
+          "Para esta adaptação cozinhe até ficar totalmente firme, sem nenhum ovo escorrendo. Adicione a pimenta listada após o cozimento. Sirva imediatamente, com o pão listado, se houver."
+        ],
+        "ru": [
+          "Навешенные съедобные яйца взбейте с указанным молоком, если оно есть, и посолите до однородного состояния.",
+          "Растопите указанное несоленое сливочное масло на сковороде на среднем огне. Добавьте яйца и перемешайте, соприкасаясь сырым яйцом со сковородой.",
+          "Для этой адаптации готовьте до полной готовности, без жидкого яйца. После приготовления добавьте указанный перец. Подавайте сразу же, с указанным хлебом, если он есть."
+        ]
+      },
+      "notes": {
+        "en": "Adapted from Wikibooks; amounts are per base serving before your portion and household multipliers. Time is an editorial estimate. Nutrients are ingredient estimates from USDA SR Legacy 2018; cooking losses and final yield are not modelled. Adapted egg, butter, salt and pepper weights; milk is optional in the source. Toast variant uses its serving suggestion. Egg is cooked fully rather than removed while still glossy. Optional sauces and cheese are excluded.",
+        "tr": "Wikibooks uyarlaması; miktarlar porsiyon ve kişi çarpanlarından önce tek temel porsiyon içindir. Süre editoryal tahmindir. Besinler USDA SR Legacy 2018 malzeme tahminidir; pişirme kaybı ve son ağırlık modellenmez. Yumurta, tereyağı, tuz ve karabiber gramları uyarlandı; kaynakta süt isteğe bağlıdır. Tost çeşidi kaynak sunumundan gelir. Yumurta parlakken alınmak yerine tamamen pişirilir. İsteğe bağlı sos ve peynir çıkarıldı.",
+        "ar": "مقتبس من ويكي الكتب. المبالغ لكل قاعدة خدمة قبل الجزء الخاص بك ومضاعفات الأسرة. الوقت هو تقدير التحرير. العناصر الغذائية هي تقديرات المكونات من USDA SR Legacy 2018؛ لم يتم وضع نماذج لخسائر الطهي والعائد النهائي. أوزان مناسبة للبيض والزبدة والملح والفلفل؛ الحليب اختياري في المصدر. يستخدم متغير الخبز المحمص اقتراح التقديم الخاص به. يتم طهي البيض بالكامل بدلاً من إزالته وهو لا يزال لامعًا. يتم استبعاد الصلصات والجبن الاختيارية.",
+        "de": "Angepasst von Wikibooks; Die Beträge verstehen sich pro Basisportion vor Ihrer Portion und den Haushaltsmultiplikatoren. Die Zeit ist eine redaktionelle Schätzung. Bei den Nährstoffen handelt es sich um Schätzungen der Inhaltsstoffe aus USDA SR Legacy 2018; Kochverluste und Endausbeute werden nicht modelliert. Angepasste Ei-, Butter-, Salz- und Pfeffergewichte; Milch ist in der Quelle optional. Die Toastvariante verwendet ihren Serviervorschlag. Das Ei wird vollständig gegart und nicht herausgenommen, solange es noch glänzend ist. Optionale Saucen und Käse sind ausgeschlossen.",
+        "es": "Adaptado de Wikilibros; las cantidades son por porción base antes de su porción y los multiplicadores del hogar. El tiempo es una estimación editorial. Los nutrientes son estimaciones de ingredientes de USDA SR Legacy 2018; Las pérdidas por cocción y el rendimiento final no se modelan. Pesos adaptados de huevo, mantequilla, sal y pimienta; la leche es opcional en la fuente. La variante tostada utiliza su sugerencia de servicio. El huevo se cocina completamente en lugar de retirarlo mientras aún está brillante. Se excluyen las salsas y el queso opcionales.",
+        "fr": "Adapté de Wikibooks ; les montants sont par portion de base avant votre portion et les multiplicateurs ménagers. Le temps est une estimation éditoriale. Les nutriments sont des estimations d'ingrédients de l'USDA SR Legacy 2018 ; les pertes à la cuisson et le rendement final ne sont pas modélisés. Poids adaptés pour œufs, beurre, sel et poivre ; le lait est facultatif dans la source. La variante Toast utilise sa suggestion de portion. L'œuf est entièrement cuit plutôt que retiré alors qu'il est encore brillant. Les sauces et le fromage facultatifs sont exclus.",
+        "ja": "ウィキブックから転載。金額は、あなたの分量と家庭での乗数の前の基本サービングあたりです。時間は編集部の推定値です。栄養素は USDA SR Legacy 2018 からの成分推定値です。調理ロスと最終収量はモデル化されていません。卵、バター、塩、コショウの重量を調整。ソースのミルクはオプションです。トーストのバリエーションでは、提供方法の提案が使用されます。卵はツヤのある状態で取り出すのではなく、しっかりと火が通ってます。オプションのソースとチーズは含まれません。",
+        "pt-BR": "Adaptado do Wikilivros; os valores são por porção base antes de sua porção e multiplicadores domésticos. O tempo é uma estimativa editorial. Os nutrientes são estimativas de ingredientes do USDA SR Legacy 2018; as perdas por cozimento e o rendimento final não são modelados. Pesos adaptados de ovo, manteiga, sal e pimenta; o leite é opcional na fonte. A variante Toast usa sua sugestão de serviço. O ovo é totalmente cozido, em vez de removido enquanto ainda está brilhante. Molhos e queijos opcionais estão excluídos.",
+        "ru": "Адаптировано из Wikibooks; суммы указаны за базовую порцию без учета множителей вашей порции и семьи. Время — это редакционная оценка. Питательные вещества представляют собой оценки ингредиентов из отчета Министерства сельского хозяйства США SR Legacy 2018; Потери при приготовлении и конечный выход не моделируются. Адаптированная навеска для яиц, масла, соли и перца; молоко в источнике необязательно. Вариант тоста использует предложенную подачу. Яйцо готовится полностью, а не удаляется, пока оно остается блестящим. Дополнительные соусы и сыр исключены."
+      },
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ABasic+Scrambled+Eggs&oldid=4523414",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ABasic+Scrambled+Eggs&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ]
+}

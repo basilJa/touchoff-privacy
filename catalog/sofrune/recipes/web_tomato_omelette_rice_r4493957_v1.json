@@ -1,0 +1,251 @@
+{
+  "schema": 1,
+  "revision": 2,
+  "published": "2026-10-23",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "activeIds": [
+    "web_tomato_omelette_rice_r4493957_v1"
+  ],
+  "foodSource": "USDA SR Legacy 2018-04 (CC0)",
+  "foods": [
+    {
+      "id": "web_garlic_v1",
+      "fdc": "169230",
+      "description": "Garlic, raw",
+      "nutrition": {
+        "carbs": 33.06,
+        "kcal": 149.0,
+        "vitc": 31.2,
+        "b12": 0.0,
+        "fiber": 2.1,
+        "iron": 1.7,
+        "sodium": 17.0,
+        "protein": 6.36,
+        "calcium": 181.0,
+        "potassium": 401.0,
+        "fat": 0.5
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Garlic, raw",
+        "tr": "Çiğ sarımsak",
+        "ar": "الثوم الخام",
+        "de": "Knoblauch, roh",
+        "es": "Ajo, crudo",
+        "fr": "Ail, cru",
+        "ja": "ニンニク、生",
+        "pt-BR": "Alho cru",
+        "ru": "Чеснок, сырой"
+      }
+    },
+    {
+      "id": "web_salt_v1",
+      "fdc": "173468",
+      "description": "Salt, table",
+      "nutrition": {
+        "fiber": 0.0,
+        "iron": 0.33,
+        "sodium": 38758.0,
+        "vitc": 0.0,
+        "b12": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "carbs": 0.0,
+        "kcal": 0.0,
+        "calcium": 24.0,
+        "potassium": 8.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Salt, table",
+        "tr": "Sofra tuzu",
+        "ar": "ملح، طاولة",
+        "de": "Salz, Tisch",
+        "es": "sal, mesa",
+        "fr": "Sel de table",
+        "ja": "塩、テーブル",
+        "pt-BR": "Sal, mesa",
+        "ru": "Соль столовая"
+      }
+    },
+    {
+      "id": "web_pepper_v1",
+      "fdc": "170931",
+      "description": "Spices, pepper, black",
+      "nutrition": {
+        "b12": 0.0,
+        "fat": 3.26,
+        "carbs": 63.95,
+        "kcal": 251.0,
+        "calcium": 443.0,
+        "potassium": 1329.0,
+        "protein": 10.39,
+        "fiber": 25.3,
+        "iron": 9.71,
+        "sodium": 20.0,
+        "vitc": 0.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Ground black pepper",
+        "tr": "Öğütülmüş karabiber",
+        "ar": "فلفل أسود مطحون",
+        "de": "Gemahlener schwarzer Pfeffer",
+        "es": "Pimienta negra molida",
+        "fr": "Poivre noir moulu",
+        "ja": "挽いた黒胡椒",
+        "pt-BR": "Pimenta preta moída",
+        "ru": "Черный молотый перец"
+      }
+    },
+    {
+      "id": "web_butter_v1",
+      "fdc": "173430",
+      "description": "Butter, without salt",
+      "nutrition": {
+        "calcium": 24.0,
+        "kcal": 717.0,
+        "iron": 0.02,
+        "b12": 0.17,
+        "potassium": 24.0,
+        "fat": 81.11,
+        "carbs": 0.06,
+        "protein": 0.85,
+        "fiber": 0.0,
+        "vitc": 0.0,
+        "sodium": 11.0
+      },
+      "unknown": [],
+      "allergens": [
+        "milk"
+      ],
+      "animal": "dairy",
+      "names": {
+        "en": "Unsalted butter",
+        "tr": "Tuzsuz tereyağı",
+        "ar": "زبدة غير مملحة",
+        "de": "Ungesalzene Butter",
+        "es": "mantequilla sin sal",
+        "fr": "Beurre non salé",
+        "ja": "無塩バター",
+        "pt-BR": "Manteiga sem sal",
+        "ru": "Масло несоленое"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "web_tomato_omelette_rice_r4493957_v1",
+      "lead": "egg",
+      "titles": {
+        "en": "Tomato omelette with brown rice",
+        "tr": "Esmer pirinçli domatesli omlet",
+        "ar": "أومليت بالطماطم مع الأرز البني",
+        "de": "Tomatenomelett mit braunem Reis",
+        "es": "Tortilla de tomate con arroz integral",
+        "fr": "Omelette aux tomates et riz brun",
+        "ja": "玄米トマトオムレツ",
+        "pt-BR": "Omelete de tomate com arroz integral",
+        "ru": "Томатный омлет с коричневым рисом"
+      },
+      "ingredients": [
+        {
+          "food": "egg",
+          "grams": 100
+        },
+        {
+          "food": "tomato",
+          "grams": 150
+        },
+        {
+          "food": "oil",
+          "grams": 7
+        },
+        {
+          "food": "web_salt_v1",
+          "grams": 0.5
+        },
+        {
+          "food": "web_pepper_v1",
+          "grams": 0.1
+        },
+        {
+          "food": "rice",
+          "grams": 160
+        }
+      ],
+      "waterMl": 0,
+      "minutes": 20,
+      "group": "egg",
+      "snack": false,
+      "steps": {
+        "en": [
+          "Wash and dice the tomato. Beat the weighed edible egg with the listed salt and pepper.",
+          "Heat the listed olive oil in a pan. Cook the tomato until softened. Mix with the egg, then spread the mixture in the pan over medium-low heat.",
+          "Cook until firm enough to turn. Flip carefully and cook until the egg is fully set. Serve hot with the listed bread or safely reheated cooked rice."
+        ],
+        "tr": [
+          "Domatesi yıkayıp doğra. Tartılmış yenebilir yumurtayı listedeki tuz ve karabiberle çırp.",
+          "Listedeki zeytinyağını tavada ısıt. Domatesi yumuşayana dek pişir. Yumurtayla karıştırıp tavaya orta-kısık ateşte yay.",
+          "Çevrilebilecek kadar katılaşana dek pişir. Dikkatlice çevirip yumurta tamamen katılaşana dek pişir. Listedeki ekmek veya güvenle tekrar ısıtılmış pişmiş pirinçle sıcak sun."
+        ],
+        "ar": [
+          "اغسلي الطماطم وقطعيها إلى مكعبات. اخفقي البيضة الصالحة للأكل مع الملح والفلفل المذكورين.",
+          "سخني زيت الزيتون المدرج في مقلاة. اطبخي الطماطم حتى تنضج. امزجيه مع البيضة، ثم وزعي الخليط في المقلاة على نار متوسطة إلى منخفضة.",
+          "اطهيها حتى تصبح ثابتة بدرجة كافية لتتحول. اقلبها بعناية واطهيها حتى تنضج البيضة بالكامل. يُقدم ساخنًا مع الخبز المدرج أو الأرز المطبوخ المُعاد تسخينه بأمان."
+        ],
+        "de": [
+          "Die Tomate waschen und würfeln. Das abgewogene essbare Ei mit dem aufgeführten Salz und Pfeffer verquirlen.",
+          "Das aufgeführte Olivenöl in einer Pfanne erhitzen. Kochen Sie die Tomate, bis sie weich ist. Mit dem Ei vermischen und die Mischung dann bei mittlerer bis niedriger Hitze in der Pfanne verteilen.",
+          "Kochen, bis es fest genug ist, um sich zu wenden. Vorsichtig wenden und kochen, bis das Ei vollständig fest ist. Heiß mit dem aufgeführten Brot oder sicher aufgewärmtem gekochtem Reis servieren."
+        ],
+        "es": [
+          "Lavar y trocear el tomate. Batir el huevo comestible pesado con la sal y pimienta indicadas.",
+          "Calentar el aceite de oliva indicado en una sartén. Cocine el tomate hasta que esté suave. Mezclar con el huevo, luego esparcir la mezcla en la sartén a fuego medio-bajo.",
+          "Cocine hasta que esté lo suficientemente firme como para darle la vuelta. Voltee con cuidado y cocine hasta que el huevo esté completamente cuajado. Sirva caliente con el pan indicado o con arroz cocido recalentado de forma segura."
+        ],
+        "fr": [
+          "Lavez et coupez la tomate en dés. Battez l'œuf comestible pesé avec le sel et le poivre indiqués.",
+          "Faites chauffer l'huile d'olive indiquée dans une poêle. Cuire la tomate jusqu'à ce qu'elle soit ramollie. Mélangez avec l'œuf, puis étalez le mélange dans la poêle sur feu moyen-doux.",
+          "Cuire jusqu'à ce qu'il soit suffisamment ferme pour se retourner. Retournez délicatement et faites cuire jusqu'à ce que l'œuf soit complètement pris. Servir chaud avec le pain indiqué ou du riz cuit réchauffé en toute sécurité."
+        ],
+        "ja": [
+          "トマトを洗って角切りにする。計量した食用卵に記載されている塩とコショウを加えて混ぜます。",
+          "記載されているオリーブオイルを鍋に入れて加熱します。トマトを柔らかくなるまで煮ます。卵と混ぜ、鍋に広げて中弱火にかけます。",
+          "ひっくり返すのに十分な固さまで調理します。注意深くひっくり返し、卵が完全に固まるまで調理します。記載されているパンまたは安全に再加熱したご飯と一緒にお召し上がりください。"
+        ],
+        "pt-BR": [
+          "Lave e corte o tomate em cubos. Bata o ovo comestível pesado com o sal e a pimenta listados.",
+          "Aqueça o azeite listado em uma panela. Cozinhe o tomate até ficar macio. Misture com o ovo e espalhe a mistura na panela em fogo médio-baixo.",
+          "Cozinhe até ficar firme o suficiente para virar. Vire com cuidado e cozinhe até que o ovo esteja totalmente firme. Sirva quente com o pão listado ou arroz cozido reaquecido com segurança."
+        ],
+        "ru": [
+          "Помойте и нарежьте кубиками помидор. Взбитое съедобное яйцо взбейте с указанной солью и перцем.",
+          "Нагрейте указанное оливковое масло на сковороде. Варить помидор до размягчения. Смешайте с яйцом, затем выложите смесь в сковороду на средний или слабый огонь.",
+          "Готовьте, пока он не станет достаточно твердым, чтобы его можно было перевернуть. Осторожно переверните и готовьте, пока яйцо полностью не застынет. Подавайте горячим с указанным хлебом или безопасно разогретым приготовленным рисом."
+        ]
+      },
+      "notes": {
+        "en": "Adapted from Wikibooks; amounts are per base serving before your portion and household multipliers. Time is an editorial estimate. Nutrients are ingredient estimates from USDA SR Legacy 2018; cooking losses and final yield are not modelled. The original gives no quantities: all weights are our adaptation. Olive oil chosen for vegetable oil; its bread/rice serving suggestion is included in the calculation. Brown rice replaces jollof rice.",
+        "tr": "Wikibooks uyarlaması; miktarlar porsiyon ve kişi çarpanlarından önce tek temel porsiyon içindir. Süre editoryal tahmindir. Besinler USDA SR Legacy 2018 malzeme tahminidir; pişirme kaybı ve son ağırlık modellenmez. Kaynak miktar belirtmez: bütün gramlar bizim uyarlamamızdır. Bitkisel yağ için zeytinyağı seçildi; ekmek/pirinç sunumu hesaba dahil edildi. Jollof yerine esmer pirinç kullanıldı.",
+        "ar": "مقتبس من ويكي الكتب. المبالغ لكل قاعدة خدمة قبل الجزء الخاص بك ومضاعفات الأسرة. الوقت هو تقدير التحرير. العناصر الغذائية هي تقديرات المكونات من USDA SR Legacy 2018؛ لم يتم وضع نماذج لخسائر الطهي والعائد النهائي. الأصل لا يعطي أي كميات: جميع الأوزان هي تكيفنا. زيت الزيتون المختار للزيت النباتي. يتم تضمين اقتراح تقديم الخبز/الأرز في الحساب. يحل الأرز البني محل أرز الجولوف.",
+        "de": "Angepasst von Wikibooks; Die Beträge verstehen sich pro Basisportion vor Ihrer Portion und den Haushaltsmultiplikatoren. Die Zeit ist eine redaktionelle Schätzung. Bei den Nährstoffen handelt es sich um Schätzungen der Inhaltsstoffe aus USDA SR Legacy 2018; Kochverluste und Endausbeute werden nicht modelliert. Im Original sind keine Mengenangaben enthalten, alle Gewichtsangaben sind unsere Adaptionen. Als Pflanzenöl ausgewähltes Olivenöl; Der Serviervorschlag für Brot/Reis wird in die Berechnung einbezogen. Brauner Reis ersetzt Jollof-Reis.",
+        "es": "Adaptado de Wikilibros; las cantidades son por porción base antes de su porción y los multiplicadores del hogar. El tiempo es una estimación editorial. Los nutrientes son estimaciones de ingredientes de USDA SR Legacy 2018; Las pérdidas por cocción y el rendimiento final no se modelan. El original no da cantidades: todos los pesos son nuestra adaptación. Aceite de oliva elegido por aceite vegetal; su sugerencia de porción de pan/arroz se incluye en el cálculo. El arroz integral reemplaza al arroz jollof.",
+        "fr": "Adapté de Wikibooks ; les montants sont par portion de base avant votre portion et les multiplicateurs ménagers. Le temps est une estimation éditoriale. Les nutriments sont des estimations d'ingrédients de l'USDA SR Legacy 2018 ; les pertes à la cuisson et le rendement final ne sont pas modélisés. L'original ne donne aucune quantité : tous les poids sont notre adaptation. Huile d'olive choisie pour l'huile végétale ; sa suggestion de portion de pain/riz est incluse dans le calcul. Le riz brun remplace le riz Jollof.",
+        "ja": "ウィキブックから転載。金額は、あなたの分量と家庭での乗数の前の基本サービングあたりです。時間は編集部の推定値です。栄養素は USDA SR Legacy 2018 からの成分推定値です。調理ロスと最終収量はモデル化されていません。オリジナルでは量が示されていません。すべての重みは私たちが適応したものです。植物油として選ばれたオリーブオイル。パンとご飯の提供の提案は計算に含まれています。玄米はジョロフライスの代わりになります。",
+        "pt-BR": "Adaptado do Wikilivros; os valores são por porção base antes de sua porção e multiplicadores domésticos. O tempo é uma estimativa editorial. Os nutrientes são estimativas de ingredientes do USDA SR Legacy 2018; as perdas por cozimento e o rendimento final não são modelados. O original não dá quantidades: todos os pesos são nossa adaptação. Azeite escolhido para óleo vegetal; sua sugestão de porção de pão/arroz está incluída no cálculo. O arroz integral substitui o arroz jollof.",
+        "ru": "Адаптировано из Wikibooks; суммы указаны за базовую порцию без учета множителей вашей порции и семьи. Время — это редакционная оценка. Питательные вещества представляют собой оценки ингредиентов из отчета Министерства сельского хозяйства США SR Legacy 2018; Потери при приготовлении и конечный выход не моделируются. В оригинале не указаны количества: все веса являются нашей адаптацией. Оливковое масло, выбранное вместо растительного; рекомендуемая порция хлеба/риса включена в расчет. Коричневый рис заменяет рис джоллоф."
+      },
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ANigerian+Tomato+Omelette&oldid=4493957",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ANigerian+Tomato+Omelette&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "schema": 1,
+  "revision": 2,
+  "published": "2026-10-23",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "activeIds": [
+    "web_red_lentil_soup_r4518501_v1"
+  ],
+  "foodSource": "USDA SR Legacy 2018-04 (CC0)",
+  "foods": [
+    {
+      "id": "web_garlic_v1",
+      "fdc": "169230",
+      "description": "Garlic, raw",
+      "nutrition": {
+        "carbs": 33.06,
+        "kcal": 149.0,
+        "vitc": 31.2,
+        "b12": 0.0,
+        "fiber": 2.1,
+        "iron": 1.7,
+        "sodium": 17.0,
+        "protein": 6.36,
+        "calcium": 181.0,
+        "potassium": 401.0,
+        "fat": 0.5
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Garlic, raw",
+        "tr": "Çiğ sarımsak",
+        "ar": "الثوم الخام",
+        "de": "Knoblauch, roh",
+        "es": "Ajo, crudo",
+        "fr": "Ail, cru",
+        "ja": "ニンニク、生",
+        "pt-BR": "Alho cru",
+        "ru": "Чеснок, сырой"
+      }
+    },
+    {
+      "id": "web_salt_v1",
+      "fdc": "173468",
+      "description": "Salt, table",
+      "nutrition": {
+        "fiber": 0.0,
+        "iron": 0.33,
+        "sodium": 38758.0,
+        "vitc": 0.0,
+        "b12": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "carbs": 0.0,
+        "kcal": 0.0,
+        "calcium": 24.0,
+        "potassium": 8.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Salt, table",
+        "tr": "Sofra tuzu",
+        "ar": "ملح، طاولة",
+        "de": "Salz, Tisch",
+        "es": "sal, mesa",
+        "fr": "Sel de table",
+        "ja": "塩、テーブル",
+        "pt-BR": "Sal, mesa",
+        "ru": "Соль столовая"
+      }
+    },
+    {
+      "id": "web_pepper_v1",
+      "fdc": "170931",
+      "description": "Spices, pepper, black",
+      "nutrition": {
+        "b12": 0.0,
+        "fat": 3.26,
+        "carbs": 63.95,
+        "kcal": 251.0,
+        "calcium": 443.0,
+        "potassium": 1329.0,
+        "protein": 10.39,
+        "fiber": 25.3,
+        "iron": 9.71,
+        "sodium": 20.0,
+        "vitc": 0.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Ground black pepper",
+        "tr": "Öğütülmüş karabiber",
+        "ar": "فلفل أسود مطحون",
+        "de": "Gemahlener schwarzer Pfeffer",
+        "es": "Pimienta negra molida",
+        "fr": "Poivre noir moulu",
+        "ja": "挽いた黒胡椒",
+        "pt-BR": "Pimenta preta moída",
+        "ru": "Черный молотый перец"
+      }
+    },
+    {
+      "id": "web_butter_v1",
+      "fdc": "173430",
+      "description": "Butter, without salt",
+      "nutrition": {
+        "calcium": 24.0,
+        "kcal": 717.0,
+        "iron": 0.02,
+        "b12": 0.17,
+        "potassium": 24.0,
+        "fat": 81.11,
+        "carbs": 0.06,
+        "protein": 0.85,
+        "fiber": 0.0,
+        "vitc": 0.0,
+        "sodium": 11.0
+      },
+      "unknown": [],
+      "allergens": [
+        "milk"
+      ],
+      "animal": "dairy",
+      "names": {
+        "en": "Unsalted butter",
+        "tr": "Tuzsuz tereyağı",
+        "ar": "زبدة غير مملحة",
+        "de": "Ungesalzene Butter",
+        "es": "mantequilla sin sal",
+        "fr": "Beurre non salé",
+        "ja": "無塩バター",
+        "pt-BR": "Manteiga sem sal",
+        "ru": "Масло несоленое"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "web_red_lentil_soup_r4518501_v1",
+      "lead": "lentil",
+      "titles": {
+        "en": "Red lentil and carrot soup",
+        "tr": "Havuçlu kırmızı mercimek çorbası",
+        "ar": "شوربة العدس الأحمر والجزر",
+        "de": "Rote Linsen-Karotten-Suppe",
+        "es": "Sopa de lentejas rojas y zanahoria",
+        "fr": "Soupe de lentilles rouges et carottes",
+        "ja": "赤レンズ豆と人参のスープ",
+        "pt-BR": "Sopa de lentilha vermelha e cenoura",
+        "ru": "Суп из красной чечевицы и моркови"
+      },
+      "ingredients": [
+        {
+          "food": "lentil",
+          "grams": 56.7
+        },
+        {
+          "food": "onion",
+          "grams": 37.5
+        },
+        {
+          "food": "carrot",
+          "grams": 30
+        },
+        {
+          "food": "web_garlic_v1",
+          "grams": 1.5
+        },
+        {
+          "food": "oil",
+          "grams": 3.4
+        }
+      ],
+      "waterMl": 360,
+      "minutes": 40,
+      "group": "legume",
+      "snack": false,
+      "steps": {
+        "en": [
+          "Sort and rinse the dry red lentils. Wash and dice the carrot and onion; peel and mince the garlic.",
+          "Heat the listed olive oil in a pot. Soften the onion and carrot, then add garlic and stir briefly.",
+          "Add lentils and the listed water. Simmer for 20–30 minutes, until lentils are soft; add more water if needed. Divide into the displayed portions and serve hot."
+        ],
+        "tr": [
+          "Kuru kırmızı mercimeği ayıklayıp yıka. Havuç ve soğanı yıkayıp doğra; sarımsağı soyup ince kıy.",
+          "Listedeki zeytinyağını tencerede ısıt. Soğan ve havucu yumuşatıp sarımsağı ekle, kısaca karıştır.",
+          "Mercimek ve listedeki suyu ekle. Mercimek yumuşayana kadar 20–30 dakika hafifçe kaynat; gerekirse su ekle. Gösterilen porsiyonlara bölüp sıcak sun."
+        ],
+        "ar": [
+          "فرز وشطف العدس الأحمر الجاف. اغسلي الجزرة والبصل وقطعيهما إلى مكعبات؛ قشر وافرم الثوم.",
+          "تسخين زيت الزيتون المدرج في وعاء. يُطرى البصل والجزر ثم يُضاف الثوم ويُقلب لفترة وجيزة.",
+          "أضف العدس والماء المدرج. يُطهى على نار خفيفة لمدة 20-30 دقيقة حتى ينضج العدس. أضف المزيد من الماء إذا لزم الأمر. تقسم إلى الأجزاء المعروضة وتقدم ساخنة."
+        ],
+        "de": [
+          "Die trockenen roten Linsen sortieren und abspülen. Karotte und Zwiebel waschen und würfeln; Den Knoblauch schälen und fein hacken.",
+          "Das aufgeführte Olivenöl in einem Topf erhitzen. Zwiebel und Karotte anschwitzen, dann Knoblauch dazugeben und kurz umrühren.",
+          "Linsen und das aufgeführte Wasser hinzufügen. 20–30 Minuten köcheln lassen, bis die Linsen weich sind; Bei Bedarf mehr Wasser hinzufügen. In die angezeigten Portionen aufteilen und heiß servieren."
+        ],
+        "es": [
+          "Clasificar y enjuagar las lentejas rojas secas. Lavar y picar la zanahoria y la cebolla; pelar y picar el ajo.",
+          "Calentar el aceite de oliva indicado en una olla. Suaviza la cebolla y la zanahoria, luego agrega el ajo y revuelve brevemente.",
+          "Agrega las lentejas y el agua indicada. Cocine a fuego lento durante 20 a 30 minutos, hasta que las lentejas estén suaves; agregue más agua si es necesario. Dividir en las porciones mostradas y servir caliente."
+        ],
+        "fr": [
+          "Triez et rincez les lentilles rouges sèches. Lavez et coupez en dés la carotte et l'oignon; éplucher et émincer l'ail.",
+          "Faites chauffer l'huile d'olive indiquée dans une casserole. Faites ramollir l'oignon et la carotte, puis ajoutez l'ail et remuez brièvement.",
+          "Ajoutez les lentilles et l'eau indiquée. Laisser mijoter pendant 20 à 30 minutes, jusqu'à ce que les lentilles soient tendres ; ajoutez plus d'eau si nécessaire. Répartir dans les portions affichées et servir chaud."
+        ],
+        "ja": [
+          "乾燥した赤レンズ豆を選別して洗います。ニンジンとタマネギを洗ってさいの目に切ります。ニンニクの皮をむき、みじん切りにする。",
+          "記載されているオリーブオイルを鍋に入れて加熱します。玉ねぎとにんじんをしんなりさせ、にんにくを加えて軽く炒めます。",
+          "レンズ豆と記載の水を加えます。レンズ豆が柔らかくなるまで、20〜30分間煮ます。必要に応じて水を追加します。表示の分量に分けて温かいうちにお召し上がりください。"
+        ],
+        "pt-BR": [
+          "Separe e enxágue as lentilhas vermelhas secas. Lave e corte em cubos a cenoura e a cebola; descasque e pique o alho.",
+          "Aqueça o azeite listado em uma panela. Amoleça a cebola e a cenoura, depois acrescente o alho e mexa um pouco.",
+          "Adicione as lentilhas e a água listada. Cozinhe por 20–30 minutos, até que as lentilhas estejam macias; adicione mais água se necessário. Divida nas porções indicadas e sirva quente."
+        ],
+        "ru": [
+          "Переберите и промойте сухую красную чечевицу. Вымойте и нарежьте кубиками морковь и лук; очистить и измельчить чеснок.",
+          "Нагрейте указанное оливковое масло в кастрюле. Размягчите лук и морковь, затем добавьте чеснок и немного перемешайте.",
+          "Добавьте чечевицу и указанную воду. Варить на медленном огне 20–30 минут, пока чечевица не станет мягкой; при необходимости добавьте еще воды. Разделить на выставленные порции и подавать горячим."
+        ]
+      },
+      "notes": {
+        "en": "Adapted from Wikibooks; amounts are per base serving before your portion and household multipliers. Time is an editorial estimate. Nutrients are ingredient estimates from USDA SR Legacy 2018; cooking losses and final yield are not modelled. Original four servings divided by four: 1 tbsp oil=13.6 g; onion=150 g; two carrots=120 g; two garlic cloves=6 g; half pound lentils=226.8 g; six cups water=1440 ml. Choose water, omit bay leaf and optional garnishes. USDA lentils are a generic dry-lentil proxy for red lentils.",
+        "tr": "Wikibooks uyarlaması; miktarlar porsiyon ve kişi çarpanlarından önce tek temel porsiyon içindir. Süre editoryal tahmindir. Besinler USDA SR Legacy 2018 malzeme tahminidir; pişirme kaybı ve son ağırlık modellenmez. Kaynağın dört porsiyonu dörde bölündü: 1 yemek kaşığı yağ=13,6 g; soğan=150 g; iki havuç=120 g; iki diş sarımsak=6 g; yarım libre mercimek=226,8 g; altı bardak su=1440 ml. Su seçildi; defne ve isteğe bağlı süsler çıkarıldı. USDA genel kuru mercimeği kırmızı mercimek için yaklaşık eşlemedir.",
+        "ar": "مقتبس من ويكي الكتب. المبالغ لكل قاعدة خدمة قبل الجزء الخاص بك ومضاعفات الأسرة. الوقت هو تقدير التحرير. العناصر الغذائية هي تقديرات المكونات من USDA SR Legacy 2018؛ لم يتم وضع نماذج لخسائر الطهي والعائد النهائي. أربع حصص أصلية مقسمة على أربع: 1 ملعقة كبيرة زيت = 13.6 جم؛ بصل = 150 جم؛ جزرتان = 120 جم؛ فصين من الثوم = 6 جم؛ نصف رطل عدس = 226.8 جم؛ ستة أكواب ماء=1440 مل. اختر الماء، واحذف ورق الغار والزينة الاختيارية. العدس التابع لوزارة الزراعة الأمريكية هو بديل عام للعدس الجاف للعدس الأحمر.",
+        "de": "Angepasst von Wikibooks; Die Beträge verstehen sich pro Basisportion vor Ihrer Portion und den Haushaltsmultiplikatoren. Die Zeit ist eine redaktionelle Schätzung. Bei den Nährstoffen handelt es sich um Schätzungen der Inhaltsstoffe aus USDA SR Legacy 2018; Kochverluste und Endausbeute werden nicht modelliert. Ursprünglich vier Portionen geteilt durch vier: 1 EL Öl = 13,6 g; Zwiebel=150 g; zwei Karotten=120 g; zwei Knoblauchzehen=6 g; halbes Pfund Linsen = 226,8 g; sechs Tassen Wasser=1440 ml. Wählen Sie Wasser, lassen Sie Lorbeerblatt und optionale Beilagen weg. USDA-Linsen sind ein generischer Trockenlinsen-Ersatz für rote Linsen.",
+        "es": "Adaptado de Wikilibros; las cantidades son por porción base antes de su porción y los multiplicadores del hogar. El tiempo es una estimación editorial. Los nutrientes son estimaciones de ingredientes de USDA SR Legacy 2018; Las pérdidas por cocción y el rendimiento final no se modelan. Cuatro porciones originales divididas en cuatro: 1 cucharada de aceite = 13,6 g; cebolla=150 g; dos zanahorias=120 g; dos dientes de ajo=6 g; lentejas de media libra = 226,8 g; seis tazas de agua = 1440 ml. Elija agua, omita la hoja de laurel y guarniciones opcionales. Las lentejas del USDA son un sustituto genérico de las lentejas secas para las lentejas rojas.",
+        "fr": "Adapté de Wikibooks ; les montants sont par portion de base avant votre portion et les multiplicateurs ménagers. Le temps est une estimation éditoriale. Les nutriments sont des estimations d'ingrédients de l'USDA SR Legacy 2018 ; les pertes à la cuisson et le rendement final ne sont pas modélisés. Quatre portions originales divisées par quatre : 1 cuillère à soupe d'huile = 13,6 g ; oignon=150 g ; deux carottes=120 g ; deux gousses d'ail = 6 g ; lentilles d'une demi-livre = 226,8 g ; six tasses d'eau = 1440 ml. Choisissez de l’eau, omettez la feuille de laurier et les garnitures facultatives. Les lentilles USDA sont un substitut générique aux lentilles sèches pour les lentilles rouges.",
+        "ja": "ウィキブックから転載。金額は、あなたの分量と家庭での乗数の前の基本サービングあたりです。時間は編集部の推定値です。栄養素は USDA SR Legacy 2018 からの成分推定値です。調理ロスと最終収量はモデル化されていません。元の 4 人分を 4 で割った値: 油 大さじ 1 = 13.6 g。玉ねぎ=150g。にんじん2本=120g。ニンニク 2 片 = 6 g;レンズ豆 0.5 ポンド = 226.8 g。水6カップ=1440ml。水を選択し、月桂樹の葉とオプションの付け合わせを省略します。 USDA レンズ豆は、赤レンズ豆の一般的な乾燥レンズ豆の代替品です。",
+        "pt-BR": "Adaptado do Wikilivros; os valores são por porção base antes de sua porção e multiplicadores domésticos. O tempo é uma estimativa editorial. Os nutrientes são estimativas de ingredientes do USDA SR Legacy 2018; as perdas por cozimento e o rendimento final não são modelados. Quatro porções originais divididas por quatro: 1 colher de sopa de óleo = 13,6 g; cebola=150g; duas cenouras=120 g; dois dentes de alho=6 g; lentilhas de meio quilo = 226,8 g; seis xícaras de água = 1440 ml. Escolha água, omita a folha de louro e guarnições opcionais. As lentilhas do USDA são um proxy genérico de lentilha seca para lentilhas vermelhas.",
+        "ru": "Адаптировано из Wikibooks; суммы указаны за базовую порцию без учета множителей вашей порции и семьи. Время — это редакционная оценка. Питательные вещества представляют собой оценки ингредиентов из отчета Министерства сельского хозяйства США SR Legacy 2018; Потери при приготовлении и конечный выход не моделируются. Оригинальные четыре порции, разделенные на четыре: 1 ст.л. масла=13,6 г; лук репчатый=150 г; две морковки=120 г; два зубчика чеснока=6 г; полфунта чечевицы = 226,8 г; шесть стаканов воды = 1440 мл. Выберите воду, исключите лавровый лист и дополнительные гарниры. Чечевица Министерства сельского хозяйства США — это общий аналог красной чечевицы, представляющий собой сухую чечевицу."
+      },
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ARed+Lentil+Soup&oldid=4518501",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ARed+Lentil+Soup&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ]
+}

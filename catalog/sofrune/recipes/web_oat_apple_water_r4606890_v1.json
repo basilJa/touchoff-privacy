@@ -1,0 +1,235 @@
+{
+  "schema": 1,
+  "revision": 2,
+  "published": "2026-10-23",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "activeIds": [
+    "web_oat_apple_water_r4606890_v1"
+  ],
+  "foodSource": "USDA SR Legacy 2018-04 (CC0)",
+  "foods": [
+    {
+      "id": "web_garlic_v1",
+      "fdc": "169230",
+      "description": "Garlic, raw",
+      "nutrition": {
+        "carbs": 33.06,
+        "kcal": 149.0,
+        "vitc": 31.2,
+        "b12": 0.0,
+        "fiber": 2.1,
+        "iron": 1.7,
+        "sodium": 17.0,
+        "protein": 6.36,
+        "calcium": 181.0,
+        "potassium": 401.0,
+        "fat": 0.5
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Garlic, raw",
+        "tr": "Çiğ sarımsak",
+        "ar": "الثوم الخام",
+        "de": "Knoblauch, roh",
+        "es": "Ajo, crudo",
+        "fr": "Ail, cru",
+        "ja": "ニンニク、生",
+        "pt-BR": "Alho cru",
+        "ru": "Чеснок, сырой"
+      }
+    },
+    {
+      "id": "web_salt_v1",
+      "fdc": "173468",
+      "description": "Salt, table",
+      "nutrition": {
+        "fiber": 0.0,
+        "iron": 0.33,
+        "sodium": 38758.0,
+        "vitc": 0.0,
+        "b12": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "carbs": 0.0,
+        "kcal": 0.0,
+        "calcium": 24.0,
+        "potassium": 8.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Salt, table",
+        "tr": "Sofra tuzu",
+        "ar": "ملح، طاولة",
+        "de": "Salz, Tisch",
+        "es": "sal, mesa",
+        "fr": "Sel de table",
+        "ja": "塩、テーブル",
+        "pt-BR": "Sal, mesa",
+        "ru": "Соль столовая"
+      }
+    },
+    {
+      "id": "web_pepper_v1",
+      "fdc": "170931",
+      "description": "Spices, pepper, black",
+      "nutrition": {
+        "b12": 0.0,
+        "fat": 3.26,
+        "carbs": 63.95,
+        "kcal": 251.0,
+        "calcium": 443.0,
+        "potassium": 1329.0,
+        "protein": 10.39,
+        "fiber": 25.3,
+        "iron": 9.71,
+        "sodium": 20.0,
+        "vitc": 0.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Ground black pepper",
+        "tr": "Öğütülmüş karabiber",
+        "ar": "فلفل أسود مطحون",
+        "de": "Gemahlener schwarzer Pfeffer",
+        "es": "Pimienta negra molida",
+        "fr": "Poivre noir moulu",
+        "ja": "挽いた黒胡椒",
+        "pt-BR": "Pimenta preta moída",
+        "ru": "Черный молотый перец"
+      }
+    },
+    {
+      "id": "web_butter_v1",
+      "fdc": "173430",
+      "description": "Butter, without salt",
+      "nutrition": {
+        "calcium": 24.0,
+        "kcal": 717.0,
+        "iron": 0.02,
+        "b12": 0.17,
+        "potassium": 24.0,
+        "fat": 81.11,
+        "carbs": 0.06,
+        "protein": 0.85,
+        "fiber": 0.0,
+        "vitc": 0.0,
+        "sodium": 11.0
+      },
+      "unknown": [],
+      "allergens": [
+        "milk"
+      ],
+      "animal": "dairy",
+      "names": {
+        "en": "Unsalted butter",
+        "tr": "Tuzsuz tereyağı",
+        "ar": "زبدة غير مملحة",
+        "de": "Ungesalzene Butter",
+        "es": "mantequilla sin sal",
+        "fr": "Beurre non salé",
+        "ja": "無塩バター",
+        "pt-BR": "Manteiga sem sal",
+        "ru": "Масло несоленое"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "web_oat_apple_water_r4606890_v1",
+      "lead": "oats",
+      "titles": {
+        "en": "Apple porridge with water",
+        "tr": "Suyla elmalı yulaf lapası",
+        "ar": "عصيدة التفاح مع الماء",
+        "de": "Apfelbrei mit Wasser",
+        "es": "Gachas de manzana con agua",
+        "fr": "Bouillie de pommes avec de l'eau",
+        "ja": "リンゴのお粥（水入り）",
+        "pt-BR": "Mingau de maçã com água",
+        "ru": "Яблочная каша на воде"
+      },
+      "ingredients": [
+        {
+          "food": "oats",
+          "grams": 60
+        },
+        {
+          "food": "apple",
+          "grams": 150
+        }
+      ],
+      "waterMl": 300,
+      "minutes": 15,
+      "group": "grain",
+      "snack": false,
+      "steps": {
+        "en": [
+          "Combine the listed dry oats and water in a saucepan and bring to a boil. Lower the heat and stir regularly, watching for boiling over.",
+          "Simmer until soft. Add the listed milk if present, and stir until heated through; otherwise keep cooking with water. Oat type changes cooking time.",
+          "If apple is listed, wash, core and add during cooking. If banana is listed, peel and slice onto the finished porridge. Divide into the displayed portions. No unlisted sugar, honey or toppings are included."
+        ],
+        "tr": [
+          "Listedeki kuru yulaf ve suyu tencerede kaynat. Ateşi azaltıp taşmamasına dikkat ederek düzenli karıştır.",
+          "Yumuşayana dek hafifçe kaynat. Listede süt varsa ekleyip iyice ısınana dek karıştır; yoksa suyla pişirmeyi sürdür. Yulaf türüne göre süre değişir.",
+          "Elma varsa yıka, çekirdeğini çıkar ve pişerken ekle. Muz varsa soyup dilimleyerek pişmiş lapanın üstüne koy. Gösterilen porsiyonlara böl. Listelenmeyen şeker, bal veya üst malzemeleri hesaba dahil değildir."
+        ],
+        "ar": [
+          "يُمزج الشوفان الجاف المذكور مع الماء في قدر ويُغلى المزيج. خففي النار وحركيه بانتظام، وراقبي الغليان.",
+          "ينضج حتى تصبح طرية. أضف الحليب المدرج إذا كان موجودًا، وحركه حتى يسخن؛ وإلا استمر في الطهي بالماء. نوع الشوفان يغير وقت الطهي.",
+          "إذا كانت التفاحة مدرجة في القائمة، اغسلها وقشرها وأضفها أثناء الطهي. إذا كان الموز مدرجًا في القائمة، قشره وقطعه إلى شرائح على العصيدة النهائية. تقسيمها إلى الأجزاء المعروضة. لا يتم تضمين السكر أو العسل أو الطبقة غير المدرجة."
+        ],
+        "de": [
+          "Die aufgeführten trockenen Haferflocken und Wasser in einem Topf vermischen und zum Kochen bringen. Reduzieren Sie die Hitze und rühren Sie regelmäßig um, achten Sie darauf, dass es nicht überkocht.",
+          "Köcheln lassen, bis es weich ist. Fügen Sie die aufgeführte Milch hinzu, falls vorhanden, und rühren Sie, bis sie durchgewärmt ist. andernfalls weiter mit Wasser kochen. Hafersorte verändert die Garzeit.",
+          "Wenn Apfel aufgeführt ist, waschen, entkernen und während des Kochens hinzufügen. Wenn eine Banane aufgeführt ist, schälen Sie sie und schneiden Sie sie in Scheiben auf den fertigen Brei. In die angezeigten Portionen aufteilen. Es sind kein nicht aufgeführter Zucker, Honig oder Toppings enthalten."
+        ],
+        "es": [
+          "Combine la avena seca indicada y el agua en una cacerola y deje hervir. Baje el fuego y revuelva regularmente, vigilando que no se desborde.",
+          "Cocine a fuego lento hasta que esté suave. Agregue la leche indicada, si está presente, y revuelva hasta que esté completamente caliente; de lo contrario siga cocinando con agua. El tipo de avena cambia el tiempo de cocción.",
+          "Si la manzana aparece en la lista, lávela, quítele el corazón y agréguela durante la cocción. Si aparece un plátano, pélelo y córtelo en rodajas sobre la papilla terminada. Divida en las porciones mostradas. No se incluyen azúcar, miel ni aderezos que no figuran en la lista."
+        ],
+        "fr": [
+          "Mélangez les flocons d'avoine secs indiqués et l'eau dans une casserole et portez à ébullition. Baissez le feu et remuez régulièrement en surveillant les débordements.",
+          "Laisser mijoter jusqu'à ce qu'il soit tendre. Ajoutez le lait indiqué, le cas échéant, et remuez jusqu'à ce qu'il soit bien chaud ; sinon continuez la cuisson avec de l'eau. Le type d'avoine change le temps de cuisson.",
+          "Si une pomme est répertoriée, lavez, épépinez et ajoutez pendant la cuisson. Si la banane est répertoriée, pelez-la et coupez-la en tranches sur le porridge fini. Divisez en portions affichées. Aucun sucre, miel ou garniture non répertorié n'est inclus."
+        ],
+        "ja": [
+          "記載されているドライオーツと水を鍋に入れて沸騰させます。火を弱め、吹きこぼれに注意しながら定期的にかき混ぜます。",
+          "柔らかくなるまで煮ます。記載されている牛乳が存在する場合はそれを加え、完全に加熱されるまでかき混ぜます。それ以外の場合は水で調理を続けてください。オーツ麦の種類によって調理時間が変わります。",
+          "リンゴが記載されている場合は、洗って芯を取り、調理中に加えます。バナナが記載されている場合は、皮をむき、完成したお粥の上にスライスします。表示されている部分に分割します。記載されていない砂糖、蜂蜜、トッピングは含まれておりません。"
+        ],
+        "pt-BR": [
+          "Combine a aveia seca listada e a água em uma panela e leve para ferver. Abaixe o fogo e mexa regularmente, observando se ferve.",
+          "Cozinhe até ficar macio. Adicione o leite listado, se presente, e mexa até aquecer; caso contrário, continue cozinhando com água. O tipo de aveia altera o tempo de cozimento.",
+          "Se a maçã estiver listada, lave, retire o caroço e adicione durante o cozimento. Se a banana estiver listada, descasque e corte no mingau pronto. Divida nas porções exibidas. Não estão incluídos açúcar, mel ou coberturas não listadas."
+        ],
+        "ru": [
+          "Смешайте указанный сухой овес и воду в кастрюле и доведите до кипения. Уменьшите огонь и регулярно помешивайте, следя за тем, чтобы жидкость не закипела.",
+          "Тушить до мягкости. Добавьте указанное молоко, если оно есть, и перемешайте, пока оно полностью не прогреется; в противном случае продолжайте готовить с водой. Тип овса меняет время приготовления.",
+          "Если в списке указано яблоко, вымойте его, удалите сердцевину и добавьте во время приготовления. Если в списке указан банан, очистите его и нарежьте на готовую кашу. Разделить на отображаемые части. Никакой неуказанный сахар, мед или начинки не включены."
+        ]
+      },
+      "notes": {
+        "en": "Adapted from Wikibooks; amounts are per base serving before your portion and household multipliers. Time is an editorial estimate. Nutrients are ingredient estimates from USDA SR Legacy 2018; cooking losses and final yield are not modelled. Based on the source recipe and its water/fruit variations. We chose oat/fruit weights, use whole milk at approximately 185 g per 180 ml, and omit optional sweeteners. Listed oats are the USDA dry-oat record, not an exact brand.",
+        "tr": "Wikibooks uyarlaması; miktarlar porsiyon ve kişi çarpanlarından önce tek temel porsiyon içindir. Süre editoryal tahmindir. Besinler USDA SR Legacy 2018 malzeme tahminidir; pişirme kaybı ve son ağırlık modellenmez. Kaynak tarif ve su/meyve çeşitleri temel alındı. Yulaf/meyve gramları seçildi; 180 ml tam süt yaklaşık 185 g alındı; isteğe bağlı tatlandırıcılar çıkarıldı. Yulaf kaydı USDA kuru yulaftır; belirli marka değildir.",
+        "ar": "مقتبس من ويكي الكتب. المبالغ لكل قاعدة خدمة قبل الجزء الخاص بك ومضاعفات الأسرة. الوقت هو تقدير التحرير. العناصر الغذائية هي تقديرات المكونات من USDA SR Legacy 2018؛ لم يتم وضع نماذج لخسائر الطهي والعائد النهائي. بناءً على وصفة المصدر وتنوعها في الماء/الفاكهة. لقد اخترنا أوزان الشوفان/الفاكهة، واستخدمنا الحليب كامل الدسم بحوالي 185 جرامًا لكل 180 مل، واستبعدنا المحليات الاختيارية. الشوفان المدرج هو سجل الشوفان الجاف التابع لوزارة الزراعة الأمريكية، وليس علامة تجارية محددة.",
+        "de": "Angepasst von Wikibooks; Die Beträge verstehen sich pro Basisportion vor Ihrer Portion und den Haushaltsmultiplikatoren. Die Zeit ist eine redaktionelle Schätzung. Bei den Nährstoffen handelt es sich um Schätzungen der Inhaltsstoffe aus USDA SR Legacy 2018; Kochverluste und Endausbeute werden nicht modelliert. Basierend auf dem Originalrezept und seinen Wasser-/Fruchtvariationen. Wir haben Hafer-/Fruchtgewichte gewählt, Vollmilch in einer Menge von ca. 185 g pro 180 ml verwendet und optionale Süßstoffe weggelassen. Bei gelistetem Hafer handelt es sich um den USDA-Trockenhafer-Rekord, nicht um eine genaue Marke.",
+        "es": "Adaptado de Wikilibros; las cantidades son por porción base antes de su porción y los multiplicadores del hogar. El tiempo es una estimación editorial. Los nutrientes son estimaciones de ingredientes de USDA SR Legacy 2018; Las pérdidas por cocción y el rendimiento final no se modelan. Basado en la receta original y sus variaciones de agua/fruta. Elegimos pesos de avena/fruta, usamos leche entera en aproximadamente 185 g por 180 ml y omitimos los edulcorantes opcionales. La avena incluida en la lista es el registro de avena seca del USDA, no una marca exacta.",
+        "fr": "Adapté de Wikibooks ; les montants sont par portion de base avant votre portion et les multiplicateurs ménagers. Le temps est une estimation éditoriale. Les nutriments sont des estimations d'ingrédients de l'USDA SR Legacy 2018 ; les pertes à la cuisson et le rendement final ne sont pas modélisés. Basé sur la recette source et ses variations eau/fruit. Nous avons choisi des poids d'avoine et de fruits, utilisé du lait entier à raison d'environ 185 g pour 180 ml et omis les édulcorants facultatifs. L'avoine répertoriée constitue le record d'avoine sèche de l'USDA, et non une marque exacte.",
+        "ja": "ウィキブックから転載。金額は、あなたの分量と家庭での乗数の前の基本サービングあたりです。時間は編集部の推定値です。栄養素は USDA SR Legacy 2018 からの成分推定値です。調理ロスと最終収量はモデル化されていません。ソースのレシピとその水/フルーツのバリエーションに基づいています。オーツ麦/フルーツの重量を選択し、180 ml あたり約 185 g の全乳を使用し、オプションの甘味料を省略しました。リストされているオーツは USDA のドライオーツの記録であり、正確なブランドではありません。",
+        "pt-BR": "Adaptado do Wikilivros; os valores são por porção base antes de sua porção e multiplicadores domésticos. O tempo é uma estimativa editorial. Os nutrientes são estimativas de ingredientes do USDA SR Legacy 2018; as perdas por cozimento e o rendimento final não são modelados. Com base na receita de origem e suas variações de água/fruta. Escolhemos pesos de aveia/fruta, usamos leite integral em aproximadamente 185 g por 180 ml e omitimos adoçantes opcionais. A aveia listada é o recorde de aveia seca do USDA, não uma marca exata.",
+        "ru": "Адаптировано из Wikibooks; суммы указаны за базовую порцию без учета множителей вашей порции и семьи. Время — это редакционная оценка. Питательные вещества представляют собой оценки ингредиентов из отчета Министерства сельского хозяйства США SR Legacy 2018; Потери при приготовлении и конечный выход не моделируются. На основе исходного рецепта и его водно-фруктовых вариаций. Мы выбрали овсяно-фруктовый вес, использовали цельное молоко в количестве примерно 185 г на 180 мл и исключили дополнительные подсластители. Перечисленный овес представляет собой рекорд Министерства сельского хозяйства США по сухому овсу, а не конкретную марку."
+      },
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat+Porridge&oldid=4606890",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat+Porridge&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ]
+}

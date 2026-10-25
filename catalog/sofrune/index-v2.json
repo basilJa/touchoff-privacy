@@ -1,0 +1,487 @@
+{
+  "schema": 2,
+  "revision": 2,
+  "published": "2026-10-23",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "activeIds": [
+    "web_tomato_omelette_bread_r4493957_v1",
+    "web_tomato_omelette_rice_r4493957_v1",
+    "web_oat_milk_r4606890_v2",
+    "web_oat_apple_water_r4606890_v2",
+    "web_oat_banana_milk_r4606890_v2",
+    "web_scrambled_milk_r4523414_v1",
+    "web_scrambled_toast_r4523414_v1",
+    "web_red_lentil_soup_r4518501_v1"
+  ],
+  "foodSource": "USDA SR Legacy 2018-04 (CC0)",
+  "foods": [
+    {
+      "id": "web_garlic_v1",
+      "fdc": "169230",
+      "description": "Garlic, raw",
+      "nutrition": {
+        "carbs": 33.06,
+        "kcal": 149.0,
+        "vitc": 31.2,
+        "b12": 0.0,
+        "fiber": 2.1,
+        "iron": 1.7,
+        "sodium": 17.0,
+        "protein": 6.36,
+        "calcium": 181.0,
+        "potassium": 401.0,
+        "fat": 0.5
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Garlic, raw",
+        "tr": "Çiğ sarımsak",
+        "ar": "الثوم الخام",
+        "de": "Knoblauch, roh",
+        "es": "Ajo, crudo",
+        "fr": "Ail, cru",
+        "ja": "ニンニク、生",
+        "pt-BR": "Alho cru",
+        "ru": "Чеснок, сырой"
+      }
+    },
+    {
+      "id": "web_salt_v1",
+      "fdc": "173468",
+      "description": "Salt, table",
+      "nutrition": {
+        "fiber": 0.0,
+        "iron": 0.33,
+        "sodium": 38758.0,
+        "vitc": 0.0,
+        "b12": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "carbs": 0.0,
+        "kcal": 0.0,
+        "calcium": 24.0,
+        "potassium": 8.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Salt, table",
+        "tr": "Sofra tuzu",
+        "ar": "ملح، طاولة",
+        "de": "Salz, Tisch",
+        "es": "sal, mesa",
+        "fr": "Sel de table",
+        "ja": "塩、テーブル",
+        "pt-BR": "Sal, mesa",
+        "ru": "Соль столовая"
+      }
+    },
+    {
+      "id": "web_pepper_v1",
+      "fdc": "170931",
+      "description": "Spices, pepper, black",
+      "nutrition": {
+        "b12": 0.0,
+        "fat": 3.26,
+        "carbs": 63.95,
+        "kcal": 251.0,
+        "calcium": 443.0,
+        "potassium": 1329.0,
+        "protein": 10.39,
+        "fiber": 25.3,
+        "iron": 9.71,
+        "sodium": 20.0,
+        "vitc": 0.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Ground black pepper",
+        "tr": "Öğütülmüş karabiber",
+        "ar": "فلفل أسود مطحون",
+        "de": "Gemahlener schwarzer Pfeffer",
+        "es": "Pimienta negra molida",
+        "fr": "Poivre noir moulu",
+        "ja": "挽いた黒胡椒",
+        "pt-BR": "Pimenta preta moída",
+        "ru": "Черный молотый перец"
+      }
+    },
+    {
+      "id": "web_butter_v1",
+      "fdc": "173430",
+      "description": "Butter, without salt",
+      "nutrition": {
+        "calcium": 24.0,
+        "kcal": 717.0,
+        "iron": 0.02,
+        "b12": 0.17,
+        "potassium": 24.0,
+        "fat": 81.11,
+        "carbs": 0.06,
+        "protein": 0.85,
+        "fiber": 0.0,
+        "vitc": 0.0,
+        "sodium": 11.0
+      },
+      "unknown": [],
+      "allergens": [
+        "milk"
+      ],
+      "animal": "dairy",
+      "names": {
+        "en": "Unsalted butter",
+        "tr": "Tuzsuz tereyağı",
+        "ar": "زبدة غير مملحة",
+        "de": "Ungesalzene Butter",
+        "es": "mantequilla sin sal",
+        "fr": "Beurre non salé",
+        "ja": "無塩バター",
+        "pt-BR": "Manteiga sem sal",
+        "ru": "Масло несоленое"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "web_tomato_omelette_bread_r4493957_v1",
+      "lead": "egg",
+      "titles": {
+        "en": "Tomato omelette with bread",
+        "tr": "Ekmekli domatesli omlet",
+        "ar": "أومليت طماطم مع خبز",
+        "de": "Tomatenomelett mit Brot",
+        "es": "Tortilla de tomate con pan",
+        "fr": "Omelette aux tomates et au pain",
+        "ja": "トマトオムレツ パン添え",
+        "pt-BR": "Omelete de tomate com pão",
+        "ru": "Томатный омлет с хлебом"
+      },
+      "ingredients": [
+        {
+          "food": "egg",
+          "grams": 100
+        },
+        {
+          "food": "tomato",
+          "grams": 150
+        },
+        {
+          "food": "oil",
+          "grams": 7
+        },
+        {
+          "food": "web_salt_v1",
+          "grams": 0.5
+        },
+        {
+          "food": "web_pepper_v1",
+          "grams": 0.1
+        },
+        {
+          "food": "bread",
+          "grams": 60
+        }
+      ],
+      "waterMl": 0,
+      "minutes": 20,
+      "group": "egg",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ANigerian+Tomato+Omelette&oldid=4493957",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ANigerian+Tomato+Omelette&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_tomato_omelette_rice_r4493957_v1",
+      "lead": "egg",
+      "titles": {
+        "en": "Tomato omelette with brown rice",
+        "tr": "Esmer pirinçli domatesli omlet",
+        "ar": "أومليت بالطماطم مع الأرز البني",
+        "de": "Tomatenomelett mit braunem Reis",
+        "es": "Tortilla de tomate con arroz integral",
+        "fr": "Omelette aux tomates et riz brun",
+        "ja": "玄米トマトオムレツ",
+        "pt-BR": "Omelete de tomate com arroz integral",
+        "ru": "Томатный омлет с коричневым рисом"
+      },
+      "ingredients": [
+        {
+          "food": "egg",
+          "grams": 100
+        },
+        {
+          "food": "tomato",
+          "grams": 150
+        },
+        {
+          "food": "oil",
+          "grams": 7
+        },
+        {
+          "food": "web_salt_v1",
+          "grams": 0.5
+        },
+        {
+          "food": "web_pepper_v1",
+          "grams": 0.1
+        },
+        {
+          "food": "rice",
+          "grams": 160
+        }
+      ],
+      "waterMl": 0,
+      "minutes": 20,
+      "group": "egg",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ANigerian+Tomato+Omelette&oldid=4493957",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ANigerian+Tomato+Omelette&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_oat_milk_r4606890_v2",
+      "lead": "oats",
+      "titles": {
+        "en": "Milk oat porridge",
+        "tr": "Sütlü yulaf lapası",
+        "ar": "عصيدة الشوفان بالحليب",
+        "de": "Milch-Haferbrei",
+        "es": "Gachas de avena con leche",
+        "fr": "Bouillie d'avoine au lait",
+        "ja": "ミルクオーツのお粥",
+        "pt-BR": "Mingau de aveia com leite",
+        "ru": "Молочная овсяная каша"
+      },
+      "ingredients": [
+        {
+          "food": "oats",
+          "grams": 45
+        },
+        {
+          "food": "milk",
+          "grams": 185
+        }
+      ],
+      "waterMl": 180,
+      "minutes": 15,
+      "group": "grain",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat+Porridge&oldid=4606890",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat+Porridge&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_oat_apple_water_r4606890_v2",
+      "lead": "oats",
+      "titles": {
+        "en": "Apple porridge with water",
+        "tr": "Suyla elmalı yulaf lapası",
+        "ar": "عصيدة التفاح مع الماء",
+        "de": "Apfelbrei mit Wasser",
+        "es": "Gachas de manzana con agua",
+        "fr": "Bouillie de pommes avec de l'eau",
+        "ja": "リンゴのお粥（水入り）",
+        "pt-BR": "Mingau de maçã com água",
+        "ru": "Яблочная каша на воде"
+      },
+      "ingredients": [
+        {
+          "food": "oats",
+          "grams": 60
+        },
+        {
+          "food": "apple",
+          "grams": 150
+        }
+      ],
+      "waterMl": 300,
+      "minutes": 15,
+      "group": "grain",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat+Porridge&oldid=4606890",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat+Porridge&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_oat_banana_milk_r4606890_v2",
+      "lead": "oats",
+      "titles": {
+        "en": "Banana milk porridge",
+        "tr": "Muzlu sütlü yulaf",
+        "ar": "عصيدة حليب الموز",
+        "de": "Bananenmilchbrei",
+        "es": "Gachas de leche de plátano",
+        "fr": "Bouillie de lait à la banane",
+        "ja": "バナナミルク粥",
+        "pt-BR": "Mingau de banana com leite",
+        "ru": "Банановая молочная каша"
+      },
+      "ingredients": [
+        {
+          "food": "oats",
+          "grams": 60
+        },
+        {
+          "food": "milk",
+          "grams": 185
+        },
+        {
+          "food": "banana",
+          "grams": 100
+        }
+      ],
+      "waterMl": 180,
+      "minutes": 15,
+      "group": "grain",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat+Porridge&oldid=4606890",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat+Porridge&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_scrambled_milk_r4523414_v1",
+      "lead": "egg",
+      "titles": {
+        "en": "Scrambled eggs with milk",
+        "tr": "Sütlü çırpılmış yumurta",
+        "ar": "بيض مخفوق مع الحليب",
+        "de": "Rührei mit Milch",
+        "es": "Huevos revueltos con leche",
+        "fr": "Oeufs brouillés au lait",
+        "ja": "スクランブルエッグとミルク",
+        "pt-BR": "Ovos mexidos com leite",
+        "ru": "Яичница с молоком"
+      },
+      "ingredients": [
+        {
+          "food": "egg",
+          "grams": 150
+        },
+        {
+          "food": "milk",
+          "grams": 40
+        },
+        {
+          "food": "web_butter_v1",
+          "grams": 10
+        },
+        {
+          "food": "web_salt_v1",
+          "grams": 0.5
+        },
+        {
+          "food": "web_pepper_v1",
+          "grams": 0.1
+        }
+      ],
+      "waterMl": 0,
+      "minutes": 12,
+      "group": "egg",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ABasic+Scrambled+Eggs&oldid=4523414",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ABasic+Scrambled+Eggs&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_scrambled_toast_r4523414_v1",
+      "lead": "egg",
+      "titles": {
+        "en": "Scrambled eggs on toast",
+        "tr": "Tost üstü çırpılmış yumurta",
+        "ar": "البيض المخفوق على الخبز المحمص",
+        "de": "Rührei auf Toast",
+        "es": "Huevos revueltos sobre tostadas",
+        "fr": "Oeufs brouillés sur pain grillé",
+        "ja": "トーストにスクランブルエッグ",
+        "pt-BR": "Ovos mexidos na torrada",
+        "ru": "Яичница на тосте"
+      },
+      "ingredients": [
+        {
+          "food": "egg",
+          "grams": 100
+        },
+        {
+          "food": "web_butter_v1",
+          "grams": 8
+        },
+        {
+          "food": "web_salt_v1",
+          "grams": 0.4
+        },
+        {
+          "food": "web_pepper_v1",
+          "grams": 0.1
+        },
+        {
+          "food": "bread",
+          "grams": 70
+        }
+      ],
+      "waterMl": 0,
+      "minutes": 12,
+      "group": "egg",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ABasic+Scrambled+Eggs&oldid=4523414",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ABasic+Scrambled+Eggs&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_red_lentil_soup_r4518501_v1",
+      "lead": "lentil",
+      "titles": {
+        "en": "Red lentil and carrot soup",
+        "tr": "Havuçlu kırmızı mercimek çorbası",
+        "ar": "شوربة العدس الأحمر والجزر",
+        "de": "Rote Linsen-Karotten-Suppe",
+        "es": "Sopa de lentejas rojas y zanahoria",
+        "fr": "Soupe de lentilles rouges et carottes",
+        "ja": "赤レンズ豆と人参のスープ",
+        "pt-BR": "Sopa de lentilha vermelha e cenoura",
+        "ru": "Суп из красной чечевицы и моркови"
+      },
+      "ingredients": [
+        {
+          "food": "lentil",
+          "grams": 56.7
+        },
+        {
+          "food": "onion",
+          "grams": 37.5
+        },
+        {
+          "food": "carrot",
+          "grams": 30
+        },
+        {
+          "food": "web_garlic_v1",
+          "grams": 1.5
+        },
+        {
+          "food": "oil",
+          "grams": 3.4
+        }
+      ],
+      "waterMl": 360,
+      "minutes": 40,
+      "group": "legume",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ARed+Lentil+Soup&oldid=4518501",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ARed+Lentil+Soup&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ]
+}
