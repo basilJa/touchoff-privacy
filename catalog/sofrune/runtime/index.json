@@ -1,0 +1,1734 @@
+{
+  "schema": 4,
+  "revision": 3,
+  "published": "2026-10-23",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "activeIds": [
+    "lentil_stew",
+    "chickpea_bowl",
+    "chicken_rice",
+    "beef_barley",
+    "salmon_rice",
+    "eggs_tomato",
+    "tofu_rice",
+    "lentil_barley",
+    "fava_barley",
+    "cod_barley",
+    "peas_bowl",
+    "miso_tofu",
+    "cod_rice",
+    "oat_milk",
+    "oat_apple",
+    "chicken_vegetables",
+    "chickpea_cabbage",
+    "beef_tomato",
+    "cod_toast1920",
+    "egg_toast1920",
+    "carrot_soup",
+    "apple_nuts",
+    "apple",
+    "banana",
+    "yogurt",
+    "nuts",
+    "tofu_snack",
+    "fava_snack",
+    "carrot_snack",
+    "web_tomato_omelette_bread_r4493957_v1",
+    "web_tomato_omelette_rice_r4493957_v1",
+    "web_oat_milk_r4606890_v2",
+    "web_oat_apple_water_r4606890_v2",
+    "web_oat_banana_milk_r4606890_v2",
+    "web_scrambled_milk_r4523414_v1",
+    "web_scrambled_toast_r4523414_v1",
+    "web_red_lentil_soup_r4518501_v1"
+  ],
+  "foodSource": "USDA SR Legacy 2018-04 (CC0)",
+  "foods": [
+    {
+      "id": "web_garlic_v1",
+      "fdc": "169230",
+      "description": "Garlic, raw",
+      "nutrition": {
+        "carbs": 33.06,
+        "kcal": 149.0,
+        "vitc": 31.2,
+        "b12": 0.0,
+        "fiber": 2.1,
+        "iron": 1.7,
+        "sodium": 17.0,
+        "protein": 6.36,
+        "calcium": 181.0,
+        "potassium": 401.0,
+        "fat": 0.5
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Garlic, raw",
+        "tr": "Çiğ sarımsak",
+        "ar": "الثوم الخام",
+        "de": "Knoblauch, roh",
+        "es": "Ajo, crudo",
+        "fr": "Ail, cru",
+        "ja": "ニンニク、生",
+        "pt-BR": "Alho cru",
+        "ru": "Чеснок, сырой"
+      }
+    },
+    {
+      "id": "web_salt_v1",
+      "fdc": "173468",
+      "description": "Salt, table",
+      "nutrition": {
+        "fiber": 0.0,
+        "iron": 0.33,
+        "sodium": 38758.0,
+        "vitc": 0.0,
+        "b12": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "carbs": 0.0,
+        "kcal": 0.0,
+        "calcium": 24.0,
+        "potassium": 8.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Salt, table",
+        "tr": "Sofra tuzu",
+        "ar": "ملح، طاولة",
+        "de": "Salz, Tisch",
+        "es": "sal, mesa",
+        "fr": "Sel de table",
+        "ja": "塩、テーブル",
+        "pt-BR": "Sal, mesa",
+        "ru": "Соль столовая"
+      }
+    },
+    {
+      "id": "web_pepper_v1",
+      "fdc": "170931",
+      "description": "Spices, pepper, black",
+      "nutrition": {
+        "b12": 0.0,
+        "fat": 3.26,
+        "carbs": 63.95,
+        "kcal": 251.0,
+        "calcium": 443.0,
+        "potassium": 1329.0,
+        "protein": 10.39,
+        "fiber": 25.3,
+        "iron": 9.71,
+        "sodium": 20.0,
+        "vitc": 0.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Ground black pepper",
+        "tr": "Öğütülmüş karabiber",
+        "ar": "فلفل أسود مطحون",
+        "de": "Gemahlener schwarzer Pfeffer",
+        "es": "Pimienta negra molida",
+        "fr": "Poivre noir moulu",
+        "ja": "挽いた黒胡椒",
+        "pt-BR": "Pimenta preta moída",
+        "ru": "Черный молотый перец"
+      }
+    },
+    {
+      "id": "web_butter_v1",
+      "fdc": "173430",
+      "description": "Butter, without salt",
+      "nutrition": {
+        "calcium": 24.0,
+        "kcal": 717.0,
+        "iron": 0.02,
+        "b12": 0.17,
+        "potassium": 24.0,
+        "fat": 81.11,
+        "carbs": 0.06,
+        "protein": 0.85,
+        "fiber": 0.0,
+        "vitc": 0.0,
+        "sodium": 11.0
+      },
+      "unknown": [],
+      "allergens": [
+        "milk"
+      ],
+      "animal": "dairy",
+      "names": {
+        "en": "Unsalted butter",
+        "tr": "Tuzsuz tereyağı",
+        "ar": "زبدة غير مملحة",
+        "de": "Ungesalzene Butter",
+        "es": "mantequilla sin sal",
+        "fr": "Beurre non salé",
+        "ja": "無塩バター",
+        "pt-BR": "Manteiga sem sal",
+        "ru": "Масло несоленое"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "lentil_stew",
+      "lead": "lentil",
+      "method": "stew",
+      "ingredients": [
+        {
+          "food": "lentil",
+          "grams": 90
+        },
+        {
+          "food": "tomato",
+          "grams": 150
+        },
+        {
+          "food": "onion",
+          "grams": 50
+        },
+        {
+          "food": "carrot",
+          "grams": 80
+        },
+        {
+          "food": "oil",
+          "grams": 10
+        },
+        {
+          "food": "bread",
+          "grams": 60
+        }
+      ],
+      "minutes": 35,
+      "group": "legume",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Lentil and vegetable stew",
+        "tr": "Mercimekli sebze tenceresi",
+        "ar": "يخنة العدس والخضار",
+        "de": "Linsen-Gemüse-Eintopf",
+        "es": "Guiso de lentejas y verduras",
+        "fr": "Ragoût de lentilles et légumes",
+        "ja": "レンズ豆と野菜のシチュー",
+        "pt-BR": "Ensopado de lentilhas e legumes",
+        "ru": "Рагу из чечевицы и овощей"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "chickpea_bowl",
+      "lead": "chickpea",
+      "method": "bowl",
+      "ingredients": [
+        {
+          "food": "chickpea",
+          "grams": 230
+        },
+        {
+          "food": "rice",
+          "grams": 180
+        },
+        {
+          "food": "spinach",
+          "grams": 60
+        },
+        {
+          "food": "oil",
+          "grams": 10
+        }
+      ],
+      "minutes": 15,
+      "group": "legume",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Chickpea and rice bowl",
+        "tr": "Nohutlu pirinç kâsesi",
+        "ar": "وعاء الحمص والأرز",
+        "de": "Schüssel mit Kichererbsen und Reis",
+        "es": "Bol de garbanzos y arroz",
+        "fr": "Bol de pois chiches et riz",
+        "ja": "ひよこ豆と丼",
+        "pt-BR": "Tigela de grão de bico e arroz",
+        "ru": "Миска нута и риса"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "chicken_rice",
+      "lead": "chicken",
+      "method": "pan",
+      "ingredients": [
+        {
+          "food": "chicken",
+          "grams": 160
+        },
+        {
+          "food": "rice",
+          "grams": 220
+        },
+        {
+          "food": "tomato",
+          "grams": 150
+        },
+        {
+          "food": "onion",
+          "grams": 60
+        },
+        {
+          "food": "oil",
+          "grams": 10
+        }
+      ],
+      "minutes": 25,
+      "group": "poultry",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Chicken with brown rice",
+        "tr": "Tavuklu esmer pilav",
+        "ar": "دجاج مع أرز بني",
+        "de": "Huhn mit braunem Reis",
+        "es": "Pollo con arroz integral",
+        "fr": "Poulet au riz brun",
+        "ja": "チキンと玄米ご飯",
+        "pt-BR": "Frango com arroz integral",
+        "ru": "Курица с коричневым рисом"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "beef_barley",
+      "lead": "beef",
+      "method": "stew",
+      "ingredients": [
+        {
+          "food": "beef",
+          "grams": 160
+        },
+        {
+          "food": "barley",
+          "grams": 220
+        },
+        {
+          "food": "carrot",
+          "grams": 100
+        },
+        {
+          "food": "onion",
+          "grams": 60
+        }
+      ],
+      "minutes": 40,
+      "group": "redmeat",
+      "historical": [
+        "legion",
+        "viking",
+        "england1778"
+      ],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Beef and barley pot",
+        "tr": "Arpalı kıyma tenceresi",
+        "ar": "وعاء لحم البقر والشعير",
+        "de": "Rindfleisch- und Gerstentopf",
+        "es": "Olla de ternera y cebada",
+        "fr": "Pot de boeuf et d'orge",
+        "ja": "牛肉と大麦の鍋",
+        "pt-BR": "Pote de carne e cevada",
+        "ru": "Горшок с говядиной и ячменем"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "salmon_rice",
+      "lead": "salmon",
+      "method": "bake",
+      "ingredients": [
+        {
+          "food": "salmon",
+          "grams": 150
+        },
+        {
+          "food": "rice",
+          "grams": 220
+        },
+        {
+          "food": "spinach",
+          "grams": 100
+        },
+        {
+          "food": "oil",
+          "grams": 5
+        }
+      ],
+      "minutes": 30,
+      "group": "fish",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Salmon, spinach and rice",
+        "tr": "Ispanaklı somon ve pirinç",
+        "ar": "سلمون، سبانخ وأرز",
+        "de": "Lachs, Spinat und Reis",
+        "es": "Salmón, espinacas y arroz",
+        "fr": "Saumon, épinards et riz",
+        "ja": "サーモン、ほうれん草、ご飯",
+        "pt-BR": "Salmão, espinafre e arroz",
+        "ru": "Лосось, шпинат и рис"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "eggs_tomato",
+      "lead": "egg",
+      "method": "pan",
+      "ingredients": [
+        {
+          "food": "egg",
+          "grams": 150
+        },
+        {
+          "food": "bread",
+          "grams": 100
+        },
+        {
+          "food": "tomato",
+          "grams": 180
+        },
+        {
+          "food": "onion",
+          "grams": 50
+        },
+        {
+          "food": "oil",
+          "grams": 8
+        }
+      ],
+      "minutes": 20,
+      "group": "egg",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Tomato eggs on toast",
+        "tr": "Domatesli yumurta ve tost",
+        "ar": "بيض الطماطم على الخبز المحمص",
+        "de": "Tomateneier auf Toast",
+        "es": "Huevos con tomate sobre tostada",
+        "fr": "Œufs de tomates sur du pain grillé",
+        "ja": "トーストにトマトエッグ",
+        "pt-BR": "Ovos de tomate na torrada",
+        "ru": "Томатные яйца на тосте"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "tofu_rice",
+      "lead": "tofu",
+      "method": "pan",
+      "ingredients": [
+        {
+          "food": "tofu",
+          "grams": 200
+        },
+        {
+          "food": "rice",
+          "grams": 200
+        },
+        {
+          "food": "carrot",
+          "grams": 100
+        }
+      ],
+      "minutes": 20,
+      "group": "soy",
+      "historical": [
+        "samurai"
+      ],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Vegetable tofu with rice",
+        "tr": "Sebzeli tofu ve pirinç",
+        "ar": "التوفو النباتي مع الأرز",
+        "de": "Gemüsetofu mit Reis",
+        "es": "Tofu de verduras con arroz",
+        "fr": "Tofu aux légumes avec du riz",
+        "ja": "野菜豆腐とご飯",
+        "pt-BR": "Tofu vegetal com arroz",
+        "ru": "Овощной тофу с рисом"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "lentil_barley",
+      "lead": "lentil",
+      "method": "stew",
+      "ingredients": [
+        {
+          "food": "lentil",
+          "grams": 80
+        },
+        {
+          "food": "barley",
+          "grams": 200
+        },
+        {
+          "food": "carrot",
+          "grams": 100
+        },
+        {
+          "food": "onion",
+          "grams": 50
+        }
+      ],
+      "minutes": 35,
+      "group": "legume",
+      "historical": [
+        "legion",
+        "gladiator"
+      ],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Lentil and barley pot",
+        "tr": "Mercimekli arpa tenceresi",
+        "ar": "وعاء العدس والشعير",
+        "de": "Linsen- und Gerstentopf",
+        "es": "Olla de lentejas y cebada",
+        "fr": "Pot de lentilles et d'orge",
+        "ja": "レンズ豆と大麦の鍋",
+        "pt-BR": "Pote de lentilha e cevada",
+        "ru": "Горшок с чечевицей и ячменем"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "fava_barley",
+      "lead": "fava",
+      "method": "bowl",
+      "ingredients": [
+        {
+          "food": "fava",
+          "grams": 250
+        },
+        {
+          "food": "barley",
+          "grams": 230
+        },
+        {
+          "food": "carrot",
+          "grams": 80
+        }
+      ],
+      "minutes": 15,
+      "group": "legume",
+      "historical": [
+        "gladiator",
+        "legion"
+      ],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Fava bean and barley bowl",
+        "tr": "Baklalı arpa tabağı",
+        "ar": "وعاء الفول والشعير",
+        "de": "Schüssel mit Ackerbohnen und Gerste",
+        "es": "Tazón de habas y cebada",
+        "fr": "Bol de fèves et d'orge",
+        "ja": "そら豆と麦の丼",
+        "pt-BR": "Tigela de fava e cevada",
+        "ru": "Чаша из фасоли и ячменя"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "cod_barley",
+      "lead": "cod",
+      "method": "bake",
+      "ingredients": [
+        {
+          "food": "cod",
+          "grams": 180
+        },
+        {
+          "food": "barley",
+          "grams": 240
+        },
+        {
+          "food": "cabbage",
+          "grams": 130
+        }
+      ],
+      "minutes": 30,
+      "group": "fish",
+      "historical": [
+        "legion",
+        "viking"
+      ],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Baked cod with barley",
+        "tr": "Arpalı fırın morina",
+        "ar": "سمك القد المخبوز مع الشعير",
+        "de": "Gebackener Kabeljau mit Gerste",
+        "es": "Bacalao al horno con cebada",
+        "fr": "Morue au four à l'orge",
+        "ja": "タラの大麦入り焼き",
+        "pt-BR": "Bacalhau Assado com Cevada",
+        "ru": "Треска запеченная с перловкой"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "peas_bowl",
+      "lead": "peas",
+      "method": "stew",
+      "ingredients": [
+        {
+          "food": "peas",
+          "grams": 240
+        },
+        {
+          "food": "carrot",
+          "grams": 100
+        },
+        {
+          "food": "onion",
+          "grams": 70
+        },
+        {
+          "food": "bread",
+          "grams": 90
+        }
+      ],
+      "minutes": 30,
+      "group": "legume",
+      "historical": [
+        "viking",
+        "england1778"
+      ],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Pea and carrot pot",
+        "tr": "Bezelyeli havuç tenceresi",
+        "ar": "وعاء البازلاء والجزر",
+        "de": "Erbsen- und Karottentopf",
+        "es": "Olla de guisantes y zanahorias",
+        "fr": "Pot de pois et de carottes",
+        "ja": "エンドウ豆とニンジンの鍋",
+        "pt-BR": "Pote de ervilha e cenoura",
+        "ru": "Горшок с горошком и морковью"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "miso_tofu",
+      "lead": "tofu",
+      "method": "soup",
+      "ingredients": [
+        {
+          "food": "tofu",
+          "grams": 180
+        },
+        {
+          "food": "miso",
+          "grams": 15
+        },
+        {
+          "food": "rice",
+          "grams": 220
+        },
+        {
+          "food": "carrot",
+          "grams": 80
+        }
+      ],
+      "minutes": 20,
+      "group": "soy",
+      "historical": [
+        "samurai"
+      ],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Tofu miso soup with rice",
+        "tr": "Tofulu miso çorbası ve pirinç",
+        "ar": "حساء التوفو ميسو مع الأرز",
+        "de": "Tofu-Miso-Suppe mit Reis",
+        "es": "Sopa de tofu y miso con arroz",
+        "fr": "Soupe miso au tofu et riz",
+        "ja": "豆腐の味噌汁とご飯",
+        "pt-BR": "Sopa de missô de tofu com arroz",
+        "ru": "Суп мисо с тофу и рисом"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "cod_rice",
+      "lead": "cod",
+      "method": "bake",
+      "ingredients": [
+        {
+          "food": "cod",
+          "grams": 180
+        },
+        {
+          "food": "rice",
+          "grams": 240
+        },
+        {
+          "food": "carrot",
+          "grams": 100
+        }
+      ],
+      "minutes": 25,
+      "group": "fish",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Baked cod with rice",
+        "tr": "Fırında morina ve pirinç",
+        "ar": "سمك القد المخبوز مع الأرز",
+        "de": "Gebackener Kabeljau mit Reis",
+        "es": "Bacalao al horno con arroz",
+        "fr": "Morue au four avec du riz",
+        "ja": "タラの焼きご飯添え",
+        "pt-BR": "Bacalhau assado com arroz",
+        "ru": "Запеченная треска с рисом"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "oat_milk",
+      "lead": "oats",
+      "method": "porridge",
+      "ingredients": [
+        {
+          "food": "oats",
+          "grams": 80
+        },
+        {
+          "food": "milk",
+          "grams": 220
+        },
+        {
+          "food": "apple",
+          "grams": 150
+        },
+        {
+          "food": "hazelnut",
+          "grams": 20
+        }
+      ],
+      "minutes": 12,
+      "group": "dairy",
+      "historical": [
+        "viking"
+      ],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Apple and hazelnut milk oats",
+        "tr": "Elmalı fındıklı sütlü yulaf",
+        "ar": "الشوفان بالحليب والتفاح والبندق",
+        "de": "Haferflocken aus Apfel- und Haselnussmilch",
+        "es": "Avena con leche de manzana y avellanas",
+        "fr": "Gruau au lait de pomme et noisette",
+        "ja": "リンゴとヘーゼルナッツのミルクオーツ",
+        "pt-BR": "Aveia com leite de maçã e avelã",
+        "ru": "Овсянка на молоке с яблоком и фундуком"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "oat_apple",
+      "lead": "oats",
+      "method": "porridge",
+      "ingredients": [
+        {
+          "food": "oats",
+          "grams": 90
+        },
+        {
+          "food": "apple",
+          "grams": 180
+        },
+        {
+          "food": "hazelnut",
+          "grams": 25
+        }
+      ],
+      "minutes": 12,
+      "group": "grain",
+      "historical": [
+        "viking"
+      ],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Apple and hazelnut porridge",
+        "tr": "Elmalı fındıklı yulaf lapası",
+        "ar": "عصيدة التفاح والبندق",
+        "de": "Apfel-Haselnuss-Porridge",
+        "es": "Gachas de manzana y avellanas",
+        "fr": "Bouillie de pommes et noisettes",
+        "ja": "リンゴとヘーゼルナッツのお粥",
+        "pt-BR": "Mingau de maçã e avelã",
+        "ru": "Яблочно-ореховая каша"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "chicken_vegetables",
+      "lead": "chicken",
+      "method": "stew",
+      "ingredients": [
+        {
+          "food": "chicken",
+          "grams": 180
+        },
+        {
+          "food": "carrot",
+          "grams": 120
+        },
+        {
+          "food": "peas",
+          "grams": 150
+        },
+        {
+          "food": "bread",
+          "grams": 70
+        },
+        {
+          "food": "oil",
+          "grams": 10
+        }
+      ],
+      "minutes": 35,
+      "group": "poultry",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Chicken and spring vegetables",
+        "tr": "Tavuklu sebze tenceresi",
+        "ar": "دجاج وخضروات ربيعية",
+        "de": "Hähnchen und Frühlingsgemüse",
+        "es": "Pollo y verduras de primavera",
+        "fr": "Poulet et légumes printaniers",
+        "ja": "鶏肉と春野菜",
+        "pt-BR": "Frango e legumes primavera",
+        "ru": "Курица и весенние овощи"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "chickpea_cabbage",
+      "lead": "chickpea",
+      "method": "stew",
+      "ingredients": [
+        {
+          "food": "chickpea",
+          "grams": 250
+        },
+        {
+          "food": "cabbage",
+          "grams": 180
+        },
+        {
+          "food": "onion",
+          "grams": 60
+        },
+        {
+          "food": "bread",
+          "grams": 60
+        },
+        {
+          "food": "oil",
+          "grams": 10
+        }
+      ],
+      "minutes": 25,
+      "group": "legume",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Chickpea and cabbage pot",
+        "tr": "Lahanalı nohut tenceresi",
+        "ar": "وعاء الحمص والملفوف",
+        "de": "Kichererbsen- und Kohltopf",
+        "es": "Olla de garbanzos y coles",
+        "fr": "Pot de pois chiches et choux",
+        "ja": "ひよこ豆とキャベツの鍋",
+        "pt-BR": "Pote de grão de bico e repolho",
+        "ru": "Горшок с нутом и капустой"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "beef_tomato",
+      "lead": "beef",
+      "method": "pan",
+      "ingredients": [
+        {
+          "food": "beef",
+          "grams": 160
+        },
+        {
+          "food": "tomato",
+          "grams": 200
+        },
+        {
+          "food": "rice",
+          "grams": 200
+        },
+        {
+          "food": "oil",
+          "grams": 8
+        }
+      ],
+      "minutes": 25,
+      "group": "redmeat",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Tomato beef with rice",
+        "tr": "Domatesli kıyma ve pirinç",
+        "ar": "لحم بقري بالطماطم مع الأرز",
+        "de": "Tomatenrindfleisch mit Reis",
+        "es": "Carne de tomate con arroz",
+        "fr": "Bœuf aux tomates et riz",
+        "ja": "トマトビーフライス",
+        "pt-BR": "Carne de tomate com arroz",
+        "ru": "Томатная говядина с рисом"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "cod_toast1920",
+      "lead": "cod",
+      "method": "bake",
+      "ingredients": [
+        {
+          "food": "cod",
+          "grams": 180
+        },
+        {
+          "food": "bread",
+          "grams": 100
+        },
+        {
+          "food": "milk",
+          "grams": 100
+        }
+      ],
+      "minutes": 30,
+      "group": "fish",
+      "historical": [
+        "usa1920"
+      ],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Baked fish with bread",
+        "tr": "Fırında balık ve ekmek",
+        "ar": "سمك مشوي مع الخبز",
+        "de": "Gebackener Fisch mit Brot",
+        "es": "Pescado al horno con pan",
+        "fr": "Poisson au four avec du pain",
+        "ja": "焼き魚とパン",
+        "pt-BR": "Peixe assado com pão",
+        "ru": "Запеченная рыба с хлебом"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "egg_toast1920",
+      "lead": "egg",
+      "method": "pan",
+      "ingredients": [
+        {
+          "food": "egg",
+          "grams": 150
+        },
+        {
+          "food": "bread",
+          "grams": 120
+        },
+        {
+          "food": "milk",
+          "grams": 100
+        }
+      ],
+      "minutes": 20,
+      "group": "egg",
+      "historical": [
+        "usa1920"
+      ],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Eggs, milk and toast",
+        "tr": "Sütlü yumurta ve tost",
+        "ar": "بيض، حليب وخبز محمص",
+        "de": "Eier, Milch und Toast",
+        "es": "Huevos, leche y tostadas",
+        "fr": "Oeufs, lait et pain grillé",
+        "ja": "卵、牛乳、トースト",
+        "pt-BR": "Ovos, leite e torradas",
+        "ru": "Яйца, молоко и тосты"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "carrot_soup",
+      "lead": "carrot",
+      "method": "soup",
+      "ingredients": [
+        {
+          "food": "carrot",
+          "grams": 200
+        },
+        {
+          "food": "onion",
+          "grams": 70
+        },
+        {
+          "food": "lentil",
+          "grams": 80
+        },
+        {
+          "food": "bread",
+          "grams": 60
+        },
+        {
+          "food": "oil",
+          "grams": 8
+        }
+      ],
+      "minutes": 35,
+      "group": "legume",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Carrot and lentil soup",
+        "tr": "Havuçlu mercimek çorbası",
+        "ar": "شوربة الجزر والعدس",
+        "de": "Karotten-Linsen-Suppe",
+        "es": "Sopa de zanahoria y lentejas",
+        "fr": "Soupe de carottes et lentilles",
+        "ja": "ニンジンとレンズ豆のスープ",
+        "pt-BR": "Sopa de cenoura e lentilha",
+        "ru": "Суп из моркови и чечевицы"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "apple_nuts",
+      "lead": "apple",
+      "method": "snack",
+      "ingredients": [
+        {
+          "food": "apple",
+          "grams": 180
+        },
+        {
+          "food": "hazelnut",
+          "grams": 25
+        }
+      ],
+      "minutes": 5,
+      "group": "nuts",
+      "historical": [
+        "legion",
+        "viking",
+        "england1778",
+        "usa1920"
+      ],
+      "snack": true,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Apple and hazelnuts",
+        "tr": "Elma ve fındık",
+        "ar": "التفاح والبندق",
+        "de": "Apfel und Haselnüsse",
+        "es": "Manzana y avellanas",
+        "fr": "Pomme et noisettes",
+        "ja": "リンゴとヘーゼルナッツ",
+        "pt-BR": "Maçã e avelãs",
+        "ru": "Яблоко и фундук"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "apple",
+      "lead": "apple",
+      "method": "snack",
+      "ingredients": [
+        {
+          "food": "apple",
+          "grams": 200
+        }
+      ],
+      "minutes": 5,
+      "group": "fruit",
+      "historical": [
+        "legion",
+        "gladiator",
+        "viking",
+        "samurai",
+        "england1778",
+        "usa1920"
+      ],
+      "snack": true,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "A crisp apple",
+        "tr": "Taze elma",
+        "ar": "تفاحة هشة",
+        "de": "Ein knackiger Apfel",
+        "es": "una manzana crujiente",
+        "fr": "Une pomme croustillante",
+        "ja": "シャキシャキとしたリンゴ",
+        "pt-BR": "Uma maçã crocante",
+        "ru": "Хрустящее яблоко"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "banana",
+      "lead": "banana",
+      "method": "snack",
+      "ingredients": [
+        {
+          "food": "banana",
+          "grams": 160
+        }
+      ],
+      "minutes": 5,
+      "group": "fruit",
+      "historical": [
+        "usa1920"
+      ],
+      "snack": true,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "A banana break",
+        "tr": "Muz molası",
+        "ar": "استراحة الموز",
+        "de": "Eine Bananenpause",
+        "es": "Un descanso de plátano",
+        "fr": "Une pause banane",
+        "ja": "バナナブレイク",
+        "pt-BR": "Uma pausa para bananas",
+        "ru": "Банановый перерыв"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "yogurt",
+      "lead": "yogurt",
+      "method": "snack",
+      "ingredients": [
+        {
+          "food": "yogurt",
+          "grams": 220
+        }
+      ],
+      "minutes": 5,
+      "group": "dairy",
+      "historical": [
+        "viking",
+        "england1778",
+        "usa1920"
+      ],
+      "snack": true,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "A bowl of plain yogurt",
+        "tr": "Bir kâse sade yoğurt",
+        "ar": "علبة من الزبادي العادي",
+        "de": "Eine Schüssel Naturjoghurt",
+        "es": "Un bol de yogur natural",
+        "fr": "Un bol de yaourt nature",
+        "ja": "プレーンヨーグルトのボウル",
+        "pt-BR": "Uma tigela de iogurte natural",
+        "ru": "Тарелка простого йогурта"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "nuts",
+      "lead": "hazelnut",
+      "method": "snack",
+      "ingredients": [
+        {
+          "food": "hazelnut",
+          "grams": 30
+        }
+      ],
+      "minutes": 5,
+      "group": "nuts",
+      "historical": [
+        "legion",
+        "viking",
+        "england1778",
+        "usa1920"
+      ],
+      "snack": true,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "A handful of hazelnuts",
+        "tr": "Bir avuç fındık",
+        "ar": "حفنة من البندق",
+        "de": "Eine Handvoll Haselnüsse",
+        "es": "Un puñado de avellanas",
+        "fr": "Une poignée de noisettes",
+        "ja": "ヘーゼルナッツ 一握り",
+        "pt-BR": "Um punhado de avelãs",
+        "ru": "Горсть фундука"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "tofu_snack",
+      "lead": "tofu",
+      "method": "snack",
+      "ingredients": [
+        {
+          "food": "tofu",
+          "grams": 100
+        }
+      ],
+      "minutes": 5,
+      "group": "soy",
+      "historical": [
+        "samurai"
+      ],
+      "snack": true,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Tofu bites",
+        "tr": "Tofu lokmaları",
+        "ar": "لدغات التوفو",
+        "de": "Tofu-Häppchen",
+        "es": "Bocaditos de tofu",
+        "fr": "Bouchées de tofu",
+        "ja": "豆腐一口",
+        "pt-BR": "Mordidas de tofu",
+        "ru": "Тофу кусочки"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "fava_snack",
+      "lead": "fava",
+      "method": "snack",
+      "ingredients": [
+        {
+          "food": "fava",
+          "grams": 140
+        }
+      ],
+      "minutes": 5,
+      "group": "legume",
+      "historical": [
+        "legion",
+        "gladiator"
+      ],
+      "snack": true,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Fava bean snack bowl",
+        "tr": "Baklalı atıştırmalık kâsesi",
+        "ar": "وعاء الوجبات الخفيفة من الفول",
+        "de": "Ackerbohnen-Snackschale",
+        "es": "Tazón de bocadillos de habas",
+        "fr": "Bol à collation aux fèves",
+        "ja": "そら豆スナックボウル",
+        "pt-BR": "Tigela de lanche de fava",
+        "ru": "Тарелка для закуски из фасоли"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "carrot_snack",
+      "lead": "carrot",
+      "method": "snack",
+      "ingredients": [
+        {
+          "food": "carrot",
+          "grams": 150
+        }
+      ],
+      "minutes": 5,
+      "group": "vegetable",
+      "historical": [
+        "legion",
+        "gladiator",
+        "viking",
+        "samurai",
+        "england1778",
+        "usa1920"
+      ],
+      "snack": true,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Carrot sticks",
+        "tr": "Havuç çubukları",
+        "ar": "عيدان الجزر",
+        "de": "Karottenstifte",
+        "es": "palitos de zanahoria",
+        "fr": "Bâtonnets de carottes",
+        "ja": "キャロットスティック",
+        "pt-BR": "Palitos de cenoura",
+        "ru": "Морковные палочки"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_tomato_omelette_bread_r4493957_v1",
+      "lead": "egg",
+      "titles": {
+        "en": "Tomato omelette with bread",
+        "tr": "Ekmekli domatesli omlet",
+        "ar": "أومليت طماطم مع خبز",
+        "de": "Tomatenomelett mit Brot",
+        "es": "Tortilla de tomate con pan",
+        "fr": "Omelette aux tomates et au pain",
+        "ja": "トマトオムレツ パン添え",
+        "pt-BR": "Omelete de tomate com pão",
+        "ru": "Томатный омлет с хлебом"
+      },
+      "ingredients": [
+        {
+          "food": "egg",
+          "grams": 100
+        },
+        {
+          "food": "tomato",
+          "grams": 150
+        },
+        {
+          "food": "oil",
+          "grams": 7
+        },
+        {
+          "food": "web_salt_v1",
+          "grams": 0.5
+        },
+        {
+          "food": "web_pepper_v1",
+          "grams": 0.1
+        },
+        {
+          "food": "bread",
+          "grams": 60
+        }
+      ],
+      "waterMl": 0,
+      "minutes": 20,
+      "group": "egg",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ANigerian+Tomato+Omelette&oldid=4493957",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ANigerian+Tomato+Omelette&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_tomato_omelette_rice_r4493957_v1",
+      "lead": "egg",
+      "titles": {
+        "en": "Tomato omelette with brown rice",
+        "tr": "Esmer pirinçli domatesli omlet",
+        "ar": "أومليت بالطماطم مع الأرز البني",
+        "de": "Tomatenomelett mit braunem Reis",
+        "es": "Tortilla de tomate con arroz integral",
+        "fr": "Omelette aux tomates et riz brun",
+        "ja": "玄米トマトオムレツ",
+        "pt-BR": "Omelete de tomate com arroz integral",
+        "ru": "Томатный омлет с коричневым рисом"
+      },
+      "ingredients": [
+        {
+          "food": "egg",
+          "grams": 100
+        },
+        {
+          "food": "tomato",
+          "grams": 150
+        },
+        {
+          "food": "oil",
+          "grams": 7
+        },
+        {
+          "food": "web_salt_v1",
+          "grams": 0.5
+        },
+        {
+          "food": "web_pepper_v1",
+          "grams": 0.1
+        },
+        {
+          "food": "rice",
+          "grams": 160
+        }
+      ],
+      "waterMl": 0,
+      "minutes": 20,
+      "group": "egg",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ANigerian+Tomato+Omelette&oldid=4493957",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ANigerian+Tomato+Omelette&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_oat_milk_r4606890_v2",
+      "lead": "oats",
+      "titles": {
+        "en": "Milk oat porridge",
+        "tr": "Sütlü yulaf lapası",
+        "ar": "عصيدة الشوفان بالحليب",
+        "de": "Milch-Haferbrei",
+        "es": "Gachas de avena con leche",
+        "fr": "Bouillie d'avoine au lait",
+        "ja": "ミルクオーツのお粥",
+        "pt-BR": "Mingau de aveia com leite",
+        "ru": "Молочная овсяная каша"
+      },
+      "ingredients": [
+        {
+          "food": "oats",
+          "grams": 45
+        },
+        {
+          "food": "milk",
+          "grams": 185
+        }
+      ],
+      "waterMl": 180,
+      "minutes": 15,
+      "group": "grain",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat+Porridge&oldid=4606890",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat+Porridge&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_oat_apple_water_r4606890_v2",
+      "lead": "oats",
+      "titles": {
+        "en": "Apple porridge with water",
+        "tr": "Suyla elmalı yulaf lapası",
+        "ar": "عصيدة التفاح مع الماء",
+        "de": "Apfelbrei mit Wasser",
+        "es": "Gachas de manzana con agua",
+        "fr": "Bouillie de pommes avec de l'eau",
+        "ja": "リンゴのお粥（水入り）",
+        "pt-BR": "Mingau de maçã com água",
+        "ru": "Яблочная каша на воде"
+      },
+      "ingredients": [
+        {
+          "food": "oats",
+          "grams": 60
+        },
+        {
+          "food": "apple",
+          "grams": 150
+        }
+      ],
+      "waterMl": 300,
+      "minutes": 15,
+      "group": "grain",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat+Porridge&oldid=4606890",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat+Porridge&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_oat_banana_milk_r4606890_v2",
+      "lead": "oats",
+      "titles": {
+        "en": "Banana milk porridge",
+        "tr": "Muzlu sütlü yulaf",
+        "ar": "عصيدة حليب الموز",
+        "de": "Bananenmilchbrei",
+        "es": "Gachas de leche de plátano",
+        "fr": "Bouillie de lait à la banane",
+        "ja": "バナナミルク粥",
+        "pt-BR": "Mingau de banana com leite",
+        "ru": "Банановая молочная каша"
+      },
+      "ingredients": [
+        {
+          "food": "oats",
+          "grams": 60
+        },
+        {
+          "food": "milk",
+          "grams": 185
+        },
+        {
+          "food": "banana",
+          "grams": 100
+        }
+      ],
+      "waterMl": 180,
+      "minutes": 15,
+      "group": "grain",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat+Porridge&oldid=4606890",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat+Porridge&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_scrambled_milk_r4523414_v1",
+      "lead": "egg",
+      "titles": {
+        "en": "Scrambled eggs with milk",
+        "tr": "Sütlü çırpılmış yumurta",
+        "ar": "بيض مخفوق مع الحليب",
+        "de": "Rührei mit Milch",
+        "es": "Huevos revueltos con leche",
+        "fr": "Oeufs brouillés au lait",
+        "ja": "スクランブルエッグとミルク",
+        "pt-BR": "Ovos mexidos com leite",
+        "ru": "Яичница с молоком"
+      },
+      "ingredients": [
+        {
+          "food": "egg",
+          "grams": 150
+        },
+        {
+          "food": "milk",
+          "grams": 40
+        },
+        {
+          "food": "web_butter_v1",
+          "grams": 10
+        },
+        {
+          "food": "web_salt_v1",
+          "grams": 0.5
+        },
+        {
+          "food": "web_pepper_v1",
+          "grams": 0.1
+        }
+      ],
+      "waterMl": 0,
+      "minutes": 12,
+      "group": "egg",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ABasic+Scrambled+Eggs&oldid=4523414",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ABasic+Scrambled+Eggs&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_scrambled_toast_r4523414_v1",
+      "lead": "egg",
+      "titles": {
+        "en": "Scrambled eggs on toast",
+        "tr": "Tost üstü çırpılmış yumurta",
+        "ar": "البيض المخفوق على الخبز المحمص",
+        "de": "Rührei auf Toast",
+        "es": "Huevos revueltos sobre tostadas",
+        "fr": "Oeufs brouillés sur pain grillé",
+        "ja": "トーストにスクランブルエッグ",
+        "pt-BR": "Ovos mexidos na torrada",
+        "ru": "Яичница на тосте"
+      },
+      "ingredients": [
+        {
+          "food": "egg",
+          "grams": 100
+        },
+        {
+          "food": "web_butter_v1",
+          "grams": 8
+        },
+        {
+          "food": "web_salt_v1",
+          "grams": 0.4
+        },
+        {
+          "food": "web_pepper_v1",
+          "grams": 0.1
+        },
+        {
+          "food": "bread",
+          "grams": 70
+        }
+      ],
+      "waterMl": 0,
+      "minutes": 12,
+      "group": "egg",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ABasic+Scrambled+Eggs&oldid=4523414",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ABasic+Scrambled+Eggs&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "web_red_lentil_soup_r4518501_v1",
+      "lead": "lentil",
+      "titles": {
+        "en": "Red lentil and carrot soup",
+        "tr": "Havuçlu kırmızı mercimek çorbası",
+        "ar": "شوربة العدس الأحمر والجزر",
+        "de": "Rote Linsen-Karotten-Suppe",
+        "es": "Sopa de lentejas rojas y zanahoria",
+        "fr": "Soupe de lentilles rouges et carottes",
+        "ja": "赤レンズ豆と人参のスープ",
+        "pt-BR": "Sopa de lentilha vermelha e cenoura",
+        "ru": "Суп из красной чечевицы и моркови"
+      },
+      "ingredients": [
+        {
+          "food": "lentil",
+          "grams": 56.7
+        },
+        {
+          "food": "onion",
+          "grams": 37.5
+        },
+        {
+          "food": "carrot",
+          "grams": 30
+        },
+        {
+          "food": "web_garlic_v1",
+          "grams": 1.5
+        },
+        {
+          "food": "oil",
+          "grams": 3.4
+        }
+      ],
+      "waterMl": 360,
+      "minutes": 40,
+      "group": "legume",
+      "snack": false,
+      "source": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ARed+Lentil+Soup&oldid=4518501",
+      "contributors": "https://en.wikibooks.org/w/index.php?title=Cookbook%3ARed+Lentil+Soup&action=history",
+      "attribution": "Wikibooks Cookbook contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "schema": 3,
+  "revision": 3,
+  "published": "2026-10-23",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "activeIds": [
+    "yogurt"
+  ],
+  "foodSource": "USDA SR Legacy 2018-04 (CC0)",
+  "foods": [
+    {
+      "id": "web_garlic_v1",
+      "fdc": "169230",
+      "description": "Garlic, raw",
+      "nutrition": {
+        "carbs": 33.06,
+        "kcal": 149.0,
+        "vitc": 31.2,
+        "b12": 0.0,
+        "fiber": 2.1,
+        "iron": 1.7,
+        "sodium": 17.0,
+        "protein": 6.36,
+        "calcium": 181.0,
+        "potassium": 401.0,
+        "fat": 0.5
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Garlic, raw",
+        "tr": "Çiğ sarımsak",
+        "ar": "الثوم الخام",
+        "de": "Knoblauch, roh",
+        "es": "Ajo, crudo",
+        "fr": "Ail, cru",
+        "ja": "ニンニク、生",
+        "pt-BR": "Alho cru",
+        "ru": "Чеснок, сырой"
+      }
+    },
+    {
+      "id": "web_salt_v1",
+      "fdc": "173468",
+      "description": "Salt, table",
+      "nutrition": {
+        "fiber": 0.0,
+        "iron": 0.33,
+        "sodium": 38758.0,
+        "vitc": 0.0,
+        "b12": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "carbs": 0.0,
+        "kcal": 0.0,
+        "calcium": 24.0,
+        "potassium": 8.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Salt, table",
+        "tr": "Sofra tuzu",
+        "ar": "ملح، طاولة",
+        "de": "Salz, Tisch",
+        "es": "sal, mesa",
+        "fr": "Sel de table",
+        "ja": "塩、テーブル",
+        "pt-BR": "Sal, mesa",
+        "ru": "Соль столовая"
+      }
+    },
+    {
+      "id": "web_pepper_v1",
+      "fdc": "170931",
+      "description": "Spices, pepper, black",
+      "nutrition": {
+        "b12": 0.0,
+        "fat": 3.26,
+        "carbs": 63.95,
+        "kcal": 251.0,
+        "calcium": 443.0,
+        "potassium": 1329.0,
+        "protein": 10.39,
+        "fiber": 25.3,
+        "iron": 9.71,
+        "sodium": 20.0,
+        "vitc": 0.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Ground black pepper",
+        "tr": "Öğütülmüş karabiber",
+        "ar": "فلفل أسود مطحون",
+        "de": "Gemahlener schwarzer Pfeffer",
+        "es": "Pimienta negra molida",
+        "fr": "Poivre noir moulu",
+        "ja": "挽いた黒胡椒",
+        "pt-BR": "Pimenta preta moída",
+        "ru": "Черный молотый перец"
+      }
+    },
+    {
+      "id": "web_butter_v1",
+      "fdc": "173430",
+      "description": "Butter, without salt",
+      "nutrition": {
+        "calcium": 24.0,
+        "kcal": 717.0,
+        "iron": 0.02,
+        "b12": 0.17,
+        "potassium": 24.0,
+        "fat": 81.11,
+        "carbs": 0.06,
+        "protein": 0.85,
+        "fiber": 0.0,
+        "vitc": 0.0,
+        "sodium": 11.0
+      },
+      "unknown": [],
+      "allergens": [
+        "milk"
+      ],
+      "animal": "dairy",
+      "names": {
+        "en": "Unsalted butter",
+        "tr": "Tuzsuz tereyağı",
+        "ar": "زبدة غير مملحة",
+        "de": "Ungesalzene Butter",
+        "es": "mantequilla sin sal",
+        "fr": "Beurre non salé",
+        "ja": "無塩バター",
+        "pt-BR": "Manteiga sem sal",
+        "ru": "Масло несоленое"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "yogurt",
+      "lead": "yogurt",
+      "method": "snack",
+      "ingredients": [
+        {
+          "food": "yogurt",
+          "grams": 220
+        }
+      ],
+      "minutes": 5,
+      "group": "dairy",
+      "historical": [
+        "viking",
+        "england1778",
+        "usa1920"
+      ],
+      "snack": true,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "A bowl of plain yogurt",
+        "tr": "Bir kâse sade yoğurt",
+        "ar": "علبة من الزبادي العادي",
+        "de": "Eine Schüssel Naturjoghurt",
+        "es": "Un bol de yogur natural",
+        "fr": "Un bol de yaourt nature",
+        "ja": "プレーンヨーグルトのボウル",
+        "pt-BR": "Uma tigela de iogurte natural",
+        "ru": "Тарелка простого йогурта"
+      },
+      "steps": {
+        "en": [
+          "Weigh the listed edible quantities. Wash fruit and vegetables; remove inedible peels or shells.",
+          "Keep yogurt chilled. Use tofu or beans only when ready to eat, following the package and storage guidance.",
+          "Divide into the stated household portions. Mark as eaten only after you have eaten it."
+        ],
+        "tr": [
+          "Listelenen yenebilir miktarları tart. Meyve ve sebzeyi yıka; yenmeyen kabukları ayır.",
+          "Yoğurdu soğuk tut. Tofu ve baklayı yalnız yemeye hazır hâlde, paket ve saklama kurallarına uyarak kullan.",
+          "Belirtilen hane porsiyonlarına böl. Yalnız yedikten sonra yedim olarak işaretle."
+        ],
+        "ar": [
+          "وزن الكميات الصالحة للأكل المدرجة. اغسل الفواكه والخضروات. إزالة القشور أو الأصداف غير الصالحة للأكل.",
+          "احفظي الزبادي مبردًا. استخدم التوفو أو الفاصوليا فقط عندما تكون جاهزة للأكل، مع اتباع إرشادات العبوة والتخزين.",
+          "تقسيم الأجزاء المنزلية المذكورة. ضع علامة على أنه تم تناوله فقط بعد تناوله."
+        ],
+        "de": [
+          "Wiegen Sie die aufgeführten essbaren Mengen ab. Obst und Gemüse waschen; Entfernen Sie ungenießbare Schalen oder Schalen.",
+          "Joghurt gekühlt aufbewahren. Verwenden Sie Tofu oder Bohnen nur zum Verzehr und befolgen Sie dabei die Packungs- und Lagerungshinweise.",
+          "Auf die angegebenen Haushaltsportionen aufteilen. Markieren Sie es erst dann als gegessen, wenn Sie es gegessen haben."
+        ],
+        "es": [
+          "Pesar las cantidades comestibles indicadas. Lavar frutas y verduras; retire las cáscaras o cáscaras no comestibles.",
+          "Mantenga el yogur frío. Utilice tofu o frijoles sólo cuando estén listos para comer, siguiendo las instrucciones del paquete y de almacenamiento.",
+          "Divida en las porciones domésticas indicadas. Márcalo como comido sólo después de haberlo comido."
+        ],
+        "fr": [
+          "Pesez les quantités comestibles indiquées. Laver les fruits et légumes ; retirez les écorces ou les coquilles non comestibles.",
+          "Gardez le yaourt au frais. Utilisez du tofu ou des haricots uniquement lorsqu'ils sont prêts à manger, en suivant les instructions sur l'emballage et le stockage.",
+          "Divisez dans les portions ménagères indiquées. Marquez comme mangé seulement après l'avoir mangé."
+        ],
+        "ja": [
+          "記載されている可食量の重量を量ります。果物や野菜を洗います。食べられない皮や殻を取り除きます。",
+          "ヨーグルトは冷やしておきます。豆腐や豆は、パッケージと保存方法に従って、食べられるときにのみ使用してください。",
+          "記載された世帯の割合に分割します。食べた後でのみ、食べ済みとしてマークしてください。"
+        ],
+        "pt-BR": [
+          "Pese as quantidades comestíveis listadas. Lave frutas e legumes; remova cascas ou cascas não comestíveis.",
+          "Mantenha o iogurte gelado. Use tofu ou feijão somente quando estiver pronto para comer, seguindo a embalagem e as orientações de armazenamento.",
+          "Divida nas porções familiares indicadas. Marque como comido somente depois de comê-lo."
+        ],
+        "ru": [
+          "Взвесьте указанные съедобные количества. Мыть фрукты и овощи; удалить несъедобную кожуру или скорлупу.",
+          "Храните йогурт охлажденным. Используйте тофу или бобы только тогда, когда они готовы к употреблению, соблюдая инструкции по упаковке и хранению.",
+          "Разделите домохозяйство на указанные части. Отмечайте как съеденное только после того, как вы его съели."
+        ]
+      },
+      "notes": {
+        "en": "Nutrients are estimates from USDA SR Legacy 2018. Brands and cooking losses vary. This is not a medical diet or diagnosis. Modern portion adaptation using documented foods. This is not an exact historical daily menu or a nutritional guarantee. ",
+        "tr": "Besinler USDA SR Legacy 2018 verilerinden tahmin edilir. Marka ve pişirme kayıpları değişir. Tıbbi diyet veya tanı değildir. Belgelenmiş gıdalarla modern porsiyon uyarlaması. Birebir tarihî günlük menü veya besinsel yeterlilik garantisi değildir. ",
+        "ar": "العناصر الغذائية هي تقديرات من USDA SR Legacy 2018. تختلف العلامات التجارية وفواقد الطهي. هذا ليس نظامًا غذائيًا أو تشخيصًا طبيًا. التكيف الحديث للجزء باستخدام الأطعمة الموثقة. هذه ليست قائمة يومية تاريخية دقيقة أو ضمانًا غذائيًا. ",
+        "de": "Bei den Nährstoffen handelt es sich um Schätzungen aus dem USDA SR Legacy 2018. Marken und Kochverluste variieren. Dies ist keine medizinische Diät oder Diagnose. Moderne Portionsanpassung anhand dokumentierter Lebensmittel. Dies ist kein exaktes historisches Tagesmenü oder eine Nährwertgarantie. ",
+        "es": "Los nutrientes son estimaciones de USDA SR Legacy 2018. Las marcas y las pérdidas por cocción varían. Esta no es una dieta ni un diagnóstico médico. Adaptación moderna de porciones utilizando alimentos documentados. Este no es un menú diario histórico exacto ni una garantía nutricional. ",
+        "fr": "Les nutriments sont des estimations de l'USDA SR Legacy 2018. Les marques et les pertes à la cuisson varient. Il ne s’agit pas d’un régime ou d’un diagnostic médical. Adaptation moderne des portions à l’aide d’aliments documentés. Il ne s’agit pas d’un menu quotidien historique exact ni d’une garantie nutritionnelle. ",
+        "ja": "栄養素はUSDA SR Legacy 2018からの推定値です。ブランドと調理ロスは異なります。これは医学的な食事療法や診断ではありません。 文書化された食品を使用した現代的な分量の適応。これは、正確な過去の毎日のメニューや栄養を保証するものではありません。 ",
+        "pt-BR": "Os nutrientes são estimativas do USDA SR Legacy 2018. As marcas e as perdas por cozimento variam. Esta não é uma dieta médica ou diagnóstico. Adaptação moderna de porções usando alimentos documentados. Este não é um cardápio diário histórico exato ou uma garantia nutricional. ",
+        "ru": "Питательные вещества рассчитаны по данным Министерства сельского хозяйства США SR Legacy 2018. Бренды и потери при приготовлении различаются. Это не лечебная диета и не диагноз. Современная порционная адаптация с использованием документированных продуктов. Это не точное историческое ежедневное меню или гарантия питательности. "
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ]
+}

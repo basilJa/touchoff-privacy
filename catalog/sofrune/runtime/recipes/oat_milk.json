@@ -1,0 +1,247 @@
+{
+  "schema": 3,
+  "revision": 3,
+  "published": "2026-10-23",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "activeIds": [
+    "oat_milk"
+  ],
+  "foodSource": "USDA SR Legacy 2018-04 (CC0)",
+  "foods": [
+    {
+      "id": "web_garlic_v1",
+      "fdc": "169230",
+      "description": "Garlic, raw",
+      "nutrition": {
+        "carbs": 33.06,
+        "kcal": 149.0,
+        "vitc": 31.2,
+        "b12": 0.0,
+        "fiber": 2.1,
+        "iron": 1.7,
+        "sodium": 17.0,
+        "protein": 6.36,
+        "calcium": 181.0,
+        "potassium": 401.0,
+        "fat": 0.5
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Garlic, raw",
+        "tr": "Çiğ sarımsak",
+        "ar": "الثوم الخام",
+        "de": "Knoblauch, roh",
+        "es": "Ajo, crudo",
+        "fr": "Ail, cru",
+        "ja": "ニンニク、生",
+        "pt-BR": "Alho cru",
+        "ru": "Чеснок, сырой"
+      }
+    },
+    {
+      "id": "web_salt_v1",
+      "fdc": "173468",
+      "description": "Salt, table",
+      "nutrition": {
+        "fiber": 0.0,
+        "iron": 0.33,
+        "sodium": 38758.0,
+        "vitc": 0.0,
+        "b12": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "carbs": 0.0,
+        "kcal": 0.0,
+        "calcium": 24.0,
+        "potassium": 8.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Salt, table",
+        "tr": "Sofra tuzu",
+        "ar": "ملح، طاولة",
+        "de": "Salz, Tisch",
+        "es": "sal, mesa",
+        "fr": "Sel de table",
+        "ja": "塩、テーブル",
+        "pt-BR": "Sal, mesa",
+        "ru": "Соль столовая"
+      }
+    },
+    {
+      "id": "web_pepper_v1",
+      "fdc": "170931",
+      "description": "Spices, pepper, black",
+      "nutrition": {
+        "b12": 0.0,
+        "fat": 3.26,
+        "carbs": 63.95,
+        "kcal": 251.0,
+        "calcium": 443.0,
+        "potassium": 1329.0,
+        "protein": 10.39,
+        "fiber": 25.3,
+        "iron": 9.71,
+        "sodium": 20.0,
+        "vitc": 0.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Ground black pepper",
+        "tr": "Öğütülmüş karabiber",
+        "ar": "فلفل أسود مطحون",
+        "de": "Gemahlener schwarzer Pfeffer",
+        "es": "Pimienta negra molida",
+        "fr": "Poivre noir moulu",
+        "ja": "挽いた黒胡椒",
+        "pt-BR": "Pimenta preta moída",
+        "ru": "Черный молотый перец"
+      }
+    },
+    {
+      "id": "web_butter_v1",
+      "fdc": "173430",
+      "description": "Butter, without salt",
+      "nutrition": {
+        "calcium": 24.0,
+        "kcal": 717.0,
+        "iron": 0.02,
+        "b12": 0.17,
+        "potassium": 24.0,
+        "fat": 81.11,
+        "carbs": 0.06,
+        "protein": 0.85,
+        "fiber": 0.0,
+        "vitc": 0.0,
+        "sodium": 11.0
+      },
+      "unknown": [],
+      "allergens": [
+        "milk"
+      ],
+      "animal": "dairy",
+      "names": {
+        "en": "Unsalted butter",
+        "tr": "Tuzsuz tereyağı",
+        "ar": "زبدة غير مملحة",
+        "de": "Ungesalzene Butter",
+        "es": "mantequilla sin sal",
+        "fr": "Beurre non salé",
+        "ja": "無塩バター",
+        "pt-BR": "Manteiga sem sal",
+        "ru": "Масло несоленое"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "oat_milk",
+      "lead": "oats",
+      "method": "porridge",
+      "ingredients": [
+        {
+          "food": "oats",
+          "grams": 80
+        },
+        {
+          "food": "milk",
+          "grams": 220
+        },
+        {
+          "food": "apple",
+          "grams": 150
+        },
+        {
+          "food": "hazelnut",
+          "grams": 20
+        }
+      ],
+      "minutes": 12,
+      "group": "dairy",
+      "historical": [
+        "viking"
+      ],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Apple and hazelnut milk oats",
+        "tr": "Elmalı fındıklı sütlü yulaf",
+        "ar": "الشوفان بالحليب والتفاح والبندق",
+        "de": "Haferflocken aus Apfel- und Haselnussmilch",
+        "es": "Avena con leche de manzana y avellanas",
+        "fr": "Gruau au lait de pomme et noisette",
+        "ja": "リンゴとヘーゼルナッツのミルクオーツ",
+        "pt-BR": "Aveia com leite de maçã e avelã",
+        "ru": "Овсянка на молоке с яблоком и фундуком"
+      },
+      "steps": {
+        "en": [
+          "Weigh the oats and listed fruit, nuts and milk. Wash fruit and chop nuts.",
+          "Simmer oats in the listed milk, adding water as needed; use water if no milk is listed. Stir until soft.",
+          "Top with the listed fruit and nuts. Divide into the stated household portions and serve warm."
+        ],
+        "tr": [
+          "Yulafı ve listelenen meyve, yemiş ve sütü tart. Meyveyi yıka, yemişleri doğra.",
+          "Yulafı listede varsa sütle, gerekirse su ekleyerek pişir; süt yoksa su kullan. Yumuşayana dek karıştır.",
+          "Üzerine listelenen meyve ve yemişi koy. Belirtilen hane porsiyonlarına bölüp ılık sun."
+        ],
+        "ar": [
+          "قم بوزن الشوفان والفواكه والمكسرات والحليب. اغسل الفاكهة وقطع المكسرات.",
+          "يُطهى الشوفان في الحليب المُدرج مع إضافة الماء حسب الحاجة؛ استخدم الماء إذا لم يكن هناك حليب مدرج. حرك حتى تصبح ناعمة.",
+          "ضعي فوقها الفواكه والمكسرات المذكورة. تقسم إلى الأجزاء المنزلية المذكورة وتقدم دافئة."
+        ],
+        "de": [
+          "Wiegen Sie die Haferflocken und die aufgeführten Früchte, Nüsse und Milch ab. Obst waschen und Nüsse hacken.",
+          "Haferflocken in der angegebenen Milch köcheln lassen und nach Bedarf Wasser hinzufügen; Verwenden Sie Wasser, wenn keine Milch aufgeführt ist. Rühren, bis es weich ist.",
+          "Mit den aufgeführten Früchten und Nüssen belegen. In die angegebenen Haushaltsportionen aufteilen und warm servieren."
+        ],
+        "es": [
+          "Pesar la avena y las frutas, nueces y leche indicadas. Lavar la fruta y picar las nueces.",
+          "Cocine a fuego lento la avena en la leche indicada y agregue agua según sea necesario; use agua si no aparece leche. Revuelva hasta que esté suave.",
+          "Cubra con las frutas y nueces indicadas. Divida en las porciones domésticas indicadas y sirva caliente."
+        ],
+        "fr": [
+          "Pesez les flocons d'avoine ainsi que les fruits, les noix et le lait indiqués. Lavez les fruits et hachez les noix.",
+          "Laisser mijoter les flocons d'avoine dans le lait indiqué, en ajoutant de l'eau si nécessaire ; utilisez de l’eau si aucun lait n’est répertorié. Remuer jusqu'à ce qu'il soit tendre.",
+          "Garnir avec les fruits et les noix indiqués. Répartir dans les portions ménagères indiquées et servir chaud."
+        ],
+        "ja": [
+          "オーツ麦、記載されている果物、ナッツ、牛乳の重さを量ります。果物を洗い、ナッツを刻む。",
+          "必要に応じて水を加え、記載されている牛乳でオーツ麦を煮ます。牛乳が記載されていない場合は水を使用してください。柔らかくなるまでかき混ぜます。",
+          "記載されているフルーツとナッツをトッピングします。記載されている家庭用分量に分けて、温かいうちにお召し上がりください。"
+        ],
+        "pt-BR": [
+          "Pese a aveia e liste as frutas, nozes e leite. Lave as frutas e pique as nozes.",
+          "Cozinhe a aveia no leite listado, adicionando água conforme necessário; use água se nenhum leite estiver listado. Mexa até ficar macio.",
+          "Cubra com as frutas e nozes listadas. Divida nas porções domésticas indicadas e sirva quente."
+        ],
+        "ru": [
+          "Взвесьте овес и перечисленные фрукты, орехи и молоко. Вымойте фрукты и измельчите орехи.",
+          "Овсяные хлопья варить в указанном молоке, при необходимости добавляя воду; используйте воду, если в списке нет молока. Перемешайте до мягкости.",
+          "Сверху выложите перечисленные фрукты и орехи. Разделите блюдо на указанные порции и подавайте теплым."
+        ]
+      },
+      "notes": {
+        "en": "Nutrients are estimates from USDA SR Legacy 2018. Brands and cooking losses vary. This is not a medical diet or diagnosis. Modern portion adaptation using documented foods. This is not an exact historical daily menu or a nutritional guarantee. H-01",
+        "tr": "Besinler USDA SR Legacy 2018 verilerinden tahmin edilir. Marka ve pişirme kayıpları değişir. Tıbbi diyet veya tanı değildir. Belgelenmiş gıdalarla modern porsiyon uyarlaması. Birebir tarihî günlük menü veya besinsel yeterlilik garantisi değildir. H-01",
+        "ar": "العناصر الغذائية هي تقديرات من USDA SR Legacy 2018. تختلف العلامات التجارية وفواقد الطهي. هذا ليس نظامًا غذائيًا أو تشخيصًا طبيًا. التكيف الحديث للجزء باستخدام الأطعمة الموثقة. هذه ليست قائمة يومية تاريخية دقيقة أو ضمانًا غذائيًا. H-01",
+        "de": "Bei den Nährstoffen handelt es sich um Schätzungen aus dem USDA SR Legacy 2018. Marken und Kochverluste variieren. Dies ist keine medizinische Diät oder Diagnose. Moderne Portionsanpassung anhand dokumentierter Lebensmittel. Dies ist kein exaktes historisches Tagesmenü oder eine Nährwertgarantie. H-01",
+        "es": "Los nutrientes son estimaciones de USDA SR Legacy 2018. Las marcas y las pérdidas por cocción varían. Esta no es una dieta ni un diagnóstico médico. Adaptación moderna de porciones utilizando alimentos documentados. Este no es un menú diario histórico exacto ni una garantía nutricional. H-01",
+        "fr": "Les nutriments sont des estimations de l'USDA SR Legacy 2018. Les marques et les pertes à la cuisson varient. Il ne s’agit pas d’un régime ou d’un diagnostic médical. Adaptation moderne des portions à l’aide d’aliments documentés. Il ne s’agit pas d’un menu quotidien historique exact ni d’une garantie nutritionnelle. H-01",
+        "ja": "栄養素はUSDA SR Legacy 2018からの推定値です。ブランドと調理ロスは異なります。これは医学的な食事療法や診断ではありません。 文書化された食品を使用した現代的な分量の適応。これは、正確な過去の毎日のメニューや栄養を保証するものではありません。 H-01",
+        "pt-BR": "Os nutrientes são estimativas do USDA SR Legacy 2018. As marcas e as perdas por cozimento variam. Esta não é uma dieta médica ou diagnóstico. Adaptação moderna de porções usando alimentos documentados. Este não é um cardápio diário histórico exato ou uma garantia nutricional. H-01",
+        "ru": "Питательные вещества рассчитаны по данным Министерства сельского хозяйства США SR Legacy 2018. Бренды и потери при приготовлении различаются. Это не лечебная диета и не диагноз. Современная порционная адаптация с использованием документированных продуктов. Это не точное историческое ежедневное меню или гарантия питательности. H-01"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "schema": 3,
+  "revision": 3,
+  "published": "2026-10-23",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "activeIds": [
+    "lentil_barley"
+  ],
+  "foodSource": "USDA SR Legacy 2018-04 (CC0)",
+  "foods": [
+    {
+      "id": "web_garlic_v1",
+      "fdc": "169230",
+      "description": "Garlic, raw",
+      "nutrition": {
+        "carbs": 33.06,
+        "kcal": 149.0,
+        "vitc": 31.2,
+        "b12": 0.0,
+        "fiber": 2.1,
+        "iron": 1.7,
+        "sodium": 17.0,
+        "protein": 6.36,
+        "calcium": 181.0,
+        "potassium": 401.0,
+        "fat": 0.5
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Garlic, raw",
+        "tr": "Çiğ sarımsak",
+        "ar": "الثوم الخام",
+        "de": "Knoblauch, roh",
+        "es": "Ajo, crudo",
+        "fr": "Ail, cru",
+        "ja": "ニンニク、生",
+        "pt-BR": "Alho cru",
+        "ru": "Чеснок, сырой"
+      }
+    },
+    {
+      "id": "web_salt_v1",
+      "fdc": "173468",
+      "description": "Salt, table",
+      "nutrition": {
+        "fiber": 0.0,
+        "iron": 0.33,
+        "sodium": 38758.0,
+        "vitc": 0.0,
+        "b12": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "carbs": 0.0,
+        "kcal": 0.0,
+        "calcium": 24.0,
+        "potassium": 8.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Salt, table",
+        "tr": "Sofra tuzu",
+        "ar": "ملح، طاولة",
+        "de": "Salz, Tisch",
+        "es": "sal, mesa",
+        "fr": "Sel de table",
+        "ja": "塩、テーブル",
+        "pt-BR": "Sal, mesa",
+        "ru": "Соль столовая"
+      }
+    },
+    {
+      "id": "web_pepper_v1",
+      "fdc": "170931",
+      "description": "Spices, pepper, black",
+      "nutrition": {
+        "b12": 0.0,
+        "fat": 3.26,
+        "carbs": 63.95,
+        "kcal": 251.0,
+        "calcium": 443.0,
+        "potassium": 1329.0,
+        "protein": 10.39,
+        "fiber": 25.3,
+        "iron": 9.71,
+        "sodium": 20.0,
+        "vitc": 0.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "names": {
+        "en": "Ground black pepper",
+        "tr": "Öğütülmüş karabiber",
+        "ar": "فلفل أسود مطحون",
+        "de": "Gemahlener schwarzer Pfeffer",
+        "es": "Pimienta negra molida",
+        "fr": "Poivre noir moulu",
+        "ja": "挽いた黒胡椒",
+        "pt-BR": "Pimenta preta moída",
+        "ru": "Черный молотый перец"
+      }
+    },
+    {
+      "id": "web_butter_v1",
+      "fdc": "173430",
+      "description": "Butter, without salt",
+      "nutrition": {
+        "calcium": 24.0,
+        "kcal": 717.0,
+        "iron": 0.02,
+        "b12": 0.17,
+        "potassium": 24.0,
+        "fat": 81.11,
+        "carbs": 0.06,
+        "protein": 0.85,
+        "fiber": 0.0,
+        "vitc": 0.0,
+        "sodium": 11.0
+      },
+      "unknown": [],
+      "allergens": [
+        "milk"
+      ],
+      "animal": "dairy",
+      "names": {
+        "en": "Unsalted butter",
+        "tr": "Tuzsuz tereyağı",
+        "ar": "زبدة غير مملحة",
+        "de": "Ungesalzene Butter",
+        "es": "mantequilla sin sal",
+        "fr": "Beurre non salé",
+        "ja": "無塩バター",
+        "pt-BR": "Manteiga sem sal",
+        "ru": "Масло несоленое"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "lentil_barley",
+      "lead": "lentil",
+      "method": "stew",
+      "ingredients": [
+        {
+          "food": "lentil",
+          "grams": 80
+        },
+        {
+          "food": "barley",
+          "grams": 200
+        },
+        {
+          "food": "carrot",
+          "grams": 100
+        },
+        {
+          "food": "onion",
+          "grams": 50
+        }
+      ],
+      "minutes": 35,
+      "group": "legume",
+      "historical": [
+        "legion",
+        "gladiator"
+      ],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Lentil and barley pot",
+        "tr": "Mercimekli arpa tenceresi",
+        "ar": "وعاء العدس والشعير",
+        "de": "Linsen- und Gerstentopf",
+        "es": "Olla de lentejas y cebada",
+        "fr": "Pot de lentilles et d'orge",
+        "ja": "レンズ豆と大麦の鍋",
+        "pt-BR": "Pote de lentilha e cevada",
+        "ru": "Горшок с чечевицей и ячменем"
+      },
+      "steps": {
+        "en": [
+          "Weigh the listed ingredients. Rinse dry lentils, wash vegetables and chop them. Keep raw meat separate.",
+          "Heat the listed oil, if any. Cook onion and raw meat first; add vegetables and lentils with enough water to cover. Simmer until tender, adding water as needed.",
+          "Add already cooked grains or beans at the end and heat through. Serve bread on the side, if listed. Divide into the stated household portions."
+        ],
+        "tr": [
+          "Listelenen malzemeleri tart. Kuru mercimeği yıka; sebzeleri yıkayıp doğra. Çiğ eti ayrı tut.",
+          "Listedeki yağ varsa ısıt. Önce soğanı ve çiğ eti pişir; sebze ve mercimeği üzerini örtecek suyla ekle. Gerekirse su ekleyerek yumuşayana dek pişir.",
+          "Önceden pişmiş tahıl veya baklagilleri sona doğru ekleyip iyice ısıt. Listede ekmek varsa yanında sun. Belirtilen hane porsiyonlarına böl."
+        ],
+        "ar": [
+          "وزن المكونات المذكورة. اشطف العدس الجاف واغسل الخضار واقطعها. أبقِ اللحوم النيئة منفصلة.",
+          "سخني الزيت المذكور إن وجد. قم بطهي البصل واللحوم النيئة أولاً؛ أضيفي الخضار والعدس مع كمية كافية من الماء لتغطيتها. يترك على نار خفيفة حتى ينضج، ويضاف الماء حسب الحاجة.",
+          "أضف الحبوب أو الفاصوليا المطبوخة بالفعل في النهاية وقم بتسخينها. يُقدم الخبز بجانبه، إذا كان مدرجًا. تقسيم إلى الأجزاء المنزلية المذكورة."
+        ],
+        "de": [
+          "Wiegen Sie die aufgeführten Zutaten ab. Trockene Linsen abspülen, Gemüse waschen und hacken. Rohes Fleisch getrennt aufbewahren.",
+          "Erhitzen Sie ggf. das aufgeführte Öl. Zuerst Zwiebeln und rohes Fleisch kochen; Gemüse und Linsen mit so viel Wasser hinzufügen, dass es bedeckt ist. Köcheln lassen, bis es weich ist, bei Bedarf Wasser hinzufügen.",
+          "Zum Schluss bereits gekochte Körner oder Bohnen hinzufügen und erhitzen. Servieren Sie Brot als Beilage, falls aufgeführt. Auf die angegebenen Haushaltsportionen aufteilen."
+        ],
+        "es": [
+          "Pese los ingredientes enumerados. Enjuagar las lentejas secas, lavar las verduras y picarlas. Mantenga la carne cruda separada.",
+          "Caliente el aceite indicado, si lo hubiera. Cocine primero la cebolla y la carne cruda; agregue las verduras y las lentejas con suficiente agua para cubrir. Cocine a fuego lento hasta que estén tiernos, agregando agua según sea necesario.",
+          "Agregue los granos o frijoles ya cocidos al final y caliente. Sirva el pan a un lado, si está incluido. Divida en las porciones domésticas indicadas."
+        ],
+        "fr": [
+          "Pesez les ingrédients énumérés. Rincez les lentilles sèches, lavez les légumes et hachez-les. Gardez la viande crue à part.",
+          "Faites chauffer l'huile indiquée, le cas échéant. Faites d'abord cuire l'oignon et la viande crue ; ajouter les légumes et les lentilles avec suffisamment d'eau pour couvrir. Laisser mijoter jusqu'à tendreté, en ajoutant de l'eau au besoin.",
+          "Ajoutez à la fin les céréales ou les haricots déjà cuits et faites chauffer. Servir le pain à côté, si indiqué. Répartissez dans les portions ménagères indiquées."
+        ],
+        "ja": [
+          "記載されている材料の重量を量ります。乾燥レンズ豆を洗い、野菜を洗い、みじん切りにします。生肉は分けて保管してください。",
+          "記載されているオイルがある場合は、それを加熱します。最初に玉ねぎと生肉を調理します。野菜とレンズ豆を加え、かぶるくらいの水を加えます。必要に応じて水を加え、柔らかくなるまで煮ます。",
+          "すでに調理済みの穀物または豆を最後に加え、加熱します。記載されている場合は、パンを添えてください。指定された世帯の割合に分けます。"
+        ],
+        "pt-BR": [
+          "Pese os ingredientes listados. Lave as lentilhas secas, lave os legumes e pique-os. Mantenha a carne crua separada.",
+          "Aqueça o óleo listado, se houver. Cozinhe primeiro a cebola e a carne crua; adicione legumes e lentilhas com água suficiente para cobrir. Cozinhe até ficar macio, adicionando água conforme necessário.",
+          "Adicione grãos ou feijões já cozidos no final e aqueça bem. Sirva o pão à parte, se listado. Divida nas porções familiares indicadas."
+        ],
+        "ru": [
+          "Взвесьте указанные ингредиенты. Промойте сухую чечевицу, вымойте овощи и нарежьте их. Храните сырое мясо отдельно.",
+          "Нагрейте указанное масло, если оно есть. Сначала приготовьте лук и сырое мясо; добавьте овощи и чечевицу и залейте достаточным количеством воды, чтобы она покрыла их. Варить до готовности, при необходимости добавляя воду.",
+          "В конце добавьте уже приготовленные крупы или фасоль и прогрейте. Подавайте вместе с хлебом, если он указан. Разделите на указанные домашние части."
+        ]
+      },
+      "notes": {
+        "en": "Nutrients are estimates from USDA SR Legacy 2018. Brands and cooking losses vary. This is not a medical diet or diagnosis. Modern portion adaptation using documented foods. This is not an exact historical daily menu or a nutritional guarantee. H-03 H-04",
+        "tr": "Besinler USDA SR Legacy 2018 verilerinden tahmin edilir. Marka ve pişirme kayıpları değişir. Tıbbi diyet veya tanı değildir. Belgelenmiş gıdalarla modern porsiyon uyarlaması. Birebir tarihî günlük menü veya besinsel yeterlilik garantisi değildir. H-03 H-04",
+        "ar": "العناصر الغذائية هي تقديرات من USDA SR Legacy 2018. تختلف العلامات التجارية وفواقد الطهي. هذا ليس نظامًا غذائيًا أو تشخيصًا طبيًا. التكيف الحديث للجزء باستخدام الأطعمة الموثقة. هذه ليست قائمة يومية تاريخية دقيقة أو ضمانًا غذائيًا. H-03 H-04",
+        "de": "Bei den Nährstoffen handelt es sich um Schätzungen aus dem USDA SR Legacy 2018. Marken und Kochverluste variieren. Dies ist keine medizinische Diät oder Diagnose. Moderne Portionsanpassung anhand dokumentierter Lebensmittel. Dies ist kein exaktes historisches Tagesmenü oder eine Nährwertgarantie. H-03 H-04",
+        "es": "Los nutrientes son estimaciones de USDA SR Legacy 2018. Las marcas y las pérdidas por cocción varían. Esta no es una dieta ni un diagnóstico médico. Adaptación moderna de porciones utilizando alimentos documentados. Este no es un menú diario histórico exacto ni una garantía nutricional. H-03 H-04",
+        "fr": "Les nutriments sont des estimations de l'USDA SR Legacy 2018. Les marques et les pertes à la cuisson varient. Il ne s’agit pas d’un régime ou d’un diagnostic médical. Adaptation moderne des portions à l’aide d’aliments documentés. Il ne s’agit pas d’un menu quotidien historique exact ni d’une garantie nutritionnelle. H-03 H-04",
+        "ja": "栄養素はUSDA SR Legacy 2018からの推定値です。ブランドと調理ロスは異なります。これは医学的な食事療法や診断ではありません。 文書化された食品を使用した現代的な分量の適応。これは、正確な過去の毎日のメニューや栄養を保証するものではありません。 H-03 H-04",
+        "pt-BR": "Os nutrientes são estimativas do USDA SR Legacy 2018. As marcas e as perdas por cozimento variam. Esta não é uma dieta médica ou diagnóstico. Adaptação moderna de porções usando alimentos documentados. Este não é um cardápio diário histórico exato ou uma garantia nutricional. H-03 H-04",
+        "ru": "Питательные вещества рассчитаны по данным Министерства сельского хозяйства США SR Legacy 2018. Бренды и потери при приготовлении различаются. Это не лечебная диета и не диагноз. Современная порционная адаптация с использованием документированных продуктов. Это не точное историческое ежедневное меню или гарантия питательности. H-03 H-04"
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ]
+}
