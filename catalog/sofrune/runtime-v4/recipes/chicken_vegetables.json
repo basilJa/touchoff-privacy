@@ -1,0 +1,117 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [],
+  "recipes": [
+    {
+      "id": "chicken_vegetables",
+      "lead": "chicken",
+      "method": "stew",
+      "ingredients": [
+        {
+          "food": "chicken",
+          "grams": 180
+        },
+        {
+          "food": "carrot",
+          "grams": 120
+        },
+        {
+          "food": "peas",
+          "grams": 150
+        },
+        {
+          "food": "bread",
+          "grams": 70
+        },
+        {
+          "food": "oil",
+          "grams": 10
+        }
+      ],
+      "minutes": 35,
+      "group": "poultry",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Chicken and spring vegetables",
+        "tr": "Tavuklu sebze tenceresi",
+        "ar": "دجاج وخضروات ربيعية",
+        "de": "Hähnchen und Frühlingsgemüse",
+        "es": "Pollo y verduras de primavera",
+        "fr": "Poulet et légumes printaniers",
+        "ja": "鶏肉と春野菜",
+        "pt-BR": "Frango e legumes primavera",
+        "ru": "Курица и весенние овощи"
+      },
+      "steps": {
+        "en": [
+          "Weigh the listed ingredients. Rinse dry lentils, wash vegetables and chop them. Keep raw meat separate.",
+          "Heat the listed oil, if any. Cook onion and raw meat first; add vegetables and lentils with enough water to cover. Simmer until tender, adding water as needed.",
+          "Add already cooked grains or beans at the end and heat through. Serve bread on the side, if listed. Divide into the stated household portions."
+        ],
+        "tr": [
+          "Listelenen malzemeleri tart. Kuru mercimeği yıka; sebzeleri yıkayıp doğra. Çiğ eti ayrı tut.",
+          "Listedeki yağ varsa ısıt. Önce soğanı ve çiğ eti pişir; sebze ve mercimeği üzerini örtecek suyla ekle. Gerekirse su ekleyerek yumuşayana dek pişir.",
+          "Önceden pişmiş tahıl veya baklagilleri sona doğru ekleyip iyice ısıt. Listede ekmek varsa yanında sun. Belirtilen hane porsiyonlarına böl."
+        ],
+        "ar": [
+          "وزن المكونات المذكورة. اشطف العدس الجاف واغسل الخضار واقطعها. أبقِ اللحوم النيئة منفصلة.",
+          "سخني الزيت المذكور إن وجد. قم بطهي البصل واللحوم النيئة أولاً؛ أضيفي الخضار والعدس مع كمية كافية من الماء لتغطيتها. يترك على نار خفيفة حتى ينضج، ويضاف الماء حسب الحاجة.",
+          "أضف الحبوب أو الفاصوليا المطبوخة بالفعل في النهاية وقم بتسخينها. يُقدم الخبز بجانبه، إذا كان مدرجًا. تقسيم إلى الأجزاء المنزلية المذكورة."
+        ],
+        "de": [
+          "Wiegen Sie die aufgeführten Zutaten ab. Trockene Linsen abspülen, Gemüse waschen und hacken. Rohes Fleisch getrennt aufbewahren.",
+          "Erhitzen Sie ggf. das aufgeführte Öl. Zuerst Zwiebeln und rohes Fleisch kochen; Gemüse und Linsen mit so viel Wasser hinzufügen, dass es bedeckt ist. Köcheln lassen, bis es weich ist, bei Bedarf Wasser hinzufügen.",
+          "Zum Schluss bereits gekochte Körner oder Bohnen hinzufügen und erhitzen. Servieren Sie Brot als Beilage, falls aufgeführt. Auf die angegebenen Haushaltsportionen aufteilen."
+        ],
+        "es": [
+          "Pese los ingredientes enumerados. Enjuagar las lentejas secas, lavar las verduras y picarlas. Mantenga la carne cruda separada.",
+          "Caliente el aceite indicado, si lo hubiera. Cocine primero la cebolla y la carne cruda; agregue las verduras y las lentejas con suficiente agua para cubrir. Cocine a fuego lento hasta que estén tiernos, agregando agua según sea necesario.",
+          "Agregue los granos o frijoles ya cocidos al final y caliente. Sirva el pan a un lado, si está incluido. Divida en las porciones domésticas indicadas."
+        ],
+        "fr": [
+          "Pesez les ingrédients énumérés. Rincez les lentilles sèches, lavez les légumes et hachez-les. Gardez la viande crue à part.",
+          "Faites chauffer l'huile indiquée, le cas échéant. Faites d'abord cuire l'oignon et la viande crue ; ajouter les légumes et les lentilles avec suffisamment d'eau pour couvrir. Laisser mijoter jusqu'à tendreté, en ajoutant de l'eau au besoin.",
+          "Ajoutez à la fin les céréales ou les haricots déjà cuits et faites chauffer. Servir le pain à côté, si indiqué. Répartissez dans les portions ménagères indiquées."
+        ],
+        "ja": [
+          "記載されている材料の重量を量ります。乾燥レンズ豆を洗い、野菜を洗い、みじん切りにします。生肉は分けて保管してください。",
+          "記載されているオイルがある場合は、それを加熱します。最初に玉ねぎと生肉を調理します。野菜とレンズ豆を加え、かぶるくらいの水を加えます。必要に応じて水を加え、柔らかくなるまで煮ます。",
+          "すでに調理済みの穀物または豆を最後に加え、加熱します。記載されている場合は、パンを添えてください。指定された世帯の割合に分けます。"
+        ],
+        "pt-BR": [
+          "Pese os ingredientes listados. Lave as lentilhas secas, lave os legumes e pique-os. Mantenha a carne crua separada.",
+          "Aqueça o óleo listado, se houver. Cozinhe primeiro a cebola e a carne crua; adicione legumes e lentilhas com água suficiente para cobrir. Cozinhe até ficar macio, adicionando água conforme necessário.",
+          "Adicione grãos ou feijões já cozidos no final e aqueça bem. Sirva o pão à parte, se listado. Divida nas porções familiares indicadas."
+        ],
+        "ru": [
+          "Взвесьте указанные ингредиенты. Промойте сухую чечевицу, вымойте овощи и нарежьте их. Храните сырое мясо отдельно.",
+          "Нагрейте указанное масло, если оно есть. Сначала приготовьте лук и сырое мясо; добавьте овощи и чечевицу и залейте достаточным количеством воды, чтобы она покрыла их. Варить до готовности, при необходимости добавляя воду.",
+          "В конце добавьте уже приготовленные крупы или фасоль и прогрейте. Подавайте вместе с хлебом, если он указан. Разделите на указанные домашние части."
+        ]
+      },
+      "notes": {
+        "en": "Nutrients are estimates from USDA SR Legacy 2018. Brands and cooking losses vary. This is not a medical diet or diagnosis. ",
+        "tr": "Besinler USDA SR Legacy 2018 verilerinden tahmin edilir. Marka ve pişirme kayıpları değişir. Tıbbi diyet veya tanı değildir. ",
+        "ar": "العناصر الغذائية هي تقديرات من USDA SR Legacy 2018. تختلف العلامات التجارية وفواقد الطهي. هذا ليس نظامًا غذائيًا أو تشخيصًا طبيًا. ",
+        "de": "Bei den Nährstoffen handelt es sich um Schätzungen aus dem USDA SR Legacy 2018. Marken und Kochverluste variieren. Dies ist keine medizinische Diät oder Diagnose. ",
+        "es": "Los nutrientes son estimaciones de USDA SR Legacy 2018. Las marcas y las pérdidas por cocción varían. Esta no es una dieta ni un diagnóstico médico. ",
+        "fr": "Les nutriments sont des estimations de l'USDA SR Legacy 2018. Les marques et les pertes à la cuisson varient. Il ne s’agit pas d’un régime ou d’un diagnostic médical. ",
+        "ja": "栄養素はUSDA SR Legacy 2018からの推定値です。ブランドと調理ロスは異なります。これは医学的な食事療法や診断ではありません。 ",
+        "pt-BR": "Os nutrientes são estimativas do USDA SR Legacy 2018. As marcas e as perdas por cozimento variam. Esta não é uma dieta médica ou diagnóstico. ",
+        "ru": "Питательные вещества рассчитаны по данным Министерства сельского хозяйства США SR Legacy 2018. Бренды и потери при приготовлении различаются. Это не лечебная диета и не диагноз. "
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "activeIds": [
+    "chicken_vegetables"
+  ]
+}

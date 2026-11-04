@@ -1,0 +1,206 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [
+    {
+      "id": "web_q_lemonjuice",
+      "fdc": "167747",
+      "description": "Lemon juice, raw",
+      "nutrition": {
+        "b12": 0.0,
+        "vitc": 38.7,
+        "protein": 0.35,
+        "fiber": 0.3,
+        "iron": 0.08,
+        "sodium": 1.0,
+        "calcium": 6.0,
+        "potassium": 103.0,
+        "fat": 0.24,
+        "carbs": 6.9,
+        "kcal": 22.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Lemon juice, raw",
+        "tr": "Limon suyu, çiğ",
+        "ar": "عصير الليمون الخام",
+        "de": "Zitronensaft, roh",
+        "es": "Jugo de limón, crudo",
+        "fr": "Jus de citron, cru",
+        "ja": "レモン汁、生",
+        "pt-BR": "Suco de limão, cru",
+        "ru": "Лимонный сок, сырой"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/167747/nutrients",
+      "state": "raw"
+    },
+    {
+      "id": "web_q_avocado",
+      "fdc": "171705",
+      "description": "Avocados, raw, all commercial varieties",
+      "nutrition": {
+        "vitc": 10.0,
+        "protein": 2.0,
+        "fiber": 6.7,
+        "iron": 0.55,
+        "sodium": 7.0,
+        "fat": 14.66,
+        "calcium": 12.0,
+        "potassium": 485.0,
+        "b12": 0.0,
+        "carbs": 8.53,
+        "kcal": 160.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Avocado, raw, flesh only",
+        "tr": "Avokado, çiğ, yalnız eti",
+        "ar": "الأفوكادو الخام واللحم فقط",
+        "de": "Avocado, roh, nur Fruchtfleisch",
+        "es": "Aguacate, crudo, sólo pulpa",
+        "fr": "Avocat, cru, chair uniquement",
+        "ja": "アボカド、生、果肉のみ",
+        "pt-BR": "Abacate, cru, apenas polpa",
+        "ru": "Авокадо, сырое, только мякоть"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/171705/nutrients",
+      "state": "raw"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "web_q_avocado_egg_toast",
+      "lead": "web_q_avocado",
+      "method": "pan",
+      "ingredients": [
+        {
+          "food": "web_q_avocado",
+          "grams": 100
+        },
+        {
+          "food": "egg",
+          "grams": 100
+        },
+        {
+          "food": "bread",
+          "grams": 90
+        },
+        {
+          "food": "tomato",
+          "grams": 100
+        },
+        {
+          "food": "web_q_lemonjuice",
+          "grams": 10
+        }
+      ],
+      "minutes": 22,
+      "group": "egg",
+      "historical": [],
+      "snack": false,
+      "waterMl": 500,
+      "titles": {
+        "en": "Avocado and firm egg toast",
+        "tr": "Avokadolu katı yumurtalı ekmek",
+        "ar": "الأفوكادو ونخب البيض الثابت",
+        "de": "Toast mit Avocado und festem Ei",
+        "es": "Tostada de aguacate y huevo firme",
+        "fr": "Toasts à l'avocat et aux œufs fermes",
+        "ja": "アボカドとしっかり卵のトースト",
+        "pt-BR": "Torrada de abacate e ovo firme",
+        "ru": "Тост с авокадо и твердым яйцом"
+      },
+      "steps": {
+        "en": [
+          "Put eggs in a small saucepan and cover with the listed water, adding enough to cover if necessary. Bring to a boil.",
+          "Simmer for 10–12 minutes until yolks and whites are firm, then cool under cold water and peel.",
+          "Weigh avocado flesh without stone or skin; mash with lemon juice. Slice washed tomato and the peeled eggs.",
+          "Toast bread without fat, spread avocado and top with egg. Serve tomato alongside."
+        ],
+        "tr": [
+          "Yumurtaları küçük tencereye koyup belirtilen suyla ört; gerekirse üstlerini geçecek kadar su ekle ve kaynat.",
+          "Sarısı ve beyazı katılaşana kadar 10–12 dakika hafif kaynat; soğuk suyla soğutup soy.",
+          "Avokadonun kabuksuz, çekirdeksiz etini tartıp limon suyuyla ez. Yıkanmış domatesi ve soyulmuş yumurtayı dilimle.",
+          "Ekmeği yağsız kızart, avokadoyu sürüp yumurtayı koy. Domatesle servis et."
+        ],
+        "ar": [
+          "ضعي البيض في قدر صغير وغطيه بالماء المذكور، وأضيفي ما يكفي لتغطية البيض إذا لزم الأمر. جلب ليغلي.",
+          "يُطهى على نار خفيفة لمدة 10–12 دقائق حتى يتماسك الصفار والبياض، ثم يُبرد تحت الماء البارد ويُقشر.",
+          "وزن لحم الأفوكادو بدون حجر أو جلد. يهرس مع عصير الليمون. شريحة الطماطم المغسولة والبيض المقشر.",
+          "نحمص الخبز بدون دهون، ثم نوزع الأفوكادو ونضع فوقه البيض. تقدم الطماطم بجانبها."
+        ],
+        "de": [
+          "Geben Sie die Eier in einen kleinen Topf und bedecken Sie sie mit dem aufgeführten Wasser. Geben Sie bei Bedarf so viel hinzu, dass die Eier bedeckt sind. Zum Kochen bringen.",
+          "10–12 Minuten köcheln lassen, bis Eigelb und Eiweiß fest sind, dann unter kaltem Wasser abkühlen lassen und schälen.",
+          "Avocadofleisch ohne Stein und Schale wiegen; Mit Zitronensaft pürieren. Die gewaschenen Tomaten und die geschälten Eier in Scheiben schneiden.",
+          "Brot ohne Fett toasten, Avocado darauf verteilen und mit Ei belegen. Tomaten dazu servieren."
+        ],
+        "es": [
+          "Coloque los huevos en una cacerola pequeña y cúbralos con el agua indicada, agregando suficiente para cubrir si es necesario. Llevar a ebullición.",
+          "Cocine a fuego lento durante 10 a 12 minutos hasta que las yemas y las claras estén firmes, luego enfríe con agua fría y pélelas.",
+          "Pesar la pulpa del aguacate sin hueso ni piel; triturar con jugo de limón. Cortar el tomate lavado y los huevos pelados.",
+          "Tostar pan sin grasa, untar aguacate y cubrir con huevo. Sirva el tomate al lado."
+        ],
+        "fr": [
+          "Mettez les œufs dans une petite casserole et couvrez avec l'eau indiquée, en ajoutant suffisamment pour couvrir si nécessaire. Porter à ébullition.",
+          "Laisser mijoter pendant 10–12 minutes jusqu'à ce que les jaunes et les blancs soient fermes, puis refroidir sous l'eau froide et peler.",
+          "Peser la chair d'avocat sans noyau ni peau ; écraser avec du jus de citron. Tranchez la tomate lavée et les œufs pelés.",
+          "Faire griller le pain sans matière grasse, tartiner l'avocat et garnir d'œuf. Servir la tomate à côté."
+        ],
+        "ja": [
+          "小さな鍋に卵を入れ、記載されている水を加え、必要に応じて十分な量の水を加えます。沸騰させます。",
+          "黄身と白身が固まるまで 10–12 分間煮て、冷水で冷やして皮をむきます。",
+          "石や皮を除いたアボカドの果肉の重さを量ります。レモン汁でマッシュします。洗ったトマトと皮をむいた卵をスライスします。",
+          "脂肪分のないパンをトーストし、アボカドを広げ、その上に卵をのせます。トマトを添えてお召し上がりください。"
+        ],
+        "pt-BR": [
+          "Coloque os ovos em uma panela pequena e cubra com a água indicada, acrescentando o suficiente para cobrir, se necessário. Deixe ferver.",
+          "Cozinhe por 10–12 minutos até que as gemas e as claras estejam firmes, depois deixe esfriar em água fria e descasque.",
+          "Pese a polpa do abacate sem caroço ou casca; amasse com suco de limão. Fatie o tomate lavado e os ovos descascados.",
+          "Torre o pão sem gordura, espalhe o abacate e cubra com o ovo. Sirva o tomate ao lado."
+        ],
+        "ru": [
+          "Положите яйца в небольшую кастрюлю и залейте указанной водой, при необходимости добавляя столько, чтобы покрыть ее. Доведите до кипения.",
+          "Варите на медленном огне 10–12 минут, пока желтки и белки не станут твердыми, затем остудите под холодной водой и снимите кожицу.",
+          "Взвесьте мякоть авокадо без косточек и кожицы; размять с лимонным соком. Нарежьте промытый помидор и очищенные яйца.",
+          "Поджарьте хлеб без жира, намажьте авокадо и сверху полейте яйцом. Рядом подавайте помидоры."
+        ]
+      },
+      "notes": {
+        "en": "Ingredient weights describe one base portion in the stated raw, dry or cooked state. Weigh edible parts. Nutrition is an estimate from USDA ingredient records; cooking losses are not modelled. Times are guides; use a food thermometer for animal foods. No extra salt, oil, toppings or sauces are included. This recipe has not been kitchen-tested. Historical labels describe modern adaptations, not reconstructed daily menus.",
+        "tr": "Malzeme miktarları belirtilen çiğ, kuru veya pişmiş durumda bir temel porsiyona aittir. Yenebilir kısmı tart. Besinler USDA malzeme kayıtlarından tahmindir; pişirme kayıpları modellenmez. Süreler yol gösterir; hayvansal gıdalarda gıda termometresi kullan. Ek tuz, yağ, süsleme veya sos dahil değildir. Bu tarif mutfakta denenmemiştir. Tarihsel etiketler özgün günlük menüyü değil, modern uyarlamayı anlatır.",
+        "ar": "تصف أوزان المكونات جزءًا أساسيًا واحدًا في الحالة الخام أو الجافة أو المطبوخة المذكورة. وزن الأجزاء الصالحة للأكل. التغذية هي تقدير من سجلات المكونات التابعة لوزارة الزراعة الأمريكية؛ لم يتم وضع نماذج لخسائر الطهي. الأوقات هي أدلة. استخدم مقياس حرارة الطعام للأغذية الحيوانية. لا يتم تضمين الملح الإضافي أو الزيت أو الطبقة أو الصلصات. لم يتم اختبار هذه الوصفة في المطبخ. تصف العلامات التاريخية التعديلات الحديثة، وليس القوائم اليومية المعاد بناؤها.",
+        "de": "Zutatengewichte beschreiben eine Grundportion im angegebenen rohen, trockenen oder gekochten Zustand. Essbare Teile abwiegen. Der Nährwert ist eine Schätzung aus den USDA-Inhaltsstoffaufzeichnungen; Kochverluste werden nicht modelliert. Zeiten sind Führer; Verwenden Sie für tierische Lebensmittel ein Lebensmittelthermometer. Es sind kein zusätzliches Salz, Öl, Toppings oder Saucen enthalten. Dieses Rezept wurde nicht in der Küche getestet. Historische Etiketten beschreiben moderne Adaptionen, keine rekonstruierten Tagesmenüs.",
+        "es": "Los pesos de los ingredientes describen una porción base en el estado crudo, seco o cocido indicado. Pesar las partes comestibles. La nutrición es una estimación de los registros de ingredientes del USDA; Las pérdidas por cocción no se modelan. Los tiempos son guías; Utilice un termómetro para alimentos para alimentos de origen animal. No se incluyen sal, aceite, aderezos ni salsas adicionales. Esta receta no ha sido probada en cocina. Las etiquetas históricas describen adaptaciones modernas, no menús diarios reconstruidos.",
+        "fr": "Les poids des ingrédients décrivent une portion de base à l’état brut, sec ou cuit indiqué. Pesez les parties comestibles. La nutrition est une estimation tirée des registres des ingrédients de l'USDA ; les pertes à la cuisson ne sont pas modélisées. Les temps sont des guides ; utilisez un thermomètre alimentaire pour les aliments d'origine animale. Aucun sel, huile, garniture ou sauce supplémentaire n'est inclus. Cette recette n'a pas été testée en cuisine. Les étiquettes historiques décrivent des adaptations modernes et non des menus quotidiens reconstitués.",
+        "ja": "成分重量は、記載されている生、乾燥、または調理された状態の 1 つのベース部分を表します。可食部分の重さを量ります。栄養成分はUSDAの成分記録からの推定値です。調理による損失はモデル化されていません。時間は目安です。動物性食品には食品用温度計を使用してください。余分な塩、油、トッピング、ソースは含まれていません。このレシピはキッチンでテストされていません。歴史的なラベルは、毎日のメニューを再構築したものではなく、現代に適応したものを説明しています。",
+        "pt-BR": "Os pesos dos ingredientes descrevem uma porção de base no estado declarado cru, seco ou cozido. Pese as partes comestíveis. A nutrição é uma estimativa dos registros de ingredientes do USDA; as perdas por cozimento não são modeladas. Os tempos são guias; use um termômetro alimentar para alimentos de origem animal. Não estão incluídos sal, óleo, coberturas ou molhos extras. Esta receita não foi testada na cozinha. Rótulos históricos descrevem adaptações modernas, não menus diários reconstruídos.",
+        "ru": "Масса ингредиентов соответствует одной базовой порции в указанном сыром, сухом или приготовленном состоянии. Взвесьте съедобные части. Питательность — это оценка на основе записей об ингредиентах Министерства сельского хозяйства США; потери при приготовлении пищи не моделируются. Время — ориентир; используйте пищевой термометр для продуктов животного происхождения. Никакой дополнительной соли, масла, начинок и соусов в комплект не входит. Этот рецепт не был проверен на кухне. Исторические этикетки описывают современные адаптации, а не реконструированные ежедневные меню."
+      },
+      "cuisine": "international",
+      "equipment": [
+        "stovetop"
+      ],
+      "mealTypes": [
+        "breakfast"
+      ],
+      "prepMinutes": 7,
+      "cookMinutes": 15,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "activeIds": [
+    "web_q_avocado_egg_toast"
+  ]
+}

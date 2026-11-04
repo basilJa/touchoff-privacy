@@ -1,0 +1,248 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [
+    {
+      "id": "web_q_cucumber",
+      "fdc": "168409",
+      "description": "Cucumber, with peel, raw",
+      "nutrition": {
+        "carbs": 3.63,
+        "kcal": 15.0,
+        "sodium": 2.0,
+        "b12": 0.0,
+        "calcium": 16.0,
+        "potassium": 147.0,
+        "fat": 0.11,
+        "vitc": 2.8,
+        "fiber": 0.5,
+        "iron": 0.28,
+        "protein": 0.65
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Cucumber with peel, raw",
+        "tr": "Salatalık, kabuklu, çiğ",
+        "ar": "خيار مع قشره، نيء",
+        "de": "Gurke mit Schale, roh",
+        "es": "Pepino con cáscara, crudo",
+        "fr": "Concombre avec pelure, cru",
+        "ja": "皮付きキュウリ、生",
+        "pt-BR": "Pepino com casca, cru",
+        "ru": "Огурец с кожурой, сырой"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/168409/nutrients",
+      "state": "raw"
+    },
+    {
+      "id": "web_q_lemonjuice",
+      "fdc": "167747",
+      "description": "Lemon juice, raw",
+      "nutrition": {
+        "b12": 0.0,
+        "vitc": 38.7,
+        "protein": 0.35,
+        "fiber": 0.3,
+        "iron": 0.08,
+        "sodium": 1.0,
+        "calcium": 6.0,
+        "potassium": 103.0,
+        "fat": 0.24,
+        "carbs": 6.9,
+        "kcal": 22.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Lemon juice, raw",
+        "tr": "Limon suyu, çiğ",
+        "ar": "عصير الليمون الخام",
+        "de": "Zitronensaft, roh",
+        "es": "Jugo de limón, crudo",
+        "fr": "Jus de citron, cru",
+        "ja": "レモン汁、生",
+        "pt-BR": "Suco de limão, cru",
+        "ru": "Лимонный сок, сырой"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/167747/nutrients",
+      "state": "raw"
+    },
+    {
+      "id": "web_q_quinoa",
+      "fdc": "168874",
+      "description": "Quinoa, uncooked",
+      "nutrition": {
+        "fiber": 7.0,
+        "iron": 4.57,
+        "sodium": 5.0,
+        "protein": 14.12,
+        "fat": 6.07,
+        "calcium": 47.0,
+        "potassium": 563.0,
+        "carbs": 64.16,
+        "kcal": 368.0,
+        "b12": 0.0
+      },
+      "unknown": [
+        "vitc"
+      ],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Quinoa, dry",
+        "tr": "Kinoa, kuru",
+        "ar": "الكينوا، جافة",
+        "de": "Quinoa, trocken",
+        "es": "Quinua, seca",
+        "fr": "Quinoa, sec",
+        "ja": "キヌア、乾燥",
+        "pt-BR": "Quinua, seca",
+        "ru": "Киноа, сухая"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/168874/nutrients",
+      "state": "dry"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "web_q_quinoa_chickpea_bowl",
+      "lead": "web_q_quinoa",
+      "method": "pan",
+      "ingredients": [
+        {
+          "food": "web_q_quinoa",
+          "grams": 75
+        },
+        {
+          "food": "chickpea",
+          "grams": 170
+        },
+        {
+          "food": "web_q_cucumber",
+          "grams": 120
+        },
+        {
+          "food": "tomato",
+          "grams": 150
+        },
+        {
+          "food": "web_q_lemonjuice",
+          "grams": 20
+        },
+        {
+          "food": "oil",
+          "grams": 10
+        }
+      ],
+      "minutes": 35,
+      "group": "legume",
+      "historical": [],
+      "snack": false,
+      "waterMl": 160,
+      "titles": {
+        "en": "Quinoa chickpea vegetable bowl",
+        "tr": "Kinoalı nohutlu sebze kâsesi",
+        "ar": "وعاء خضار الكينوا والحمص",
+        "de": "Quinoa-Kichererbsen-Gemüseschüssel",
+        "es": "Tazón de verduras con garbanzos y quinua",
+        "fr": "Bol de légumes aux pois chiches et au quinoa",
+        "ja": "キヌアひよこ豆の野菜ボウル",
+        "pt-BR": "Tigela de legumes com quinoa e grão de bico",
+        "ru": "Овощная тарелка с киноа и нутом"
+      },
+      "steps": {
+        "en": [
+          "Rinse dry quinoa in a fine sieve. Use cooked, drained chickpeas.",
+          "Put quinoa and the listed water in a saucepan, bring to a simmer and cover for 15–18 minutes until tender; rest off the heat for 5 minutes.",
+          "Wash and dice cucumber and tomato. Fold chickpeas into the warm quinoa, or warm them separately to 74°C if reheating leftovers.",
+          "Mix oil and lemon juice, combine with the quinoa, chickpeas and vegetables, and serve the complete bowl."
+        ],
+        "tr": [
+          "Kuru kinoayı ince süzgeçte yıka. Pişmiş, süzülmüş nohut kullan.",
+          "Kinoa ile belirtilen suyu tencerede hafif kaynat; kapalı olarak 15–18 dakika yumuşayana kadar pişir, ateşten alıp 5 dakika dinlendir.",
+          "Salatalık ile domatesi yıkayıp küp doğra. Nohudu ılık kinoaya kat veya artan yemek yeniden ısıtılıyorsa ayrı olarak 74°C ısıt.",
+          "Yağ ile limon suyunu karıştır; kinoa, nohut ve sebzeye katıp kâsenin tamamını servis et."
+        ],
+        "ar": [
+          "شطف الكينوا الجافة في منخل ناعم. استخدمي الحمص المطبوخ والمصفى.",
+          "ضعي الكينوا والماء المدرج في قدر، واتركيه حتى يغلي على نار خفيفة ثم غطيه لمدة 15–18 دقيقة حتى ينضج؛ استرح بعيدًا عن الحرارة لمدة 5 دقيقة.",
+          "يغسل الخيار والطماطم ويقطعان إلى مكعبات. قم بطي الحمص في الكينوا الدافئة، أو قم بتسخينها بشكل منفصل إلى 74°C في حالة إعادة تسخين بقايا الطعام.",
+          "يخلط الزيت وعصير الليمون، ويضاف إلى الكينوا والحمص والخضار، ويقدم الطبق كاملاً."
+        ],
+        "de": [
+          "Trockenes Quinoa in einem feinen Sieb abspülen. Verwenden Sie gekochte, abgetropfte Kichererbsen.",
+          "Quinoa und das angegebene Wasser in einen Topf geben, zum Köcheln bringen und zugedeckt 15–18 Minuten lang kochen lassen, bis es weich ist; Lassen Sie den Herd für 5 Minuten ruhen.",
+          "Gurke und Tomate waschen und würfeln. Kichererbsen unter die warme Quinoa heben oder separat auf 74°C erwärmen, wenn Reste aufgewärmt werden sollen.",
+          "Öl und Zitronensaft verrühren, mit Quinoa, Kichererbsen und Gemüse vermischen und die komplette Schüssel servieren."
+        ],
+        "es": [
+          "Enjuague la quinua seca en un colador fino. Utilice garbanzos cocidos y escurridos.",
+          "Coloque la quinua y el agua indicada en una cacerola, cocine a fuego lento y cubra durante 15 a 18 minutos hasta que estén tiernas; reposar fuera del fuego durante 5 minutos.",
+          "Lavar y cortar en dados el pepino y el tomate. Incorpora los garbanzos a la quinua tibia o caliéntalos por separado a 74 °C si recalientas las sobras.",
+          "Mezcla el aceite y el jugo de limón, combina con la quinoa, los garbanzos y las verduras y sirve el bol completo."
+        ],
+        "fr": [
+          "Rincer le quinoa sec dans une passoire fine. Utilisez des pois chiches cuits et égouttés.",
+          "Mettez le quinoa et l'eau indiquée dans une casserole, portez à ébullition et couvrez pendant 15–18 minutes jusqu'à ce qu'il soit tendre ; reposez-vous hors du feu pendant 5 minutes.",
+          "Lavez et coupez en dés le concombre et la tomate. Incorporez les pois chiches dans le quinoa chaud ou réchauffez-les séparément au 74°C si vous réchauffez les restes.",
+          "Mélanger l'huile et le jus de citron, mélanger avec le quinoa, les pois chiches et les légumes et servir le bol complet."
+        ],
+        "ja": [
+          "乾燥キヌアを目の細かいふるいですすぎます。茹でて水を切ったひよこ豆を使用します。",
+          "キヌアと記載の水を鍋に入れて沸騰させ、柔らかくなるまで蓋をして15–18分間煮ます。 5分間火を止めてください。",
+          "キュウリとトマトを洗って角切りにする。ひよこ豆を温かいキヌアに混ぜます。残り物を再加熱する場合は、ひよこ豆を別々に 74°C まで温めます。",
+          "オイルとレモン汁を混ぜ、キヌア、ひよこ豆、野菜と混ぜ合わせ、完成したボウルを盛り付けます。"
+        ],
+        "pt-BR": [
+          "Lave a quinoa seca em uma peneira fina. Use grão de bico cozido e escorrido.",
+          "Coloque a quinoa e a água listada em uma panela, leve para ferver e tampe por 15–18 minutos até ficar macio; descanse fora do fogo por 5 minutos.",
+          "Lave e corte o pepino e o tomate em cubos. Dobre o grão de bico na quinoa quente ou aqueça-os separadamente até 74°C se reaquecer as sobras.",
+          "Misture o azeite e o suco de limão, misture com a quinoa, o grão de bico e os vegetais e sirva a tigela completa."
+        ],
+        "ru": [
+          "Промойте сухую киноа через мелкое сито. Используйте приготовленный, осушенный нут.",
+          "Положите киноа и указанную воду в кастрюлю, доведите до кипения и накройте крышкой на 15–18 минут до готовности; отдохните от тепла в течение 5 минут.",
+          "Вымойте и нарежьте кубиками огурец и помидор. Добавьте нут в теплую киноа или нагрейте его отдельно до 74°C, если разогреваете остатки.",
+          "Смешайте масло и лимонный сок, соедините с киноа, нутом и овощами и подавайте целиком."
+        ]
+      },
+      "notes": {
+        "en": "Ingredient weights describe one base portion in the stated raw, dry or cooked state. Weigh edible parts. Nutrition is an estimate from USDA ingredient records; cooking losses are not modelled. Times are guides; use a food thermometer for animal foods. No extra salt, oil, toppings or sauces are included. This recipe has not been kitchen-tested. Historical labels describe modern adaptations, not reconstructed daily menus.",
+        "tr": "Malzeme miktarları belirtilen çiğ, kuru veya pişmiş durumda bir temel porsiyona aittir. Yenebilir kısmı tart. Besinler USDA malzeme kayıtlarından tahmindir; pişirme kayıpları modellenmez. Süreler yol gösterir; hayvansal gıdalarda gıda termometresi kullan. Ek tuz, yağ, süsleme veya sos dahil değildir. Bu tarif mutfakta denenmemiştir. Tarihsel etiketler özgün günlük menüyü değil, modern uyarlamayı anlatır.",
+        "ar": "تصف أوزان المكونات جزءًا أساسيًا واحدًا في الحالة الخام أو الجافة أو المطبوخة المذكورة. وزن الأجزاء الصالحة للأكل. التغذية هي تقدير من سجلات المكونات التابعة لوزارة الزراعة الأمريكية؛ لم يتم وضع نماذج لخسائر الطهي. الأوقات هي أدلة. استخدم مقياس حرارة الطعام للأغذية الحيوانية. لا يتم تضمين الملح الإضافي أو الزيت أو الطبقة أو الصلصات. لم يتم اختبار هذه الوصفة في المطبخ. تصف العلامات التاريخية التعديلات الحديثة، وليس القوائم اليومية المعاد بناؤها.",
+        "de": "Zutatengewichte beschreiben eine Grundportion im angegebenen rohen, trockenen oder gekochten Zustand. Essbare Teile abwiegen. Der Nährwert ist eine Schätzung aus den USDA-Inhaltsstoffaufzeichnungen; Kochverluste werden nicht modelliert. Zeiten sind Führer; Verwenden Sie für tierische Lebensmittel ein Lebensmittelthermometer. Es sind kein zusätzliches Salz, Öl, Toppings oder Saucen enthalten. Dieses Rezept wurde nicht in der Küche getestet. Historische Etiketten beschreiben moderne Adaptionen, keine rekonstruierten Tagesmenüs.",
+        "es": "Los pesos de los ingredientes describen una porción base en el estado crudo, seco o cocido indicado. Pesar las partes comestibles. La nutrición es una estimación de los registros de ingredientes del USDA; Las pérdidas por cocción no se modelan. Los tiempos son guías; Utilice un termómetro para alimentos para alimentos de origen animal. No se incluyen sal, aceite, aderezos ni salsas adicionales. Esta receta no ha sido probada en cocina. Las etiquetas históricas describen adaptaciones modernas, no menús diarios reconstruidos.",
+        "fr": "Les poids des ingrédients décrivent une portion de base à l’état brut, sec ou cuit indiqué. Pesez les parties comestibles. La nutrition est une estimation tirée des registres des ingrédients de l'USDA ; les pertes à la cuisson ne sont pas modélisées. Les temps sont des guides ; utilisez un thermomètre alimentaire pour les aliments d'origine animale. Aucun sel, huile, garniture ou sauce supplémentaire n'est inclus. Cette recette n'a pas été testée en cuisine. Les étiquettes historiques décrivent des adaptations modernes et non des menus quotidiens reconstitués.",
+        "ja": "成分重量は、記載されている生、乾燥、または調理された状態の 1 つのベース部分を表します。可食部分の重さを量ります。栄養成分はUSDAの成分記録からの推定値です。調理による損失はモデル化されていません。時間は目安です。動物性食品には食品用温度計を使用してください。余分な塩、油、トッピング、ソースは含まれていません。このレシピはキッチンでテストされていません。歴史的なラベルは、毎日のメニューを再構築したものではなく、現代に適応したものを説明しています。",
+        "pt-BR": "Os pesos dos ingredientes descrevem uma porção de base no estado declarado cru, seco ou cozido. Pese as partes comestíveis. A nutrição é uma estimativa dos registros de ingredientes do USDA; as perdas por cozimento não são modeladas. Os tempos são guias; use um termômetro alimentar para alimentos de origem animal. Não estão incluídos sal, óleo, coberturas ou molhos extras. Esta receita não foi testada na cozinha. Rótulos históricos descrevem adaptações modernas, não menus diários reconstruídos.",
+        "ru": "Масса ингредиентов соответствует одной базовой порции в указанном сыром, сухом или приготовленном состоянии. Взвесьте съедобные части. Питательность — это оценка на основе записей об ингредиентах Министерства сельского хозяйства США; потери при приготовлении пищи не моделируются. Время — ориентир; используйте пищевой термометр для продуктов животного происхождения. Никакой дополнительной соли, масла, начинок и соусов в комплект не входит. Этот рецепт не был проверен на кухне. Исторические этикетки описывают современные адаптации, а не реконструированные ежедневные меню."
+      },
+      "cuisine": "mediterranean",
+      "equipment": [
+        "stovetop"
+      ],
+      "mealTypes": [
+        "lunch",
+        "dinner",
+        "extra_meal"
+      ],
+      "prepMinutes": 10,
+      "cookMinutes": 20,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "activeIds": [
+    "web_q_quinoa_chickpea_bowl"
+  ]
+}

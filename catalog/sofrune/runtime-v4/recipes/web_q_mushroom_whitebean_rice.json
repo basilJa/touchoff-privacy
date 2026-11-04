@@ -1,0 +1,208 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [
+    {
+      "id": "web_q_mushroom",
+      "fdc": "169251",
+      "description": "Mushrooms, white, raw",
+      "nutrition": {
+        "b12": 0.04,
+        "fiber": 1.0,
+        "fat": 0.34,
+        "calcium": 3.0,
+        "potassium": 318.0,
+        "vitc": 2.1,
+        "iron": 0.5,
+        "sodium": 5.0,
+        "protein": 3.09,
+        "carbs": 3.26,
+        "kcal": 22.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "White mushroom, raw",
+        "tr": "Beyaz mantar, çiğ",
+        "ar": "فطر أبيض، خام",
+        "de": "Weißer Pilz, roh",
+        "es": "Hongo blanco, crudo",
+        "fr": "Champignon blanc, cru",
+        "ja": "白いキノコ、生",
+        "pt-BR": "Cogumelo branco, cru",
+        "ru": "Белый гриб, сырой"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/169251/nutrients",
+      "state": "raw"
+    },
+    {
+      "id": "web_q_whitebeans",
+      "fdc": "175203",
+      "description": "Beans, white, mature seeds, cooked, boiled, without salt",
+      "nutrition": {
+        "carbs": 25.09,
+        "kcal": 139.0,
+        "fiber": 6.3,
+        "iron": 3.7,
+        "sodium": 6.0,
+        "vitc": 0.0,
+        "b12": 0.0,
+        "protein": 9.73,
+        "fat": 0.35,
+        "calcium": 90.0,
+        "potassium": 561.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "White beans, cooked, no salt, drained",
+        "tr": "Beyaz fasulye, pişmiş, tuzsuz, süzülmüş",
+        "ar": "فاصوليا بيضاء، مطبوخة، بدون ملح، مصفاة",
+        "de": "Weiße Bohnen, gekocht, ohne Salz, abgetropft",
+        "es": "Frijoles blancos, cocidos, sin sal, escurridos",
+        "fr": "Haricots blancs, cuits, sans sel, égouttés",
+        "ja": "白インゲン豆、調理済み、塩なし、水切り",
+        "pt-BR": "Feijão branco, cozido, sem sal, escorrido",
+        "ru": "Белая фасоль, вареная, без соли, слить воду"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/175203/nutrients",
+      "state": "cooked"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "web_q_mushroom_whitebean_rice",
+      "lead": "web_q_mushroom",
+      "method": "pan",
+      "ingredients": [
+        {
+          "food": "web_q_mushroom",
+          "grams": 180
+        },
+        {
+          "food": "web_q_whitebeans",
+          "grams": 200
+        },
+        {
+          "food": "rice",
+          "grams": 200
+        },
+        {
+          "food": "onion",
+          "grams": 50
+        },
+        {
+          "food": "oil",
+          "grams": 10
+        }
+      ],
+      "minutes": 25,
+      "group": "legume",
+      "historical": [],
+      "snack": false,
+      "waterMl": 50,
+      "titles": {
+        "en": "Mushroom and white bean rice bowl",
+        "tr": "Mantarlı beyaz fasulyeli pirinç",
+        "ar": "وعاء أرز بالفطر والفاصوليا البيضاء",
+        "de": "Reisschüssel mit Pilzen und weißen Bohnen",
+        "es": "Tazón de arroz con champiñones y frijoles blancos",
+        "fr": "Bol de riz aux champignons et haricots blancs",
+        "ja": "きのこと白インゲン豆丼",
+        "pt-BR": "Tigela de arroz com cogumelos e feijão branco",
+        "ru": "Чашка риса с грибами и белой фасолью"
+      },
+      "steps": {
+        "en": [
+          "Use cooked brown rice and cooked, drained white beans. Slice mushrooms and dice onion.",
+          "Soften onion in oil for 3 minutes, then add mushrooms and cook uncovered for 7–8 minutes until their liquid reduces.",
+          "Add white beans, cooked rice and the listed water. Cover and warm for 5–7 minutes.",
+          "When reheating refrigerated beans or rice, check 74°C throughout. Stir gently and serve the complete bowl."
+        ],
+        "tr": [
+          "Pişmiş esmer pirinç ve pişmiş, süzülmüş beyaz fasulye kullan. Mantarı dilimle, soğanı küp doğra.",
+          "Soğanı yağda 3 dakika yumuşat; mantarı ekleyip suyu azalana kadar açık olarak 7–8 dakika pişir.",
+          "Beyaz fasulye, pişmiş pirinç ve belirtilen suyu ekle. Kapatıp 5–7 dakika ısıt.",
+          "Buzdolabındaki fasulye veya pirinç yeniden ısıtılıyorsa her yerde 74°C kontrol et. Nazikçe karıştırıp kâsenin tamamını servis et."
+        ],
+        "ar": [
+          "استخدمي الأرز البني المطبوخ والفاصوليا البيضاء المطبوخة والمصفاة. قطع الفطر والبصل إلى مكعبات.",
+          "يُقلى البصل في الزيت لمدة 3 دقيقة، ثم يُضاف الفطر ويُطهى بدون غطاء لمدة 7–8 دقيقة حتى يقل سائله.",
+          "أضيفي الفاصوليا البيضاء والأرز المطبوخ والماء المدرج. قم بتغطيته ودفئه لمدة 5–7 دقائق.",
+          "عند إعادة تسخين الفاصوليا أو الأرز المبرد، تحقق من 74°C طوال الوقت. يقلب بلطف ويقدم الوعاء الكامل."
+        ],
+        "de": [
+          "Verwenden Sie gekochten braunen Reis und gekochte, abgetropfte weiße Bohnen. Champignons in Scheiben schneiden und Zwiebel würfeln.",
+          "Zwiebeln in Öl 3 Minuten einweichen, dann Pilze hinzufügen und ohne Deckel 7–8 Minuten kochen, bis die Flüssigkeit reduziert ist.",
+          "Fügen Sie weiße Bohnen, gekochten Reis und das angegebene Wasser hinzu. Abdecken und 5–7 Minuten lang erwärmen.",
+          "Überprüfen Sie beim Aufwärmen von gekühlten Bohnen oder Reis durchgehend 74°C. Vorsichtig umrühren und die komplette Schüssel servieren."
+        ],
+        "es": [
+          "Utilice arroz integral cocido y frijoles blancos cocidos y escurridos. Cortar los champiñones en rodajas y la cebolla en cuadritos.",
+          "Ablande la cebolla en aceite durante 3 minutos, luego agregue los champiñones y cocine sin tapar durante 7 a 8 minutos hasta que se reduzca el líquido.",
+          "Agregue los frijoles blancos, el arroz cocido y el agua indicada. Cubra y caliente durante 5 a 7 minutos.",
+          "Al recalentar frijoles o arroz refrigerados, controle los 74 °C en todo momento. Remueve suavemente y sirve el bol completo."
+        ],
+        "fr": [
+          "Utilisez du riz brun cuit et des haricots blancs cuits et égouttés. Trancher les champignons et l'oignon en dés.",
+          "Faire ramollir l'oignon dans l'huile pendant 3 minutes, puis ajouter les champignons et cuire à découvert pendant 7–8 minutes jusqu'à ce que leur liquide réduise.",
+          "Ajoutez les haricots blancs, le riz cuit et l'eau indiquée. Couvrir et réchauffer pendant 5–7 minutes.",
+          "Lorsque vous réchauffez des haricots ou du riz réfrigérés, vérifiez 74°C partout. Remuer délicatement et servir le bol complet."
+        ],
+        "ja": [
+          "炊いた玄米と水気を切った白インゲン豆を使用します。キノコはスライスし、玉ねぎはみじん切りにする。",
+          "玉ねぎを油で3分間柔らかくし、その後キノコを加え、液体が減るまで蓋をせずに7–8分間調理します。",
+          "白インゲン豆、炊いた米、記載の水を加えます。蓋をして5–7分間温めます。",
+          "冷蔵豆や米を温め直す場合は、74°Cを必ずご確認ください。ゆっくりとかき混ぜて、完成したボウルをお召し上がりください。"
+        ],
+        "pt-BR": [
+          "Use arroz integral cozido e feijão branco cozido e escorrido. Fatie os cogumelos e pique a cebola.",
+          "Amoleça a cebola em óleo por 3 minutos, depois adicione os cogumelos e cozinhe descoberto por 7–8 minutos até que o líquido reduza.",
+          "Adicione o feijão branco, o arroz cozido e a água indicada. Cubra e aqueça por 5–7 minutos.",
+          "Ao reaquecer feijão ou arroz refrigerado, verifique 74°C por completo. Mexa delicadamente e sirva a tigela completa."
+        ],
+        "ru": [
+          "Используйте приготовленный коричневый рис и вареную, осушенную белую фасоль. Нарежьте грибы и нарежьте лук кубиками.",
+          "Размягчите лук в масле в течение 3 минут, затем добавьте грибы и готовьте без крышки 7–8 минут, пока их жидкость не уменьшится.",
+          "Добавьте белую фасоль, приготовленный рис и указанную воду. Накройте крышкой и прогрейте в течение 5–7 минут.",
+          "При разогреве охлажденных бобов или риса проверьте 74°C. Аккуратно перемешайте и подавайте всю тарелку."
+        ]
+      },
+      "notes": {
+        "en": "Ingredient weights describe one base portion in the stated raw, dry or cooked state. Weigh edible parts. Nutrition is an estimate from USDA ingredient records; cooking losses are not modelled. Times are guides; use a food thermometer for animal foods. No extra salt, oil, toppings or sauces are included. This recipe has not been kitchen-tested. Historical labels describe modern adaptations, not reconstructed daily menus.",
+        "tr": "Malzeme miktarları belirtilen çiğ, kuru veya pişmiş durumda bir temel porsiyona aittir. Yenebilir kısmı tart. Besinler USDA malzeme kayıtlarından tahmindir; pişirme kayıpları modellenmez. Süreler yol gösterir; hayvansal gıdalarda gıda termometresi kullan. Ek tuz, yağ, süsleme veya sos dahil değildir. Bu tarif mutfakta denenmemiştir. Tarihsel etiketler özgün günlük menüyü değil, modern uyarlamayı anlatır.",
+        "ar": "تصف أوزان المكونات جزءًا أساسيًا واحدًا في الحالة الخام أو الجافة أو المطبوخة المذكورة. وزن الأجزاء الصالحة للأكل. التغذية هي تقدير من سجلات المكونات التابعة لوزارة الزراعة الأمريكية؛ لم يتم وضع نماذج لخسائر الطهي. الأوقات هي أدلة. استخدم مقياس حرارة الطعام للأغذية الحيوانية. لا يتم تضمين الملح الإضافي أو الزيت أو الطبقة أو الصلصات. لم يتم اختبار هذه الوصفة في المطبخ. تصف العلامات التاريخية التعديلات الحديثة، وليس القوائم اليومية المعاد بناؤها.",
+        "de": "Zutatengewichte beschreiben eine Grundportion im angegebenen rohen, trockenen oder gekochten Zustand. Essbare Teile abwiegen. Der Nährwert ist eine Schätzung aus den USDA-Inhaltsstoffaufzeichnungen; Kochverluste werden nicht modelliert. Zeiten sind Führer; Verwenden Sie für tierische Lebensmittel ein Lebensmittelthermometer. Es sind kein zusätzliches Salz, Öl, Toppings oder Saucen enthalten. Dieses Rezept wurde nicht in der Küche getestet. Historische Etiketten beschreiben moderne Adaptionen, keine rekonstruierten Tagesmenüs.",
+        "es": "Los pesos de los ingredientes describen una porción base en el estado crudo, seco o cocido indicado. Pesar las partes comestibles. La nutrición es una estimación de los registros de ingredientes del USDA; Las pérdidas por cocción no se modelan. Los tiempos son guías; Utilice un termómetro para alimentos para alimentos de origen animal. No se incluyen sal, aceite, aderezos ni salsas adicionales. Esta receta no ha sido probada en cocina. Las etiquetas históricas describen adaptaciones modernas, no menús diarios reconstruidos.",
+        "fr": "Les poids des ingrédients décrivent une portion de base à l’état brut, sec ou cuit indiqué. Pesez les parties comestibles. La nutrition est une estimation tirée des registres des ingrédients de l'USDA ; les pertes à la cuisson ne sont pas modélisées. Les temps sont des guides ; utilisez un thermomètre alimentaire pour les aliments d'origine animale. Aucun sel, huile, garniture ou sauce supplémentaire n'est inclus. Cette recette n'a pas été testée en cuisine. Les étiquettes historiques décrivent des adaptations modernes et non des menus quotidiens reconstitués.",
+        "ja": "成分重量は、記載されている生、乾燥、または調理された状態の 1 つのベース部分を表します。可食部分の重さを量ります。栄養成分はUSDAの成分記録からの推定値です。調理による損失はモデル化されていません。時間は目安です。動物性食品には食品用温度計を使用してください。余分な塩、油、トッピング、ソースは含まれていません。このレシピはキッチンでテストされていません。歴史的なラベルは、毎日のメニューを再構築したものではなく、現代に適応したものを説明しています。",
+        "pt-BR": "Os pesos dos ingredientes descrevem uma porção de base no estado declarado cru, seco ou cozido. Pese as partes comestíveis. A nutrição é uma estimativa dos registros de ingredientes do USDA; as perdas por cozimento não são modeladas. Os tempos são guias; use um termômetro alimentar para alimentos de origem animal. Não estão incluídos sal, óleo, coberturas ou molhos extras. Esta receita não foi testada na cozinha. Rótulos históricos descrevem adaptações modernas, não menus diários reconstruídos.",
+        "ru": "Масса ингредиентов соответствует одной базовой порции в указанном сыром, сухом или приготовленном состоянии. Взвесьте съедобные части. Питательность — это оценка на основе записей об ингредиентах Министерства сельского хозяйства США; потери при приготовлении пищи не моделируются. Время — ориентир; используйте пищевой термометр для продуктов животного происхождения. Никакой дополнительной соли, масла, начинок и соусов в комплект не входит. Этот рецепт не был проверен на кухне. Исторические этикетки описывают современные адаптации, а не реконструированные ежедневные меню."
+      },
+      "cuisine": "international",
+      "equipment": [
+        "stovetop"
+      ],
+      "mealTypes": [
+        "lunch",
+        "dinner",
+        "extra_meal"
+      ],
+      "prepMinutes": 7,
+      "cookMinutes": 18,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "activeIds": [
+    "web_q_mushroom_whitebean_rice"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [],
+  "recipes": [
+    {
+      "id": "eggs_tomato",
+      "lead": "egg",
+      "method": "pan",
+      "ingredients": [
+        {
+          "food": "egg",
+          "grams": 150
+        },
+        {
+          "food": "bread",
+          "grams": 100
+        },
+        {
+          "food": "tomato",
+          "grams": 180
+        },
+        {
+          "food": "onion",
+          "grams": 50
+        },
+        {
+          "food": "oil",
+          "grams": 8
+        }
+      ],
+      "minutes": 20,
+      "group": "egg",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Tomato eggs on toast",
+        "tr": "Domatesli yumurta ve tost",
+        "ar": "بيض الطماطم على الخبز المحمص",
+        "de": "Tomateneier auf Toast",
+        "es": "Huevos con tomate sobre tostada",
+        "fr": "Œufs de tomates sur du pain grillé",
+        "ja": "トーストにトマトエッグ",
+        "pt-BR": "Ovos de tomate na torrada",
+        "ru": "Томатные яйца на тосте"
+      },
+      "steps": {
+        "en": [
+          "Weigh and chop ingredients. Use separate utensils for raw meat. Beat eggs if listed; pat tofu dry.",
+          "Heat the listed oil in a skillet. Cook raw protein fully, then add chopped vegetables. Add milk or a little water if needed; cook eggs until firm.",
+          "Heat cooked grains separately and toast bread if listed. Serve with the cooked mixture, divided into the stated household portions."
+        ],
+        "tr": [
+          "Malzemeleri tartıp doğra. Çiğ et için ayrı gereç kullan. Varsa yumurtayı çırp; tofunun suyunu al.",
+          "Listedeki yağı tavada ısıt. Çiğ proteini tamamen pişirip doğranmış sebzeleri ekle. Gerekirse süt veya az su ekle; yumurtayı katılaşana dek pişir.",
+          "Pişmiş tahılı ayrı ısıt; varsa ekmeği kızart. Pişen karışımla belirtilen hane porsiyonlarına bölerek sun."
+        ],
+        "ar": [
+          "وزن المكونات وتقطيعها. استخدم أواني منفصلة للحوم النيئة. فاز البيض إذا كان مدرجا؛ بات التوفو الجاف.",
+          "سخني الزيت المذكور في مقلاة. اطهي البروتين الخام بالكامل ثم أضيفي الخضار المقطعة. أضف الحليب أو القليل من الماء إذا لزم الأمر؛ طهي البيض حتى يصبح متماسكًا.",
+          "سخني الحبوب المطبوخة بشكل منفصل وحمصي الخبز إذا كان مدرجًا. يقدم مع الخليط المطبوخ المقسم إلى حصص منزلية محددة."
+        ],
+        "de": [
+          "Zutaten abwiegen und hacken. Verwenden Sie für rohes Fleisch separate Utensilien. Eier schlagen, falls aufgeführt; Tofu trocken tupfen.",
+          "Erhitzen Sie das aufgeführte Öl in einer Pfanne. Kochen Sie das Rohprotein vollständig und fügen Sie dann gehacktes Gemüse hinzu. Bei Bedarf Milch oder etwas Wasser hinzufügen; Eier kochen, bis sie fest sind.",
+          "Gekochte Körner separat erhitzen und Brot toasten, falls aufgeführt. Mit der gekochten Mischung, aufgeteilt in die angegebenen Haushaltsportionen, servieren."
+        ],
+        "es": [
+          "Pesar y picar los ingredientes. Utilice utensilios separados para la carne cruda. Batir los huevos si figuran en la lista; Seque el tofu con palmaditas.",
+          "Calentar el aceite indicado en una sartén. Cocine completamente la proteína cruda y luego agregue las verduras picadas. Agrega leche o un poco de agua si es necesario; Cocine los huevos hasta que estén firmes.",
+          "Caliente los granos cocidos por separado y tueste el pan, si figura en la lista. Servir con la mezcla cocida, dividida en las porciones caseras indicadas."
+        ],
+        "fr": [
+          "Pesez et hachez les ingrédients. Utilisez des ustensiles séparés pour la viande crue. Battez les œufs si cela est indiqué ; sécher le tofu.",
+          "Faites chauffer l'huile indiquée dans une poêle. Faites cuire entièrement les protéines crues, puis ajoutez les légumes hachés. Ajoutez du lait ou un peu d'eau si nécessaire ; cuire les œufs jusqu'à ce qu'ils soient fermes.",
+          "Chauffez les céréales cuites séparément et faites griller le pain si cela est indiqué. Servir avec le mélange cuit, réparti dans les portions ménagères indiquées."
+        ],
+        "ja": [
+          "材料の重さを量って切ります。生肉には別の調理器具を使用してください。卵が記載されている場合は溶きほぐします。豆腐を軽くたたいて乾燥させます。",
+          "フライパンに記載の油を入れて熱します。生のたんぱく質を十分に調理してから、刻んだ野菜を加えます。必要に応じて牛乳または少量の水を加えます。卵が固まるまで調理します。",
+          "調理した穀物を別に加熱し、記載されている場合はパンをトーストします。調理済みの混合物を、記載されている家庭用分量に分けてお召し上がりください。"
+        ],
+        "pt-BR": [
+          "Pese e pique os ingredientes. Use utensílios separados para carne crua. Bata os ovos, se listado; seque o tofu.",
+          "Aqueça o óleo listado em uma frigideira. Cozinhe totalmente a proteína crua e adicione os vegetais picados. Adicione leite ou um pouco de água se necessário; cozinhe os ovos até ficarem firmes.",
+          "Aqueça os grãos cozidos separadamente e toste o pão, se listado. Sirva com a mistura cozida, dividida nas porções caseiras indicadas."
+        ],
+        "ru": [
+          "Взвесьте и нарежьте ингредиенты. Используйте отдельную посуду для сырого мяса. Взбейте яйца, если они есть в списке; обсушите тофу.",
+          "Нагрейте указанное масло на сковороде. Полностью сварите сырой белок, затем добавьте нарезанные овощи. При необходимости добавьте молоко или немного воды; варить яйца до твердого состояния.",
+          "Отдельно разогрейте приготовленные зерна и поджарьте хлеб, если он указан. Подавайте с приготовленной смесью, разделенной на указанные порции."
+        ]
+      },
+      "notes": {
+        "en": "Nutrients are estimates from USDA SR Legacy 2018. Brands and cooking losses vary. This is not a medical diet or diagnosis. ",
+        "tr": "Besinler USDA SR Legacy 2018 verilerinden tahmin edilir. Marka ve pişirme kayıpları değişir. Tıbbi diyet veya tanı değildir. ",
+        "ar": "العناصر الغذائية هي تقديرات من USDA SR Legacy 2018. تختلف العلامات التجارية وفواقد الطهي. هذا ليس نظامًا غذائيًا أو تشخيصًا طبيًا. ",
+        "de": "Bei den Nährstoffen handelt es sich um Schätzungen aus dem USDA SR Legacy 2018. Marken und Kochverluste variieren. Dies ist keine medizinische Diät oder Diagnose. ",
+        "es": "Los nutrientes son estimaciones de USDA SR Legacy 2018. Las marcas y las pérdidas por cocción varían. Esta no es una dieta ni un diagnóstico médico. ",
+        "fr": "Les nutriments sont des estimations de l'USDA SR Legacy 2018. Les marques et les pertes à la cuisson varient. Il ne s’agit pas d’un régime ou d’un diagnostic médical. ",
+        "ja": "栄養素はUSDA SR Legacy 2018からの推定値です。ブランドと調理ロスは異なります。これは医学的な食事療法や診断ではありません。 ",
+        "pt-BR": "Os nutrientes são estimativas do USDA SR Legacy 2018. As marcas e as perdas por cozimento variam. Esta não é uma dieta médica ou diagnóstico. ",
+        "ru": "Питательные вещества рассчитаны по данным Министерства сельского хозяйства США SR Legacy 2018. Бренды и потери при приготовлении различаются. Это не лечебная диета и не диагноз. "
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "activeIds": [
+    "eggs_tomato"
+  ]
+}

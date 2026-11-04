@@ -1,0 +1,137 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [],
+  "recipes": [
+    {
+      "id": "web_q_chickpea_cabbage_v2",
+      "lead": "chickpea",
+      "method": "stew",
+      "ingredients": [
+        {
+          "food": "chickpea",
+          "grams": 250
+        },
+        {
+          "food": "cabbage",
+          "grams": 180
+        },
+        {
+          "food": "onion",
+          "grams": 60
+        },
+        {
+          "food": "bread",
+          "grams": 60
+        },
+        {
+          "food": "oil",
+          "grams": 10
+        }
+      ],
+      "minutes": 25,
+      "group": "legume",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "waterMl": 100,
+      "titles": {
+        "en": "Chickpea and cabbage pot",
+        "tr": "Lahanalı nohut tenceresi",
+        "ar": "وعاء الحمص والملفوف",
+        "de": "Kichererbsen- und Kohltopf",
+        "es": "Olla de garbanzos y coles",
+        "fr": "Pot de pois chiches et choux",
+        "ja": "ひよこ豆とキャベツの鍋",
+        "pt-BR": "Pote de grão de bico e repolho",
+        "ru": "Горшок с нутом и капустой"
+      },
+      "steps": {
+        "en": [
+          "Use cooked, drained chickpeas. Shred cabbage and thinly slice onion.",
+          "Soften onion in olive oil for 3 minutes, then add cabbage and stir for 3 minutes.",
+          "Add chickpeas and the listed water. Cover and simmer for 10–12 minutes until cabbage is tender; check 74°C when reheating stored chickpeas.",
+          "Serve all of the vegetables and beans with the weighed bread. Raw dry chickpeas cannot be substituted at the same weight or cooking time."
+        ],
+        "tr": [
+          "Pişmiş, süzülmüş nohut kullan. Lahanayı ince kıyıp soğanı ince dilimle.",
+          "Soğanı zeytinyağında 3 dakika yumuşat; lahanayı ekleyip 3 dakika karıştır.",
+          "Nohut ve belirtilen suyu ekle. Kapatıp lahana yumuşayana kadar 10–12 dakika pişir; saklanmış nohut yeniden ısıtılıyorsa 74°C kontrol et.",
+          "Sebze ve nohutun tamamını tartılmış ekmekle servis et. Aynı gram ve süreyle kuru nohut kullanılamaz."
+        ],
+        "ar": [
+          "استخدمي الحمص المطبوخ والمصفى. يقطع الملفوف ويقطع البصل إلى شرائح رفيعة.",
+          "يُقلى البصل في زيت الزيتون لمدة 3 دقيقة، ثم يُضاف الملفوف ويُقلب لمدة 3 دقيقة.",
+          "أضف الحمص والماء المذكور. يُغطى ويُترك على نار خفيفة لمدة 10–12 دقائق حتى ينضج الملفوف. تحقق من 74°C عند إعادة تسخين الحمص المخزن.",
+          "تُقدم جميع الخضروات والفاصوليا مع الخبز الموزون. لا يمكن استبدال الحمص الجاف النيئ بنفس الوزن أو وقت الطهي."
+        ],
+        "de": [
+          "Verwenden Sie gekochte, abgetropfte Kichererbsen. Den Kohl zerkleinern und die Zwiebel in dünne Scheiben schneiden.",
+          "Zwiebeln in Olivenöl 3 Minuten einweichen, dann Kohl hinzufügen und 3 Minuten lang umrühren.",
+          "Kichererbsen und das angegebene Wasser hinzufügen. Abdecken und 10–12 Minuten köcheln lassen, bis der Kohl weich ist; Überprüfen Sie 74°C, wenn Sie gelagerte Kichererbsen wieder aufwärmen.",
+          "Das gesamte Gemüse und die Bohnen mit dem abgewogenen Brot servieren. Rohe, trockene Kichererbsen können bei gleichem Gewicht oder gleicher Garzeit nicht ersetzt werden."
+        ],
+        "es": [
+          "Utilice garbanzos cocidos y escurridos. Triture el repollo y la cebolla en rodajas finas.",
+          "Ablande la cebolla en aceite de oliva durante 3 minutos, luego agregue el repollo y revuelva durante 3 minutos.",
+          "Agrega los garbanzos y el agua indicada. Tape y cocine a fuego lento durante 10 a 12 minutos hasta que el repollo esté tierno; compruebe los 74 °C al recalentar los garbanzos almacenados.",
+          "Sirve todas las verduras y los frijoles con el pan pesado. No se pueden sustituir los garbanzos crudos secos al mismo peso ni tiempo de cocción."
+        ],
+        "fr": [
+          "Utilisez des pois chiches cuits et égouttés. Râpez le chou et émincez l'oignon.",
+          "Faites ramollir l'oignon dans l'huile d'olive pendant 3 minutes, puis ajoutez le chou et remuez pendant 3 minutes.",
+          "Ajoutez les pois chiches et l'eau indiquée. Couvrir et laisser mijoter pendant 10–12 minutes jusqu'à ce que le chou soit tendre ; vérifiez 74°C lorsque vous réchauffez des pois chiches conservés.",
+          "Servir tous les légumes et haricots avec le pain pesé. Les pois chiches secs crus ne peuvent pas être remplacés par le même poids ou le même temps de cuisson."
+        ],
+        "ja": [
+          "茹でて水を切ったひよこ豆を使用します。キャベツは千切り、玉ねぎは薄切りにします。",
+          "玉ねぎをオリーブオイルで3分間柔らかくし、キャベツを加えて3分間かき混ぜます。",
+          "ひよこ豆と記載の水を加えます。蓋をして、キャベツが柔らかくなるまで10–12分間煮ます。保存したひよこ豆を再加熱する場合は、74°Cを確認してください。",
+          "すべての野菜と豆を計量したパンと一緒に盛り付けます。生の乾燥ひよこ豆を同じ重量または調理時間で代用することはできません。"
+        ],
+        "pt-BR": [
+          "Use grão de bico cozido e escorrido. Rale o repolho e corte a cebola em fatias finas.",
+          "Amoleça a cebola no azeite por 3 minutos, depois adicione o repolho e mexa por 3 minutos.",
+          "Adicione o grão de bico e a água listada. Cubra e cozinhe por 10–12 minutos até que o repolho esteja macio; verifique 74°C ao reaquecer grão de bico armazenado.",
+          "Sirva todos os legumes e feijão com o pão pesado. O grão-de-bico cru e seco não pode ser substituído pelo mesmo peso ou tempo de cozimento."
+        ],
+        "ru": [
+          "Используйте приготовленный, осушенный нут. Нашинковать капусту и тонко нарезать лук.",
+          "Размягчите лук в оливковом масле в течение 3 минут, затем добавьте капусту и перемешивайте в течение 3 минут.",
+          "Добавьте нут и указанную воду. Накройте крышкой и тушите 10–12 минут, пока капуста не станет мягкой; проверьте 74°C при разогреве хранящегося нута.",
+          "Подавайте все овощи и фасоль с взвешенным хлебом. Сырой сухой нут не может быть заменен при том же весе и времени приготовления."
+        ]
+      },
+      "notes": {
+        "en": "Ingredient weights describe one base portion in the stated raw, dry or cooked state. Weigh edible parts. Nutrition is an estimate from USDA ingredient records; cooking losses are not modelled. Times are guides; use a food thermometer for animal foods. No extra salt, oil, toppings or sauces are included. This recipe has not been kitchen-tested. Historical labels describe modern adaptations, not reconstructed daily menus.",
+        "tr": "Malzeme miktarları belirtilen çiğ, kuru veya pişmiş durumda bir temel porsiyona aittir. Yenebilir kısmı tart. Besinler USDA malzeme kayıtlarından tahmindir; pişirme kayıpları modellenmez. Süreler yol gösterir; hayvansal gıdalarda gıda termometresi kullan. Ek tuz, yağ, süsleme veya sos dahil değildir. Bu tarif mutfakta denenmemiştir. Tarihsel etiketler özgün günlük menüyü değil, modern uyarlamayı anlatır.",
+        "ar": "تصف أوزان المكونات جزءًا أساسيًا واحدًا في الحالة الخام أو الجافة أو المطبوخة المذكورة. وزن الأجزاء الصالحة للأكل. التغذية هي تقدير من سجلات المكونات التابعة لوزارة الزراعة الأمريكية؛ لم يتم وضع نماذج لخسائر الطهي. الأوقات هي أدلة. استخدم مقياس حرارة الطعام للأغذية الحيوانية. لا يتم تضمين الملح الإضافي أو الزيت أو الطبقة أو الصلصات. لم يتم اختبار هذه الوصفة في المطبخ. تصف العلامات التاريخية التعديلات الحديثة، وليس القوائم اليومية المعاد بناؤها.",
+        "de": "Zutatengewichte beschreiben eine Grundportion im angegebenen rohen, trockenen oder gekochten Zustand. Essbare Teile abwiegen. Der Nährwert ist eine Schätzung aus den USDA-Inhaltsstoffaufzeichnungen; Kochverluste werden nicht modelliert. Zeiten sind Führer; Verwenden Sie für tierische Lebensmittel ein Lebensmittelthermometer. Es sind kein zusätzliches Salz, Öl, Toppings oder Saucen enthalten. Dieses Rezept wurde nicht in der Küche getestet. Historische Etiketten beschreiben moderne Adaptionen, keine rekonstruierten Tagesmenüs.",
+        "es": "Los pesos de los ingredientes describen una porción base en el estado crudo, seco o cocido indicado. Pesar las partes comestibles. La nutrición es una estimación de los registros de ingredientes del USDA; Las pérdidas por cocción no se modelan. Los tiempos son guías; Utilice un termómetro para alimentos para alimentos de origen animal. No se incluyen sal, aceite, aderezos ni salsas adicionales. Esta receta no ha sido probada en cocina. Las etiquetas históricas describen adaptaciones modernas, no menús diarios reconstruidos.",
+        "fr": "Les poids des ingrédients décrivent une portion de base à l’état brut, sec ou cuit indiqué. Pesez les parties comestibles. La nutrition est une estimation tirée des registres des ingrédients de l'USDA ; les pertes à la cuisson ne sont pas modélisées. Les temps sont des guides ; utilisez un thermomètre alimentaire pour les aliments d'origine animale. Aucun sel, huile, garniture ou sauce supplémentaire n'est inclus. Cette recette n'a pas été testée en cuisine. Les étiquettes historiques décrivent des adaptations modernes et non des menus quotidiens reconstitués.",
+        "ja": "成分重量は、記載されている生、乾燥、または調理された状態の 1 つのベース部分を表します。可食部分の重さを量ります。栄養成分はUSDAの成分記録からの推定値です。調理による損失はモデル化されていません。時間は目安です。動物性食品には食品用温度計を使用してください。余分な塩、油、トッピング、ソースは含まれていません。このレシピはキッチンでテストされていません。歴史的なラベルは、毎日のメニューを再構築したものではなく、現代に適応したものを説明しています。",
+        "pt-BR": "Os pesos dos ingredientes descrevem uma porção de base no estado declarado cru, seco ou cozido. Pese as partes comestíveis. A nutrição é uma estimativa dos registros de ingredientes do USDA; as perdas por cozimento não são modeladas. Os tempos são guias; use um termômetro alimentar para alimentos de origem animal. Não estão incluídos sal, óleo, coberturas ou molhos extras. Esta receita não foi testada na cozinha. Rótulos históricos descrevem adaptações modernas, não menus diários reconstruídos.",
+        "ru": "Масса ингредиентов соответствует одной базовой порции в указанном сыром, сухом или приготовленном состоянии. Взвесьте съедобные части. Питательность — это оценка на основе записей об ингредиентах Министерства сельского хозяйства США; потери при приготовлении пищи не моделируются. Время — ориентир; используйте пищевой термометр для продуктов животного происхождения. Никакой дополнительной соли, масла, начинок и соусов в комплект не входит. Этот рецепт не был проверен на кухне. Исторические этикетки описывают современные адаптации, а не реконструированные ежедневные меню."
+      },
+      "cuisine": "international",
+      "equipment": [
+        "stovetop"
+      ],
+      "mealTypes": [
+        "lunch",
+        "dinner",
+        "extra_meal"
+      ],
+      "prepMinutes": 7,
+      "cookMinutes": 18,
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "activeIds": [
+    "web_q_chickpea_cabbage_v2"
+  ]
+}

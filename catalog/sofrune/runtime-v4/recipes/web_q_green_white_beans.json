@@ -1,0 +1,212 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [
+    {
+      "id": "web_q_greenbeans",
+      "fdc": "169961",
+      "description": "Beans, snap, green, raw",
+      "nutrition": {
+        "fat": 0.22,
+        "calcium": 37.0,
+        "potassium": 211.0,
+        "vitc": 12.2,
+        "protein": 1.83,
+        "fiber": 2.7,
+        "iron": 1.03,
+        "sodium": 6.0,
+        "carbs": 6.97,
+        "kcal": 31.0,
+        "b12": 0.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Green beans, raw",
+        "tr": "Taze fasulye, çiğ",
+        "ar": "الفاصوليا الخضراء، الخام",
+        "de": "Grüne Bohnen, roh",
+        "es": "Judías verdes, crudas",
+        "fr": "Haricots verts, crus",
+        "ja": "インゲン、生",
+        "pt-BR": "Feijão verde, cru",
+        "ru": "Фасоль зеленая, сырая"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/169961/nutrients",
+      "state": "raw"
+    },
+    {
+      "id": "web_q_whitebeans",
+      "fdc": "175203",
+      "description": "Beans, white, mature seeds, cooked, boiled, without salt",
+      "nutrition": {
+        "carbs": 25.09,
+        "kcal": 139.0,
+        "fiber": 6.3,
+        "iron": 3.7,
+        "sodium": 6.0,
+        "vitc": 0.0,
+        "b12": 0.0,
+        "protein": 9.73,
+        "fat": 0.35,
+        "calcium": 90.0,
+        "potassium": 561.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "White beans, cooked, no salt, drained",
+        "tr": "Beyaz fasulye, pişmiş, tuzsuz, süzülmüş",
+        "ar": "فاصوليا بيضاء، مطبوخة، بدون ملح، مصفاة",
+        "de": "Weiße Bohnen, gekocht, ohne Salz, abgetropft",
+        "es": "Frijoles blancos, cocidos, sin sal, escurridos",
+        "fr": "Haricots blancs, cuits, sans sel, égouttés",
+        "ja": "白インゲン豆、調理済み、塩なし、水切り",
+        "pt-BR": "Feijão branco, cozido, sem sal, escorrido",
+        "ru": "Белая фасоль, вареная, без соли, слить воду"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/175203/nutrients",
+      "state": "cooked"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "web_q_green_white_beans",
+      "lead": "web_q_greenbeans",
+      "method": "pan",
+      "ingredients": [
+        {
+          "food": "web_q_greenbeans",
+          "grams": 200
+        },
+        {
+          "food": "web_q_whitebeans",
+          "grams": 200
+        },
+        {
+          "food": "tomato",
+          "grams": 180
+        },
+        {
+          "food": "onion",
+          "grams": 60
+        },
+        {
+          "food": "oil",
+          "grams": 10
+        },
+        {
+          "food": "bread",
+          "grams": 60
+        }
+      ],
+      "minutes": 45,
+      "group": "legume",
+      "historical": [],
+      "snack": false,
+      "waterMl": 150,
+      "titles": {
+        "en": "Green and white bean tomato stew",
+        "tr": "Taze ve beyaz fasulye yemeği",
+        "ar": "يخنة الطماطم بالفاصوليا الخضراء والبيضاء",
+        "de": "Eintopf mit grünen und weißen Bohnentomaten",
+        "es": "Guiso de tomate con judías verdes y blancas",
+        "fr": "Ragoût de tomates aux haricots verts et blancs",
+        "ja": "緑と白インゲン豆のトマト煮込み",
+        "pt-BR": "Ensopado de tomate com feijão verde e branco",
+        "ru": "Тушеное мясо из зеленых и белых помидоров"
+      },
+      "steps": {
+        "en": [
+          "Trim green beans and cut into 3 cm pieces. Chop onion and tomato; use cooked, drained white beans.",
+          "Soften onion in olive oil for 4 minutes. Add green beans and tomato and stir for 3 minutes.",
+          "Add the listed water, cover and simmer for 20–25 minutes until green beans are tender.",
+          "Fold in cooked white beans and heat for 5 minutes, checking 74°C when reheating stored beans. Serve with bread."
+        ],
+        "tr": [
+          "Taze fasulyenin uçlarını ayırıp 3 cm kes. Soğan ile domatesi doğra; pişmiş, süzülmüş beyaz fasulye kullan.",
+          "Soğanı zeytinyağında 4 dakika yumuşat. Taze fasulye ve domatesi katıp 3 dakika çevir.",
+          "Belirtilen suyu ekle, kapat ve fasulye yumuşayana kadar 20–25 dakika pişir.",
+          "Pişmiş beyaz fasulyeyi katıp 5 dakika ısıt; saklanmış fasulye yeniden ısıtılıyorsa 74°C kontrol et. Ekmekle servis et."
+        ],
+        "ar": [
+          "تُقطع الفاصوليا الخضراء إلى قطع 3 cm. يقطع البصل والطماطم. استخدمي الفاصوليا البيضاء المطبوخة والمصفّاة.",
+          "يُذبل البصل في زيت الزيتون لمدة 4 دقيقة. تُضاف الفاصوليا الخضراء والطماطم ويُحرَّك المزيج لمدة 3 دقائق.",
+          "أضف الماء المدرج، ثم غطيه واتركه على نار هادئة لمدة 20–25 دقيقة حتى تنضج الفاصوليا الخضراء.",
+          "أضف الفاصوليا البيضاء المطبوخة وقم بتسخينها لمدة 5 دقائق، مع التحقق من 74°C عند إعادة تسخين الفاصوليا المخزنة. يقدم مع الخبز."
+        ],
+        "de": [
+          "Grüne Bohnen putzen und in 3 cm Stücke schneiden. Zwiebel und Tomate hacken; Verwenden Sie gekochte, abgetropfte weiße Bohnen.",
+          "Zwiebeln in Olivenöl 4 Minuten einweichen. Grüne Bohnen und Tomaten hinzufügen und 3 Minuten lang rühren.",
+          "Das aufgeführte Wasser hinzufügen, abdecken und 20–25 Minuten köcheln lassen, bis die grünen Bohnen weich sind.",
+          "Gekochte weiße Bohnen unterheben und 5 Minuten lang erhitzen, dabei 74°C beim Wiedererwärmen gelagerter Bohnen überprüfen. Mit Brot servieren."
+        ],
+        "es": [
+          "Recorta las judías verdes y córtalas en trozos de 3 cm. Picar la cebolla y el tomate; use frijoles blancos cocidos y escurridos.",
+          "Ablanda la cebolla en aceite de oliva durante 4 minutos. Agregue las judías verdes y el tomate y revuelva durante 3 minutos.",
+          "Agregue el agua indicada, cubra y cocine a fuego lento durante 20 a 25 minutos hasta que las judías verdes estén tiernas.",
+          "Incorpora los frijoles blancos cocidos y caliéntalos durante 5 minutos, controlando 74 °C al recalentar los frijoles almacenados. Servir con pan."
+        ],
+        "fr": [
+          "Coupez les haricots verts et coupez-les en morceaux 3 cm. Hacher l'oignon et la tomate; utilisez des haricots blancs cuits et égouttés.",
+          "Faire revenir l'oignon dans l'huile d'olive pendant 4 minutes. Ajoutez les haricots verts et la tomate et remuez pendant 3 minutes.",
+          "Ajoutez l'eau indiquée, couvrez et laissez mijoter pendant 20–25 minutes jusqu'à ce que les haricots verts soient tendres.",
+          "Incorporer les haricots blancs cuits et chauffer pendant 5 minutes, en vérifiant 74°C lorsque vous réchauffez les haricots stockés. Servir avec du pain."
+        ],
+        "ja": [
+          "インゲンを切り落とし、3 cm 個に切ります。玉ねぎとトマトをみじん切りにします。調理して水気を切った白インゲン豆を使用します。",
+          "玉ねぎをオリーブオイルで4分間柔らかくします。インゲンとトマトを加え、3 分間かき混ぜます。",
+          "記載の水を加え、蓋をし、インゲンが柔らかくなるまで20–25分間煮ます。",
+          "調理済みの白インゲン豆を入れ、5 分間加熱します。保存した豆を再加熱する場合は、74°C を確認します。パンと一緒にお召し上がりください。"
+        ],
+        "pt-BR": [
+          "Apare o feijão verde e corte em pedaços 3 cm. Pique a cebola e o tomate; use feijão branco cozido e escorrido.",
+          "Amoleça a cebola no azeite por 4 minutos. Adicione o feijão verde e o tomate e mexa por 3 minutos.",
+          "Adicione a água listada, tampe e cozinhe por 20–25 minutos até que o feijão verde esteja macio.",
+          "Junte o feijão branco cozido e aqueça por 5 minutos, verificando 74°C ao reaquecer o feijão armazenado. Sirva com pão."
+        ],
+        "ru": [
+          "Обрежьте зеленую фасоль и нарежьте ее на кусочки 3 cm. Нарежьте лук и помидор; используйте вареную, осушенную белую фасоль.",
+          "Смягчите лук в оливковом масле в течение 4 минут. Добавьте зеленую фасоль и помидоры и перемешивайте 3 минут.",
+          "Добавьте указанную воду, накройте крышкой и варите 20–25 минут, пока зеленая фасоль не станет мягкой.",
+          "Добавьте приготовленную белую фасоль и нагревайте в течение 5 минут, проверяя 74°C при разогреве хранящейся фасоли. Подавайте с хлебом."
+        ]
+      },
+      "notes": {
+        "en": "Ingredient weights describe one base portion in the stated raw, dry or cooked state. Weigh edible parts. Nutrition is an estimate from USDA ingredient records; cooking losses are not modelled. Times are guides; use a food thermometer for animal foods. No extra salt, oil, toppings or sauces are included. This recipe has not been kitchen-tested. Historical labels describe modern adaptations, not reconstructed daily menus.",
+        "tr": "Malzeme miktarları belirtilen çiğ, kuru veya pişmiş durumda bir temel porsiyona aittir. Yenebilir kısmı tart. Besinler USDA malzeme kayıtlarından tahmindir; pişirme kayıpları modellenmez. Süreler yol gösterir; hayvansal gıdalarda gıda termometresi kullan. Ek tuz, yağ, süsleme veya sos dahil değildir. Bu tarif mutfakta denenmemiştir. Tarihsel etiketler özgün günlük menüyü değil, modern uyarlamayı anlatır.",
+        "ar": "تصف أوزان المكونات جزءًا أساسيًا واحدًا في الحالة الخام أو الجافة أو المطبوخة المذكورة. وزن الأجزاء الصالحة للأكل. التغذية هي تقدير من سجلات المكونات التابعة لوزارة الزراعة الأمريكية؛ لم يتم وضع نماذج لخسائر الطهي. الأوقات هي أدلة. استخدم مقياس حرارة الطعام للأغذية الحيوانية. لا يتم تضمين الملح الإضافي أو الزيت أو الطبقة أو الصلصات. لم يتم اختبار هذه الوصفة في المطبخ. تصف العلامات التاريخية التعديلات الحديثة، وليس القوائم اليومية المعاد بناؤها.",
+        "de": "Zutatengewichte beschreiben eine Grundportion im angegebenen rohen, trockenen oder gekochten Zustand. Essbare Teile abwiegen. Der Nährwert ist eine Schätzung aus den USDA-Inhaltsstoffaufzeichnungen; Kochverluste werden nicht modelliert. Zeiten sind Führer; Verwenden Sie für tierische Lebensmittel ein Lebensmittelthermometer. Es sind kein zusätzliches Salz, Öl, Toppings oder Saucen enthalten. Dieses Rezept wurde nicht in der Küche getestet. Historische Etiketten beschreiben moderne Adaptionen, keine rekonstruierten Tagesmenüs.",
+        "es": "Los pesos de los ingredientes describen una porción base en el estado crudo, seco o cocido indicado. Pesar las partes comestibles. La nutrición es una estimación de los registros de ingredientes del USDA; Las pérdidas por cocción no se modelan. Los tiempos son guías; Utilice un termómetro para alimentos para alimentos de origen animal. No se incluyen sal, aceite, aderezos ni salsas adicionales. Esta receta no ha sido probada en cocina. Las etiquetas históricas describen adaptaciones modernas, no menús diarios reconstruidos.",
+        "fr": "Les poids des ingrédients décrivent une portion de base à l’état brut, sec ou cuit indiqué. Pesez les parties comestibles. La nutrition est une estimation tirée des registres des ingrédients de l'USDA ; les pertes à la cuisson ne sont pas modélisées. Les temps sont des guides ; utilisez un thermomètre alimentaire pour les aliments d'origine animale. Aucun sel, huile, garniture ou sauce supplémentaire n'est inclus. Cette recette n'a pas été testée en cuisine. Les étiquettes historiques décrivent des adaptations modernes et non des menus quotidiens reconstitués.",
+        "ja": "成分重量は、記載されている生、乾燥、または調理された状態の 1 つのベース部分を表します。可食部分の重さを量ります。栄養成分はUSDAの成分記録からの推定値です。調理による損失はモデル化されていません。時間は目安です。動物性食品には食品用温度計を使用してください。余分な塩、油、トッピング、ソースは含まれていません。このレシピはキッチンでテストされていません。歴史的なラベルは、毎日のメニューを再構築したものではなく、現代に適応したものを説明しています。",
+        "pt-BR": "Os pesos dos ingredientes descrevem uma porção de base no estado declarado cru, seco ou cozido. Pese as partes comestíveis. A nutrição é uma estimativa dos registros de ingredientes do USDA; as perdas por cozimento não são modeladas. Os tempos são guias; use um termômetro alimentar para alimentos de origem animal. Não estão incluídos sal, óleo, coberturas ou molhos extras. Esta receita não foi testada na cozinha. Rótulos históricos descrevem adaptações modernas, não menus diários reconstruídos.",
+        "ru": "Масса ингредиентов соответствует одной базовой порции в указанном сыром, сухом или приготовленном состоянии. Взвесьте съедобные части. Питательность — это оценка на основе записей об ингредиентах Министерства сельского хозяйства США; потери при приготовлении пищи не моделируются. Время — ориентир; используйте пищевой термометр для продуктов животного происхождения. Никакой дополнительной соли, масла, начинок и соусов в комплект не входит. Этот рецепт не был проверен на кухне. Исторические этикетки описывают современные адаптации, а не реконструированные ежедневные меню."
+      },
+      "cuisine": "turkish",
+      "equipment": [
+        "stovetop"
+      ],
+      "mealTypes": [
+        "lunch",
+        "dinner",
+        "extra_meal"
+      ],
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "activeIds": [
+    "web_q_green_white_beans"
+  ]
+}

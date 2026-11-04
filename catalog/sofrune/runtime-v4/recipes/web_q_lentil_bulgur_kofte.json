@@ -1,0 +1,341 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [
+    {
+      "id": "web_q_bulgur",
+      "fdc": "170688",
+      "description": "Bulgur, dry",
+      "nutrition": {
+        "fiber": 12.5,
+        "calcium": 35.0,
+        "potassium": 410.0,
+        "fat": 1.33,
+        "carbs": 75.87,
+        "kcal": 342.0,
+        "vitc": 0.0,
+        "b12": 0.0,
+        "protein": 12.29,
+        "iron": 2.46,
+        "sodium": 17.0
+      },
+      "unknown": [],
+      "allergens": [
+        "gluten"
+      ],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Bulgur, dry",
+        "tr": "Bulgur, kuru",
+        "ar": "البرغل الجاف",
+        "de": "Bulgur, trocken",
+        "es": "Bulgur, seco",
+        "fr": "Boulgour, sec",
+        "ja": "ブルグール、ドライ",
+        "pt-BR": "Bulgur, seco",
+        "ru": "Булгур, сухой"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/170688/nutrients",
+      "state": "dry"
+    },
+    {
+      "id": "web_q_lemonjuice",
+      "fdc": "167747",
+      "description": "Lemon juice, raw",
+      "nutrition": {
+        "b12": 0.0,
+        "vitc": 38.7,
+        "protein": 0.35,
+        "fiber": 0.3,
+        "iron": 0.08,
+        "sodium": 1.0,
+        "calcium": 6.0,
+        "potassium": 103.0,
+        "fat": 0.24,
+        "carbs": 6.9,
+        "kcal": 22.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Lemon juice, raw",
+        "tr": "Limon suyu, çiğ",
+        "ar": "عصير الليمون الخام",
+        "de": "Zitronensaft, roh",
+        "es": "Jugo de limón, crudo",
+        "fr": "Jus de citron, cru",
+        "ja": "レモン汁、生",
+        "pt-BR": "Suco de limão, cru",
+        "ru": "Лимонный сок, сырой"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/167747/nutrients",
+      "state": "raw"
+    },
+    {
+      "id": "web_q_parsley",
+      "fdc": "170416",
+      "description": "Parsley, fresh",
+      "nutrition": {
+        "carbs": 6.33,
+        "kcal": 36.0,
+        "calcium": 138.0,
+        "potassium": 554.0,
+        "fat": 0.79,
+        "protein": 2.97,
+        "fiber": 3.3,
+        "iron": 6.2,
+        "sodium": 56.0,
+        "vitc": 133.0,
+        "b12": 0.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Parsley, fresh",
+        "tr": "Maydanoz, taze",
+        "ar": "البقدونس الطازج",
+        "de": "Petersilie, frisch",
+        "es": "perejil, fresco",
+        "fr": "Persil, frais",
+        "ja": "パセリ、新鮮",
+        "pt-BR": "Salsa, fresca",
+        "ru": "Петрушка, свежая"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/170416/nutrients",
+      "state": "raw"
+    },
+    {
+      "id": "web_q_tomatopaste",
+      "fdc": "170459",
+      "description": "Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program)",
+      "nutrition": {
+        "b12": 0.0,
+        "carbs": 18.91,
+        "kcal": 82.0,
+        "sodium": 59.0,
+        "calcium": 36.0,
+        "potassium": 1014.0,
+        "fat": 0.47,
+        "vitc": 21.9,
+        "iron": 2.98,
+        "protein": 4.32,
+        "fiber": 4.1
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Tomato paste, no added salt",
+        "tr": "Domates salçası, tuz eklenmemiş",
+        "ar": "معجون طماطم، بدون ملح مضاف",
+        "de": "Tomatenmark, ohne Salzzusatz",
+        "es": "Pasta de tomate, sin sal añadida",
+        "fr": "Pâte de tomate, sans sel ajouté",
+        "ja": "トマトペースト、食塩無添加",
+        "pt-BR": "Pasta de tomate, sem adição de sal",
+        "ru": "Томатная паста, без добавления соли"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/170459/nutrients",
+      "state": "ready"
+    },
+    {
+      "id": "web_q_redlentil",
+      "fdc": "174284",
+      "description": "Lentils, pink or red, raw",
+      "nutrition": {
+        "carbs": 63.1,
+        "kcal": 358.0,
+        "calcium": 48.0,
+        "potassium": 668.0,
+        "iron": 7.39,
+        "protein": 23.91,
+        "fat": 2.17,
+        "fiber": 10.8,
+        "vitc": 1.7,
+        "b12": 0.0,
+        "sodium": 7.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Red lentils, dry",
+        "tr": "Kırmızı mercimek, kuru",
+        "ar": "عدس أحمر، جاف",
+        "de": "Rote Linsen, trocken",
+        "es": "Lentejas rojas, secas",
+        "fr": "Lentilles rouges, sèches",
+        "ja": "赤レンズ豆、乾燥",
+        "pt-BR": "Lentilhas vermelhas, secas",
+        "ru": "Красная чечевица, сухая"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/174284/nutrients",
+      "state": "dry"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "web_q_lentil_bulgur_kofte",
+      "lead": "web_q_redlentil",
+      "method": "pan",
+      "ingredients": [
+        {
+          "food": "web_q_redlentil",
+          "grams": 85
+        },
+        {
+          "food": "web_q_bulgur",
+          "grams": 60
+        },
+        {
+          "food": "onion",
+          "grams": 60
+        },
+        {
+          "food": "web_q_tomatopaste",
+          "grams": 20
+        },
+        {
+          "food": "web_q_parsley",
+          "grams": 20
+        },
+        {
+          "food": "oil",
+          "grams": 12
+        },
+        {
+          "food": "web_q_lemonjuice",
+          "grams": 20
+        }
+      ],
+      "minutes": 60,
+      "group": "legume",
+      "historical": [],
+      "snack": false,
+      "waterMl": 260,
+      "titles": {
+        "en": "Red lentil and bulgur patties",
+        "tr": "Mercimek köftesi",
+        "ar": "فطائر العدس الأحمر والبرغل",
+        "de": "Rote Linsen- und Bulgur-Pastetchen",
+        "es": "Empanadas de lentejas rojas y bulgur",
+        "fr": "Galettes de lentilles rouges et boulgour",
+        "ja": "赤レンズ豆とブルガーのパティ",
+        "pt-BR": "Rissóis de lentilha vermelha e bulgur",
+        "ru": "Котлеты из красной чечевицы и булгура"
+      },
+      "steps": {
+        "en": [
+          "Rinse dry red lentils and simmer in the listed water for 18–22 minutes until collapsing, leaving a little liquid.",
+          "Turn off heat, stir in fine dry bulgur and cover for 15 minutes so it absorbs the liquid. Bulgur must soften completely; add a little boiling water if needed.",
+          "Meanwhile finely chop onion and soften it in olive oil for 5 minutes. Stir in tomato paste for 1 minute, then mix into the lentil bulgur.",
+          "Cool until safe to handle. Fold in chopped washed parsley and lemon juice, then shape small patties. Serve all of the mixture; no lettuce or extra sauce is counted."
+        ],
+        "tr": [
+          "Kuru kırmızı mercimeği yıkayıp belirtilen suda 18–22 dakika, dağılıp az sulu kalana kadar pişir.",
+          "Ateşi kapat; ince kuru bulguru katıp suyu çekmesi için 15 dakika kapalı beklet. Bulgur tamamen yumuşamalıdır; gerekirse biraz kaynar su ekle.",
+          "Bu sırada ince doğranmış soğanı zeytinyağında 5 dakika yumuşat. Salçayı katıp 1 dakika çevir; mercimekli bulgura karıştır.",
+          "Elle tutulabilecek kadar soğut. Yıkanıp kıyılmış maydanoz ve limon suyunu katıp küçük köfteler yap. Karışımın tamamını servis et; marul veya ek sos hesaba dahil değildir."
+        ],
+        "ar": [
+          "اشطف العدس الأحمر الجاف واتركه على نار خفيفة في الماء المدرج لمدة 18–22 دقيقة حتى ينهار، ويترك القليل من السائل.",
+          "أطفئ النار وأضف البرغل الجاف الناعم وحركه وغطيه لمدة 15 لمدة دقيقة حتى يمتص السائل. يجب أن ينضج البرغل تماماً؛ أضف القليل من الماء المغلي إذا لزم الأمر.",
+          "في هذه الأثناء، يفرم البصل ناعماً ويخفف في زيت الزيتون لمدة 5 دقيقة. يُضاف معجون الطماطم لمدة دقيقة 1، ثم يُضاف إلى برغل العدس.",
+          "تبرد حتى تصبح آمنة في التعامل معها. أضيفي البقدونس المغسول المفروم وعصير الليمون، ثم قومي بتشكيل أقراص صغيرة. يقدم كل الخليط. لا يتم احتساب الخس أو الصلصة الإضافية."
+        ],
+        "de": [
+          "Trockene rote Linsen abspülen und im angegebenen Wasser 18–22 Minuten köcheln lassen, bis sie zusammenfallen und etwas Flüssigkeit übrig bleibt.",
+          "Den Herd ausschalten, feinen, trockenen Bulgur einrühren und zugedeckt 15 Minuten ruhen lassen, damit er die Flüssigkeit aufnimmt. Bulgur muss vollständig weich werden; Bei Bedarf etwas kochendes Wasser hinzufügen.",
+          "In der Zwischenzeit die Zwiebel fein hacken und 5 Minuten in Olivenöl anbraten. Tomatenmark 1 Minute einrühren, dann unter den Linsenbulgur mischen.",
+          "Abkühlen lassen, bis es sicher gehandhabt werden kann. Gehackte gewaschene Petersilie und Zitronensaft unterheben und kleine Pastetchen formen. Servieren Sie die gesamte Mischung. Es wird kein Salat oder zusätzliche Soße gezählt."
+        ],
+        "es": [
+          "Enjuague las lentejas rojas secas y cocine a fuego lento en el agua indicada durante 18 a 22 minutos hasta que se colapsen, dejando un poco de líquido.",
+          "Apague el fuego, agregue el bulgur fino y seco y cubra durante 15 minutos para que absorba el líquido. Bulgur debe ablandarse por completo; agregue un poco de agua hirviendo si es necesario.",
+          "Mientras tanto, pique finamente la cebolla y afánela en aceite de oliva durante 5 minutos. Agregue la pasta de tomate durante 1 minuto y luego mezcle con el bulgur de lentejas.",
+          "Deje enfriar hasta que sea seguro manipularlo. Agregue el perejil lavado picado y el jugo de limón y luego forme hamburguesas pequeñas. Sirve toda la mezcla; no se cuenta la lechuga ni la salsa extra."
+        ],
+        "fr": [
+          "Rincer les lentilles rouges séchées et laisser mijoter dans l'eau indiquée pendant 18–22 minutes jusqu'à ce qu'elles s'effondrent, laissant un peu de liquide.",
+          "Éteignez le feu, incorporez le boulgour fin et sec et couvrez pendant 15 minutes pour qu'il absorbe le liquide. Le boulgour doit ramollir complètement ; ajoutez un peu d'eau bouillante si nécessaire.",
+          "Pendant ce temps, hachez finement l'oignon et ramollissez-le dans l'huile d'olive pendant 5 minutes. Incorporer la pâte de tomate pendant 1 minute, puis mélanger au boulgour de lentilles.",
+          "Laisser refroidir jusqu'à ce qu'il soit sécuritaire de manipuler. Incorporez le persil lavé haché et le jus de citron, puis façonnez des petites galettes. Servir tout le mélange; aucune laitue ou sauce supplémentaire n'est comptée."
+        ],
+        "ja": [
+          "乾燥した赤レンズ豆を洗い、記載の水で18–22分間、崩れて液体が少し残るまで煮ます。",
+          "火を止め、細かい乾燥ブルグルを加えてかき混ぜ、液体を吸収するように蓋をして 15 分間置きます。ブルグルは完全に柔らかくする必要があります。必要に応じて、少量の熱湯を加えてください。",
+          "その間に玉ねぎを細かく刻み、オリーブオイルに入れて5分間柔らかくします。トマトペーストを1分間混ぜ、レンズ豆のブルグルに混ぜます。",
+          "安全に扱えるようになるまで冷却してください。洗ったパセリのみじん切りとレモン汁を加えて混ぜ、小さなパテの形を作ります。混ぜ合わせたものをすべてお召し上がりください。レタスや余分なソースはカウントされません。"
+        ],
+        "pt-BR": [
+          "Enxágue as lentilhas vermelhas secas e cozinhe na água listada por 18–22 minutos até desmoronarem, deixando um pouco de líquido.",
+          "Desligue o fogo, junte o bulgur fino e seco e tampe por 15 minutos para que absorva o líquido. O Bulgur deve amolecer completamente; adicione um pouco de água fervente, se necessário.",
+          "Entretanto pique a cebola finamente e amoleça no azeite durante 5 minutos. Junte a pasta de tomate por 1 minuto e depois misture com o bulgur de lentilha.",
+          "Deixe esfriar até ser seguro para manusear. Junte a salsinha lavada picada e o suco de limão e molde pequenos hambúrgueres. Sirva toda a mistura; nenhuma alface ou molho extra é contado."
+        ],
+        "ru": [
+          "Промойте сухую красную чечевицу и варите в указанной воде в течение 18–22 минут, пока она не развалится, оставив немного жидкости.",
+          "Выключите огонь, добавьте мелкий сухой булгур и накройте крышкой на 15 минут, чтобы он впитал жидкость. Булгур должен полностью размягчиться; при необходимости добавьте немного кипятка.",
+          "Тем временем мелко нарежьте лук и смягчите его в оливковом масле в течение 5 минут. Добавьте томатную пасту на 1 минуты, затем добавьте чечевичный булгур.",
+          "Остудить до тех пор, пока с ним не станет безопасно обращаться. Добавьте нарезанную промытую петрушку и лимонный сок, затем сформируйте небольшие котлеты. Подавайте всю смесь; салат или дополнительный соус не учитываются."
+        ]
+      },
+      "notes": {
+        "en": "Ingredient weights describe one base portion in the stated raw, dry or cooked state. Weigh edible parts. Nutrition is an estimate from USDA ingredient records; cooking losses are not modelled. Times are guides; use a food thermometer for animal foods. No extra salt, oil, toppings or sauces are included. This recipe has not been kitchen-tested. Historical labels describe modern adaptations, not reconstructed daily menus.",
+        "tr": "Malzeme miktarları belirtilen çiğ, kuru veya pişmiş durumda bir temel porsiyona aittir. Yenebilir kısmı tart. Besinler USDA malzeme kayıtlarından tahmindir; pişirme kayıpları modellenmez. Süreler yol gösterir; hayvansal gıdalarda gıda termometresi kullan. Ek tuz, yağ, süsleme veya sos dahil değildir. Bu tarif mutfakta denenmemiştir. Tarihsel etiketler özgün günlük menüyü değil, modern uyarlamayı anlatır.",
+        "ar": "تصف أوزان المكونات جزءًا أساسيًا واحدًا في الحالة الخام أو الجافة أو المطبوخة المذكورة. وزن الأجزاء الصالحة للأكل. التغذية هي تقدير من سجلات المكونات التابعة لوزارة الزراعة الأمريكية؛ لم يتم وضع نماذج لخسائر الطهي. الأوقات هي أدلة. استخدم مقياس حرارة الطعام للأغذية الحيوانية. لا يتم تضمين الملح الإضافي أو الزيت أو الطبقة أو الصلصات. لم يتم اختبار هذه الوصفة في المطبخ. تصف العلامات التاريخية التعديلات الحديثة، وليس القوائم اليومية المعاد بناؤها.",
+        "de": "Zutatengewichte beschreiben eine Grundportion im angegebenen rohen, trockenen oder gekochten Zustand. Essbare Teile abwiegen. Der Nährwert ist eine Schätzung aus den USDA-Inhaltsstoffaufzeichnungen; Kochverluste werden nicht modelliert. Zeiten sind Führer; Verwenden Sie für tierische Lebensmittel ein Lebensmittelthermometer. Es sind kein zusätzliches Salz, Öl, Toppings oder Saucen enthalten. Dieses Rezept wurde nicht in der Küche getestet. Historische Etiketten beschreiben moderne Adaptionen, keine rekonstruierten Tagesmenüs.",
+        "es": "Los pesos de los ingredientes describen una porción base en el estado crudo, seco o cocido indicado. Pesar las partes comestibles. La nutrición es una estimación de los registros de ingredientes del USDA; Las pérdidas por cocción no se modelan. Los tiempos son guías; Utilice un termómetro para alimentos para alimentos de origen animal. No se incluyen sal, aceite, aderezos ni salsas adicionales. Esta receta no ha sido probada en cocina. Las etiquetas históricas describen adaptaciones modernas, no menús diarios reconstruidos.",
+        "fr": "Les poids des ingrédients décrivent une portion de base à l’état brut, sec ou cuit indiqué. Pesez les parties comestibles. La nutrition est une estimation tirée des registres des ingrédients de l'USDA ; les pertes à la cuisson ne sont pas modélisées. Les temps sont des guides ; utilisez un thermomètre alimentaire pour les aliments d'origine animale. Aucun sel, huile, garniture ou sauce supplémentaire n'est inclus. Cette recette n'a pas été testée en cuisine. Les étiquettes historiques décrivent des adaptations modernes et non des menus quotidiens reconstitués.",
+        "ja": "成分重量は、記載されている生、乾燥、または調理された状態の 1 つのベース部分を表します。可食部分の重さを量ります。栄養成分はUSDAの成分記録からの推定値です。調理による損失はモデル化されていません。時間は目安です。動物性食品には食品用温度計を使用してください。余分な塩、油、トッピング、ソースは含まれていません。このレシピはキッチンでテストされていません。歴史的なラベルは、毎日のメニューを再構築したものではなく、現代に適応したものを説明しています。",
+        "pt-BR": "Os pesos dos ingredientes descrevem uma porção de base no estado declarado cru, seco ou cozido. Pese as partes comestíveis. A nutrição é uma estimativa dos registros de ingredientes do USDA; as perdas por cozimento não são modeladas. Os tempos são guias; use um termômetro alimentar para alimentos de origem animal. Não estão incluídos sal, óleo, coberturas ou molhos extras. Esta receita não foi testada na cozinha. Rótulos históricos descrevem adaptações modernas, não menus diários reconstruídos.",
+        "ru": "Масса ингредиентов соответствует одной базовой порции в указанном сыром, сухом или приготовленном состоянии. Взвесьте съедобные части. Питательность — это оценка на основе записей об ингредиентах Министерства сельского хозяйства США; потери при приготовлении пищи не моделируются. Время — ориентир; используйте пищевой термометр для продуктов животного происхождения. Никакой дополнительной соли, масла, начинок и соусов в комплект не входит. Этот рецепт не был проверен на кухне. Исторические этикетки описывают современные адаптации, а не реконструированные ежедневные меню."
+      },
+      "cuisine": "turkish",
+      "equipment": [
+        "stovetop"
+      ],
+      "mealTypes": [
+        "lunch",
+        "dinner",
+        "extra_meal"
+      ],
+      "prepMinutes": 15,
+      "cookMinutes": 30,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photo": {
+        "url": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/photos/8be5584efbc9c513c74d0bb89c7fefbae74d92beb3eaef4c939af6c8eb1e7577.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Izmir_mercimek_k%C3%B6ftesi.jpg",
+        "artist": "Samizambak",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "alt": {
+          "en": "Example presentation of Red lentil and bulgur patties",
+          "tr": "Mercimek köftesi için örnek sunum",
+          "pt-BR": "Exemplo de apresentação de Rissóis de lentilha vermelha e bulgur",
+          "de": "Beispieldarstellung von Rote Linsen- und Bulgur-Pastetchen",
+          "ru": "Пример представления Котлеты из красной чечевицы и булгура",
+          "fr": "Exemple de présentation de Galettes de lentilles rouges et boulgour",
+          "ar": "مثال لعرض فطائر العدس الأحمر والبرغل",
+          "ja": "赤レンズ豆とブルガーのパティ の表示例",
+          "es": "Ejemplo de presentación de Empanadas de lentejas rojas y bulgur"
+        }
+      }
+    }
+  ],
+  "activeIds": [
+    "web_q_lentil_bulgur_kofte"
+  ]
+}

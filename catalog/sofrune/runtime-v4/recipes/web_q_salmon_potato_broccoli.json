@@ -1,0 +1,261 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [
+    {
+      "id": "web_q_potato",
+      "fdc": "170026",
+      "description": "Potatoes, flesh and skin, raw",
+      "nutrition": {
+        "fat": 0.09,
+        "calcium": 12.0,
+        "b12": 0.0,
+        "kcal": 77.0,
+        "vitc": 19.7,
+        "sodium": 6.0,
+        "protein": 2.05,
+        "fiber": 2.1,
+        "iron": 0.81,
+        "carbs": 17.49,
+        "potassium": 425.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Potato with skin, raw",
+        "tr": "Patates, kabuklu, çiğ",
+        "ar": "البطاطا مع الجلد، الخام",
+        "de": "Kartoffel mit Schale, roh",
+        "es": "Patata con piel, cruda",
+        "fr": "Pomme de terre avec la peau, crue",
+        "ja": "皮付きジャガイモ、生",
+        "pt-BR": "Batata com casca, crua",
+        "ru": "Картофель с кожурой, сырой"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/170026/nutrients",
+      "state": "raw"
+    },
+    {
+      "id": "web_q_broccoli",
+      "fdc": "170379",
+      "description": "Broccoli, raw",
+      "nutrition": {
+        "carbs": 6.64,
+        "kcal": 34.0,
+        "fat": 0.37,
+        "calcium": 47.0,
+        "potassium": 316.0,
+        "protein": 2.82,
+        "fiber": 2.6,
+        "iron": 0.73,
+        "sodium": 33.0,
+        "vitc": 89.2,
+        "b12": 0.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Broccoli, raw",
+        "tr": "Brokoli, çiğ",
+        "ar": "البروكلي، الخام",
+        "de": "Brokkoli, roh",
+        "es": "Brócoli, crudo",
+        "fr": "Brocoli, cru",
+        "ja": "ブロッコリー、生",
+        "pt-BR": "Brócolis, cru",
+        "ru": "Брокколи, сырая"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/170379/nutrients",
+      "state": "raw"
+    },
+    {
+      "id": "web_q_lemonjuice",
+      "fdc": "167747",
+      "description": "Lemon juice, raw",
+      "nutrition": {
+        "b12": 0.0,
+        "vitc": 38.7,
+        "protein": 0.35,
+        "fiber": 0.3,
+        "iron": 0.08,
+        "sodium": 1.0,
+        "calcium": 6.0,
+        "potassium": 103.0,
+        "fat": 0.24,
+        "carbs": 6.9,
+        "kcal": 22.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Lemon juice, raw",
+        "tr": "Limon suyu, çiğ",
+        "ar": "عصير الليمون الخام",
+        "de": "Zitronensaft, roh",
+        "es": "Jugo de limón, crudo",
+        "fr": "Jus de citron, cru",
+        "ja": "レモン汁、生",
+        "pt-BR": "Suco de limão, cru",
+        "ru": "Лимонный сок, сырой"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/167747/nutrients",
+      "state": "raw"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "web_q_salmon_potato_broccoli",
+      "lead": "salmon",
+      "method": "bake",
+      "ingredients": [
+        {
+          "food": "salmon",
+          "grams": 160
+        },
+        {
+          "food": "web_q_potato",
+          "grams": 230
+        },
+        {
+          "food": "web_q_broccoli",
+          "grams": 180
+        },
+        {
+          "food": "oil",
+          "grams": 10
+        },
+        {
+          "food": "web_q_lemonjuice",
+          "grams": 15
+        }
+      ],
+      "minutes": 45,
+      "group": "fish",
+      "historical": [],
+      "snack": false,
+      "waterMl": 0,
+      "titles": {
+        "en": "Salmon with potato and broccoli",
+        "tr": "Patatesli brokolili somon",
+        "ar": "سمك السلمون مع البطاطس والبروكلي",
+        "de": "Lachs mit Kartoffeln und Brokkoli",
+        "es": "Salmón con patatas y brócoli",
+        "fr": "Saumon aux pommes de terre et brocoli",
+        "ja": "サーモンとジャガイモとブロッコリー",
+        "pt-BR": "Salmão com batata e brócolis",
+        "ru": "Лосось с картофелем и брокколи"
+      },
+      "steps": {
+        "en": [
+          "Heat oven to 210°C. Cut raw potato into 1.5 cm cubes and broccoli into small florets.",
+          "Toss potato with half the oil and roast on a tray for 15 minutes.",
+          "Add broccoli tossed in remaining oil and raw salmon beside the potatoes. Roast for 15–20 minutes more.",
+          "Check potato is tender and fish reaches 63°C at its thickest point. Drizzle lemon juice over the cooked food and serve everything."
+        ],
+        "tr": [
+          "Fırını 210°C ısıt. Çiğ patatesi 1,5 cm küp, brokoliyi küçük çiçek kes.",
+          "Patatesi yağın yarısıyla karıştırıp tepside 15 dakika pişir.",
+          "Kalan yağla karıştırılmış brokoliyi ve çiğ somonu patateslerin yanına ekle. 15–20 dakika daha pişir.",
+          "Patates yumuşamalı, balığın en kalın yeri 63°C olmalıdır. Pişen yemeğe limon suyunu gezdirip tamamını servis et."
+        ],
+        "ar": [
+          "سخني الفرن إلى 210°C. قطّعي البطاطس النيئة إلى مكعبات 1.5 cm والبروكلي إلى زهيرات صغيرة.",
+          "تُقلب البطاطس مع نصف كمية الزيت وتُحمص في صينية لمدة 15 دقيقة.",
+          "يُضاف البروكلي المقلي بالزيت المتبقي وسمك السلمون النيئ بجانب البطاطس. مشوي لمدة 15–20 دقائق أكثر.",
+          "تحقق من أن البطاطس طرية وأن الأسماك تصل إلى 63°C في أكثر نقاطها سُمكًا. يُسكب عصير الليمون فوق الطعام المطبوخ ويُقدم كل شيء."
+        ],
+        "de": [
+          "Den Ofen auf 210°C vorheizen. Rohe Kartoffeln in 1.5 cm Würfel und Brokkoli in kleine Röschen schneiden.",
+          "Kartoffeln mit der Hälfte des Öls vermengen und auf einem Blech 15 Minuten rösten.",
+          "Den im restlichen Öl geschwenkten Brokkoli und den rohen Lachs neben die Kartoffeln geben. Weitere 15–20 Minuten rösten.",
+          "Überprüfen Sie, ob die Kartoffel zart ist und der Fisch an der dicksten Stelle 63°C erreicht. Zitronensaft über das gekochte Essen träufeln und alles servieren."
+        ],
+        "es": [
+          "Calentar el horno a 210°C. Cortar la patata cruda en cubos de 1,5 cm y el brócoli en floretes pequeños.",
+          "Mezcle las patatas con la mitad del aceite y ase en una bandeja durante 15 minutos.",
+          "Agregue el brócoli mezclado con el aceite restante y el salmón crudo junto a las papas. Ase durante 15 a 20 minutos más.",
+          "Comprueba que la patata esté tierna y el pescado alcance los 63°C en su punto más grueso. Rocíe jugo de limón sobre la comida cocida y sirva todo."
+        ],
+        "fr": [
+          "Chauffer le four à 210°C. Coupez la pomme de terre crue en cubes 1.5 cm et le brocoli en petits bouquets.",
+          "Mélanger la pomme de terre avec la moitié de l'huile et rôtir sur un plateau pendant 15 minutes.",
+          "Ajouter le brocoli mélangé au reste de l'huile et le saumon cru à côté des pommes de terre. Rôtissez pendant 15–20 minutes supplémentaires.",
+          "Vérifiez que la pomme de terre est tendre et que le poisson atteint le 63°C à son point le plus épais. Versez du jus de citron sur les aliments cuits et servez le tout."
+        ],
+        "ja": [
+          "オーブンを210°Cまで加熱します。生のジャガイモを1.5 cm個の立方体に切り、ブロッコリーを小さな小房に切ります。",
+          "ジャガイモに半分の油を加え、トレイの上で15分間ローストします。",
+          "残りの油で和えたブロッコリーと生のサーモンをジャガイモの横に加えます。さらに15–20分ローストします。",
+          "ジャガイモが柔らかく、魚が最も厚い部分で 63°C に達していることを確認してください。調理済みの食べ物にレモン汁をかけて、すべてを盛り付けます。"
+        ],
+        "pt-BR": [
+          "Aqueça o forno a 210°C. Corte a batata crua em cubos 1.5 cm e os brócolis em pequenas florzinhas.",
+          "Misture a batata com metade do azeite e asse em uma bandeja por 15 minutos.",
+          "Adicione os brócolis misturados com o óleo restante e o salmão cru ao lado das batatas. Asse por mais 15–20 minutos.",
+          "Verifique se a batata está macia e o peixe atinge 63°C no ponto mais grosso. Regue os alimentos cozidos com suco de limão e sirva tudo."
+        ],
+        "ru": [
+          "Нагрейте духовку до 210°C. Нарежьте сырой картофель кубиками 1.5 cm, а брокколи — небольшими соцветиями.",
+          "Перемешайте картофель с половиной масла и запекайте на противне в течение 15 минут.",
+          "Рядом с картофелем добавьте брокколи, заправленную оставшимся маслом, и сырого лосося. Жарьте еще 15–20 минут.",
+          "Убедитесь, что картофель нежный, а рыба достигает 63°C в самом толстом месте. Сбрызните приготовленную еду лимонным соком и подавайте."
+        ]
+      },
+      "notes": {
+        "en": "Ingredient weights describe one base portion in the stated raw, dry or cooked state. Weigh edible parts. Nutrition is an estimate from USDA ingredient records; cooking losses are not modelled. Times are guides; use a food thermometer for animal foods. No extra salt, oil, toppings or sauces are included. This recipe has not been kitchen-tested. Historical labels describe modern adaptations, not reconstructed daily menus.",
+        "tr": "Malzeme miktarları belirtilen çiğ, kuru veya pişmiş durumda bir temel porsiyona aittir. Yenebilir kısmı tart. Besinler USDA malzeme kayıtlarından tahmindir; pişirme kayıpları modellenmez. Süreler yol gösterir; hayvansal gıdalarda gıda termometresi kullan. Ek tuz, yağ, süsleme veya sos dahil değildir. Bu tarif mutfakta denenmemiştir. Tarihsel etiketler özgün günlük menüyü değil, modern uyarlamayı anlatır.",
+        "ar": "تصف أوزان المكونات جزءًا أساسيًا واحدًا في الحالة الخام أو الجافة أو المطبوخة المذكورة. وزن الأجزاء الصالحة للأكل. التغذية هي تقدير من سجلات المكونات التابعة لوزارة الزراعة الأمريكية؛ لم يتم وضع نماذج لخسائر الطهي. الأوقات هي أدلة. استخدم مقياس حرارة الطعام للأغذية الحيوانية. لا يتم تضمين الملح الإضافي أو الزيت أو الطبقة أو الصلصات. لم يتم اختبار هذه الوصفة في المطبخ. تصف العلامات التاريخية التعديلات الحديثة، وليس القوائم اليومية المعاد بناؤها.",
+        "de": "Zutatengewichte beschreiben eine Grundportion im angegebenen rohen, trockenen oder gekochten Zustand. Essbare Teile abwiegen. Der Nährwert ist eine Schätzung aus den USDA-Inhaltsstoffaufzeichnungen; Kochverluste werden nicht modelliert. Zeiten sind Führer; Verwenden Sie für tierische Lebensmittel ein Lebensmittelthermometer. Es sind kein zusätzliches Salz, Öl, Toppings oder Saucen enthalten. Dieses Rezept wurde nicht in der Küche getestet. Historische Etiketten beschreiben moderne Adaptionen, keine rekonstruierten Tagesmenüs.",
+        "es": "Los pesos de los ingredientes describen una porción base en el estado crudo, seco o cocido indicado. Pesar las partes comestibles. La nutrición es una estimación de los registros de ingredientes del USDA; Las pérdidas por cocción no se modelan. Los tiempos son guías; Utilice un termómetro para alimentos para alimentos de origen animal. No se incluyen sal, aceite, aderezos ni salsas adicionales. Esta receta no ha sido probada en cocina. Las etiquetas históricas describen adaptaciones modernas, no menús diarios reconstruidos.",
+        "fr": "Les poids des ingrédients décrivent une portion de base à l’état brut, sec ou cuit indiqué. Pesez les parties comestibles. La nutrition est une estimation tirée des registres des ingrédients de l'USDA ; les pertes à la cuisson ne sont pas modélisées. Les temps sont des guides ; utilisez un thermomètre alimentaire pour les aliments d'origine animale. Aucun sel, huile, garniture ou sauce supplémentaire n'est inclus. Cette recette n'a pas été testée en cuisine. Les étiquettes historiques décrivent des adaptations modernes et non des menus quotidiens reconstitués.",
+        "ja": "成分重量は、記載されている生、乾燥、または調理された状態の 1 つのベース部分を表します。可食部分の重さを量ります。栄養成分はUSDAの成分記録からの推定値です。調理による損失はモデル化されていません。時間は目安です。動物性食品には食品用温度計を使用してください。余分な塩、油、トッピング、ソースは含まれていません。このレシピはキッチンでテストされていません。歴史的なラベルは、毎日のメニューを再構築したものではなく、現代に適応したものを説明しています。",
+        "pt-BR": "Os pesos dos ingredientes descrevem uma porção de base no estado declarado cru, seco ou cozido. Pese as partes comestíveis. A nutrição é uma estimativa dos registros de ingredientes do USDA; as perdas por cozimento não são modeladas. Os tempos são guias; use um termômetro alimentar para alimentos de origem animal. Não estão incluídos sal, óleo, coberturas ou molhos extras. Esta receita não foi testada na cozinha. Rótulos históricos descrevem adaptações modernas, não menus diários reconstruídos.",
+        "ru": "Масса ингредиентов соответствует одной базовой порции в указанном сыром, сухом или приготовленном состоянии. Взвесьте съедобные части. Питательность — это оценка на основе записей об ингредиентах Министерства сельского хозяйства США; потери при приготовлении пищи не моделируются. Время — ориентир; используйте пищевой термометр для продуктов животного происхождения. Никакой дополнительной соли, масла, начинок и соусов в комплект не входит. Этот рецепт не был проверен на кухне. Исторические этикетки описывают современные адаптации, а не реконструированные ежедневные меню."
+      },
+      "cuisine": "mediterranean",
+      "equipment": [
+        "oven"
+      ],
+      "mealTypes": [
+        "lunch",
+        "dinner",
+        "extra_meal"
+      ],
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photo": {
+        "url": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/photos/459342e3546e4ba232e9fefde5255cefa0228342e8480e8fc2a947c611b960aa.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Mittagessen_Broccoli_Lachs_Kartoffeln.JPG",
+        "artist": "Chin tin tin",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "alt": {
+          "en": "Example presentation of Salmon with potato and broccoli",
+          "tr": "Patatesli brokolili somon için örnek sunum",
+          "pt-BR": "Exemplo de apresentação de Salmão com batata e brócolis",
+          "de": "Beispieldarstellung von Lachs mit Kartoffeln und Brokkoli",
+          "ru": "Пример представления Лосось с картофелем и брокколи",
+          "fr": "Exemple de présentation de Saumon aux pommes de terre et brocoli",
+          "ar": "مثال لعرض سمك السلمون مع البطاطس والبروكلي",
+          "ja": "サーモンとジャガイモとブロッコリー の表示例",
+          "es": "Ejemplo de presentación de Salmón con patatas y brócoli"
+        }
+      }
+    }
+  ],
+  "activeIds": [
+    "web_q_salmon_potato_broccoli"
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [],
+  "recipes": [
+    {
+      "id": "web_q_cod_rice_v2",
+      "lead": "cod",
+      "method": "bake",
+      "ingredients": [
+        {
+          "food": "cod",
+          "grams": 180
+        },
+        {
+          "food": "rice",
+          "grams": 240
+        },
+        {
+          "food": "carrot",
+          "grams": 100
+        }
+      ],
+      "minutes": 25,
+      "group": "fish",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "waterMl": 60,
+      "titles": {
+        "en": "Baked cod with rice",
+        "tr": "Fırında morina ve pirinç",
+        "ar": "سمك القد المخبوز مع الأرز",
+        "de": "Gebackener Kabeljau mit Reis",
+        "es": "Bacalao al horno con arroz",
+        "fr": "Morue au four avec du riz",
+        "ja": "タラの焼きご飯添え",
+        "pt-BR": "Bacalhau assado com arroz",
+        "ru": "Запеченная треска с рисом"
+      },
+      "steps": {
+        "en": [
+          "Heat the oven to 200°C. Slice carrot into thin rounds and put in a small covered baking dish with the listed water.",
+          "Lay raw cod over carrot and drizzle with the listed olive oil. Cover and bake for 15–20 minutes; the thickest fish portion must reach 63°C.",
+          "Warm the already cooked brown rice separately. If it was refrigerated, reheat to 74°C.",
+          "Serve the cod and tender carrot over all of the rice. Do not use the cooked rice weight as a dry-rice amount."
+        ],
+        "tr": [
+          "Fırını 200°C ısıt. Havucu ince halka kesip belirtilen suyla küçük kapaklı fırın kabına koy.",
+          "Çiğ morinayı havucun üstüne yerleştirip belirtilen zeytinyağını gezdir. Kapatıp 15–20 dakika pişir; balığın en kalın yeri 63°C olmalıdır.",
+          "Önceden pişmiş esmer pirinci ayrı ısıt. Buzdolabında saklandıysa 74°C ısıt.",
+          "Balık ve yumuşayan havucu pirincin tamamıyla servis et. Pişmiş pirinç ağırlığı kadar kuru pirinç kullanma."
+        ],
+        "ar": [
+          "سخني الفرن إلى 200°C. قطعي الجزر إلى دوائر رفيعة ثم ضعيه في طبق خبز صغير مغطى بالماء المضاف إليه.",
+          "ضعي سمك القد الخام فوق الجزر ورشي عليه زيت الزيتون المدرج. يُغطى ويُخبز لمدة 15–20 دقيقة؛ يجب أن يصل الجزء الأكثر سمكًا من الأسماك إلى 63°C.",
+          "قم بتدفئة الأرز البني المطبوخ بشكل منفصل. إذا تم تبريده، قم بإعادة تسخينه إلى 74°C.",
+          "يُقدّم سمك القد والجزر الطري فوق كل الأرز. لا تستخدم وزن الأرز المطبوخ ككمية أرز جاف."
+        ],
+        "de": [
+          "Heizen Sie den Ofen auf 200°C vor. Die Karotte in dünne Scheiben schneiden und mit dem angegebenen Wasser in eine kleine, abgedeckte Auflaufform geben.",
+          "Rohen Kabeljau über die Karotte legen und mit dem aufgeführten Olivenöl beträufeln. Abdecken und 15–20 Minuten backen; Die dickste Fischportion muss 63°C erreichen.",
+          "Den bereits gekochten Naturreis separat erwärmen. Wenn es gekühlt war, erhitzen Sie es erneut auf 74°C.",
+          "Den Kabeljau und die zarte Karotte über dem Reis servieren. Verwenden Sie das Gewicht des gekochten Reises nicht als Trockenreismenge."
+        ],
+        "es": [
+          "Calentar el horno a 200°C. Corte la zanahoria en rodajas finas y colóquela en una fuente para horno pequeña tapada con el agua indicada.",
+          "Coloque el bacalao crudo sobre la zanahoria y rocíe con el aceite de oliva indicado. Cubra y hornee durante 15 a 20 minutos; la porción de pescado más gruesa debe alcanzar los 63°C.",
+          "Calentar por separado el arroz integral ya cocido. Si estuvo refrigerado, recalentar a 74°C.",
+          "Servir el bacalao y la zanahoria tierna sobre todo el arroz. No utilice el peso del arroz cocido como cantidad de arroz seco."
+        ],
+        "fr": [
+          "Chauffez le four à 200°C. Coupez la carotte en fines rondelles et mettez-la dans un petit plat allant au four couvert avec l'eau indiquée.",
+          "Déposer la morue crue sur la carotte et arroser d'un filet d'huile d'olive indiquée. Couvrir et cuire au four pendant 15–20 minutes ; la portion de poisson la plus épaisse doit atteindre 63°C.",
+          "Réchauffez séparément le riz brun déjà cuit. S'il a été réfrigéré, réchauffez-le au 74°C.",
+          "Servir la morue et la carotte tendre sur tout le riz. N'utilisez pas le poids du riz cuit comme quantité de riz sec."
+        ],
+        "ja": [
+          "オーブンを200°Cまで加熱します。にんじんを薄い輪切りにし、記載されている水を入れた小さな蓋付きグラタン皿に置きます。",
+          "生のタラをニンジンの上に置き、記載されているオリーブオイルを回しかけます。蓋をして15–20分間焼きます。魚の最も厚い部分は 63°C に達する必要があります。",
+          "炊き上がった玄米を別に温めます。冷蔵されていた場合は、74°Cまで温めてください。",
+          "タラと柔らかいニンジンをご飯全体に盛り付けます。炊き上がった米の重量を乾燥米の量として使用しないでください。"
+        ],
+        "pt-BR": [
+          "Aqueça o forno a 200°C. Corte a cenoura em rodelas finas e coloque em uma assadeira pequena coberta com a água listada.",
+          "Coloque o bacalhau cru sobre a cenoura e regue com o azeite indicado. Cubra e leve ao forno por 15–20 minutos; a porção de peixe mais espessa deve atingir 63°C.",
+          "Aqueça separadamente o arroz integral já cozido. Se foi refrigerado, reaqueça até 74°C.",
+          "Sirva o bacalhau e a cenoura tenra por cima de todo o arroz. Não use o peso do arroz cozido como quantidade de arroz seco."
+        ],
+        "ru": [
+          "Нагрейте духовку до 200°C. Нарежьте морковь тонкими кружочками и положите в небольшую форму для запекания под крышкой с указанной водой.",
+          "Выложите сырую треску поверх моркови и сбрызните указанным оливковым маслом. Накройте крышкой и запекайте 15–20 минут; самая толстая часть рыбы должна достигать 63°C.",
+          "Отдельно прогрейте уже сваренный коричневый рис. Если он был охлажден, разогрейте до 74°C.",
+          "Подавайте треску и нежную морковь поверх всего риса. Не используйте массу приготовленного риса в качестве сухого риса."
+        ]
+      },
+      "notes": {
+        "en": "Ingredient weights describe one base portion in the stated raw, dry or cooked state. Weigh edible parts. Nutrition is an estimate from USDA ingredient records; cooking losses are not modelled. Times are guides; use a food thermometer for animal foods. No extra salt, oil, toppings or sauces are included. This recipe has not been kitchen-tested. Historical labels describe modern adaptations, not reconstructed daily menus.",
+        "tr": "Malzeme miktarları belirtilen çiğ, kuru veya pişmiş durumda bir temel porsiyona aittir. Yenebilir kısmı tart. Besinler USDA malzeme kayıtlarından tahmindir; pişirme kayıpları modellenmez. Süreler yol gösterir; hayvansal gıdalarda gıda termometresi kullan. Ek tuz, yağ, süsleme veya sos dahil değildir. Bu tarif mutfakta denenmemiştir. Tarihsel etiketler özgün günlük menüyü değil, modern uyarlamayı anlatır.",
+        "ar": "تصف أوزان المكونات جزءًا أساسيًا واحدًا في الحالة الخام أو الجافة أو المطبوخة المذكورة. وزن الأجزاء الصالحة للأكل. التغذية هي تقدير من سجلات المكونات التابعة لوزارة الزراعة الأمريكية؛ لم يتم وضع نماذج لخسائر الطهي. الأوقات هي أدلة. استخدم مقياس حرارة الطعام للأغذية الحيوانية. لا يتم تضمين الملح الإضافي أو الزيت أو الطبقة أو الصلصات. لم يتم اختبار هذه الوصفة في المطبخ. تصف العلامات التاريخية التعديلات الحديثة، وليس القوائم اليومية المعاد بناؤها.",
+        "de": "Zutatengewichte beschreiben eine Grundportion im angegebenen rohen, trockenen oder gekochten Zustand. Essbare Teile abwiegen. Der Nährwert ist eine Schätzung aus den USDA-Inhaltsstoffaufzeichnungen; Kochverluste werden nicht modelliert. Zeiten sind Führer; Verwenden Sie für tierische Lebensmittel ein Lebensmittelthermometer. Es sind kein zusätzliches Salz, Öl, Toppings oder Saucen enthalten. Dieses Rezept wurde nicht in der Küche getestet. Historische Etiketten beschreiben moderne Adaptionen, keine rekonstruierten Tagesmenüs.",
+        "es": "Los pesos de los ingredientes describen una porción base en el estado crudo, seco o cocido indicado. Pesar las partes comestibles. La nutrición es una estimación de los registros de ingredientes del USDA; Las pérdidas por cocción no se modelan. Los tiempos son guías; Utilice un termómetro para alimentos para alimentos de origen animal. No se incluyen sal, aceite, aderezos ni salsas adicionales. Esta receta no ha sido probada en cocina. Las etiquetas históricas describen adaptaciones modernas, no menús diarios reconstruidos.",
+        "fr": "Les poids des ingrédients décrivent une portion de base à l’état brut, sec ou cuit indiqué. Pesez les parties comestibles. La nutrition est une estimation tirée des registres des ingrédients de l'USDA ; les pertes à la cuisson ne sont pas modélisées. Les temps sont des guides ; utilisez un thermomètre alimentaire pour les aliments d'origine animale. Aucun sel, huile, garniture ou sauce supplémentaire n'est inclus. Cette recette n'a pas été testée en cuisine. Les étiquettes historiques décrivent des adaptations modernes et non des menus quotidiens reconstitués.",
+        "ja": "成分重量は、記載されている生、乾燥、または調理された状態の 1 つのベース部分を表します。可食部分の重さを量ります。栄養成分はUSDAの成分記録からの推定値です。調理による損失はモデル化されていません。時間は目安です。動物性食品には食品用温度計を使用してください。余分な塩、油、トッピング、ソースは含まれていません。このレシピはキッチンでテストされていません。歴史的なラベルは、毎日のメニューを再構築したものではなく、現代に適応したものを説明しています。",
+        "pt-BR": "Os pesos dos ingredientes descrevem uma porção de base no estado declarado cru, seco ou cozido. Pese as partes comestíveis. A nutrição é uma estimativa dos registros de ingredientes do USDA; as perdas por cozimento não são modeladas. Os tempos são guias; use um termômetro alimentar para alimentos de origem animal. Não estão incluídos sal, óleo, coberturas ou molhos extras. Esta receita não foi testada na cozinha. Rótulos históricos descrevem adaptações modernas, não menus diários reconstruídos.",
+        "ru": "Масса ингредиентов соответствует одной базовой порции в указанном сыром, сухом или приготовленном состоянии. Взвесьте съедобные части. Питательность — это оценка на основе записей об ингредиентах Министерства сельского хозяйства США; потери при приготовлении пищи не моделируются. Время — ориентир; используйте пищевой термометр для продуктов животного происхождения. Никакой дополнительной соли, масла, начинок и соусов в комплект не входит. Этот рецепт не был проверен на кухне. Исторические этикетки описывают современные адаптации, а не реконструированные ежедневные меню."
+      },
+      "cuisine": "international",
+      "equipment": [
+        "oven",
+        "stovetop"
+      ],
+      "mealTypes": [
+        "lunch",
+        "dinner",
+        "extra_meal"
+      ],
+      "prepMinutes": 5,
+      "cookMinutes": 20,
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "activeIds": [
+    "web_q_cod_rice_v2"
+  ]
+}

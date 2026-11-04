@@ -1,0 +1,109 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [],
+  "recipes": [
+    {
+      "id": "cod_rice",
+      "lead": "cod",
+      "method": "bake",
+      "ingredients": [
+        {
+          "food": "cod",
+          "grams": 180
+        },
+        {
+          "food": "rice",
+          "grams": 240
+        },
+        {
+          "food": "carrot",
+          "grams": 100
+        }
+      ],
+      "minutes": 25,
+      "group": "fish",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Baked cod with rice",
+        "tr": "Fırında morina ve pirinç",
+        "ar": "سمك القد المخبوز مع الأرز",
+        "de": "Gebackener Kabeljau mit Reis",
+        "es": "Bacalao al horno con arroz",
+        "fr": "Morue au four avec du riz",
+        "ja": "タラの焼きご飯添え",
+        "pt-BR": "Bacalhau assado com arroz",
+        "ru": "Запеченная треска с рисом"
+      },
+      "steps": {
+        "en": [
+          "Heat the oven to 190°C. Weigh ingredients, wash vegetables and place raw fish or meat in a baking dish.",
+          "Add the listed vegetables and oil, if any. Bake until the protein reaches its safe internal temperature; thickness changes cooking time.",
+          "Reheat already cooked grains separately. Serve bread or milk only if listed, as a side or sauce. Divide into the stated household portions."
+        ],
+        "tr": [
+          "Fırını 190°C’ye ısıt. Malzemeleri tart, sebzeleri yıka ve çiğ balık veya eti fırın kabına koy.",
+          "Listelenen sebze ve yağ varsa ekle. Protein güvenli iç sıcaklığa ulaşana dek pişir; kalınlık süreyi değiştirir.",
+          "Önceden pişmiş tahılı ayrı ısıt. Yalnız listede varsa ekmek veya sütü yanında ya da sos olarak sun. Belirtilen hane porsiyonlarına böl."
+        ],
+        "ar": [
+          "سخني الفرن إلى 190 درجة مئوية. قم بوزن المكونات وغسل الخضار ووضع السمك أو اللحم النيئ في طبق الخبز.",
+          "أضيفي الخضار المذكورة والزيت إن وجد. اخبزيها حتى يصل البروتين إلى درجة حرارته الداخلية الآمنة. سمك يغير وقت الطهي.",
+          "قم بإعادة تسخين الحبوب المطبوخة بشكل منفصل. يقدم الخبز أو الحليب فقط إذا كان مدرجًا كطبق جانبي أو صلصة. تقسيم إلى الأجزاء المنزلية المذكورة."
+        ],
+        "de": [
+          "Heizen Sie den Backofen auf 190 °C vor. Zutaten abwiegen, Gemüse waschen und rohen Fisch oder Fleisch in eine Auflaufform legen.",
+          "Fügen Sie das aufgeführte Gemüse und ggf. Öl hinzu. Backen, bis das Protein seine sichere Innentemperatur erreicht; Die Dicke verändert die Garzeit.",
+          "Bereits gegarte Körner separat aufwärmen. Servieren Sie Brot oder Milch nur, wenn dies aufgeführt ist, als Beilage oder Soße. Auf die angegebenen Haushaltsportionen aufteilen."
+        ],
+        "es": [
+          "Calentar el horno a 190°C. Pese los ingredientes, lave las verduras y coloque el pescado o la carne crudos en una fuente para horno.",
+          "Agregue las verduras y el aceite enumerados, si corresponde. Hornee hasta que la proteína alcance su temperatura interna segura; El espesor cambia el tiempo de cocción.",
+          "Recalentar por separado los cereales ya cocidos. Sirva pan o leche solo si figura en la lista, como acompañamiento o salsa. Divida en las porciones domésticas indicadas."
+        ],
+        "fr": [
+          "Chauffez le four à 190°C. Pesez les ingrédients, lavez les légumes et placez le poisson ou la viande crue dans un plat allant au four.",
+          "Ajoutez les légumes indiqués et l'huile, le cas échéant. Cuire au four jusqu'à ce que la protéine atteigne sa température interne sûre ; l'épaisseur change le temps de cuisson.",
+          "Réchauffez séparément les grains déjà cuits. Servir du pain ou du lait uniquement si cela est indiqué, en accompagnement ou en sauce. Répartissez dans les portions ménagères indiquées."
+        ],
+        "ja": [
+          "オーブンを190℃に加熱します。材料の重さを量り、野菜を洗い、生の魚や肉をグラタン皿に置きます。",
+          "記載されている野菜と油があれば加えます。タンパク質が安全な内部温度に達するまで焼きます。厚さによって調理時間が変わります。",
+          "調理済みの穀物を別々に再加熱します。パンまたは牛乳は、記載されている場合にのみ、サイドまたはソースとして提供します。指定された世帯の割合に分けます。"
+        ],
+        "pt-BR": [
+          "Aqueça o forno a 190°C. Pesar os ingredientes, lavar os vegetais e colocar o peixe ou a carne crua numa assadeira.",
+          "Adicione os vegetais listados e o óleo, se houver. Asse até que a proteína atinja a temperatura interna segura; a espessura altera o tempo de cozimento.",
+          "Reaqueça os grãos já cozidos separadamente. Sirva pão ou leite somente se listado, como acompanhamento ou molho. Divida nas porções familiares indicadas."
+        ],
+        "ru": [
+          "Разогрейте духовку до 190°C. Взвесьте ингредиенты, вымойте овощи и поместите сырую рыбу или мясо в форму для запекания.",
+          "Добавьте перечисленные овощи и масло, если есть. Выпекайте до тех пор, пока белок не достигнет безопасной внутренней температуры; толщина меняет время приготовления.",
+          "Отдельно разогрейте уже сваренные зерна. Подавайте хлеб или молоко, только если они указаны в списке, в качестве гарнира или соуса. Разделите на указанные домашние части."
+        ]
+      },
+      "notes": {
+        "en": "Nutrients are estimates from USDA SR Legacy 2018. Brands and cooking losses vary. This is not a medical diet or diagnosis. ",
+        "tr": "Besinler USDA SR Legacy 2018 verilerinden tahmin edilir. Marka ve pişirme kayıpları değişir. Tıbbi diyet veya tanı değildir. ",
+        "ar": "العناصر الغذائية هي تقديرات من USDA SR Legacy 2018. تختلف العلامات التجارية وفواقد الطهي. هذا ليس نظامًا غذائيًا أو تشخيصًا طبيًا. ",
+        "de": "Bei den Nährstoffen handelt es sich um Schätzungen aus dem USDA SR Legacy 2018. Marken und Kochverluste variieren. Dies ist keine medizinische Diät oder Diagnose. ",
+        "es": "Los nutrientes son estimaciones de USDA SR Legacy 2018. Las marcas y las pérdidas por cocción varían. Esta no es una dieta ni un diagnóstico médico. ",
+        "fr": "Les nutriments sont des estimations de l'USDA SR Legacy 2018. Les marques et les pertes à la cuisson varient. Il ne s’agit pas d’un régime ou d’un diagnostic médical. ",
+        "ja": "栄養素はUSDA SR Legacy 2018からの推定値です。ブランドと調理ロスは異なります。これは医学的な食事療法や診断ではありません。 ",
+        "pt-BR": "Os nutrientes são estimativas do USDA SR Legacy 2018. As marcas e as perdas por cozimento variam. Esta não é uma dieta médica ou diagnóstico. ",
+        "ru": "Питательные вещества рассчитаны по данным Министерства сельского хозяйства США SR Legacy 2018. Бренды и потери при приготовлении различаются. Это не лечебная диета и не диагноз. "
+      },
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "activeIds": [
+    "cod_rice"
+  ]
+}

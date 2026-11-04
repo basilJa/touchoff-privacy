@@ -1,0 +1,230 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [
+    {
+      "id": "web_q_greenpepper",
+      "fdc": "170427",
+      "description": "Peppers, sweet, green, raw",
+      "nutrition": {
+        "calcium": 10.0,
+        "potassium": 175.0,
+        "fat": 0.17,
+        "protein": 0.86,
+        "fiber": 1.7,
+        "iron": 0.34,
+        "sodium": 3.0,
+        "vitc": 80.4,
+        "carbs": 4.64,
+        "kcal": 20.0,
+        "b12": 0.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Green sweet pepper, raw",
+        "tr": "Yeşil tatlı biber, çiğ",
+        "ar": "فلفل حلو أخضر، نيء",
+        "de": "Grüne Paprika, roh",
+        "es": "Pimiento verde, crudo",
+        "fr": "Poivron vert, cru",
+        "ja": "青ピーマン、生",
+        "pt-BR": "Pimentão verde, cru",
+        "ru": "Зеленый сладкий перец, сырой"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/170427/nutrients",
+      "state": "raw"
+    },
+    {
+      "id": "web_q_whiterice",
+      "fdc": "169756",
+      "description": "Rice, white, long-grain, regular, raw, unenriched",
+      "nutrition": {
+        "protein": 7.13,
+        "fiber": 1.3,
+        "iron": 0.8,
+        "sodium": 5.0,
+        "vitc": 0.0,
+        "b12": 0.0,
+        "fat": 0.66,
+        "carbs": 79.95,
+        "kcal": 365.0,
+        "calcium": 28.0,
+        "potassium": 115.0
+      },
+      "unknown": [],
+      "allergens": [],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "White long-grain rice, dry, unenriched",
+        "tr": "Beyaz uzun taneli pirinç, kuru, zenginleştirilmemiş",
+        "ar": "أرز أبيض طويل الحبة، جاف، غير مخصب",
+        "de": "Weißer Langkornreis, trocken, nicht angereichert",
+        "es": "Arroz blanco de grano largo, seco, no enriquecido",
+        "fr": "Riz blanc à grains longs, sec, non enrichi",
+        "ja": "白い長粒米、乾燥した、強化されていない米",
+        "pt-BR": "Arroz branco de grão longo, seco, não enriquecido",
+        "ru": "Рис белый длиннозерный, сухой, необогащенный."
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/169756/nutrients",
+      "state": "dry"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "web_q_stuffed_peppers",
+      "lead": "web_q_greenpepper",
+      "method": "pan",
+      "ingredients": [
+        {
+          "food": "web_q_greenpepper",
+          "grams": 220
+        },
+        {
+          "food": "beef",
+          "grams": 130
+        },
+        {
+          "food": "web_q_whiterice",
+          "grams": 65
+        },
+        {
+          "food": "tomato",
+          "grams": 180
+        },
+        {
+          "food": "onion",
+          "grams": 60
+        },
+        {
+          "food": "oil",
+          "grams": 8
+        }
+      ],
+      "minutes": 65,
+      "group": "redmeat",
+      "historical": [],
+      "snack": false,
+      "waterMl": 250,
+      "titles": {
+        "en": "Beef and rice stuffed peppers",
+        "tr": "Kıymalı pirinçli biber dolması",
+        "ar": "فلفل محشو باللحم البقري والأرز",
+        "de": "Mit Rindfleisch und Reis gefüllte Paprika",
+        "es": "Pimientos rellenos de ternera y arroz",
+        "fr": "Poivrons farcis au bœuf et au riz",
+        "ja": "牛肉と米のピーマン詰め",
+        "pt-BR": "Pimentão recheado com carne e arroz",
+        "ru": "Перец, фаршированный говядиной и рисом"
+      },
+      "steps": {
+        "en": [
+          "Remove pepper caps and seeds, keeping peppers whole. Rinse dry white rice. Finely chop onion and tomato; reserve half the tomato for the pot.",
+          "Mix raw ground beef with rice, onion and half the tomato using clean utensils. Loosely fill peppers, leaving space for rice to swell.",
+          "Stand peppers upright in a snug saucepan. Add remaining tomato, olive oil and listed water around them. Cover and simmer gently for 35–45 minutes.",
+          "Check rice is tender and the center of the meat filling reaches 71°C. Add hot water around peppers if the pan dries; serve all peppers and sauce."
+        ],
+        "tr": [
+          "Biberlerin kapaklarını açıp çekirdeklerini ayır; bütün bırak. Kuru beyaz pirinci yıka. Soğan ve domatesi ince doğra; domatesin yarısını tencere için ayır.",
+          "Çiğ kıymayı pirinç, soğan ve domatesin yarısıyla temiz gereçle karıştır. Pirincin şişmesine yer bırakarak biberleri gevşek doldur.",
+          "Biberleri dar tencereye dik diz. Kalan domates, zeytinyağı ve belirtilen suyu çevrelerine koy. Kapalı olarak 35–45 dakika hafifçe pişir.",
+          "Pirinç yumuşamalı, kıymalı harcın ortası 71°C olmalıdır. Tencere kurursa biberlerin çevresine sıcak su ekle; biber ve sosun tamamını servis et."
+        ],
+        "ar": [
+          "إزالة أغطية الفلفل والبذور، والحفاظ على الفلفل كله. شطف الأرز الأبيض الجاف. نقطع البصل والطماطم جيدًا. احتفظ بنصف الطماطم للوعاء.",
+          "اخلطي اللحم المفروم النيئ مع الأرز والبصل ونصف حبة الطماطم باستخدام أواني نظيفة. نحشو الفلفل بشكل فضفاض، مع ترك مساحة للأرز حتى ينتفخ.",
+          "ضع الفلفل في وضع مستقيم في قدر دافئ. أضف الطماطم المتبقية وزيت الزيتون والماء المدرج حولهم. قم بتغطيته واتركه على نار هادئة لمدة 35–45 دقيقة.",
+          "تحقق من أن الأرز طري وأن مركز حشوة اللحم يصل إلى 71°C. أضف الماء الساخن حول الفلفل إذا جفت المقلاة. يقدم جميع الفلفل والصلصة."
+        ],
+        "de": [
+          "Entfernen Sie die Kappen und Kerne der Paprika und lassen Sie die Paprika ganz. Trockenen weißen Reis abspülen. Zwiebel und Tomate fein hacken; Die Hälfte der Tomate für den Topf aufbewahren.",
+          "Rohes Rinderhackfleisch mit Reis, Zwiebeln und der Hälfte der Tomate mit sauberen Utensilien vermischen. Füllen Sie die Paprika locker und lassen Sie Platz, damit der Reis aufquellen kann.",
+          "Stellen Sie die Paprika aufrecht in einen gemütlichen Topf. Fügen Sie die restliche Tomate, das Olivenöl und das angegebene Wasser hinzu. Abdecken und 35–45 Minuten leicht köcheln lassen.",
+          "Überprüfen Sie, ob der Reis zart ist und die Mitte der Fleischfüllung 71°C erreicht. Fügen Sie heißes Wasser rund um die Paprika hinzu, wenn die Pfanne trocken ist. Alle Paprika und Soße servieren."
+        ],
+        "es": [
+          "Retire las tapas y las semillas de los pimientos, manteniéndolos enteros. Enjuague el arroz blanco seco. Picar finamente la cebolla y el tomate; reserva la mitad del tomate para la olla.",
+          "Mezcla la carne molida cruda con el arroz, la cebolla y la mitad del tomate utilizando utensilios limpios. Rellene los pimientos sin apretar, dejando espacio para que se hinche el arroz.",
+          "Coloque los pimientos en posición vertical en una cacerola ajustada. Agregue el tomate restante, el aceite de oliva y el agua listada a su alrededor. Cubra y cocine a fuego lento durante 35 a 45 minutos.",
+          "Verificar que el arroz esté tierno y que el centro del relleno de carne alcance los 71°C. Agregue agua caliente alrededor de los pimientos si la sartén se seca; sirva todos los pimientos y la salsa."
+        ],
+        "fr": [
+          "Retirez les chapeaux et les graines des poivrons, en gardant les poivrons entiers. Rincer le riz blanc sec. Hachez finement l'oignon et la tomate; réserver la moitié de la tomate pour le pot.",
+          "Mélangez le bœuf haché cru avec le riz, l'oignon et la moitié de la tomate à l'aide d'ustensiles propres. Remplissez les poivrons sans serrer, en laissant de la place au riz pour gonfler.",
+          "Placez les poivrons debout dans une casserole bien ajustée. Ajoutez le reste de la tomate, l'huile d'olive et l'eau indiquée autour d'eux. Couvrir et laisser mijoter doucement pendant 35–45 minutes.",
+          "Vérifiez que le riz est tendre et que le centre de la garniture de viande atteint 71°C. Ajoutez de l'eau chaude autour des poivrons si la poêle sèche ; servir tous les poivrons et la sauce."
+        ],
+        "ja": [
+          "ピーマンのヘタと種を取り除き、ピーマンを丸ごと保存します。乾いた白米は洗います。玉ねぎとトマトを細かく刻みます。トマトの半分を鍋用に取っておきます。",
+          "清潔な器具を使用して、生のひき肉を米、玉ねぎ、トマト半分と混ぜます。ピーマンをゆるめに詰め、ご飯が膨らむスペースを残します。",
+          "ピーマンをぴったりとした鍋に直立させます。残りのトマト、オリーブオイル、記載されている水を周りに加えます。蓋をして35–45分間静かに煮ます。",
+          "ご飯が柔らかく、肉の中心が71°Cに達していることを確認してください。鍋が乾いたら、ピーマンの周りに熱湯を加えます。すべてのピーマンとソースを添えます。"
+        ],
+        "pt-BR": [
+          "Remova as tampas e as sementes dos pimentões, mantendo os pimentões inteiros. Enxágue o arroz branco seco. Pique finamente a cebola e o tomate; reserve metade do tomate para a panela.",
+          "Misture a carne moída crua com o arroz, a cebola e metade do tomate em utensílios limpos. Encha os pimentões frouxamente, deixando espaço para o arroz inchar.",
+          "Coloque os pimentões em pé em uma panela confortável. Adicione o tomate restante, o azeite e a água listada ao redor deles. Cubra e cozinhe suavemente por 35–45 minutos.",
+          "Verifique se o arroz está macio e se o centro do recheio de carne atinge 71°C. Adicione água quente em volta dos pimentões se a panela secar; sirva todos os pimentões e molho."
+        ],
+        "ru": [
+          "У перца удалите шляпки и семена, сохраняя перец целым. Промойте сухой белый рис. Мелко нарезать лук и помидор; оставьте половину помидора для кастрюли.",
+          "Смешайте сырой говяжий фарш с рисом, луком и половиной помидора, используя чистую посуду. Неплотно начиняем перцы, оставляя место для разбухания риса.",
+          "Поставьте перцы вертикально в удобной кастрюле. Добавьте вокруг них оставшиеся помидоры, оливковое масло и воду. Накройте крышкой и варите на медленном огне в течение 35–45 минут.",
+          "Убедитесь, что рис нежный, а центр мясной начинки достигает 71°C. Добавьте горячую воду вокруг перца, если сковорода высохнет; подавайте весь перец и соус."
+        ]
+      },
+      "notes": {
+        "en": "Ingredient weights describe one base portion in the stated raw, dry or cooked state. Weigh edible parts. Nutrition is an estimate from USDA ingredient records; cooking losses are not modelled. Times are guides; use a food thermometer for animal foods. No extra salt, oil, toppings or sauces are included. This recipe has not been kitchen-tested. Historical labels describe modern adaptations, not reconstructed daily menus.",
+        "tr": "Malzeme miktarları belirtilen çiğ, kuru veya pişmiş durumda bir temel porsiyona aittir. Yenebilir kısmı tart. Besinler USDA malzeme kayıtlarından tahmindir; pişirme kayıpları modellenmez. Süreler yol gösterir; hayvansal gıdalarda gıda termometresi kullan. Ek tuz, yağ, süsleme veya sos dahil değildir. Bu tarif mutfakta denenmemiştir. Tarihsel etiketler özgün günlük menüyü değil, modern uyarlamayı anlatır.",
+        "ar": "تصف أوزان المكونات جزءًا أساسيًا واحدًا في الحالة الخام أو الجافة أو المطبوخة المذكورة. وزن الأجزاء الصالحة للأكل. التغذية هي تقدير من سجلات المكونات التابعة لوزارة الزراعة الأمريكية؛ لم يتم وضع نماذج لخسائر الطهي. الأوقات هي أدلة. استخدم مقياس حرارة الطعام للأغذية الحيوانية. لا يتم تضمين الملح الإضافي أو الزيت أو الطبقة أو الصلصات. لم يتم اختبار هذه الوصفة في المطبخ. تصف العلامات التاريخية التعديلات الحديثة، وليس القوائم اليومية المعاد بناؤها.",
+        "de": "Zutatengewichte beschreiben eine Grundportion im angegebenen rohen, trockenen oder gekochten Zustand. Essbare Teile abwiegen. Der Nährwert ist eine Schätzung aus den USDA-Inhaltsstoffaufzeichnungen; Kochverluste werden nicht modelliert. Zeiten sind Führer; Verwenden Sie für tierische Lebensmittel ein Lebensmittelthermometer. Es sind kein zusätzliches Salz, Öl, Toppings oder Saucen enthalten. Dieses Rezept wurde nicht in der Küche getestet. Historische Etiketten beschreiben moderne Adaptionen, keine rekonstruierten Tagesmenüs.",
+        "es": "Los pesos de los ingredientes describen una porción base en el estado crudo, seco o cocido indicado. Pesar las partes comestibles. La nutrición es una estimación de los registros de ingredientes del USDA; Las pérdidas por cocción no se modelan. Los tiempos son guías; Utilice un termómetro para alimentos para alimentos de origen animal. No se incluyen sal, aceite, aderezos ni salsas adicionales. Esta receta no ha sido probada en cocina. Las etiquetas históricas describen adaptaciones modernas, no menús diarios reconstruidos.",
+        "fr": "Les poids des ingrédients décrivent une portion de base à l’état brut, sec ou cuit indiqué. Pesez les parties comestibles. La nutrition est une estimation tirée des registres des ingrédients de l'USDA ; les pertes à la cuisson ne sont pas modélisées. Les temps sont des guides ; utilisez un thermomètre alimentaire pour les aliments d'origine animale. Aucun sel, huile, garniture ou sauce supplémentaire n'est inclus. Cette recette n'a pas été testée en cuisine. Les étiquettes historiques décrivent des adaptations modernes et non des menus quotidiens reconstitués.",
+        "ja": "成分重量は、記載されている生、乾燥、または調理された状態の 1 つのベース部分を表します。可食部分の重さを量ります。栄養成分はUSDAの成分記録からの推定値です。調理による損失はモデル化されていません。時間は目安です。動物性食品には食品用温度計を使用してください。余分な塩、油、トッピング、ソースは含まれていません。このレシピはキッチンでテストされていません。歴史的なラベルは、毎日のメニューを再構築したものではなく、現代に適応したものを説明しています。",
+        "pt-BR": "Os pesos dos ingredientes descrevem uma porção de base no estado declarado cru, seco ou cozido. Pese as partes comestíveis. A nutrição é uma estimativa dos registros de ingredientes do USDA; as perdas por cozimento não são modeladas. Os tempos são guias; use um termômetro alimentar para alimentos de origem animal. Não estão incluídos sal, óleo, coberturas ou molhos extras. Esta receita não foi testada na cozinha. Rótulos históricos descrevem adaptações modernas, não menus diários reconstruídos.",
+        "ru": "Масса ингредиентов соответствует одной базовой порции в указанном сыром, сухом или приготовленном состоянии. Взвесьте съедобные части. Питательность — это оценка на основе записей об ингредиентах Министерства сельского хозяйства США; потери при приготовлении пищи не моделируются. Время — ориентир; используйте пищевой термометр для продуктов животного происхождения. Никакой дополнительной соли, масла, начинок и соусов в комплект не входит. Этот рецепт не был проверен на кухне. Исторические этикетки описывают современные адаптации, а не реконструированные ежедневные меню."
+      },
+      "cuisine": "turkish",
+      "equipment": [
+        "stovetop"
+      ],
+      "mealTypes": [
+        "lunch",
+        "dinner",
+        "extra_meal"
+      ],
+      "prepMinutes": 20,
+      "cookMinutes": 45,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photo": {
+        "url": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/photos/de5d291fff652ba3aec828af16a1f022dc2fa07887c75a1702e7328804f7f34e.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Speca_te_mbushura_(_Stuffes_peppers).jpg",
+        "artist": "Tahir Qalliu",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "alt": {
+          "en": "Example presentation of Beef and rice stuffed peppers",
+          "tr": "Kıymalı pirinçli biber dolması için örnek sunum",
+          "pt-BR": "Exemplo de apresentação de Pimentão recheado com carne e arroz",
+          "de": "Beispieldarstellung von Mit Rindfleisch und Reis gefüllte Paprika",
+          "ru": "Пример представления Перец, фаршированный говядиной и рисом",
+          "fr": "Exemple de présentation de Poivrons farcis au bœuf et au riz",
+          "ar": "مثال لعرض فلفل محشو باللحم البقري والأرز",
+          "ja": "牛肉と米のピーマン詰め の表示例",
+          "es": "Ejemplo de presentación de Pimientos rellenos de ternera y arroz"
+        }
+      }
+    }
+  ],
+  "activeIds": [
+    "web_q_stuffed_peppers"
+  ]
+}

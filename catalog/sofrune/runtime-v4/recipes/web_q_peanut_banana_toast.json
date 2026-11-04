@@ -1,0 +1,165 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [
+    {
+      "id": "web_q_peanuts",
+      "fdc": "172430",
+      "description": "Peanuts, all types, raw",
+      "nutrition": {
+        "fiber": 8.5,
+        "b12": 0.0,
+        "sodium": 18.0,
+        "vitc": 0.0,
+        "iron": 4.58,
+        "protein": 25.8,
+        "calcium": 92.0,
+        "potassium": 705.0,
+        "fat": 49.24,
+        "carbs": 16.13,
+        "kcal": 567.0
+      },
+      "unknown": [],
+      "allergens": [
+        "peanuts"
+      ],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Peanuts, raw kernels",
+        "tr": "Yer fıstığı, çiğ iç",
+        "ar": "الفول السوداني، الحبوب الخام",
+        "de": "Erdnüsse, rohe Kerne",
+        "es": "Maní, granos crudos",
+        "fr": "Cacahuètes, grains crus",
+        "ja": "ピーナッツ、生の穀粒",
+        "pt-BR": "Amendoins, grãos crus",
+        "ru": "Арахис, сырые ядра"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/172430/nutrients",
+      "state": "raw"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "web_q_peanut_banana_toast",
+      "lead": "bread",
+      "method": "pan",
+      "ingredients": [
+        {
+          "food": "bread",
+          "grams": 100
+        },
+        {
+          "food": "banana",
+          "grams": 130
+        },
+        {
+          "food": "web_q_peanuts",
+          "grams": 30
+        }
+      ],
+      "minutes": 15,
+      "group": "nuts",
+      "historical": [],
+      "snack": false,
+      "waterMl": 0,
+      "titles": {
+        "en": "Banana and crushed peanut toast",
+        "tr": "Muzlu yer fıstıklı ekmek",
+        "ar": "توست الموز والفول السوداني المطحون",
+        "de": "Toast mit Banane und zerstoßenen Erdnüssen",
+        "es": "Tostadas de plátano y maní triturado",
+        "fr": "Toasts à la banane et aux cacahuètes concassées",
+        "ja": "バナナと砕いたピーナッツのトースト",
+        "pt-BR": "Torrada de banana e amendoim triturado",
+        "ru": "Тост с бананом и дробленым арахисом"
+      },
+      "steps": {
+        "en": [
+          "Use plain raw peanut kernels; check for shell fragments. Peel and weigh banana flesh.",
+          "Dry-toast peanuts over low-medium heat for 6–8 minutes, stirring, until fragrant; cool briefly.",
+          "Toast bread in a dry pan. Mash half the banana onto it and slice the rest.",
+          "Crush peanuts coarsely and add with the banana slices. Peanut butter or sugar is not included."
+        ],
+        "tr": [
+          "Sade çiğ yer fıstığı içi kullan; kabuk parçalarını kontrol et. Muzu soyup yenebilir kısmını tart.",
+          "Fıstığı yağsız tavada kısık-orta ateşte kokusu çıkana kadar 6–8 dakika karıştır; biraz soğut.",
+          "Ekmeği yağsız tavada kızart. Muzun yarısını üstüne ez, kalanını dilimle.",
+          "Fıstığı irice ezip muz dilimleriyle ekle. Fıstık ezmesi veya şeker dahil değildir."
+        ],
+        "ar": [
+          "استخدم حبات الفول السوداني الخام العادية؛ تحقق من وجود شظايا القشرة. قشر ووزن لحم الموز.",
+          "نخب الفول السوداني الجاف على نار خفيفة متوسطة لمدة 6–8 دقيقة مع التحريك حتى تفوح رائحته. بارد لفترة وجيزة.",
+          "نخب الخبز في مقلاة جافة. اهرسي نصف الموزة عليها وقطعي الباقي.",
+          "يُطحن الفول السوداني بشكل خشن ويُضاف إلى شرائح الموز. لا يتم تضمين زبدة الفول السوداني أو السكر."
+        ],
+        "de": [
+          "Verwenden Sie einfache rohe Erdnusskerne; Suchen Sie nach Muschelfragmenten. Bananenfleisch schälen und abwiegen.",
+          "Erdnüsse bei niedriger bis mittlerer Hitze 6–8 Minuten unter Rühren trocken rösten, bis sie duften; kurz abkühlen lassen.",
+          "Brot in einer trockenen Pfanne rösten. Die Hälfte der Banane darauf zerdrücken und den Rest in Scheiben schneiden.",
+          "Erdnüsse grob zerstoßen und mit den Bananenscheiben dazugeben. Erdnussbutter oder Zucker sind nicht enthalten."
+        ],
+        "es": [
+          "Utilice granos de maní crudos y simples; compruebe si hay fragmentos de caparazón. Pelar y pesar la pulpa del plátano.",
+          "Tuesta los maníes en seco a fuego medio-bajo durante 6 a 8 minutos, revolviendo, hasta que estén fragantes; enfriar brevemente.",
+          "Tostar el pan en una sartén seca. Triture la mitad del plátano y corte el resto en rodajas.",
+          "Triture el maní en trozos grandes y agréguelo con las rodajas de plátano. La mantequilla de maní ni el azúcar no están incluidos."
+        ],
+        "fr": [
+          "Utilisez des noyaux d’arachides crus nature ; vérifiez s'il y a des fragments d'obus. Peler et peser la chair des bananes.",
+          "Faire griller les cacahuètes à sec à feu doux-moyen pendant 6–8 minutes, en remuant, jusqu'à ce qu'elles soient parfumées; laisser refroidir brièvement.",
+          "Faire griller le pain dans une poêle sèche. Écrasez dessus la moitié de la banane et coupez le reste en tranches.",
+          "Concassez grossièrement les cacahuètes et ajoutez-les avec les tranches de banane. Le beurre de cacahuète ou le sucre ne sont pas inclus."
+        ],
+        "ja": [
+          "普通の生のピーナッツ粒を使用してください。貝殻の破片がないか確認します。バナナの皮をむき、重さを量ります。",
+          "ピーナッツを弱中火で 6–8 分間、香りが出るまでかき混ぜながら乾煎りします。短時間冷却します。",
+          "乾いたフライパンでパンをトーストします。バナナの半分をその上にマッシュし、残りをスライスします。",
+          "ピーナッツを粗く砕き、バナナのスライスと一緒に加えます。ピーナッツバターや砂糖は含まれておりません。"
+        ],
+        "pt-BR": [
+          "Use grãos de amendoim crus; verifique se há fragmentos de concha. Descasque e pese a polpa da banana.",
+          "Torre o amendoim a seco em fogo baixo-médio por 6–8 minutos, mexendo até ficar perfumado; esfriar brevemente.",
+          "Torre o pão em uma frigideira seca. Amasse metade da banana e corte o resto.",
+          "Esmague o amendoim grosseiramente e adicione com as rodelas de banana. Manteiga de amendoim ou açúcar não estão incluídos."
+        ],
+        "ru": [
+          "Используйте простые сырые ядра арахиса; проверьте наличие фрагментов скорлупы. Очистите и взвесьте мякоть банана.",
+          "Поджарьте арахис на слабом или среднем огне в течение 6–8 минут, помешивая, до появления аромата; круто, короче.",
+          "Поджарьте хлеб на сухой сковороде. Размять в него половину банана, а остальное нарезать ломтиками.",
+          "Крупно раздавить арахис и добавить к нему ломтики банана. Арахисовое масло или сахар не включены."
+        ]
+      },
+      "notes": {
+        "en": "Ingredient weights describe one base portion in the stated raw, dry or cooked state. Weigh edible parts. Nutrition is an estimate from USDA ingredient records; cooking losses are not modelled. Times are guides; use a food thermometer for animal foods. No extra salt, oil, toppings or sauces are included. This recipe has not been kitchen-tested. Historical labels describe modern adaptations, not reconstructed daily menus.",
+        "tr": "Malzeme miktarları belirtilen çiğ, kuru veya pişmiş durumda bir temel porsiyona aittir. Yenebilir kısmı tart. Besinler USDA malzeme kayıtlarından tahmindir; pişirme kayıpları modellenmez. Süreler yol gösterir; hayvansal gıdalarda gıda termometresi kullan. Ek tuz, yağ, süsleme veya sos dahil değildir. Bu tarif mutfakta denenmemiştir. Tarihsel etiketler özgün günlük menüyü değil, modern uyarlamayı anlatır.",
+        "ar": "تصف أوزان المكونات جزءًا أساسيًا واحدًا في الحالة الخام أو الجافة أو المطبوخة المذكورة. وزن الأجزاء الصالحة للأكل. التغذية هي تقدير من سجلات المكونات التابعة لوزارة الزراعة الأمريكية؛ لم يتم وضع نماذج لخسائر الطهي. الأوقات هي أدلة. استخدم مقياس حرارة الطعام للأغذية الحيوانية. لا يتم تضمين الملح الإضافي أو الزيت أو الطبقة أو الصلصات. لم يتم اختبار هذه الوصفة في المطبخ. تصف العلامات التاريخية التعديلات الحديثة، وليس القوائم اليومية المعاد بناؤها.",
+        "de": "Zutatengewichte beschreiben eine Grundportion im angegebenen rohen, trockenen oder gekochten Zustand. Essbare Teile abwiegen. Der Nährwert ist eine Schätzung aus den USDA-Inhaltsstoffaufzeichnungen; Kochverluste werden nicht modelliert. Zeiten sind Führer; Verwenden Sie für tierische Lebensmittel ein Lebensmittelthermometer. Es sind kein zusätzliches Salz, Öl, Toppings oder Saucen enthalten. Dieses Rezept wurde nicht in der Küche getestet. Historische Etiketten beschreiben moderne Adaptionen, keine rekonstruierten Tagesmenüs.",
+        "es": "Los pesos de los ingredientes describen una porción base en el estado crudo, seco o cocido indicado. Pesar las partes comestibles. La nutrición es una estimación de los registros de ingredientes del USDA; Las pérdidas por cocción no se modelan. Los tiempos son guías; Utilice un termómetro para alimentos para alimentos de origen animal. No se incluyen sal, aceite, aderezos ni salsas adicionales. Esta receta no ha sido probada en cocina. Las etiquetas históricas describen adaptaciones modernas, no menús diarios reconstruidos.",
+        "fr": "Les poids des ingrédients décrivent une portion de base à l’état brut, sec ou cuit indiqué. Pesez les parties comestibles. La nutrition est une estimation tirée des registres des ingrédients de l'USDA ; les pertes à la cuisson ne sont pas modélisées. Les temps sont des guides ; utilisez un thermomètre alimentaire pour les aliments d'origine animale. Aucun sel, huile, garniture ou sauce supplémentaire n'est inclus. Cette recette n'a pas été testée en cuisine. Les étiquettes historiques décrivent des adaptations modernes et non des menus quotidiens reconstitués.",
+        "ja": "成分重量は、記載されている生、乾燥、または調理された状態の 1 つのベース部分を表します。可食部分の重さを量ります。栄養成分はUSDAの成分記録からの推定値です。調理による損失はモデル化されていません。時間は目安です。動物性食品には食品用温度計を使用してください。余分な塩、油、トッピング、ソースは含まれていません。このレシピはキッチンでテストされていません。歴史的なラベルは、毎日のメニューを再構築したものではなく、現代に適応したものを説明しています。",
+        "pt-BR": "Os pesos dos ingredientes descrevem uma porção de base no estado declarado cru, seco ou cozido. Pese as partes comestíveis. A nutrição é uma estimativa dos registros de ingredientes do USDA; as perdas por cozimento não são modeladas. Os tempos são guias; use um termômetro alimentar para alimentos de origem animal. Não estão incluídos sal, óleo, coberturas ou molhos extras. Esta receita não foi testada na cozinha. Rótulos históricos descrevem adaptações modernas, não menus diários reconstruídos.",
+        "ru": "Масса ингредиентов соответствует одной базовой порции в указанном сыром, сухом или приготовленном состоянии. Взвесьте съедобные части. Питательность — это оценка на основе записей об ингредиентах Министерства сельского хозяйства США; потери при приготовлении пищи не моделируются. Время — ориентир; используйте пищевой термометр для продуктов животного происхождения. Никакой дополнительной соли, масла, начинок и соусов в комплект не входит. Этот рецепт не был проверен на кухне. Исторические этикетки описывают современные адаптации, а не реконструированные ежедневные меню."
+      },
+      "cuisine": "international",
+      "equipment": [
+        "stovetop"
+      ],
+      "mealTypes": [
+        "breakfast"
+      ],
+      "prepMinutes": 7,
+      "cookMinutes": 8,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "activeIds": [
+    "web_q_peanut_banana_toast"
+  ]
+}

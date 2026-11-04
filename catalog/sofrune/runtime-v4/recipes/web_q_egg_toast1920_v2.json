@@ -1,0 +1,129 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [],
+  "recipes": [
+    {
+      "id": "web_q_egg_toast1920_v2",
+      "lead": "egg",
+      "method": "pan",
+      "ingredients": [
+        {
+          "food": "egg",
+          "grams": 150
+        },
+        {
+          "food": "bread",
+          "grams": 120
+        },
+        {
+          "food": "milk",
+          "grams": 100
+        }
+      ],
+      "minutes": 20,
+      "group": "egg",
+      "historical": [
+        "usa1920"
+      ],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "waterMl": 0,
+      "titles": {
+        "en": "Eggs, milk and toast",
+        "tr": "Sütlü yumurta ve tost",
+        "ar": "بيض، حليب وخبز محمص",
+        "de": "Eier, Milch und Toast",
+        "es": "Huevos, leche y tostadas",
+        "fr": "Oeufs, lait et pain grillé",
+        "ja": "卵、牛乳、トースト",
+        "pt-BR": "Ovos, leite e torradas",
+        "ru": "Яйца, молоко и тосты"
+      },
+      "steps": {
+        "en": [
+          "Crack eggs into a bowl, remove shell fragments and beat with the listed milk.",
+          "Warm a good nonstick pan over low heat. Pour in the mixture; no oil or butter is included.",
+          "Stir slowly for 5–8 minutes until softly set with no liquid egg remaining. Measure 71°C in the egg mixture.",
+          "Toast the weighed bread without added fat and serve all of the eggs over it. Do not add uncooked egg mixture to the finished toast."
+        ],
+        "tr": [
+          "Yumurtaları kaba kır, kabuk parçalarını ayır ve belirtilen sütle çırp.",
+          "İyi yapışmaz tavayı kısık ateşte ısıt. Karışımı dök; bu sürüm yağ veya tereyağı içermez.",
+          "Sıvı yumurta kalmayana kadar 5–8 dakika yavaşça karıştırarak katılaştır. Yumurtalı karışımda 71°C ölç.",
+          "Tartılmış ekmeği yağ eklemeden kızartıp yumurtanın tamamını üzerine koy. Hazır ekmeğe pişmemiş yumurta karışımı ekleme."
+        ],
+        "ar": [
+          "اكسري البيض في وعاء وأزيلي شظايا القشرة واخفقيه مع الحليب المدرج.",
+          "قم بتسخين مقلاة جيدة غير لاصقة على نار خفيفة. صب في الخليط. لا يتم تضمين الزيت أو الزبدة.",
+          "يقلب ببطء لمدة 5–8 دقيقة حتى يتماسك بهدوء مع عدم وجود بيضة سائلة متبقية. قم بقياس 71°C في خليط البيض.",
+          "نحمص الخبز الموزون بدون دهون مضافة ونقدم فوقه كل البيض. لا تضيف خليط البيض غير المطبوخ إلى الخبز المحمص النهائي."
+        ],
+        "de": [
+          "Eier in eine Schüssel aufschlagen, Schalenreste entfernen und mit der aufgeführten Milch verquirlen.",
+          "Erhitzen Sie eine gut beschichtete Pfanne bei schwacher Hitze. Gießen Sie die Mischung hinein; Es ist weder Öl noch Butter enthalten.",
+          "Langsam für 5–8 Minuten rühren, bis es weich ist und kein flüssiges Ei mehr übrig ist. Messen Sie 71°C in der Eimischung ab.",
+          "Das abgewogene Brot ohne Fettzusatz toasten und alle Eier darüber servieren. Fügen Sie dem fertigen Toast keine ungekochte Eiermischung hinzu."
+        ],
+        "es": [
+          "Cascar los huevos en un bol, quitar los fragmentos de la cáscara y batir con la leche indicada.",
+          "Calienta una buena sartén antiadherente a fuego lento. Vierta la mezcla; No se incluye aceite ni mantequilla.",
+          "Revuelva lentamente durante 5 a 8 minutos hasta que cuaje suavemente y no quede huevo líquido. Mida 71°C en la mezcla de huevo.",
+          "Tuesta el pan pesado sin grasas añadidas y sirve encima todos los huevos. No agregue la mezcla de huevo crudo a la tostada terminada."
+        ],
+        "fr": [
+          "Cassez les œufs dans un bol, retirez les fragments de coquille et battez-les avec le lait indiqué.",
+          "Faites chauffer une bonne poêle antiadhésive à feu doux. Versez le mélange; aucune huile ni beurre n’est inclus.",
+          "Remuer lentement pendant 5–8 minutes jusqu'à ce qu'il soit doucement pris et qu'il ne reste plus d'œuf liquide. Mesurez 71°C dans le mélange d’œufs.",
+          "Faire griller le pain pesé sans matière grasse ajoutée et servir tous les œufs dessus. N’ajoutez pas le mélange d’œufs crus au pain grillé fini."
+        ],
+        "ja": [
+          "ボウルに卵を割り入れ、殻の破片を取り除き、記載されている牛乳を加えて混ぜます。",
+          "焦げ付き防止の良いフライパンを弱火で温めます。混合物を注ぎます。油やバターは含まれていません。",
+          "液卵が残らず柔らかく固まるまで、5–8 分間ゆっくりとかき混ぜます。卵混合物中の71°Cを測定します。",
+          "脂肪を加えずに計量したパンをトーストし、その上に卵をすべて盛り付けます。完成したトーストに生卵混合物を加えないでください。"
+        ],
+        "pt-BR": [
+          "Quebre os ovos em uma tigela, retire os fragmentos da casca e bata com o leite listado.",
+          "Aqueça uma boa frigideira antiaderente em fogo baixo. Despeje a mistura; nenhum óleo ou manteiga está incluído.",
+          "Mexa lentamente por 5–8 minutos até firmar suavemente, sem nenhum ovo líquido restante. Meça 71°C na mistura de ovos.",
+          "Torre o pão pesado sem adição de gordura e sirva todos os ovos por cima. Não adicione a mistura de ovos crus à torrada pronta."
+        ],
+        "ru": [
+          "Яйца разбить в миску, удалить фрагменты скорлупы и взбить с указанным молоком.",
+          "Нагрейте хорошую сковороду с антипригарным покрытием на слабом огне. Влейте смесь; масло или сливочное масло не включены.",
+          "Медленно перемешивайте в течение 5–8 минут, пока яйцо не станет мягким и не останется жидкого яйца. Отмерьте 71°C в яичной смеси.",
+          "Поджарьте взвешенный хлеб без добавления жира и положите поверх него все яйца. Не добавляйте сырую яичную смесь в готовый тост."
+        ]
+      },
+      "notes": {
+        "en": "Ingredient weights describe one base portion in the stated raw, dry or cooked state. Weigh edible parts. Nutrition is an estimate from USDA ingredient records; cooking losses are not modelled. Times are guides; use a food thermometer for animal foods. No extra salt, oil, toppings or sauces are included. This recipe has not been kitchen-tested. Historical labels describe modern adaptations, not reconstructed daily menus.",
+        "tr": "Malzeme miktarları belirtilen çiğ, kuru veya pişmiş durumda bir temel porsiyona aittir. Yenebilir kısmı tart. Besinler USDA malzeme kayıtlarından tahmindir; pişirme kayıpları modellenmez. Süreler yol gösterir; hayvansal gıdalarda gıda termometresi kullan. Ek tuz, yağ, süsleme veya sos dahil değildir. Bu tarif mutfakta denenmemiştir. Tarihsel etiketler özgün günlük menüyü değil, modern uyarlamayı anlatır.",
+        "ar": "تصف أوزان المكونات جزءًا أساسيًا واحدًا في الحالة الخام أو الجافة أو المطبوخة المذكورة. وزن الأجزاء الصالحة للأكل. التغذية هي تقدير من سجلات المكونات التابعة لوزارة الزراعة الأمريكية؛ لم يتم وضع نماذج لخسائر الطهي. الأوقات هي أدلة. استخدم مقياس حرارة الطعام للأغذية الحيوانية. لا يتم تضمين الملح الإضافي أو الزيت أو الطبقة أو الصلصات. لم يتم اختبار هذه الوصفة في المطبخ. تصف العلامات التاريخية التعديلات الحديثة، وليس القوائم اليومية المعاد بناؤها.",
+        "de": "Zutatengewichte beschreiben eine Grundportion im angegebenen rohen, trockenen oder gekochten Zustand. Essbare Teile abwiegen. Der Nährwert ist eine Schätzung aus den USDA-Inhaltsstoffaufzeichnungen; Kochverluste werden nicht modelliert. Zeiten sind Führer; Verwenden Sie für tierische Lebensmittel ein Lebensmittelthermometer. Es sind kein zusätzliches Salz, Öl, Toppings oder Saucen enthalten. Dieses Rezept wurde nicht in der Küche getestet. Historische Etiketten beschreiben moderne Adaptionen, keine rekonstruierten Tagesmenüs.",
+        "es": "Los pesos de los ingredientes describen una porción base en el estado crudo, seco o cocido indicado. Pesar las partes comestibles. La nutrición es una estimación de los registros de ingredientes del USDA; Las pérdidas por cocción no se modelan. Los tiempos son guías; Utilice un termómetro para alimentos para alimentos de origen animal. No se incluyen sal, aceite, aderezos ni salsas adicionales. Esta receta no ha sido probada en cocina. Las etiquetas históricas describen adaptaciones modernas, no menús diarios reconstruidos.",
+        "fr": "Les poids des ingrédients décrivent une portion de base à l’état brut, sec ou cuit indiqué. Pesez les parties comestibles. La nutrition est une estimation tirée des registres des ingrédients de l'USDA ; les pertes à la cuisson ne sont pas modélisées. Les temps sont des guides ; utilisez un thermomètre alimentaire pour les aliments d'origine animale. Aucun sel, huile, garniture ou sauce supplémentaire n'est inclus. Cette recette n'a pas été testée en cuisine. Les étiquettes historiques décrivent des adaptations modernes et non des menus quotidiens reconstitués.",
+        "ja": "成分重量は、記載されている生、乾燥、または調理された状態の 1 つのベース部分を表します。可食部分の重さを量ります。栄養成分はUSDAの成分記録からの推定値です。調理による損失はモデル化されていません。時間は目安です。動物性食品には食品用温度計を使用してください。余分な塩、油、トッピング、ソースは含まれていません。このレシピはキッチンでテストされていません。歴史的なラベルは、毎日のメニューを再構築したものではなく、現代に適応したものを説明しています。",
+        "pt-BR": "Os pesos dos ingredientes descrevem uma porção de base no estado declarado cru, seco ou cozido. Pese as partes comestíveis. A nutrição é uma estimativa dos registros de ingredientes do USDA; as perdas por cozimento não são modeladas. Os tempos são guias; use um termômetro alimentar para alimentos de origem animal. Não estão incluídos sal, óleo, coberturas ou molhos extras. Esta receita não foi testada na cozinha. Rótulos históricos descrevem adaptações modernas, não menus diários reconstruídos.",
+        "ru": "Масса ингредиентов соответствует одной базовой порции в указанном сыром, сухом или приготовленном состоянии. Взвесьте съедобные части. Питательность — это оценка на основе записей об ингредиентах Министерства сельского хозяйства США; потери при приготовлении пищи не моделируются. Время — ориентир; используйте пищевой термометр для продуктов животного происхождения. Никакой дополнительной соли, масла, начинок и соусов в комплект не входит. Этот рецепт не был проверен на кухне. Исторические этикетки описывают современные адаптации, а не реконструированные ежедневные меню."
+      },
+      "cuisine": "historical",
+      "equipment": [
+        "stovetop"
+      ],
+      "mealTypes": [
+        "breakfast"
+      ],
+      "prepMinutes": 5,
+      "cookMinutes": 15,
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "activeIds": [
+    "web_q_egg_toast1920_v2"
+  ]
+}

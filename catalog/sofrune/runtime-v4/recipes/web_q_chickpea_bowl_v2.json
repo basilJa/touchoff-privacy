@@ -1,0 +1,133 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [],
+  "recipes": [
+    {
+      "id": "web_q_chickpea_bowl_v2",
+      "lead": "chickpea",
+      "method": "bowl",
+      "ingredients": [
+        {
+          "food": "chickpea",
+          "grams": 230
+        },
+        {
+          "food": "rice",
+          "grams": 180
+        },
+        {
+          "food": "spinach",
+          "grams": 60
+        },
+        {
+          "food": "oil",
+          "grams": 10
+        }
+      ],
+      "minutes": 15,
+      "group": "legume",
+      "historical": [],
+      "snack": false,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "waterMl": 30,
+      "titles": {
+        "en": "Chickpea and rice bowl",
+        "tr": "Nohutlu pirinç kâsesi",
+        "ar": "وعاء الحمص والأرز",
+        "de": "Schüssel mit Kichererbsen und Reis",
+        "es": "Bol de garbanzos y arroz",
+        "fr": "Bol de pois chiches et riz",
+        "ja": "ひよこ豆と丼",
+        "pt-BR": "Tigela de grão de bico e arroz",
+        "ru": "Миска нута и риса"
+      },
+      "steps": {
+        "en": [
+          "Use cooked, drained chickpeas and already cooked brown rice; the displayed weights are not dry weights. Wash the spinach.",
+          "Warm the chickpeas and rice with the listed olive oil and water in a covered pan for 5–7 minutes, stirring once.",
+          "Stir in spinach and cook for another 2–3 minutes until wilted. If reheating leftovers, check the mixture reaches 74°C throughout.",
+          "Serve the complete bowl hot; no additional cooking water or raw rice needs to be counted as food."
+        ],
+        "tr": [
+          "Pişmiş, süzülmüş nohut ve önceden pişmiş esmer pirinç kullan; gösterilen miktarlar kuru ağırlık değildir. Ispanağı yıka.",
+          "Nohut ile pirinci belirtilen zeytinyağı ve suyla kapaklı tavada 5–7 dakika ısıt; bir kez karıştır.",
+          "Ispanağı ekleyip sönene kadar 2–3 dakika daha pişir. Artan yemek ısıtılıyorsa karışımın her yerinin 74°C olduğunu kontrol et.",
+          "Kâsenin tamamını sıcak servis et; ayrıca çiğ pirinç ekleme."
+        ],
+        "ar": [
+          "استخدمي الحمص المطبوخ والمصفى والأرز البني المطبوخ بالفعل؛ الأوزان المعروضة ليست أوزان جافة. اغسل السبانخ.",
+          "قومي بتسخين الحمص والأرز مع زيت الزيتون والماء في مقلاة مغطاة لمدة 5-7 دقائق مع التحريك مرة واحدة.",
+          "يُضاف السبانخ ويُطهى لمدة 2-3 دقائق أخرى حتى يذبل. في حالة إعادة تسخين بقايا الطعام، تأكد من وصول الخليط إلى 74 درجة مئوية طوال الوقت.",
+          "قدّمي الوعاء كاملاً ساخناً؛ لا يلزم احتساب أي ماء طهي إضافي أو أرز خام كطعام."
+        ],
+        "de": [
+          "Verwenden Sie gekochte, abgetropfte Kichererbsen und bereits gekochten braunen Reis; Bei den angezeigten Gewichten handelt es sich nicht um Trockengewichte. Den Spinat waschen.",
+          "Kichererbsen und Reis mit dem aufgeführten Olivenöl und Wasser in einer abgedeckten Pfanne 5–7 Minuten lang erwärmen, dabei einmal umrühren.",
+          "Spinat einrühren und weitere 2–3 Minuten kochen, bis er zusammengefallen ist. Wenn Sie Reste aufwärmen, prüfen Sie, ob die Mischung durchgehend 74°C erreicht.",
+          "Servieren Sie die komplette Schüssel heiß; Es muss kein zusätzliches Kochwasser oder roher Reis als Lebensmittel gezählt werden."
+        ],
+        "es": [
+          "Utilice garbanzos cocidos y escurridos y arroz integral ya cocido; Los pesos mostrados no son pesos secos. Lavar las espinacas.",
+          "Caliente los garbanzos y el arroz con el aceite de oliva indicado y el agua en una cacerola tapada durante 5 a 7 minutos, revolviendo una vez.",
+          "Agregue las espinacas y cocine por otros 2 a 3 minutos hasta que se ablanden. Si recalienta las sobras, verifique que la mezcla alcance los 74°C en todo momento.",
+          "Sirve el bol completo caliente; no es necesario contar como alimento agua de cocción adicional ni arroz crudo."
+        ],
+        "fr": [
+          "Utilisez des pois chiches cuits et égouttés et du riz brun déjà cuit ; les poids affichés ne sont pas des poids secs. Lavez les épinards.",
+          "Faites chauffer les pois chiches et le riz avec l'huile d'olive indiquée et l'eau dans une poêle couverte pendant 5 à 7 minutes, en remuant une fois.",
+          "Incorporer les épinards et cuire encore 2 à 3 minutes jusqu'à ce qu'ils soient fanés. Si vous réchauffez des restes, vérifiez que le mélange atteigne 74°C.",
+          "Servir le bol complet chaud; aucune eau de cuisson supplémentaire ou riz cru ne doit être considéré comme un aliment."
+        ],
+        "ja": [
+          "調理して水気を切ったひよこ豆と、すでに調理済みの玄米を使用します。表示されている重量は乾燥重量ではありません。ほうれん草を洗います。",
+          "ひよこ豆と米を記載のオリーブオイルと水と一緒に蓋付きの鍋で5–7分間温め、一度かき混ぜます。",
+          "ほうれん草を加えてかき混ぜ、しおれるまでさらに 2–3 分間調理します。残り物を再加熱する場合は、混合物が全体で 74°C に達していることを確認してください。",
+          "ボウル全体を温かいままお召し上がりください。追加の調理用水や生の米を食品としてカウントする必要はありません。"
+        ],
+        "pt-BR": [
+          "Use grão de bico cozido e escorrido e arroz integral já cozido; os pesos exibidos não são pesos secos. Lave o espinafre.",
+          "Aqueça o grão de bico e o arroz com o azeite listado e a água em uma panela tampada por 5–7 minutos, mexendo uma vez.",
+          "Junte o espinafre e cozinhe por mais 2–3 minutos até murchar. Se reaquecer sobras, verifique se a mistura atinge 74°C por completo.",
+          "Sirva a tigela completa quente; nenhuma água adicional para cozinhar ou arroz cru precisa ser contado como alimento."
+        ],
+        "ru": [
+          "Используйте приготовленный осушенный нут и уже приготовленный коричневый рис; отображаемый вес не является сухим весом. Вымойте шпинат.",
+          "Нагрейте нут и рис с указанным оливковым маслом и водой в закрытой кастрюле в течение 5–7 минут, один раз помешивая.",
+          "Добавьте шпинат и готовьте еще 2–3 минут, пока он не завянет. Если вы разогреваете остатки, убедитесь, что смесь достигает 74°C на всем протяжении.",
+          "Подавайте всю миску горячей; никакая дополнительная вода для приготовления пищи или сырой рис не должны считаться пищей."
+        ]
+      },
+      "notes": {
+        "en": "Ingredient weights describe one base portion in the stated raw, dry or cooked state. Weigh edible parts. Nutrition is an estimate from USDA ingredient records; cooking losses are not modelled. Times are guides; use a food thermometer for animal foods. No extra salt, oil, toppings or sauces are included. This recipe has not been kitchen-tested. Historical labels describe modern adaptations, not reconstructed daily menus.",
+        "tr": "Malzeme miktarları belirtilen çiğ, kuru veya pişmiş durumda bir temel porsiyona aittir. Yenebilir kısmı tart. Besinler USDA malzeme kayıtlarından tahmindir; pişirme kayıpları modellenmez. Süreler yol gösterir; hayvansal gıdalarda gıda termometresi kullan. Ek tuz, yağ, süsleme veya sos dahil değildir. Bu tarif mutfakta denenmemiştir. Tarihsel etiketler özgün günlük menüyü değil, modern uyarlamayı anlatır.",
+        "ar": "تصف أوزان المكونات جزءًا أساسيًا واحدًا في الحالة الخام أو الجافة أو المطبوخة المذكورة. وزن الأجزاء الصالحة للأكل. التغذية هي تقدير من سجلات المكونات التابعة لوزارة الزراعة الأمريكية؛ لم يتم وضع نماذج لخسائر الطهي. الأوقات هي أدلة. استخدم مقياس حرارة الطعام للأغذية الحيوانية. لا يتم تضمين الملح الإضافي أو الزيت أو الطبقة أو الصلصات. لم يتم اختبار هذه الوصفة في المطبخ. تصف العلامات التاريخية التعديلات الحديثة، وليس القوائم اليومية المعاد بناؤها.",
+        "de": "Zutatengewichte beschreiben eine Grundportion im angegebenen rohen, trockenen oder gekochten Zustand. Essbare Teile abwiegen. Der Nährwert ist eine Schätzung aus den USDA-Inhaltsstoffaufzeichnungen; Kochverluste werden nicht modelliert. Zeiten sind Führer; Verwenden Sie für tierische Lebensmittel ein Lebensmittelthermometer. Es sind kein zusätzliches Salz, Öl, Toppings oder Saucen enthalten. Dieses Rezept wurde nicht in der Küche getestet. Historische Etiketten beschreiben moderne Adaptionen, keine rekonstruierten Tagesmenüs.",
+        "es": "Los pesos de los ingredientes describen una porción base en el estado crudo, seco o cocido indicado. Pesar las partes comestibles. La nutrición es una estimación de los registros de ingredientes del USDA; Las pérdidas por cocción no se modelan. Los tiempos son guías; Utilice un termómetro para alimentos para alimentos de origen animal. No se incluyen sal, aceite, aderezos ni salsas adicionales. Esta receta no ha sido probada en cocina. Las etiquetas históricas describen adaptaciones modernas, no menús diarios reconstruidos.",
+        "fr": "Les poids des ingrédients décrivent une portion de base à l’état brut, sec ou cuit indiqué. Pesez les parties comestibles. La nutrition est une estimation tirée des registres des ingrédients de l'USDA ; les pertes à la cuisson ne sont pas modélisées. Les temps sont des guides ; utilisez un thermomètre alimentaire pour les aliments d'origine animale. Aucun sel, huile, garniture ou sauce supplémentaire n'est inclus. Cette recette n'a pas été testée en cuisine. Les étiquettes historiques décrivent des adaptations modernes et non des menus quotidiens reconstitués.",
+        "ja": "成分重量は、記載されている生、乾燥、または調理された状態の 1 つのベース部分を表します。可食部分の重さを量ります。栄養成分はUSDAの成分記録からの推定値です。調理による損失はモデル化されていません。時間は目安です。動物性食品には食品用温度計を使用してください。余分な塩、油、トッピング、ソースは含まれていません。このレシピはキッチンでテストされていません。歴史的なラベルは、毎日のメニューを再構築したものではなく、現代に適応したものを説明しています。",
+        "pt-BR": "Os pesos dos ingredientes descrevem uma porção de base no estado declarado cru, seco ou cozido. Pese as partes comestíveis. A nutrição é uma estimativa dos registros de ingredientes do USDA; as perdas por cozimento não são modeladas. Os tempos são guias; use um termômetro alimentar para alimentos de origem animal. Não estão incluídos sal, óleo, coberturas ou molhos extras. Esta receita não foi testada na cozinha. Rótulos históricos descrevem adaptações modernas, não menus diários reconstruídos.",
+        "ru": "Масса ингредиентов соответствует одной базовой порции в указанном сыром, сухом или приготовленном состоянии. Взвесьте съедобные части. Питательность — это оценка на основе записей об ингредиентах Министерства сельского хозяйства США; потери при приготовлении пищи не моделируются. Время — ориентир; используйте пищевой термометр для продуктов животного происхождения. Никакой дополнительной соли, масла, начинок и соусов в комплект не входит. Этот рецепт не был проверен на кухне. Исторические этикетки описывают современные адаптации, а не реконструированные ежедневные меню."
+      },
+      "cuisine": "international",
+      "equipment": [
+        "stovetop"
+      ],
+      "mealTypes": [
+        "lunch",
+        "dinner",
+        "extra_meal"
+      ],
+      "prepMinutes": 5,
+      "cookMinutes": 10,
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "activeIds": [
+    "web_q_chickpea_bowl_v2"
+  ]
+}

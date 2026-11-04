@@ -1,0 +1,213 @@
+{
+  "schema": 3,
+  "revision": 4,
+  "published": "2026-11-05",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "foods": [
+    {
+      "id": "web_q_pasta",
+      "fdc": "168927",
+      "description": "Pasta, dry, unenriched",
+      "nutrition": {
+        "protein": 13.04,
+        "fiber": 3.2,
+        "fat": 1.51,
+        "sodium": 6.0,
+        "carbs": 74.67,
+        "kcal": 371.0,
+        "calcium": 21.0,
+        "potassium": 223.0,
+        "vitc": 0.0,
+        "b12": 0.0,
+        "iron": 1.3
+      },
+      "unknown": [],
+      "allergens": [
+        "gluten"
+      ],
+      "animal": "plant",
+      "allergensKnown": true,
+      "names": {
+        "en": "Pasta, dry, unenriched",
+        "tr": "Makarna, kuru, zenginleştirilmemiş",
+        "ar": "المعكرونة، الجافة، غير المخصبة",
+        "de": "Nudeln, trocken, nicht angereichert",
+        "es": "Pasta, seca, no enriquecida",
+        "fr": "Pâtes, sèches, non enrichies",
+        "ja": "パスタ、乾燥、強化されていない",
+        "pt-BR": "Massa seca, não enriquecida",
+        "ru": "Макаронные изделия сухие, необогащенные"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/168927/nutrients",
+      "state": "dry"
+    },
+    {
+      "id": "web_q_feta",
+      "fdc": "173420",
+      "description": "Cheese, feta",
+      "nutrition": {
+        "fat": 21.49,
+        "carbs": 3.88,
+        "kcal": 265.0,
+        "sodium": 1139.0,
+        "calcium": 493.0,
+        "potassium": 62.0,
+        "protein": 14.21,
+        "fiber": 0.0,
+        "iron": 0.65,
+        "vitc": 0.0,
+        "b12": 1.69
+      },
+      "unknown": [],
+      "allergens": [
+        "milk"
+      ],
+      "animal": "dairy",
+      "allergensKnown": true,
+      "names": {
+        "en": "Feta cheese",
+        "tr": "Feta peyniri",
+        "ar": "جبنة الفيتا",
+        "de": "Feta-Käse",
+        "es": "queso feta",
+        "fr": "Fromage feta",
+        "ja": "フェタチーズ",
+        "pt-BR": "Queijo feta",
+        "ru": "сыр фета"
+      },
+      "origin": "https://fdc.nal.usda.gov/food-details/173420/nutrients",
+      "state": "ready"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "web_q_feta_tomato_pasta_bake",
+      "lead": "web_q_pasta",
+      "method": "bake",
+      "ingredients": [
+        {
+          "food": "web_q_pasta",
+          "grams": 90
+        },
+        {
+          "food": "web_q_feta",
+          "grams": 70
+        },
+        {
+          "food": "tomato",
+          "grams": 250
+        },
+        {
+          "food": "spinach",
+          "grams": 100
+        },
+        {
+          "food": "oil",
+          "grams": 8
+        }
+      ],
+      "minutes": 45,
+      "group": "dairy",
+      "historical": [],
+      "snack": false,
+      "waterMl": 1000,
+      "titles": {
+        "en": "Tomato feta pasta bake",
+        "tr": "Domatesli fetalı fırın makarna",
+        "ar": "خبز المعكرونة بالطماطم والفيتا",
+        "de": "Tomaten-Feta-Nudelauflauf",
+        "es": "Pasta horneada con tomate y queso feta",
+        "fr": "Pâtes à la feta et aux tomates",
+        "ja": "トマトフェタチーズのパスタ焼き",
+        "pt-BR": "Macarrão feta com tomate assado",
+        "ru": "Запеканка из томатной пасты фета"
+      },
+      "steps": {
+        "en": [
+          "Heat oven to 200°C. Chop tomato, put in a small baking dish with olive oil and place feta in the center.",
+          "Bake for 25–30 minutes until tomatoes are soft and feta is hot. Keep the dish juices.",
+          "Meanwhile boil dry pasta in the listed water according to the package. Add washed spinach for the final minute and drain.",
+          "Mash hot feta and tomatoes together, then fold in pasta and spinach. Return to the oven for 5 minutes and serve all of the dish."
+        ],
+        "tr": [
+          "Fırını 200°C ısıt. Domatesi doğrayıp zeytinyağıyla küçük fırın kabına koy; fetayı ortasına yerleştir.",
+          "Domates yumuşayıp feta ısınana kadar 25–30 dakika pişir. Kabın suyunu dökme.",
+          "Bu sırada kuru makarnayı belirtilen suda paket süresine göre haşla. Son dakikada yıkanmış ıspanağı ekleyip süz.",
+          "Sıcak feta ve domatesi ez; makarna ile ıspanağı kat. 5 dakika daha fırına koyup yemeğin tamamını servis et."
+        ],
+        "ar": [
+          "سخني الفرن إلى 200°C. تقطع الطماطم وتوضع في طبق خبز صغير مع زيت الزيتون وتوضع جبنة الفيتا في المنتصف.",
+          "اخبزيها لمدة 25–30 دقيقة حتى تصبح الطماطم طرية وجبنة الفيتا ساخنة. احتفظي بعصائر الطبق.",
+          "في هذه الأثناء، تُسلق المعكرونة الجافة في الماء الموضح على العبوة. أضيفي السبانخ المغسولة للدقيقة الأخيرة ثم صفيها.",
+          "اهرسي جبنة الفيتا والطماطم الساخنة معًا، ثم أضيفي المعكرونة والسبانخ. عُد إلى الفرن لمدة 5 دقائق وقدم الطبق بالكامل."
+        ],
+        "de": [
+          "Den Ofen auf 200°C vorheizen. Tomaten hacken, in eine kleine Auflaufform mit Olivenöl geben und Feta in die Mitte legen.",
+          "25–30 Minuten backen, bis die Tomaten weich und der Feta heiß ist. Bewahren Sie den Speisesaft auf.",
+          "In der Zwischenzeit die trockenen Nudeln in dem auf der Packung angegebenen Wasser kochen. Zum Schluss den gewaschenen Spinat hinzufügen und abtropfen lassen.",
+          "Heißen Feta und Tomaten zerdrücken, dann Nudeln und Spinat unterheben. Für 5 Minuten in den Ofen zurückstellen und das Gericht vollständig servieren."
+        ],
+        "es": [
+          "Calentar el horno a 200°C. Picar el tomate, ponerlo en una fuente para horno pequeña con aceite de oliva y colocar el queso feta en el centro.",
+          "Hornee durante 25 a 30 minutos hasta que los tomates estén suaves y el queso feta caliente. Mantenga los jugos del plato.",
+          "Mientras tanto, hierva la pasta seca en el agua indicada según el paquete. Agrega las espinacas lavadas para el último minuto y escurre.",
+          "Triture el queso feta caliente y los tomates, luego agregue la pasta y las espinacas. Regrese al horno por 5 minutos y sirva todo el plato."
+        ],
+        "fr": [
+          "Chauffer le four à 200°C. Hachez la tomate, mettez-la dans un petit plat allant au four avec de l'huile d'olive et placez la feta au centre.",
+          "Cuire au four pendant 25–30 minutes jusqu'à ce que les tomates soient tendres et que la feta soit chaude. Conservez le jus du plat.",
+          "Pendant ce temps, faites bouillir les pâtes sèches dans l’eau indiquée sur l’emballage. Ajouter les épinards lavés pendant la dernière minute et égoutter.",
+          "Écrasez ensemble la feta chaude et les tomates, puis incorporez les pâtes et les épinards. Remettre au four pendant 5 minutes et servir tout le plat."
+        ],
+        "ja": [
+          "オーブンを200°Cまで加熱します。トマトをみじん切りにし、オリーブオイルを入れた小さなグラタン皿に入れ、フェタチーズを中央に置きます。",
+          "トマトが柔らかくなり、フェタチーズが熱くなるまで、25–30 分間焼きます。皿の汁は取っておきます。",
+          "その間に乾燥パスタを表示されている水でパッケージに従って茹でます。最後に洗ったほうれん草を加えて水を切ります。",
+          "温かいフェタチーズとトマトを一緒にマッシュし、パスタとほうれん草を加えます。オーブンに戻して 5 分間焼き、皿に盛り付けます。"
+        ],
+        "pt-BR": [
+          "Aqueça o forno a 200°C. Pique o tomate, coloque numa assadeira pequena com azeite e coloque o queijo feta no centro.",
+          "Asse por 25–30 minutos até que os tomates estejam macios e o queijo feta esteja quente. Guarde os sucos do prato.",
+          "Enquanto isso, ferva o macarrão seco na água indicada na embalagem. Adicione o espinafre lavado no último minuto e escorra.",
+          "Amasse o queijo feta quente e os tomates e junte o macarrão e o espinafre. Volte ao forno por 5 minutos e sirva todo o prato."
+        ],
+        "ru": [
+          "Нагрейте духовку до 200°C. Помидор нарезаем, выкладываем в небольшую форму для запекания с оливковым маслом и в центр выкладываем фету.",
+          "Выпекайте 25–30 минут, пока помидоры не станут мягкими, а фета не станет горячей. Сохраняйте из блюда сок.",
+          "Тем временем отварите сухие макароны в воде, указанной на упаковке. На последнюю минуту добавьте промытый шпинат и слейте воду.",
+          "Разомните горячую фету и помидоры, затем добавьте макароны и шпинат. Вернитесь в духовку на 5 минут и подавайте все блюдо."
+        ]
+      },
+      "notes": {
+        "en": "Ingredient weights describe one base portion in the stated raw, dry or cooked state. Weigh edible parts. Nutrition is an estimate from USDA ingredient records; cooking losses are not modelled. Times are guides; use a food thermometer for animal foods. No extra salt, oil, toppings or sauces are included. This recipe has not been kitchen-tested. Historical labels describe modern adaptations, not reconstructed daily menus.",
+        "tr": "Malzeme miktarları belirtilen çiğ, kuru veya pişmiş durumda bir temel porsiyona aittir. Yenebilir kısmı tart. Besinler USDA malzeme kayıtlarından tahmindir; pişirme kayıpları modellenmez. Süreler yol gösterir; hayvansal gıdalarda gıda termometresi kullan. Ek tuz, yağ, süsleme veya sos dahil değildir. Bu tarif mutfakta denenmemiştir. Tarihsel etiketler özgün günlük menüyü değil, modern uyarlamayı anlatır.",
+        "ar": "تصف أوزان المكونات جزءًا أساسيًا واحدًا في الحالة الخام أو الجافة أو المطبوخة المذكورة. وزن الأجزاء الصالحة للأكل. التغذية هي تقدير من سجلات المكونات التابعة لوزارة الزراعة الأمريكية؛ لم يتم وضع نماذج لخسائر الطهي. الأوقات هي أدلة. استخدم مقياس حرارة الطعام للأغذية الحيوانية. لا يتم تضمين الملح الإضافي أو الزيت أو الطبقة أو الصلصات. لم يتم اختبار هذه الوصفة في المطبخ. تصف العلامات التاريخية التعديلات الحديثة، وليس القوائم اليومية المعاد بناؤها.",
+        "de": "Zutatengewichte beschreiben eine Grundportion im angegebenen rohen, trockenen oder gekochten Zustand. Essbare Teile abwiegen. Der Nährwert ist eine Schätzung aus den USDA-Inhaltsstoffaufzeichnungen; Kochverluste werden nicht modelliert. Zeiten sind Führer; Verwenden Sie für tierische Lebensmittel ein Lebensmittelthermometer. Es sind kein zusätzliches Salz, Öl, Toppings oder Saucen enthalten. Dieses Rezept wurde nicht in der Küche getestet. Historische Etiketten beschreiben moderne Adaptionen, keine rekonstruierten Tagesmenüs.",
+        "es": "Los pesos de los ingredientes describen una porción base en el estado crudo, seco o cocido indicado. Pesar las partes comestibles. La nutrición es una estimación de los registros de ingredientes del USDA; Las pérdidas por cocción no se modelan. Los tiempos son guías; Utilice un termómetro para alimentos para alimentos de origen animal. No se incluyen sal, aceite, aderezos ni salsas adicionales. Esta receta no ha sido probada en cocina. Las etiquetas históricas describen adaptaciones modernas, no menús diarios reconstruidos.",
+        "fr": "Les poids des ingrédients décrivent une portion de base à l’état brut, sec ou cuit indiqué. Pesez les parties comestibles. La nutrition est une estimation tirée des registres des ingrédients de l'USDA ; les pertes à la cuisson ne sont pas modélisées. Les temps sont des guides ; utilisez un thermomètre alimentaire pour les aliments d'origine animale. Aucun sel, huile, garniture ou sauce supplémentaire n'est inclus. Cette recette n'a pas été testée en cuisine. Les étiquettes historiques décrivent des adaptations modernes et non des menus quotidiens reconstitués.",
+        "ja": "成分重量は、記載されている生、乾燥、または調理された状態の 1 つのベース部分を表します。可食部分の重さを量ります。栄養成分はUSDAの成分記録からの推定値です。調理による損失はモデル化されていません。時間は目安です。動物性食品には食品用温度計を使用してください。余分な塩、油、トッピング、ソースは含まれていません。このレシピはキッチンでテストされていません。歴史的なラベルは、毎日のメニューを再構築したものではなく、現代に適応したものを説明しています。",
+        "pt-BR": "Os pesos dos ingredientes descrevem uma porção de base no estado declarado cru, seco ou cozido. Pese as partes comestíveis. A nutrição é uma estimativa dos registros de ingredientes do USDA; as perdas por cozimento não são modeladas. Os tempos são guias; use um termômetro alimentar para alimentos de origem animal. Não estão incluídos sal, óleo, coberturas ou molhos extras. Esta receita não foi testada na cozinha. Rótulos históricos descrevem adaptações modernas, não menus diários reconstruídos.",
+        "ru": "Масса ингредиентов соответствует одной базовой порции в указанном сыром, сухом или приготовленном состоянии. Взвесьте съедобные части. Питательность — это оценка на основе записей об ингредиентах Министерства сельского хозяйства США; потери при приготовлении пищи не моделируются. Время — ориентир; используйте пищевой термометр для продуктов животного происхождения. Никакой дополнительной соли, масла, начинок и соусов в комплект не входит. Этот рецепт не был проверен на кухне. Исторические этикетки описывают современные адаптации, а не реконструированные ежедневные меню."
+      },
+      "cuisine": "mediterranean",
+      "equipment": [
+        "oven",
+        "stovetop"
+      ],
+      "mealTypes": [
+        "lunch",
+        "dinner",
+        "extra_meal"
+      ],
+      "prepMinutes": 10,
+      "cookMinutes": 35,
+      "source": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "contributors": "https://basilja.github.io/touchoff-privacy/catalog/sofrune/runtime-v4/attribution.html",
+      "attribution": "Sofrune / basilbase contributors",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "activeIds": [
+    "web_q_feta_tomato_pasta_bake"
+  ]
+}
