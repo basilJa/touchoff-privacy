@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReplyDueList — Gizlilik Politikası</title>
+<meta name="description" content="ReplyDueList, sonra yanıtlayacağın mesajları Android cihazında saklar. İnternet izni, hesap, reklam ve analiz araçları yoktur.">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">ReplyDueList</p>
+    <p class="tagline">Sonra yanıtlayacağın mesajları kaydet.</p>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme <time datetime="2026-11-23">23 Kasım 2026</time> · Geliştirici basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="../" lang="en" hreflang="en">English</a></p>
+    <p class="meta">Uygulama <code>software.basilbase.replyduelist</code></p>
+  </header>
+
+  <main>
+    <div class="lede">
+      <p>ReplyDueList, yanıt listeni Android cihazında uygulamaya ait özel alanda saklar. Uygulamanın internet izni yoktur. Hesap açman gerekmez, reklam ve analiz araçları kullanılmaz. Kaydettiklerini toplamıyor, göndermiyor veya paylaşmıyoruz.</p>
+    </div>
+
+  <section>
+    <h2>Cihazında neler saklanır?</h2>
+    <p>Her kayıtta başlık, varsa yazdığın veya paylaştığın metin, seçtiğin kaynak uygulama ve hatırlatma için gereken zaman ve durum bilgileri tutulur. Bunlar arasında kaydetme, hatırlatma ve yanıtlandı olarak işaretleme zamanları bulunur.</p>
+    <p>Android’den seçili bir metni paylaştığında önce taslak açılır. Kayıt ancak Kaydet’e dokunduğunda saklanır. ReplyDueList gelen kutunu, sohbet geçmişini, rehberini veya bildirimlerini okumaz. Senin adına yanıt göndermez.</p>
+  </section>
+
+  <section>
+    <h2>Hatırlatmalar ve izinler</h2>
+    <p>Android 13 ve sonraki sürümlerde Hatırlatmaları aç’a dokunduğunda Android bildirim izni (<code>POST_NOTIFICATIONS</code>) istenir. Hatırlatmalarda genel bir başlık görünür. Kaydettiğin mesajlar ve isimler gösterilmez. Android ayarlarında Uygulamalar → ReplyDueList → Bildirimler bölümünden bildirimleri kapatıp listeyi kullanmaya devam edebilirsin.</p>
+    <p>Android’in açılış izni (<code>RECEIVE_BOOT_COMPLETED</code>), cihaz yeniden başlatıldıktan sonra bekleyen hatırlatmaları yeniden planlamaya yarar. Android, hatırlatmayı seçtiğin saatten sonra gösterebilir. AndroidX, uygulama içi sistem mesajlarını korumak için uygulamaya özel bir imza izni (<code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>) ekler.</p>
+  </section>
+
+  <section>
+    <h2>Kaynak uygulamayı açma</h2>
+    <p>ReplyDueList, kaynak seçebilmen için sınırlı sayıdaki desteklenen mesajlaşma uygulamasının yüklü olup olmadığını kontrol edebilir. Kaynak düğmesine dokunduğunda seçtiğin uygulama açılır. Kaydettiğin metin bu uygulamaya gönderilmez. Açılan uygulamanın kendi gizlilik politikası geçerlidir.</p>
+  </section>
+
+  <section>
+    <h2>Kayıtlar ne kadar kalır, nasıl silinir?</h2>
+    <p>Sildiğin ana kadar kayıtlar cihazında kalır. Kayıtları uygulama içinden tek tek silebilirsin. Hepsini kaldırmak için Android ayarlarından uygulama verilerini temizleyebilir veya uygulamayı kaldırabilirsin. Android bulut yedeği ve cihazdan cihaza aktarma bu kayıtlar için kapalıdır.</p>
+  </section>
+
+  <section>
+    <h2>Çocuklar</h2>
+    <p>Uygulama genel kullanıma yöneliktir. Çocukları hedeflemez. Kimsenin verisini toplamıyoruz.</p>
+  </section>
+
+  <section>
+    <h2>İletişim ve politika güncellemeleri</h2>
+    <p>Gizlilikle ilgili soruların için <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> adresine yazabilirsin. Sana yanıt verebilmek için e-posta adresini ve gönderdiğin mesajı alırız.</p>
+    <p>Bu sayfa GitHub Pages üzerinde barındırılır. Tarayıcın doğrudan bu hizmete bağlanır. Politika güncellendiğinde sayfanın üstündeki tarih de değişir.</p>
+  </section>
+  </main>
+
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>

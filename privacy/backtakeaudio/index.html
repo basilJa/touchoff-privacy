@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BackTakeAudio — Privacy Policy</title>
+<meta name="description" content="How BackTakeAudio uses the microphone, saves WAV clips, and keeps your data on your device.">
+<link rel="alternate" hreflang="tr" href="tr/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">BackTakeAudio</p>
+    <p class="tagline">Save the sound you just heard.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta"><time datetime="2026-11-23">Last updated November 23, 2026</time> · App <code>software.basilbase.backtakeaudio</code> · Developer basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="tr/" lang="tr" hreflang="tr">Türkçe</a></p>
+  </header>
+  <main>
+    <div class="lede">
+      <p>BackTakeAudio keeps recent sound in memory while a microphone session you started is active. Choose a duration from 10 to 60 seconds. Tap Save during that session to keep the most recent available audio, up to the duration you chose, as a WAV clip.</p>
+      <p>BackTakeAudio processes audio on your device. It has no internet permission, accounts, ads, analytics or crash reporting. basilbase does not receive recordings or other app data.</p>
+    </div>
+
+    <section>
+      <h2>When the microphone is active</h2>
+      <p>Tap <strong>Start session</strong> and allow microphone access to begin. Android runs the session as a microphone foreground service. A session can continue when you switch apps or lock the screen, subject to Android’s limits. When notifications are available, the ongoing notification shows that the session is active and offers a Stop action. You can also stop from the app.</p>
+      <p>The app replaces older audio as new sound arrives. When you stop or Android ends the session, unsaved audio is discarded. The app does not start a recording on its own or restart one after Android ends it.</p>
+    </section>
+
+    <section>
+      <h2>What stays on your device</h2>
+      <p>A saved clip contains the audio you chose to keep and stays in BackTakeAudio’s private storage until you delete it. The app keeps the time of each saved clip for your library. It also remembers your capture duration, theme, language and whether it has already asked about notifications.</p>
+      <p>Android’s backup and device-transfer rules exclude BackTakeAudio’s private clips and settings.</p>
+    </section>
+
+    <section>
+      <h2>Share, export and delete</h2>
+      <p>Only you choose whether to share a WAV clip or save a copy to a location you select in Android’s file picker. The receiving app or provider handles that copy under its own policies. Deleting a clip from BackTakeAudio removes the app’s copy. Clear the app’s storage in Android settings or uninstall it to remove its remaining local data. Manage copies that you shared or exported at their destinations.</p>
+    </section>
+
+    <section>
+      <h2>Permissions</h2>
+      <ul>
+        <li><strong>Microphone (<code>RECORD_AUDIO</code>)</strong> lets BackTakeAudio capture audio. Without it, a new session cannot start. You can revoke microphone access in Android settings.</li>
+        <li><strong>Foreground service (<code>FOREGROUND_SERVICE</code> and <code>FOREGROUND_SERVICE_MICROPHONE</code>)</strong> lets Android keep a session you started active. Tap Stop to end it.</li>
+        <li><strong>Notifications (<code>POST_NOTIFICATIONS</code> on Android 13 and later)</strong> lets the notification show session status and a Stop action. You can change this permission in Android settings and still stop sessions in the app.</li>
+        <li><strong>Internal broadcasts</strong> use an app-specific AndroidX permission that limits which apps can send them. This permission does not give the app access to your personal data.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Children and policy updates</h2>
+      <p>BackTakeAudio is a general-purpose utility and is not directed at children. If this policy changes, we update the date and the text at this address.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p><a href="mailto:contact@basilbase.com">contact@basilbase.com</a></p>
+    </section>
+  </main>
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>

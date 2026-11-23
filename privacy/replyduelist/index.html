@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReplyDueList — Privacy Policy</title>
+<meta name="description" content="ReplyDueList stores follow-ups on your Android device. It has no internet permission, account, ads or analytics.">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">ReplyDueList</p>
+    <p class="tagline">Save a message to answer later.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated <time datetime="2026-11-23">23 November 2026</time> · Developer basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="tr/" lang="tr" hreflang="tr">Türkçe</a></p>
+    <p class="meta">App <code>software.basilbase.replyduelist</code></p>
+  </header>
+
+  <main>
+    <div class="lede">
+      <p>ReplyDueList keeps your reply list in private storage on your Android device. The app has no internet permission, account, ads or analytics. We do not collect, transmit or share your follow-ups.</p>
+    </div>
+
+  <section>
+    <h2>What stays on your device</h2>
+    <p>A saved follow-up contains its title, any text you entered or shared, the source app you selected if any, and the times and status needed to show it and send a reminder. That includes when it was saved, when a reminder is due or was posted, and when you marked it replied.</p>
+    <p>When you share selected text using Android, it opens as a draft. The app stores your entry when you save it. ReplyDueList does not read your inbox, chat history, contacts or notifications, or send replies for you.</p>
+  </section>
+
+  <section>
+    <h2>Reminders and permissions</h2>
+    <p>On Android 13 and later, selecting Enable reminders prompts for Android notification permission (<code>POST_NOTIFICATIONS</code>). Reminders use a generic title and omit saved message text and names. You can turn notifications off under Android Settings → Apps → ReplyDueList → Notifications and still use the list.</p>
+    <p>Android startup access (<code>RECEIVE_BOOT_COMPLETED</code>) lets the app restore pending reminders after a restart. The timing is inexact. AndroidX adds the app’s own signature permission (<code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>) to protect internal broadcasts.</p>
+  </section>
+
+  <section>
+    <h2>Opening a source app</h2>
+    <p>ReplyDueList can check whether a short list of supported messaging apps is installed so you can select one as the source. Tapping the source button opens the installed app you chose without sending it your saved text. The other app has its own privacy policy.</p>
+  </section>
+
+  <section>
+    <h2>How long records stay and how to delete them</h2>
+    <p>Follow-ups stay on your device until you delete them. Delete an individual item in the app, clear its storage in Android settings to remove all records, or uninstall the app. Android cloud backup and device transfer are disabled for these records.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>The app is for a general audience and is not directed at children. We collect no data from anyone.</p>
+  </section>
+
+  <section>
+    <h2>Contact and policy updates</h2>
+    <p>Email <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> with privacy questions. If you email us, we receive your email address and what you send so we can reply.</p>
+    <p>This page is hosted on GitHub Pages. Your browser connects to the host directly. The date at the top changes when this policy is updated.</p>
+  </section>
+  </main>
+
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>

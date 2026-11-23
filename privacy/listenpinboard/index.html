@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ListenPinboard — Privacy Policy</title>
+<meta name="description" content="ListenPinboard keeps bookmarks on your Android device. Notification access is optional and only used to check the active player on request.">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="mark">ListenPinboard</p>
+    <p class="tagline">Save a moment in what you are listening to.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated <time datetime="2026-11-23">23 November 2026</time> · Developer basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> · <a href="tr/" lang="tr" hreflang="tr">Türkçe</a></p>
+    <p class="meta">App <code>software.basilbase.listenpinboard</code></p>
+  </header>
+
+  <main>
+    <div class="lede">
+      <p>ListenPinboard saves your bookmarks in private storage on your Android device. The app has no internet permission, account, ads or analytics. We do not collect, transmit or share your bookmarks.</p>
+    </div>
+
+  <section>
+    <h2>What stays on your device</h2>
+    <p>A saved bookmark contains a title, the date you saved it, and the playback time. For a player bookmark, the app saves the player’s package and media ID so it can recognize the same item. For a link bookmark, it saves the supported timestamp link you chose. Audio is not recorded, copied or stored.</p>
+  </section>
+
+  <section>
+    <h2>Optional Android notification access</h2>
+    <p>To mark current playback or return to a saved time in an active player, Android makes media sessions available through notification access. The app explains this before opening Android Settings for you to choose whether to allow it.</p>
+    <p>When you request one of those actions, the app checks the player and media details Android provides, such as the title, media ID, position and whether the item can seek. It does not read message or other notification contents. On Android versions with listener filters, all notification content filters are disabled.</p>
+    <p>Only Android can bind the app’s notification access component (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>). AndroidX adds the app’s own signature permission (<code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>) to protect internal broadcasts.</p>
+    <p>You can turn notification access off in Android Settings under Special app access. Saving and opening supported timestamp links still works without this access.</p>
+  </section>
+
+  <section>
+    <h2>Opening a player or link and copying a time</h2>
+    <p>When you choose to open a source, Android hands the link or launch request to the browser or player. That app has its own privacy policy. If you choose to copy a time, ListenPinboard puts the time in the Android clipboard.</p>
+  </section>
+
+  <section>
+    <h2>How long bookmarks stay and how to delete them</h2>
+    <p>Bookmarks stay on your device until you delete them. Delete individual bookmarks in the app, clear its storage in Android settings, or uninstall the app. Android cloud backup and device transfer are disabled for these records.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>The app is for a general audience and is not directed at children. We collect no data from anyone.</p>
+  </section>
+
+  <section>
+    <h2>Contact and policy updates</h2>
+    <p>Email <a href="mailto:contact@basilbase.com">contact@basilbase.com</a> with privacy questions. If you email us, we receive your email address and what you send so we can reply.</p>
+    <p>This page is hosted on GitHub Pages. Your browser connects to the host directly. The date at the top changes when this policy is updated.</p>
+  </section>
+  </main>
+
+  <footer>basilbase · <a href="mailto:contact@basilbase.com">contact@basilbase.com</a></footer>
+</div>
+</body>
+</html>
